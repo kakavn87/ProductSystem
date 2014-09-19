@@ -1,0 +1,55 @@
+<mockup version="1.0" skin="sketch" measuredW="1154" measuredH="749" mockupW="1111" mockupH="721">
+  <controls>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::TitleWindow" x="43" y="28" w="352" h="272" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Attendants</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::TextArea" x="43" y="58" w="352" h="242" measuredW="200" measuredH="140" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>left</align>
+        <text>-%20__construct%20%0AKonstruktor%0A%20%0A-%20getAttendantData%28%24id%29%20%0AHolt%20alle%20Daten%20zum%20%FCbergebenen%20Teilnehmer%0A%20%0A-%20getNames%20%0AHolt%20generell%20alle%20Vor-%20und%20Nachnamen%20der%20Teilnehmer%0A%20%0A-%20saveAttendant%28%24id%29%0AUpdate%20der%20Teilnehmerdaten%20in%20der%20Datenbank%0A%20%0A-%20addAttendant%28%29%0AF%FCgt%20einen%20neuen%20Teilnehmer%20hinzu</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::TitleWindow" x="423" y="30" w="352" h="272" measuredW="450" measuredH="400" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Customers</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::TextArea" x="423" y="60" w="352" h="291" measuredW="200" measuredH="140" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>-%20__construct%20%0AKonstruktor%0A%20%0A-%20getCustomerData%28%24id%29%20%0AHolt%20alle%20Daten%20zum%20%FCbergebenen%20Kunden%0A%20%0A-%20getNames%20%0AHolt%20generell%20alle%20Vor-%20und%20Nachnamen%20der%20Kunden%0A%20%0A-%20saveCustomer%28%24id%29%0AUpdate%20der%20Kundendaten%20in%20der%20Datenbank%0A%20%0A-%20addCustomer%28%29%0AF%FCgt%20einen%20neuen%20Kunden%20hinzu%0A%20%0A-%20showAttendants%28%24customer_id%29%0ATeilnehmer%20des%20Kunden%20anzeigen</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::TitleWindow" x="43" y="323" w="352" h="272" measuredW="450" measuredH="400" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Notice</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::TextArea" x="43" y="353" w="352" h="242" measuredW="200" measuredH="140" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>-%20__construct%20%0AKonstruktor%0A%20%0A-%20add%28%24attendants_id%2C%24customers_id%29%20%0AF%FCgt%20eine%20Notiz%20hinzu%0A%20%0A-%20save%28%24id%29%20%0AUpdate%20der%20Notiz%20in%20der%20Datenbank%0A%20%0A-%20getShort%28%24attendants_id%2C%24customers_id%29%0AKurze%20Anzeige%20der%20Notiz%20f%FCr%20overview%0A%20%0A-%20getLong%28%24id%29%0AAnzeige%20der%20Notiz%20f%FCr%20die%20Bearbeitung</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::TitleWindow" x="423" y="375" w="352" h="272" measuredW="450" measuredH="400" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Products</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::TextArea" x="423" y="405" w="352" h="344" measuredW="200" measuredH="140" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>-%20__construct%20%0AKonstruktor%0A%20%0A-%20getProductData%28%24id%29%0AHolt%20alle%20Daten%20zum%20%FCbergebenen%20Produkt%0A%20%0A-%20getNames%28%29%0AHolt%20generell%20alle%20Produktnamen%0A%20%0A-%20saveProduct%28%24id%29%0AUpdate%20der%20Produktdaten%20in%20der%20Datenbank%0A%20%0A-%20addProduct%28%24id%29%0AF%FCgt%20ein%20neues%20Produkt%20hinzu%0A%20%0A-%20bookProduct%28%24attendants_id%29%0AF%FCgt%20Produkte%20in%20die%20Datenbank%20ein%0A%20%0A-%20getBookedProducts%28%24id%29%0AZeigt%20alle%20gebuchten%20Produkte</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::TitleWindow" x="802" y="32" w="352" h="128" measuredW="450" measuredH="400" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Groups</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::TextArea" x="802" y="62" w="352" h="98" measuredW="200" measuredH="140" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>-%20__construct%20%0AKonstruktor%0A%20%0A-%20showGroups%28%24attendants_id%29%0AZeigt%20alle%20Etikett%20eines%20Teilnehmers</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

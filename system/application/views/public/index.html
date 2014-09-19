@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;"/>
+	<title>CRM</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css" media="screen, projection" />
+	<script src="js/jquery.js"></script>
+	<script src="js/iscroll.js"></script>
+	<script type="text/javascript">
+	    
+	    function loaded() {
+      	document.addEventListener('touchmove', function(e){ e.preventDefault(); });
+      	myScroll = new iScroll('scroller');
+      }
+      document.addEventListener('DOMContentLoaded', loaded)
+	    
+	</script>
+</head>
+
+<body>
+  
+  <div id="wrapper">
+    
+    <div id="leftBox">
+      <ul id="navTop">
+        <li><a href="#">Kunden</a></li>
+        <li><a href="#">Teilnehmer</a></li>
+        <li><a href="#">Projekte</a></li>
+        <div class="clear"></div>
+      </ul>
+
+      <ul id="navLeft">
+        <li><a href="#">test</a><span class="navArrow"></span></li>
+        <li><a href="#">test</a><span class="navArrow"></span></li>
+      </ul>
+      
+    </div>
+    
+    <div id="rightBox">
+      <div id="headTop">
+        Kontaktdaten
+      </div>
+      
+      <div id="content">
+        <h1>Hans Peters</h1>
+        
+        <div id="left">
+          <form class="data">
+            <select name="gender" size="1">
+                <option>Herr</option>
+                <option>Frau</option>
+            </select>
+            <select name="title" size="1">
+                <option>---</option>
+                <option>Dr.</option>
+                <option>Prof.</option>
+            </select>
+            <div class="clear"></div>
+            
+            <label class="user" for="firstName">Vorname:</label>
+            <input type="text" id="firstName" name="firstName" value="">
+            <div class="clear"></div> 
+            
+            <label class="user" for="lastName">Nachname:</label>
+            <input type="text" id="lastName" name="lastName" value="">
+            <div class="clear"></div> 
+            
+            <label class="user" for="streetNumber">Straße / Hsnr.:</label>
+            <input type="text" id="street" name="street" value="">
+            <input type="text" id="number" name="number" value="">
+            <div class="clear"></div>
+            
+            <label class="user" for="zipcodeCity">PLZ / Stadt:</label>
+            <input type="text" id="zipcode" name="zipcode" value="">
+            <input type="text" id="city" name="city" value="">
+            <div class="clear"></div>
+
+            <label class="user" for="">BL / Land:</label>
+            <input type="text" id="state" name="state" value="">
+            <input type="text" id="country" name="country" value="">
+            <div class="clear"></div>
+                              
+            <label class="user" for="mobile">Mobil:</label>
+            <input type="text" id="mobile" name="mobile" value="">
+            <div class="clear"></div>        
+            
+            <label class="user" for="phone">Telefon:</label>
+            <input type="text" id="phone" name="phone" value="">
+            <div class="clear"></div>
+
+            <label class="user" for="mail">E-Mail:</label>
+            <input type="text" id="mail" name="mail" value="">
+            <div class="clear"></div>
+                                            
+          </form>
+        </div>
+        
+        <div id="right">
+          <img src="css/images/userImage.png" alt="UserBild" />
+          <div class="clear"></div>
+          <div class="greenBox">
+             <img src="css/images/mailIcon.png" alt="Mail" /><p>Nachricht senden</p>
+             <div class="clear"></div>
+          </div>
+          <div class="greenBox">
+             <p>Newsletter</p>
+          </div>
+        </div>
+        
+        <div class="clear"></div>
+        
+        <div class="bottomBox">
+          <h1>Belegte Produkte</h1>
+          <div class="innerBottomBox">
+              <div id="scroller">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id nisl ante. Nunc molestie mi vehicula orci luctus mattis. Aliquam dictum lobortis metus, id tincidunt velit luctus ac. Duis bibendum malesuada purus ac adipiscing. Sed viverra dolor quis tortor consectetur ullamcorper. Duis ultricies tortor orci. Donec convallis ultricies libero sit amet pretium. Morbi lacinia nibh ac purus rutrum accumsan. Vivamus tincidunt odio eu purus porta fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris sed risus nec orci feugiat posuere ut sit amet lacus. Ut non lacus ut lectus mollis consectetur vehicula sed risus. Sed fringilla iaculis sem et facilisis. Nam porttitor lacus nec purus dictum dapibus. Suspendisse gravida pellentesque nibh et pulvinar.
+              </div>
+          </div>
+          <div class="addButton">
+            <a href="#"><span class="greenFont">+</span> Produkt hinzufügen</a>
+          </div>
+        </div>
+
+        <div class="bottomBox">
+          <h1>Belegte Produkte</h1>
+          <div class="innerBottomBox">
+            <div id="scroller">
+              ffsfss
+            </div>
+          </div>
+          <div class="addButton">
+            <a href="#"><span class="greenFont">+</span> Produkt hinzufügen</a>
+          </div>
+        </div>
+
+        <div class="bottomBox">
+          <h1>Belegte Produkte</h1>
+          <div class="innerBottomBox">
+            <div id="scroller">
+              ffsfss
+            </div>
+          </div>
+          <div class="addButton">
+            <a href="#"><span class="greenFont">+</span> Produkt hinzufügen</a>
+          </div>
+        </div>
+        
+        <div class="clear"></div>        
+        
+      </div>
+    </div>
+    
+    <div class="clear"></div>
+    
+    
+    
+  </div>
+  <div class="addButtonBottom"><a href="#"><span class="greenFont">+</span> Teilnehmer hinzufügen</div></a>
+  
+</body>
+</html>
