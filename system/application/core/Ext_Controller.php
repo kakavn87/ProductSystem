@@ -1,4 +1,6 @@
 <?php
+
+@session_start();
 if (! defined ( 'BASEPATH' ))
 	exit ( 'No direct script access allowed' );
 class Ext_Controller extends CI_Controller {
@@ -26,55 +28,20 @@ class Ext_Controller extends CI_Controller {
 	function __construct() {
 		parent::__construct ();
 		
+		if($this->session->userdata('logged') != 'yes') {
+			redirect('/login', 'refresh');
+		}
+		
 		// set header charset of ouput is UTF-8
 		$this->output->set_header ( 'Content-Type: text/html; charset=UTF-8' );
 	}
-	
-	/** 
-	 * check role of user
-	 */
-	protected function checkRole() {
-		$this->load->model ( 'role' );
-		$roles = array ();
-		$userRole = $this->session->userdata ( 'role' );
-		switch ($userRole) {
-			case Role::ROLE_DEVELOPER :
-				if (isset ( $this->_role ['role_developer'] )) {
-					$roles = $this->_role ['role_developer'];
-				}
-				break;
-			case Role::ROLE_TECHNICAL :
-				if (isset ( $this->_role ['role_developer'] )) {
-					$roles = $this->_role ['role_technical'];
-				}
-				break;
-			case Role::ROLE_HOTLINE :
-				if (isset ( $this->_role ['role_developer'] )) {
-					$roles = $this->_role ['role_hotline'];
-				}
-				break;
-			case Role::ROLE_PLANER :
-				if (isset ( $this->_role ['role_developer'] )) {
-					$roles = $this->_role ['role_planer'];
-				}
-				break;
-			case Role::ROLE_ENTWICKLER :
-				if (isset ( $this->_role ['role_developer'] )) {
-					$roles = $this->_role ['role_entwickler'];
-				}
-				break;
-			case Role::ROLE_ADMINISTRATOR :
-			default :
-				$roles ['action'] = array ();
-				foreach ( $this->_role as $r ) {
-					$roles ['action'] = array_merge ( $roles ['action'], $r ['action'] );
-				}
-				break;
-		}
-		// get action
-		$action = $this->uri->segment ( 1 );
+
+	function checkRole() {
+		$user = $this->session->userdata ( 'user' );
+		$this->load->library('roleComponent');
 		
-		if (! in_array ( $action, $roles ['action'] )) {
+		$roleComponent = new RoleComponent();
+		if(!$roleComponent->checkRole($user->roleName, $this->_role)) {
 			if ($this->input->is_ajax_request ()) {
 				$this->sendAjax ( 1, 'You can not access this page' );
 			}
