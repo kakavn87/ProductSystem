@@ -1,21 +1,21 @@
 <?php
-class Role extends CI_Model {
-	
+class Requirement extends CI_Model {
 	public function __construct() {
 		parent::__construct ();
 		$this->properties = array (
 				'id' => null,
-				'name' => null,
-				'deleted' => null,
-				'status' => null
+				'description' => null,
+				'deleted' => 0,
+				'status' => null 
 		);
 	}
 	
 	function getAlls() {
 		$this->db->select ( '*' );
-		$this->db->from ( 'role' );
+		$this->db->from ( 'requirement' );
 		$query = $this->db->get ();
 		$result = $query->result ();
 		return $result;
 	}
 }
+?>

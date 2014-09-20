@@ -1,0 +1,3 @@
+$(function() {
+	$("#products, #roles").chosen();
+});

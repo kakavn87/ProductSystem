@@ -57,9 +57,6 @@ class RoleComponent {
 		return true;
 	}
 	
-	/**
-	 * check role of user
-	 */
 	public function redirect($roleUser) {
 		switch ($roleUser) {
 			case self::ROLE_DEVELOPER :

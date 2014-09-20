@@ -15,8 +15,20 @@ class Service extends Ext_Controller {
 	}
 	
 	function show() {
+		$this->load->model('product');
+		$product = new Product();
+		$data['products'] = $product->getProducts();
 		
-		$content = $this->load->view('public/service/show', null, TRUE);
+		$this->load->model('role');
+		$data['roles'] = $this->role->getAlls();
+		
+		$this->load->model('order');
+		$data['orders'] = $this->order->getAlls();
+		
+		$this->load->model('requirement');
+		$data['requirements'] = $this->requirement->getAlls();
+		
+		$content = $this->load->view('public/service/show', $data, TRUE);
 		
 		$this->load->library('template');
 		$this->template->load($content);

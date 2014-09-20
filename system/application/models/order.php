@@ -1,21 +1,21 @@
 <?php
-class Role extends CI_Model {
-	
+class Order extends CI_Model {
 	public function __construct() {
 		parent::__construct ();
 		$this->properties = array (
 				'id' => null,
-				'name' => null,
-				'deleted' => null,
-				'status' => null
+				'number' => null,
+				'deleted' => 0,
+				'status' => null 
 		);
 	}
 	
 	function getAlls() {
 		$this->db->select ( '*' );
-		$this->db->from ( 'role' );
+		$this->db->from ( 'order' );
 		$query = $this->db->get ();
 		$result = $query->result ();
 		return $result;
 	}
 }
+?>
