@@ -4,6 +4,12 @@
 		<div id="innerWrapper">
 			<div id="leftBox">
 		      <?php $this->load->view('public/inc/sidebar');?>
+		      
+		      <?php 
+		      if(isset($contentModule)) {
+				echo $contentModule;
+			 } ?>
+		      
 		      </div>
 			<div id="rightBox">
 				<div id="headTop">

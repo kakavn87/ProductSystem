@@ -19,18 +19,34 @@ class Service extends Ext_Controller {
 		$product = new Product();
 		$data['products'] = $product->getProducts();
 		
+		// load Roles
 		$this->load->model('role');
 		$data['roles'] = $this->role->getAlls();
 		
+		// load Orders
 		$this->load->model('order');
 		$data['orders'] = $this->order->getAlls();
 		
+		// load requirement
 		$this->load->model('requirement');
 		$data['requirements'] = $this->requirement->getAlls();
+	
+		// load service
+		$this->load->model('dl');
+		$service['services'] = $this->dl->getServices();
+		$data['contentModule'] = $this->load->view('public/service/list_service', $service , TRUE);
 		
 		$content = $this->load->view('public/service/show', $data, TRUE);
 		
 		$this->load->library('template');
 		$this->template->load($content);
+	}
+	
+	function save() {
+		if ($this->input->is_ajax_request ()) {
+			// TODO: save service 
+			
+		}
+		exit ( 'You can not access this page' );
 	}
 }

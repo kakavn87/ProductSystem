@@ -17,4 +17,11 @@ class Dl extends CI_Model {
 				'status' => null
 		);
 	}
+	public function getServices() {
+		$this->db->select ( '*' );
+		$this->db->from ( 'service' );
+		$query = $this->db->get ();
+		$result = $query->result ();
+		return $result;
+	}
 }
