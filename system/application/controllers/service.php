@@ -4,7 +4,7 @@ class Service extends Ext_Controller {
 		parent::__construct();
 		
 		$this->_role = array(
-				'role_developer' => array('action' => array('show')),
+				'role_developer' => array('action' => array('show', 'save')),
 				'role_hotline' => array('action' => array()),
 				'role_planer' => array('action' => array()),
 				'role_entwickler' => array('action' => array()),
@@ -30,6 +30,10 @@ class Service extends Ext_Controller {
 		// load requirement
 		$this->load->model('requirement');
 		$data['requirements'] = $this->requirement->getAlls();
+		
+		// load modul
+		$this->load->model('modul');
+		$data['modules'] = $this->modul->getAlls();
 	
 		// load service
 		$this->load->model('dl');
@@ -43,10 +47,15 @@ class Service extends Ext_Controller {
 	}
 	
 	function save() {
-		if ($this->input->is_ajax_request ()) {
+		//if ($this->input->is_ajax_request ()) {
 			// TODO: save service 
+			$service = $this->input->post();
+			print_r($service);
+// 			$this->load->model('service');
+// 			$this->service->saveService($service);
 			
-		}
-		exit ( 'You can not access this page' );
+// 			$this->sendAjax();
+		//}
+		//exit ( 'You can not access this page' );
 	}
 }

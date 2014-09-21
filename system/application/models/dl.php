@@ -20,8 +20,13 @@ class Dl extends CI_Model {
 	public function getServices() {
 		$this->db->select ( '*' );
 		$this->db->from ( 'service' );
+		$this->db->order_by('created DESC');
 		$query = $this->db->get ();
 		$result = $query->result ();
 		return $result;
+	}
+	
+	function saveService($data) {
+		return $this->db->insert ( 'service', $data );
 	}
 }

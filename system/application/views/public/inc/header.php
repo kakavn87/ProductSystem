@@ -23,5 +23,9 @@
  <script src="<?=base_url();?>js/jquery-ui-1.10.4.min.js"></script>
 
 <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+
+<script type="text/javascript">
+var BASE_URL = '<?php echo base_url(); ?>';
+</script>
 </head>
 <body>

@@ -3,7 +3,7 @@
 </div>
 
 <div class="addButtonTop">
-							<a href="<?=base_url();?>service/add"><span class="greenFont">+</span>
+							<a href="javascript:void(0);"><span class="greenFont">+</span>
 								Add new service</a>
 						</div>
 <div id="scroller" class="scrollerNav">

@@ -1,4 +1,5 @@
   <script src="<?=base_url();?>js/search.js"></script>
+  <script src="<?=base_url();?>js/common.js"></script>
   <script src="<?=base_url();?>js/iscroll.js"></script>
   <script src="<?=base_url();?>js/jquery.fancybox-1.3.4.js"></script>
    <script src="<?=base_url();?>js/bloodhound.js"></script>

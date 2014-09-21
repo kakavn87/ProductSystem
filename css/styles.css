@@ -591,6 +591,19 @@ input.active {
 	margin-top: 15px;
 }
 
+.bottomBox2 {
+	width: 408px;
+	height: 300px;
+	float: left;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: #f2f1f1;
+	border: 1px solid #c7c7c7;
+	margin-right: 0px;
+	margin-top: 15px;
+}
+
 .noticeBox {
 	width: 210px;
 	height: 150px;
@@ -625,6 +638,7 @@ input.active {
 	padding: 10px;
 }
 
+.bottomBox2>h1,
 .bottomBox>h1, .noticeBox>h1, .bottomBoxLarge>h1 {
 	-webkit-border-top-left-radius: 10px;
 	-webkit-border-top-right-radius: 10px;
@@ -639,6 +653,7 @@ input.active {
 	margin: 0;
 }
 
+.bottomBox2>.innerBottomBox,
 .bottomBox>.innerBottomBox {
 	width: 210px;
 	height: 230px;
@@ -663,6 +678,7 @@ input.active {
 	overflow: hidden;
 }
 
+.bottomBox2>.addButton,
 .bottomBox>.addButton, .noticeBox>.addButton {
 	width: 191px;
 	height: 25px;
@@ -697,6 +713,7 @@ input.active {
 	padding-right: 10px;
 }
 
+.bottomBox2>.addButton>a,
 .bottomBox>.addButton>a, .noticeBox>.addButton>a, .bottomBoxLarge>.addButton>a
 	{
 	font-size: 12px;
@@ -704,6 +721,7 @@ input.active {
 	color: #fff;
 }
 
+.bottomBox2>.addButton>a>.greenFont,
 .bottomBox>.addButton>a>.greenFont, .noticeBox>.addButton>a>.greenFont,
 	.bottomBoxLarge>.addButton>a>.greenFont {
 	color: #699231;
@@ -1219,4 +1237,47 @@ div.filter div {
 	padding-top: 4px;
 	text-align: center;
 	text-shadow: none;
+}
+
+div.modul-name {
+	font-size: 11px;
+}
+
+.modulesNav {
+	width: auto !important; 
+	height: 150px;
+	border-bottom: 1px solid #c7c7c7;
+}
+
+/******* SERVICE **********/
+
+
+.containerBox {
+	border: 1px solid #c7c7c7;
+    font-size: 11px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 60px;
+    float: left;
+    position: relative;
+}
+
+.closeBox {
+	position: absolute;
+	top: 0;
+	right: 0;
+	line-height: 10px;
+}
+
+
+.arrowBox {
+	line-height: 60px;
+	float: left;
+}
+.arrowBox img.arrow {
+	width: 32px;
+	height: 32px;
+	vertical-align: middle;
 }
