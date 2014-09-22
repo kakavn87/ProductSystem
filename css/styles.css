@@ -1281,3 +1281,7 @@ div.modul-name {
 	height: 32px;
 	vertical-align: middle;
 }
+
+.modulList {
+	padding: 5px;
+}

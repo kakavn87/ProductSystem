@@ -1,7 +1,6 @@
-var listModules = [];
 $(function() {
 	
-	$("#products, #roles").chosen();
+	$("#products, #roles, #orders, #requirments").chosen();
 
 	$('.addButtonTop a').live('click', addService);
 
@@ -38,11 +37,46 @@ function addService() {
 
 function saveService() {
 	var formData = {};
+	formData.id = $('#serviceid').val();
 	formData.name = $('#name').val();
 	formData.modul = [];
 	$.each(listModules, function(index, value) {
 		formData.modul.push(value.id);
 	});
+	formData.order_id = $("#orders").val();
+	formData.requirement_id = $('#requirments').val();
+	formData.role_id = $('#roles').val();
+	formData.product_id = $('#products').val();
+	
+	if(!formData.name.trim().length) {
+		showDialog('Error', 'Please enter service name');
+		return false;
+	}
+	
+	if(!formData.modul.length) {
+		showDialog('Error', 'Please add a modul');
+		return false;
+	}
+	
+	if(!parseInt(formData.order_id)) {
+		showDialog('Error', 'Please select an order');
+		return false;
+	}
+	
+	if(!parseInt(formData.requirement_id)) {
+		showDialog('Error', 'Please select a requirement');
+		return false;
+	}
+	
+	if(!parseInt(formData.role_id)) {
+		showDialog('Error', 'Please select a role');
+		return false;
+	}
+	
+	if(!parseInt(formData.product_id)) {
+		showDialog('Error', 'Please select a product');
+		return false;
+	}
 	
 	$.ajax({
 		url : BASE_URL + 'service/save',
@@ -52,7 +86,16 @@ function saveService() {
 
 		}
 	}).done(function(data) {
-		console.log(data);
+		showDialog("Success", 'Create new service successful');
+		var obj = $.parseJSON(data);
+		if(!parseInt($('#serviceid').val())) {
+			$('#serviceid').val(obj.serviceId);
+			
+			var html = '<li data-href="' + BASE_URL + 'service/show/' + obj.serviceId + '"><p>' + formData.name + '</p>';
+			html += '<span class="navArrow"></span>';
+			html += '<div class="clear"></div></li>';
+			$('ul#navLeft').prepend(html);
+		}
 	});
 }
 
@@ -60,6 +103,10 @@ function doService(params) {
 	var modulList = $('.modulList');
 	
 	$('.addToService').live('click', addToService);
+	
+	$('ul#navLeft li').live('click', loadService);
+	
+	draw();
 	
 	if(params.allowEdit) {
 		$('.closeBox img').live('click', function() {
@@ -74,6 +121,10 @@ function doService(params) {
 			
 			$('.modulesNav').append($input);
 		});
+	}
+	
+	function loadService() {
+		location.href = $(this).data('href');
 	}
 	
 	function addToService() {

@@ -27,6 +27,7 @@ class Dl extends CI_Model {
 	}
 	
 	function saveService($data) {
-		return $this->db->insert ( 'service', $data );
+		$this->db->insert ( 'service', $data );
+		return $this->db->insert_id();
 	}
 }

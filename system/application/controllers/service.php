@@ -4,7 +4,7 @@ class Service extends Ext_Controller {
 		parent::__construct();
 		
 		$this->_role = array(
-				'role_developer' => array('action' => array('show', 'save')),
+				'role_developer' => array('action' => array('show', 'save', 'load_service')),
 				'role_hotline' => array('action' => array()),
 				'role_planer' => array('action' => array()),
 				'role_entwickler' => array('action' => array()),
@@ -14,7 +14,7 @@ class Service extends Ext_Controller {
 		$this->checkRole();
 	}
 	
-	function show() {
+	function show($id = null) {
 		$this->load->model('product');
 		$product = new Product();
 		$data['products'] = $product->getProducts();
@@ -40,6 +40,21 @@ class Service extends Ext_Controller {
 		$service['services'] = $this->dl->getServices();
 		$data['contentModule'] = $this->load->view('public/service/list_service', $service , TRUE);
 		
+		if($id) {
+			$this->load->model('service_modul');
+			$data['service'] = $this->service_modul->getServiceDetail($id);
+			
+			if(empty($data['service'])) {
+				exit('Service id is no exists');
+			}
+			$listModules = array();
+			foreach($data['service'] as $service) {
+				$listModules[] = array('id' => $service->modulId, 'modul' => $service->modulName);
+			}
+			$data['listModules'] = $listModules;
+		}
+		
+		
 		$content = $this->load->view('public/service/show', $data, TRUE);
 		
 		$this->load->library('template');
@@ -47,15 +62,37 @@ class Service extends Ext_Controller {
 	}
 	
 	function save() {
-		//if ($this->input->is_ajax_request ()) {
+		if ($this->input->is_ajax_request ()) {
 			// TODO: save service 
 			$service = $this->input->post();
-			print_r($service);
-// 			$this->load->model('service');
-// 			$this->service->saveService($service);
 			
-// 			$this->sendAjax();
-		//}
-		//exit ( 'You can not access this page' );
+			$modules = $service['modul'];
+			unset($service['modul']);
+			
+			if(empty($service['id'])) {
+	 			$this->load->model('dl');
+	 			$serviceId = $this->dl->saveService($service);
+			} else {
+				$serviceId = (int)$service['id'];
+			}
+ 			
+ 			$data = array();
+ 			$idx = 0;
+ 			foreach($modules as $modul) {
+ 				$data[] = array(
+ 						'service_id' => $serviceId,
+ 						'modul_id' => $modul,
+ 						'position' => ++$idx
+ 				);
+ 			}
+ 			
+ 			$this->load->model('service_modul');
+ 			$this->service_modul->deleteData($modules);
+ 			$this->service_modul->saveData($data);
+			
+ 			$this->response['serviceId'] = $serviceId;
+ 			$this->sendAjax();
+		}
+		exit ( 'You can not access this page' );
 	}
 }

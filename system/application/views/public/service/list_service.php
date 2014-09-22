@@ -3,17 +3,14 @@
 </div>
 
 <div class="addButtonTop">
-							<a href="javascript:void(0);"><span class="greenFont">+</span>
+							<a href="<?php echo base_url(); ?>service/show/"><span class="greenFont">+</span>
 								Add new service</a>
 						</div>
 <div id="scroller" class="scrollerNav">
           <ul id="navLeft">
-          <?php 
-          
-          ?>
           
            <?php foreach ($services as $service) :?>
-              <li><p><?= $service->name; ?></p>
+              <li data-href="<?php echo base_url(); ?>service/show/<?php echo $service->id; ?>"><p><?= $service->name; ?></p>
 								<span class="navArrow"></span>
 								<div class="clear"></div></li>
            <?php endforeach; ?>
