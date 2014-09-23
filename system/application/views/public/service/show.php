@@ -40,7 +40,7 @@ var listModules = <?php echo !isset($listModules) ? '[]' : json_encode($listModu
 				</div>
 				<?php endforeach; ?>
 				</div>
-				<button class="addToService">Add To Service</button>
+				<button class="addToService">+</button>
 			</div>
 				<div class="bottomBox2">
 					<h1>DL</h1>

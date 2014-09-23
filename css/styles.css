@@ -1250,7 +1250,7 @@ div.modul-name {
 
 .modulesNav {
 	width: auto !important; 
-	height: 150px;
+	height: 203px;
 	border-bottom: 1px solid #c7c7c7;
 }
 
@@ -1301,4 +1301,8 @@ div.modul-name {
 
 #addDocument {
 	cursor: pointer;
+}
+
+.addToService {
+	margin-left: 5px;
 }
