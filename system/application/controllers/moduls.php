@@ -76,8 +76,8 @@ class Moduls extends Ext_Controller {
 				$modulId = $modulData['id'];
 			}
 			
+			$documents = array();
 			if(isset($data['Document'])) {
-				$documents = array();
 				$idx = 0;
 				for($i=0, $n=count($data['Document']['link']); $i < $n ; $i ++) {
 					$documents[] = array(
@@ -87,8 +87,10 @@ class Moduls extends Ext_Controller {
 							'modul_id' => $modulId
 					);
 				}
-				
-				$this->document->deleteByModulId($modulId);
+			}
+			
+			$this->document->deleteByModulId($modulId);
+			if(!empty($documents)) {
 				$this->document->saveAll($documents);
 			}
 			

@@ -1230,7 +1230,7 @@ div.filter div {
 	padding: 3px;
 }
 
-.saveService {
+.saveService, .saveModul {
 	background-image: -moz-linear-gradient(center bottom, rgb(30, 144, 255)
 		40%, rgb(135, 206, 250) 70%);
 	border: 1px solid #fff;
@@ -1301,8 +1301,13 @@ div.modul-name {
 
 #addDocument {
 	cursor: pointer;
+	font-size: 12px;
 }
 
 .addToService {
 	margin-left: 5px;
+}
+
+.list-document {
+	margin: 10px 0;
 }

@@ -40,8 +40,8 @@
 			</div>
 
 			<input type="hidden" name="data[Modul][id]" id="id" value="<?php echo isset($modul)?$modul->id:''; ?>" />
-			<input type="submit" value="Save"
-					class="saveModul" />
+			<button type="submit"
+					class="saveModul">Save Modul</button>
 			<div class="clear"></div>
 		</form>
 	</div>
