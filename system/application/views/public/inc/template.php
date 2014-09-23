@@ -9,7 +9,7 @@
 		      if(isset($contentModule)) {
 				echo $contentModule;
 			 } ?>
-		      
+		      <script src="<?=base_url();?>js/module.js"></script>
 		      </div>
 			<div id="rightBox">
 				<div id="headTop">
