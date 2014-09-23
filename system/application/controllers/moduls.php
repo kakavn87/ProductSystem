@@ -25,7 +25,7 @@ class Moduls extends Ext_Controller {
 		$data['contentModule'] = $this->load->view('public/modul/list_modul', $modul , TRUE);
 		
 		$data['title'] = 'Add New Module';
-		
+		$data['documents'] = array();
 		$content = $this->load->view('public/modul/edit', $data, TRUE);
 		
 		$this->load->library('template');
