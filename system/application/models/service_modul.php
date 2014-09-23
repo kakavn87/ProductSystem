@@ -3,8 +3,8 @@ class Service_modul extends CI_Model {
 	function saveData($data) {
 		$this->db->insert_batch ( 'service_modul', $data );
 	}
-	function deleteData($ids) {
-		$this->db->where_in ( 'id', $ids );
+	function deleteData($serviceId) {
+		$this->db->where_in ( 'service_id', $serviceId );
 		$this->db->delete ( 'service_modul' );
 	}
 	function getServiceDetail($id) {

@@ -87,7 +87,7 @@ class Service extends Ext_Controller {
  			}
  			
  			$this->load->model('service_modul');
- 			$this->service_modul->deleteData($modules);
+ 			$this->service_modul->deleteData($serviceId);
  			$this->service_modul->saveData($data);
 			
  			$this->response['serviceId'] = $serviceId;
