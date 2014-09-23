@@ -4,7 +4,7 @@ class Service extends Ext_Controller {
 		parent::__construct();
 		
 		$this->_role = array(
-				'role_developer' => array('action' => array('show', 'save', 'load_service')),
+				'role_developer' => array('action' => array('show', 'save', 'load_service', 'show_modul_detail')),
 				'role_hotline' => array('action' => array()),
 				'role_planer' => array('action' => array()),
 				'role_entwickler' => array('action' => array()),
@@ -59,6 +59,22 @@ class Service extends Ext_Controller {
 		
 		$this->load->library('template');
 		$this->template->load($content);
+	}
+	
+	function show_modul_detail() {
+		if ($this->input->is_ajax_request ()) {
+			$modul_id = (int)$this->input->post('modul_id');
+			
+			$this->load->model('modul');
+			$this->load->model('document');
+			
+			$data['modul'] = $this->modul->getById($modul_id);
+			$data['documents'] = $this->document->getByModulId($modul_id);
+			
+			$this->load->view('public/service/show_modul_detail', $data);
+		} else {
+			exit ( 'You can not access this page' );
+		}
 	}
 	
 	function save() {

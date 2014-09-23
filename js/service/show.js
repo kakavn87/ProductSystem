@@ -100,6 +100,8 @@ function doService(params) {
 	
 	$('ul#navLeft li').live('click', loadService);
 	
+	$('.containerBox').live('click', openModulDetail);
+	
 	draw();
 	
 	if(params.allowEdit) {
@@ -139,6 +141,22 @@ function doService(params) {
 		
 	}
 	
+	function openModulDetail(e) {
+		if( e.target == this ) {
+			var modulId = $(this).data('modulid');
+			
+			$.ajax({
+				url : BASE_URL + 'service/show_modul_detail',
+				type: 'post',
+				data : {modul_id: modulId},
+			}).done(function(data) {
+				$.fancybox({
+					content : data
+				});
+			});
+		}
+	}
+	
 	function createInput(id, modul) {
 		var html = '<div class="modul-name">';
 		html += '<input type="checkbox" id="modul" class="modul" data-modulname=\'{"id": ' + id + ', "modul":"' + modul + '"}\' /> ';
@@ -148,7 +166,7 @@ function doService(params) {
 	}
 	
 	function createBox(value) {
-		var html = '<div class="containerBox"><div class="closeBox"><img data-modulname="' + value.modul + '" data-modulid="' + value.id + '" src="' + BASE_URL + 'css/images/deleteIcon.png" /></div>' + value.modul + '</div>';
+		var html = '<div class="containerBox" data-modulid="' + value.id + '"><div class="closeBox"><img data-modulname="' + value.modul + '" data-modulid="' + value.id + '" src="' + BASE_URL + 'css/images/deleteIcon.png" /></div>' + value.modul + '</div>';
 		return html;
 	}
 	

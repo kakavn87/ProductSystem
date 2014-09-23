@@ -14,6 +14,11 @@ class Modul extends CI_Model {
 		return $this->db->insert_id();
 	}
 	
+	function updateModul($data) {
+		$this->db->where('id', $data['id']);
+		$this->db->update('modul', $data);
+	}
+	
 	function getById($id) {
 		$this->db->select ( '*' );
 		$this->db->from ( 'modul' );

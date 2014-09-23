@@ -73,6 +73,7 @@ class Moduls extends Ext_Controller {
 			if(empty($modulData['id'])) {
 				$modulId = $this->modul->saveModul($modulData);
 			} else {
+				$this->modul->updateModul($modulData);
 				$modulId = $modulData['id'];
 			}
 			
