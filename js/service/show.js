@@ -1,9 +1,7 @@
 $(function() {
 	
 	$("#products, #roles, #orders, #requirments").chosen();
-
-	$('.addButtonTop a').live('click', addService);
-
+	
 	$('#searchmodul').search('.modul-name', function(on) {
 
 		on.all(function(results) {
@@ -30,10 +28,6 @@ $(function() {
 		allowEdit: true
 	});
 });
-
-function addService() {
-	
-}
 
 function saveService() {
 	var formData = {};
@@ -121,10 +115,6 @@ function doService(params) {
 			
 			$('.modulesNav').append($input);
 		});
-	}
-	
-	function loadService() {
-		location.href = $(this).data('href');
 	}
 	
 	function addToService() {
