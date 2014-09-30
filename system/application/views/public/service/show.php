@@ -46,7 +46,7 @@ var listModules = <?php echo !isset($listModules) ? '[]' : json_encode($listModu
 					<h1>DL</h1>
 					<div class="clear"></div>
 					
-					<div class="modulList"></div>
+					<div class="modulList" id="sortable" ></div>
 				</div>
 				<div class="clear"></div>
 				

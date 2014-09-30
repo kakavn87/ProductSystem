@@ -104,6 +104,27 @@ function doService(params) {
 	
 	draw();
 	
+	$( "#sortable" ).sortable({
+		start : function() {
+			$('.containerBox').css('margin-right', '5px');
+			$('.arrowBox').hide();
+		},
+		update: function(event, ui) {
+			var data = $("#sortable").sortable('toArray');
+			listModules = [];
+			$.each(data, function (i, val){
+				if(val) {
+					var json = JSON.stringify(eval("(" + val + ")"));
+					listModules.push($.parseJSON(json));
+				}
+			});
+		},
+		stop: function() {
+			draw();
+		}
+	});
+    $( "#sortable" ).disableSelection();
+	
 	if(params.allowEdit) {
 		$('.closeBox img').live('click', function() {
 			var removeItem = $(this).data('modulid');
@@ -166,7 +187,7 @@ function doService(params) {
 	}
 	
 	function createBox(value) {
-		var html = '<div class="containerBox" data-modulid="' + value.id + '"><div class="closeBox"><img data-modulname="' + value.modul + '" data-modulid="' + value.id + '" src="' + BASE_URL + 'css/images/deleteIcon.png" /></div>' + value.modul + '</div>';
+		var html = '<div class="containerBox ui-state-default" id=\'{"id": ' + value.id + ', "modul":"' + value.modul + '"}\' data-modulid="' + value.id + '"><div class="closeBox"><img data-modulname="' + value.modul + '" data-modulid="' + value.id + '" src="' + BASE_URL + 'css/images/deleteIcon.png" /></div>' + value.modul + '</div>';
 		return html;
 	}
 	
