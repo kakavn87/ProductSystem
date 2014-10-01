@@ -35,10 +35,12 @@ class Service extends Ext_Controller {
 		$this->load->model('modul');
 		$data['modules'] = $this->modul->getAlls();
 	
-		// load service
+		// load service non-standard
 		$this->load->model('dl');
 		$service['services'] = $this->dl->getServices();
 		$data['contentModule'] = $this->load->view('public/service/list_service', $service , TRUE);
+		
+		$data['service_standards'] = $this->dl->getServices(Dl::TYPE_STANDARD); 
 		
 		if($id) {
 			$this->load->model('service_modul');
@@ -79,17 +81,25 @@ class Service extends Ext_Controller {
 	
 	function save() {
 		if ($this->input->is_ajax_request ()) {
+			$this->load->model('dl');
+			
 			// TODO: save service 
 			$service = $this->input->post();
 			
+			$roleList = $service['role_id'];
+			unset($service['role_id']);
+			
 			$modules = $service['modul'];
 			unset($service['modul']);
+			$service['type'] = $service['type'] == 'true' ? Dl::TYPE_STANDARD : Dl::TYPE_NORMAL;
+			$service['customer_view'] = $service['customer_view'] == 'true' ? Dl::CUSTOMER_ALLOW : Dl::CUSTOMER_DENY;
 			
 			if(empty($service['id'])) {
-	 			$this->load->model('dl');
 	 			$serviceId = $this->dl->saveService($service);
 			} else {
 				$serviceId = (int)$service['id'];
+				unset($service['id']);
+				$this->dl->updateService($service, $serviceId);
 			}
  			
  			$data = array();

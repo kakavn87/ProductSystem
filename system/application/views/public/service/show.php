@@ -9,7 +9,7 @@ var listModules = <?php echo !isset($listModules) ? '[]' : json_encode($listModu
 		</h1>
 		<div id="left">
 			<div class="bottomBox">
-				<h1>Modules</h1>
+				<h1>Standard Services</h1>
 
 				<div class="clear"></div>
 
@@ -18,29 +18,15 @@ var listModules = <?php echo !isset($listModules) ? '[]' : json_encode($listModu
 						id="searchmodul" value="" />
 				</div>
 				<div id="scroller" class="scrollerNav modulesNav">
-				<?php foreach($modules as $modul): 
-					if(isset($service)) :
-						$flag = false;
-						foreach($listModules as $key => $m) :
-							if($m['id'] == $modul->id) :
-								$flag= true;
-								break;
-							endif; 
-						endforeach;
-						if($flag) :
-							continue;
-						endif;
-					endif;	
-				
-				?>
+				<?php foreach($service_standards as $standard): ?>
 				<div class="modul-name">
-										<input type="checkbox" id="modul" class="modul"
-											data-modulname='{"id": <?php echo $modul->id; ?>, "modul":"<?php echo $modul->name; ?>"}' /> 
-					<?php echo $modul->name; ?>
+					<a href="<?php echo base_url(); ?>service/show/<?php echo $standard->id; ?>">
+					<?php echo $standard->name; ?>
+					</a>
 				</div>
 				<?php endforeach; ?>
 				</div>
-				<button class="addToService">+</button>
+<!-- 				<button class="addToService">+</button> -->
 			</div>
 				<div class="bottomBox2">
 					<h1>DL</h1>
@@ -87,7 +73,7 @@ var listModules = <?php echo !isset($listModules) ? '[]' : json_encode($listModu
           </select>
 				</div>
 				<div>
-					<label>Role</label> <select id="roles" name="role_id"
+					<label>Role</label> <select id="roles" name="role_id" multiple
 						data-placeholder="Choose a role ..." style="width: 350px;"
 						class="chosen-select">
 						<option value=""></option>
@@ -120,11 +106,54 @@ var listModules = <?php echo !isset($listModules) ? '[]' : json_encode($listModu
 	            <?php endforeach;?>
 	          </select>
 				</div>
+				<div>
+					<input <?php echo (isset($service) && $service[0]->customer_view == Dl::CUSTOMER_ALLOW) ? 'checked="checked"': ''; ?> type="checkbox" name="customer_view" id="customer_view" value="1" /> Customer View
+				</div>
+				<div>
+					<input <?php echo (isset($service) && $service[0]->type == Dl::TYPE_STANDARD) ? 'checked="checked"': ''; ?>type="checkbox" name="standard" id="standard" value="1" /> Save as Service Standard
+				</div>
 				<input type="hidden" name="id" id="serviceid" value="<?php echo isset($service)?$service[0]->id:''; ?>" />
 				<input type="button" value="Save Service" name="save"
-					class="saveService" />
+					id="saveService" />
 			</div>
 	
 	</form>
+	<div class="clear"></div>
+	<div class="comments">
+		<h3>Comments</h3>
+		<div class="comments-list"></div>
+		<div>
+			<textarea name="comment" class="comment-text" rows="8" cols="60"></textarea>
+		</div>
+		<button id="addComment">Add Comment</button>
+	</div>
+</div>
+
+<div class="list-modul" style="display: none">
+	<div class="modulesList">
+	<?php foreach($modules as $modul) : 
+		if(isset($service)) :
+			$flag = false;
+			foreach($listModules as $key => $m) :
+				if($m['id'] == $modul->id) :
+					$flag= true;
+					break;
+				endif;
+			endforeach;
+			if($flag) :
+				continue;
+			endif;
+		endif;
+	?>
+		<div class="modul-name modul<?php echo $modul->id; ?>">
+			<input type="checkbox" id="modul" class="modul"
+			data-modulname='{"id": <?php echo $modul->id; ?>, "modul":"<?php echo $modul->name; ?>"}' />
+			<?php echo $modul->name; ?>
+		</div>
+		<?php endforeach; ?>
+	</div>
+	<input type="hidden" name="position" id="position" value="" />
+	<button class="addToService">Add Modul</button>
 </div>
 <script src="<?=base_url();?>js/service/show.js"></script>
+<script src="<?=base_url();?>js/service/comment.js"></script>

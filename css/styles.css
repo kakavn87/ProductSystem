@@ -383,9 +383,8 @@ td>h1 {
 	height: 100px !important;
 }
 
-.data > .list-document .item > label.user,
-.data>label.user, .data>.toggle>label.user {
-
+.data>.list-document .item>label.user, .data>label.user, .data>.toggle>label.user
+	{
 	width: 135px;
 	display: block;
 	float: left;
@@ -395,8 +394,7 @@ td>h1 {
 	padding-top: 6px;
 }
 
-.data > .list-document .item > label.user2,
-.data>label.user2 {
+.data>.list-document .item>label.user2, .data>label.user2 {
 	width: 300px;
 	display: block;
 	font-size: 16px;
@@ -406,8 +404,8 @@ td>h1 {
 	padding-bottom: 10px;
 }
 
-.data > .list-document .item > input,
-.data>input, .data>.toggle>input, .productdescription {
+.data>.list-document .item>input, .data>input, .data>.toggle>input,
+	.productdescription {
 	background: #fbfbfb;
 	padding: 4px 10px;
 	border: 1px solid #c7c7c7;
@@ -424,8 +422,7 @@ td>h1 {
 	margin-top: 10px;
 }
 
-.data > .list-document .item > select,
-.data>select, .data>.toggle>select {
+.data>.list-document .item>select, .data>select, .data>.toggle>select {
 	width: 234px;
 	background: #fbfbfb;
 	padding: 4px 10px;
@@ -643,8 +640,7 @@ input.active {
 	padding: 10px;
 }
 
-.bottomBox2>h1,
-.bottomBox>h1, .noticeBox>h1, .bottomBoxLarge>h1 {
+.bottomBox2>h1, .bottomBox>h1, .noticeBox>h1, .bottomBoxLarge>h1 {
 	-webkit-border-top-left-radius: 10px;
 	-webkit-border-top-right-radius: 10px;
 	-moz-border-radius-topleft: 10px;
@@ -658,8 +654,7 @@ input.active {
 	margin: 0;
 }
 
-.bottomBox2>.innerBottomBox,
-.bottomBox>.innerBottomBox {
+.bottomBox2>.innerBottomBox, .bottomBox>.innerBottomBox {
 	width: 210px;
 	height: 230px;
 	position: relative;
@@ -683,8 +678,7 @@ input.active {
 	overflow: hidden;
 }
 
-.bottomBox2>.addButton,
-.bottomBox>.addButton, .noticeBox>.addButton {
+.bottomBox2>.addButton, .bottomBox>.addButton, .noticeBox>.addButton {
 	width: 191px;
 	height: 25px;
 	background: #5b5b5b;
@@ -718,17 +712,16 @@ input.active {
 	padding-right: 10px;
 }
 
-.bottomBox2>.addButton>a,
-.bottomBox>.addButton>a, .noticeBox>.addButton>a, .bottomBoxLarge>.addButton>a
-	{
+.bottomBox2>.addButton>a, .bottomBox>.addButton>a, .noticeBox>.addButton>a,
+	.bottomBoxLarge>.addButton>a {
 	font-size: 12px;
 	font-weight: bold;
 	color: #fff;
 }
 
-.bottomBox2>.addButton>a>.greenFont,
-.bottomBox>.addButton>a>.greenFont, .noticeBox>.addButton>a>.greenFont,
-	.bottomBoxLarge>.addButton>a>.greenFont {
+.bottomBox2>.addButton>a>.greenFont, .bottomBox>.addButton>a>.greenFont,
+	.noticeBox>.addButton>a>.greenFont, .bottomBoxLarge>.addButton>a>.greenFont
+	{
 	color: #699231;
 }
 
@@ -952,6 +945,13 @@ input.active {
 	right: -28px;
 	top: -34px;
 	border: 1px solid #fff;
+}
+
+.info-user {
+	float: right;
+	font-size: 14px;
+	padding-top: 4px;
+	margin-top: 8px;margin-right: 7px;
 }
 
 .logout {
@@ -1230,7 +1230,7 @@ div.filter div {
 	padding: 3px;
 }
 
-.saveService, .saveModul {
+#saveService, .saveModul {
 	background-image: -moz-linear-gradient(center bottom, rgb(30, 144, 255)
 		40%, rgb(135, 206, 250) 70%);
 	border: 1px solid #fff;
@@ -1242,31 +1242,36 @@ div.filter div {
 	padding-top: 4px;
 	text-align: center;
 	text-shadow: none;
+	float: right;
 }
 
 div.modul-name {
 	font-size: 11px;
 }
 
+div.modul-name a {
+	padding: 10px;
+}
+
 .modulesNav {
-	width: auto !important; 
+	width: auto !important;
 	height: 203px;
 	border-bottom: 1px solid #c7c7c7;
 }
 
 /******* SERVICE **********/
-
-
-.containerBox {
+.addBox, .containerBox {
 	border: 1px solid #c7c7c7;
-    font-size: 11px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    text-transform: uppercase;
-    width: 60px;
-    float: left;
-    position: relative;
+	font-size: 11px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 60px;
+	float: left;
+	position: relative;
+	margin: 0px 4px 4px 0;
+	cursor: pointer;'
 }
 
 .closeBox {
@@ -1276,11 +1281,11 @@ div.modul-name {
 	line-height: 10px;
 }
 
-
 .arrowBox {
 	line-height: 60px;
 	float: left;
 }
+
 .arrowBox img.arrow {
 	width: 32px;
 	height: 32px;
@@ -1323,4 +1328,15 @@ div.modul-name {
 
 .modul_details h4 {
 	font-size: 14px;
+}
+
+.comments {
+	margin-top: 10px;
+}
+
+.comments h3 {
+	border-top: 1px solid #CCCCCC;
+	margin: 0;
+	padding: 5px;
+	font-size: 15px;
 }

@@ -1,7 +1,7 @@
 $(function() {
-	
+
 	$("#products, #roles, #orders, #requirments").chosen();
-	
+
 	$('#searchmodul').search('.modul-name', function(on) {
 
 		on.all(function(results) {
@@ -21,15 +21,17 @@ $(function() {
 			results.show();
 		});
 	});
-	
-	$('.saveService').live('click', saveService);
+
+	$('#saveService').live('click', saveService);
 
 	doService({
-		allowEdit: true
+		allowEdit : true
 	});
 });
 
-function saveService() {
+function saveService(e) {
+	e.preventDefault();
+
 	var formData = {};
 	formData.id = $('#serviceid').val();
 	formData.name = $('#name').val();
@@ -41,135 +43,167 @@ function saveService() {
 	formData.requirement_id = $('#requirments').val();
 	formData.role_id = $('#roles').val();
 	formData.product_id = $('#products').val();
-	
-	if(!formData.name.trim().length) {
+	formData.type = $('#standard').is(':checked');
+	formData.customer_view = $('#customer_view').is(':checked');
+
+	if (!formData.name.trim().length) {
 		showDialog('Error', 'Please enter service name');
 		return false;
 	}
-	
-	if(!formData.modul.length) {
+
+	if (!formData.modul.length) {
 		showDialog('Error', 'Please add a modul');
 		return false;
 	}
-	
-	if(!parseInt(formData.order_id)) {
+
+	if (!parseInt(formData.order_id)) {
 		showDialog('Error', 'Please select an order');
 		return false;
 	}
-	
-	if(!parseInt(formData.requirement_id)) {
+
+	if (!parseInt(formData.requirement_id)) {
 		showDialog('Error', 'Please select a requirement');
 		return false;
 	}
-	
-	if(!parseInt(formData.role_id)) {
+
+	if (!parseInt(formData.role_id)) {
 		showDialog('Error', 'Please select a role');
 		return false;
 	}
-	
-	if(!parseInt(formData.product_id)) {
+
+	if (!parseInt(formData.product_id)) {
 		showDialog('Error', 'Please select a product');
 		return false;
 	}
-	
-	$.ajax({
-		url : BASE_URL + 'service/save',
-		type: 'post',
-		data : formData,
-		beforeSend : function(xhr) {
 
-		}
-	}).done(function(data) {
-		showDialog("Success", 'Create new service successful');
-		var obj = $.parseJSON(data);
-		if(!parseInt($('#serviceid').val())) {
-			$('#serviceid').val(obj.serviceId);
-			
-			var html = '<li data-href="' + BASE_URL + 'service/show/' + obj.serviceId + '"><p>' + formData.name + '</p>';
-			html += '<span class="navArrow"></span>';
-			html += '<div class="clear"></div></li>';
-			$('ul#navLeft').prepend(html);
-		}
-	});
+	if (e.handled !== true) {
+		$.ajax({
+			url : BASE_URL + 'service/save',
+			type : 'post',
+			data : formData,
+			beforeSend : function(xhr) {
+
+			}
+		}).done(function(data) {
+			var obj = $.parseJSON(data);
+			if(obj.status) {
+				showDialog("Error", 'Can not create new service');
+			} else {
+				showDialog("Success", 'Create new service successful');
+//				location.href = location.href;
+			}
+		});
+
+		// this next line *must* be within this if statement
+		e.handled = true;
+	}
+
 }
 
 function doService(params) {
 	var modulList = $('.modulList');
-	
+
 	$('.addToService').live('click', addToService);
-	
+
 	$('ul#navLeft li').live('click', loadService);
-	
+
 	$('.containerBox').live('click', openModulDetail);
-	
+
+	$('.addBox').live('click', openListModul);
+
 	draw();
-	
-	$( "#sortable" ).sortable({
+
+	$("#sortable").sortable({
 		start : function() {
-			$('.containerBox').css('margin-right', '5px');
-			$('.arrowBox').hide();
 		},
-		update: function(event, ui) {
+		update : function(event, ui) {
 			var data = $("#sortable").sortable('toArray');
 			listModules = [];
-			$.each(data, function (i, val){
-				if(val) {
+			$.each(data, function(i, val) {
+				if (val && val != "left" && val != "right") {
 					var json = JSON.stringify(eval("(" + val + ")"));
 					listModules.push($.parseJSON(json));
 				}
 			});
 		},
-		stop: function() {
+		stop : function() {
 			draw();
 		}
 	});
-    $( "#sortable" ).disableSelection();
-	
-	if(params.allowEdit) {
-		$('.closeBox img').live('click', function() {
-			var removeItem = $(this).data('modulid');
-			listModules = jQuery.grep(listModules, function(value) {
-			  return value.id != removeItem;
-			});
-			// re-draw
-			draw();
-			
-			var $input = createInput($(this).data('modulid'), $(this).data('modulname'));
-			
-			$('.modulesNav').append($input);
-		});
+	$("#sortable").disableSelection();
+
+	if (params.allowEdit) {
+		$('.closeBox img').live(
+				'click',
+				function() {
+					var removeItem = $(this).data('modulid');
+					listModules = jQuery.grep(listModules, function(value) {
+						return value.id != removeItem;
+					});
+					// re-draw
+					draw();
+
+					var $input = createInput($(this).data('modulid'), $(this)
+							.data('modulname'));
+
+					$('.modulesList').append($input);
+				});
 	}
-	
-	function addToService() {
-		$('.modul:checked').each(function() {
-			listModules.push($(this).data('modulname'));
-			$(this).parent().remove();
-		});
-		
-		draw();
+
+	function openListModul(e) {
+		e.preventDefault();
+		if (e.handled !== true) {
+			$('#position').val($(this).attr('id'));
+			$.fancybox({
+				content : $('.list-modul').html()
+			});
+			e.handled = true;
+		}
+	}
+
+	function addToService(e) {
+		e.preventDefault();
+		if (e.handled !== true) {
+			$('.modul:checked').each(function(index, value) {
+				if($('#position').val() == 'right') {
+					listModules.push($(this).data('modulname'));
+				} else {
+					listModules.splice(0, 0, $(this).data('modulname'));
+				}
+				$('.modul' + $(this).data('modulname').id).remove();
+			});
+			$.fancybox.close();
+			draw();
+			// this next line *must* be within this if statement
+			e.handled = true;
+		}
+
 		return false;
 	}
-	
+
 	function draw() {
 		modulList.html('');
+		modulList.append(createAddModul('left'));
 		$.each(listModules, function(index, value) {
 			var containerBox = createBox(value);
 			modulList.append(containerBox);
-			if(index + 1 < listModules.length) {
-				modulList.append(createArrow());
-			}
+			// if(index + 1 < listModules.length) {
+			// modulList.append(createArrow());
+			// }
 		});
-		
+		modulList.append(createAddModul('right'));
 	}
-	
+
 	function openModulDetail(e) {
-		if( e.target == this ) {
+		if (e.target == this) {
 			var modulId = $(this).data('modulid');
-			
+
 			$.ajax({
 				url : BASE_URL + 'service/show_modul_detail',
-				type: 'post',
-				data : {modul_id: modulId},
+				type : 'post',
+				data : {
+					modul_id : modulId
+				},
 			}).done(function(data) {
 				$.fancybox({
 					content : data
@@ -177,23 +211,36 @@ function doService(params) {
 			});
 		}
 	}
-	
+
 	function createInput(id, modul) {
 		var html = '<div class="modul-name">';
-		html += '<input type="checkbox" id="modul" class="modul" data-modulname=\'{"id": ' + id + ', "modul":"' + modul + '"}\' /> ';
+		html += '<input type="checkbox" id="modul" class="modul" data-modulname=\'{"id": '
+				+ id + ', "modul":"' + modul + '"}\' /> ';
 		html += modul;
 		html += '</div>';
 		return html;
 	}
-	
+
 	function createBox(value) {
-		var html = '<div class="containerBox ui-state-default" id=\'{"id": ' + value.id + ', "modul":"' + value.modul + '"}\' data-modulid="' + value.id + '"><div class="closeBox"><img data-modulname="' + value.modul + '" data-modulid="' + value.id + '" src="' + BASE_URL + 'css/images/deleteIcon.png" /></div>' + value.modul + '</div>';
+		var html = '<div class="containerBox ui-state-default" id=\'{"id": '
+				+ value.id + ', "modul":"' + value.modul
+				+ '"}\' data-modulid="' + value.id
+				+ '"><div class="closeBox"><img data-modulname="' + value.modul
+				+ '" data-modulid="' + value.id + '" src="' + BASE_URL
+				+ 'css/images/deleteIcon.png" /></div>' + value.modul
+				+ '</div>';
 		return html;
 	}
-	
+
+	function createAddModul(position) {
+		var html = '<div id="' + position + '" class="addBox ui-state-default">+</div>';
+		return html;
+	}
+
 	function createArrow() {
 		var html = '<div class="arrowBox">';
-		html += '<img class="arrow" src="' + BASE_URL + 'css/images/arrow32x32.png" />';
+		html += '<img class="arrow" src="' + BASE_URL
+				+ 'css/images/arrow32x32.png" />';
 		html += '</div>';
 		return html;
 	}

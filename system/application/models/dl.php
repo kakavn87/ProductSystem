@@ -1,5 +1,11 @@
 <?php
 class Dl extends CI_Model {
+	const TYPE_NORMAL = 'Normal';
+	const TYPE_STANDARD = 'Standard';
+	
+	const CUSTOMER_ALLOW = 'Allow';
+	const CUSTOMER_DENY = 'Deny';
+	
 	public function __construct() {
 		parent::__construct ();
 		$this->properties = array (
@@ -17,9 +23,10 @@ class Dl extends CI_Model {
 				'status' => null
 		);
 	}
-	public function getServices() {
+	public function getServices($type = self::TYPE_NORMAL) {
 		$this->db->select ( '*' );
 		$this->db->from ( 'service' );
+		$this->db->where('type', $type);
 		$this->db->order_by('created DESC');
 		$query = $this->db->get ();
 		$result = $query->result ();
@@ -29,5 +36,9 @@ class Dl extends CI_Model {
 	function saveService($data) {
 		$this->db->insert ( 'service', $data );
 		return $this->db->insert_id();
+	}
+	
+	function updateService($data, $id) {
+		$this->db->update('service', $data, array('id' => $id));
 	}
 }

@@ -17,6 +17,12 @@
 					<div class="logout">
 						<a href="<?=base_url();?>login/logout">&raquo; Logout</a>
 					</div>
+					<div class="info-user">
+					<?php 
+						$user = $this->session->userdata ( 'user' );
+						echo $user->name;  
+						?>
+					</div>
 					<div class="clear"></div>
 				</div>
 				<div id="content">
