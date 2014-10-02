@@ -1,6 +1,7 @@
 <script type="text/javascript">
 var listModules = <?php echo !isset($listModules) ? '[]' : json_encode($listModules); ?>;
 </script>
+<link rel="stylesheet" type="text/css" href="<?=base_url();?>css/comment.css" media="screen, projection" />
 <div class="grey">
 	<form action="" method="post">
 		<h1>
@@ -119,14 +120,27 @@ var listModules = <?php echo !isset($listModules) ? '[]' : json_encode($listModu
 	
 	</form>
 	<div class="clear"></div>
+	<?php if(isset($comments)) : ?>
 	<div class="comments">
 		<h3>Comments</h3>
-		<div class="comments-list"></div>
 		<div>
-			<textarea name="comment" class="comment-text" rows="8" cols="60"></textarea>
+			<textarea name="comment" id="comment-text" rows="8" cols="60"></textarea>
 		</div>
 		<button id="addComment">Add Comment</button>
+		
+		<div class="comments-list">
+		<?php
+			foreach($comments as $comment) : ?>
+			<div class="list">
+			<div class="avatar"><img src="<?php echo base_url(); ?>css/images/avatar.png" /></div>
+			<div class="comment-user"><?php echo $comment->comment; ?></div>
+			</div><div class="clear"></div>
+		<?php 
+			endforeach;
+		?>
+		</div>
 	</div>
+	<?php endif; ?>
 </div>
 
 <div class="list-modul" style="display: none">
@@ -155,5 +169,6 @@ var listModules = <?php echo !isset($listModules) ? '[]' : json_encode($listModu
 	<input type="hidden" name="position" id="position" value="" />
 	<button class="addToService">Add Modul</button>
 </div>
+
 <script src="<?=base_url();?>js/service/show.js"></script>
 <script src="<?=base_url();?>js/service/comment.js"></script>

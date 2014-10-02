@@ -54,8 +54,11 @@ class Service extends Ext_Controller {
 				$listModules[] = array('id' => $service->modulId, 'modul' => $service->modulName);
 			}
 			$data['listModules'] = $listModules;
+			
+
+			$this->load->model('comment');
+			$data['comments'] = $this->comment->getCommentByService($id);
 		}
-		
 		
 		$content = $this->load->view('public/service/show', $data, TRUE);
 		

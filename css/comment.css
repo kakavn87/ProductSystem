@@ -1,0 +1,23 @@
+.comments-list {
+	margin-top: 20px;
+}
+
+.comments-list .list {
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.comments-list .avatar {
+	float: left;
+	width: 50px;
+}
+
+.comments-list .avatar img {
+	width: 30px;
+	height: 30px;
+}
+
+.comments-list .comment-user {
+	float: left;
+	width: 580px;
+}
