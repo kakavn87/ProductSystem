@@ -58,6 +58,10 @@ class Service extends Ext_Controller {
 
 			$this->load->model('comment');
 			$data['comments'] = $this->comment->getCommentByService($id);
+			
+			
+			$this->load->model('service_role');
+			$data['service_role'] = $this->service_role->getRolesByService($id);
 		}
 		
 		$content = $this->load->view('public/service/show', $data, TRUE);
@@ -92,6 +96,7 @@ class Service extends Ext_Controller {
 			$roleList = $service['role_id'];
 			unset($service['role_id']);
 			
+			
 			$modules = $service['modul'];
 			unset($service['modul']);
 			$service['type'] = $service['type'] == 'true' ? Dl::TYPE_STANDARD : Dl::TYPE_NORMAL;
@@ -104,6 +109,19 @@ class Service extends Ext_Controller {
 				unset($service['id']);
 				$this->dl->updateService($service, $serviceId);
 			}
+			
+			$data = array();
+			$idx = 0;
+			foreach($roleList as $role) {
+				$data[] = array(
+						'service_id' => $serviceId,
+						'role_id' => $role,
+				);
+			}
+			
+			$this->load->model('service_role');
+			$this->service_role->deleteData($serviceId);
+			$this->service_role->saveData($data);
  			
  			$data = array();
  			$idx = 0;

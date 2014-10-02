@@ -80,10 +80,13 @@ var listModules = <?php echo !isset($listModules) ? '[]' : json_encode($listModu
 						<option value=""></option>
 		            <?php foreach($roles as $role) : 
 			            $selected = '';
-			            if(isset($service)) :
-			            	if($service[0]->role_id == $role->id) :
-			            		$selected="selected='selected'";
-			            	endif;
+			            if(isset($service_role)) :
+			            	foreach($service_role as $serviceRole) :
+				            	if($serviceRole->role_id == $role->id) :
+				            		$selected="selected='selected'";
+			            			break;
+				            	endif;
+			            	endforeach; 
 			            endif;
 		            ?>
 		            	<option <?php echo $selected; ?> value="<?php echo $role->id; ?>"><?php echo $role->name; ?></option>
