@@ -30,3 +30,10 @@ CREATE TABLE IF NOT EXISTS `service_roles` (
   `service_id` int(11) DEFAULT NULL
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
+ALTER TABLE `modul` ADD `type` ENUM('Standard','Normal') NOT NULL DEFAULT 'Normal' AFTER `feedback`;
+
+CREATE TABLE IF NOT EXISTS `modul_roles` (
+`id` int(11) unsigned NOT NULL,
+  `role_id` int(11) DEFAULT NULL,
+  `modul_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;

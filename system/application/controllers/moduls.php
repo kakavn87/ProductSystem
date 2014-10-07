@@ -14,18 +14,31 @@ class Moduls extends Ext_Controller {
 		$this->checkRole();
 	}
 	
-	function overview() {
+	function overview($id = null) {
+		$id = (int) $id;
+		
 		$data = array();
 		
 		$this->_save();
 		
 		// load modul lists
 		$this->load->model('modul');
-		$modul['modules'] = $this->modul->getAlls();
+		$modul['modules'] = $this->modul->getNormal();
 		$data['contentModule'] = $this->load->view('public/modul/list_modul', $modul , TRUE);
+		
+		$data['modul_standards'] = $this->modul->getStandard();
 		
 		$data['title'] = 'Add New Module';
 		$data['documents'] = array();
+		
+		if($id) {
+			// get modul by id
+			$data['modul'] = $this->modul->getById($id);
+			
+			// get documents by modul Id
+			$this->load->model('document');
+			$data['documents'] = $this->document->getByModulId($id);
+		}
 		$content = $this->load->view('public/modul/edit', $data, TRUE);
 		
 		$this->load->library('template');
@@ -37,39 +50,24 @@ class Moduls extends Ext_Controller {
 	}
 		
 	function edit($id = null) {
-		$id = (int) $id;
-		
-		$this->_save();
-		
-		$data['title'] = 'Edit Module';
-		
-		// load modul lists
-		$this->load->model('modul');
-		$modul['modules'] = $this->modul->getAlls();
-		$data['contentModule'] = $this->load->view('public/modul/list_modul', $modul , TRUE);
-		
-		// get modul by id
-		$data['modul'] = $this->modul->getById($id);
-		
-		// get documents by modul Id
-		$this->load->model('document');
-		$data['documents'] = $this->document->getByModulId($id);
-		$content = $this->load->view('public/modul/edit', $data, TRUE);
-		
-		$this->load->library('template');
-		$this->template->load($content);
+		$this->overview($id);
 	}
 	
 	function _save() {
 		if($this->input->post()) {
 			$data = $this->input->post('data');
-			
 			$modulData = $data['Modul'];
 			
 			$this->load->model('modul');
 			$this->load->model('document');
 			
 			$this->db->trans_start();
+			if(isset($modulData['type'])) {
+				$modulData['type'] = $modulData['type'] == 'on' ? Modul::TYPE_STANDARD : Modul::TYPE_NORMAL;
+			} else {
+				$modulData['type'] = Modul::TYPE_NORMAL;
+			}
+			
 			if(empty($modulData['id'])) {
 				$modulId = $this->modul->saveModul($modulData);
 			} else {

@@ -1340,3 +1340,21 @@ div.modul-name a {
 	padding: 5px;
 	font-size: 15px;
 }
+
+.bottomBox2 label {
+	font-size: 12px;
+	vertical-align: text-top;
+}
+
+.bottomBox2 input {
+	vertical-align: top;
+}
+
+.bottomBox2 input, textarea {
+	margin: 0;
+	padding: 0;
+}
+
+.bottomBox2 .info {
+	padding: 10px;
+}
