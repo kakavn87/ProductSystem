@@ -57,28 +57,33 @@ class RoleComponent {
 		return true;
 	}
 	
-	public function redirect($roleUser) {
+	public function redirect($roleUser, $return = false) {
+		$url = '';
 		switch ($roleUser) {
 			case self::ROLE_DEVELOPER :
-				redirect('/service/show/', 'refresh');
+				$url = '/service/show/';
 				break;
 			case self::ROLE_TECHNICAL :
-				redirect('/service/show/', 'refresh');
+				$url = '/service/show/';
 				break;
 			case self::ROLE_HOTLINE :
-				redirect('/service/show/', 'refresh');
+				$url = '/service/show/';
 				break;
 			case self::ROLE_PLANER :
-				redirect('/service/show/', 'refresh');
+				$url = '/service/show/';
 				break;
 			case self::ROLE_ENTWICKLER :
-				redirect('/service/show/', 'refresh');
+				$url = '/service/show/';
 				break;
 			case self::ROLE_ADMINISTRATOR :
 			default :
-				redirect('/service/show/', 'refresh');
+				$url = '/service/show/';
 				break;
 		}
 	
+		if(!$return) {
+			redirect($url, 'refresh');
+		}
+		return $url;
 	}
 }

@@ -1,0 +1,16 @@
+.popup-order label {
+	font-size: 12px;
+	vertical-align: text-top;
+}
+
+.popup-order input {
+	vertical-align: top;
+}
+
+a.new-service-standard {
+	font-size: 12px;
+}
+
+button.show-service {
+	float: right;
+}

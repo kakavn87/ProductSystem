@@ -14,7 +14,7 @@ class Service extends Ext_Controller {
 		$this->checkRole();
 	}
 	
-	function show($id = null) {
+	function show($type = 'Standard', $id = null, $orderId = null) {
 		$this->load->model('product');
 		$product = new Product();
 		$data['products'] = $product->getProducts();

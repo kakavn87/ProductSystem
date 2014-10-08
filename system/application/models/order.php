@@ -17,5 +17,13 @@ class Order extends CI_Model {
 		$result = $query->result ();
 		return $result;
 	}
+	
+	function getOrderId($id) {
+		$this->db->select ( '*' );
+		$this->db->from ( 'order' );
+		$this->db->where('number', $id);
+		$query = $this->db->get ();
+		return $query->row ();
+	}
 }
 ?>

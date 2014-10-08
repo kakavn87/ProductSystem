@@ -1,6 +1,6 @@
 <?php
 @session_start();
-class Login extends CI_Controller {
+class Login extends Ext_Controller {
 
   function __construct()
   {
@@ -13,24 +13,33 @@ class Login extends CI_Controller {
   }
 
   public function check() {
-
     $password = $this->input->post('password');
     $password = sha1($password);
-
     $user = new User;
     $result = $user->check($this->input->post('mail'), $password);
     if (!empty($result)) {
-       $this->session->set_userdata('user',$result);
+       $this->session->set_userdata('user', $result);
        $this->session->set_userdata('logged','yes');
 
        $this->load->library('roleComponent');
-       
        $roleComponent = new RoleComponent();
-       $roleComponent->redirect($result->roleName);
+       $url = $roleComponent->redirect($result->roleName, true);
+       
+       $show_popup = false;
+       $allow_role = array(RoleComponent::ROLE_DEVELOPER);
+       if(in_array($result->roleName, $allow_role)) {
+       		$show_popup = true;
+       }
+       
+       $this->response['show_popup'] = $show_popup;
+       $this->response['url'] = $url;
+       $this->response['user'] = $result;
+       
+       $this->response['viewHtmlPopup'] = $this->load->view('public/login/order_popup', array(), true);
+       $this->sendAjax();
     }
     else {
-      $data['errorMail'] = "<span class='error'>Zugangsdaten nicht vorhanden oder fehlerhaft.</span><br/>";
-      $this->load->view('public/login/login',$data); 
+      $this->sendAjax(1, "Zugangsdaten nicht vorhanden oder fehlerhaft");
     }
   }
 

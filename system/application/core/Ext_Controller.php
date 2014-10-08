@@ -27,8 +27,7 @@ class Ext_Controller extends CI_Controller {
 	);
 	function __construct() {
 		parent::__construct ();
-		
-		if($this->session->userdata('logged') != 'yes') {
+		if($this->session->userdata('logged') != 'yes' && $this->uri->segment(1) != 'login') {
 			redirect('/login', 'refresh');
 		}
 		

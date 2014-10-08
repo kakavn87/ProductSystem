@@ -21,7 +21,7 @@ var listModules = <?php echo !isset($listModules) ? '[]' : json_encode($listModu
 				<div id="scroller" class="scrollerNav modulesNav">
 				<?php foreach($service_standards as $standard): ?>
 				<div class="modul-name">
-					<a href="<?php echo base_url(); ?>service/show/<?php echo $standard->id; ?>">
+					<a href="<?php echo base_url(); ?>service/show/Standard/<?php echo $standard->id; ?>">
 					<?php echo $standard->name; ?>
 					</a>
 				</div>

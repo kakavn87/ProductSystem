@@ -10,7 +10,7 @@
           <ul id="navLeft">
           
            <?php foreach ($services as $service) :?>
-              <li data-href="<?php echo base_url(); ?>service/show/<?php echo $service->id; ?>"><p><?= $service->name; ?></p>
+              <li data-href="<?php echo base_url(); ?>service/show/Normal/<?php echo $service->id; ?>"><p><?= $service->name; ?></p>
 								<span class="navArrow"></span>
 								<div class="clear"></div></li>
            <?php endforeach; ?>
