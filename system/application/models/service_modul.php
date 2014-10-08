@@ -13,6 +13,7 @@ class Service_modul extends CI_Model {
 		$this->db->join ( 'service AS Service', 'Service.id = ServiceModul.service_id', "LEFT" );
 		$this->db->join ( 'modul AS Modul', 'Modul.id = ServiceModul.modul_id', "LEFT" );
 		$this->db->where ( 'ServiceModul.service_id', $id );
+		$this->db->order_by('ServiceModul.position ASC');
 		$query = $this->db->get ();
 		$result = $query->result ();
 		return $result;
