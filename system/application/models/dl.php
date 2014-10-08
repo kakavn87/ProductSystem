@@ -33,6 +33,14 @@ class Dl extends CI_Model {
 		return $result;
 	}
 	
+	function getById($id) {
+		$this->db->select ( '*' );
+		$this->db->from ( 'service' );
+		$this->db->where('id', $id);
+		$query = $this->db->get ();
+		return $query->row ();
+	}
+	
 	function saveService($data) {
 		$this->db->insert ( 'service', $data );
 		return $this->db->insert_id();

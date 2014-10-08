@@ -23,7 +23,7 @@ $(function() {
 	});
 
 	$('#saveService').live('click', saveService);
-
+	
 	doService({
 		allowEdit : true
 	});
@@ -39,7 +39,7 @@ function saveService(e) {
 	$.each(listModules, function(index, value) {
 		formData.modul.push(value.id);
 	});
-	formData.order_id = $("#orders").val();
+	formData.order_id = $("#order_id").val();
 	formData.requirement_id = $('#requirments').val();
 	formData.role_id = $('#roles').val();
 	formData.product_id = $('#products').val();
@@ -53,11 +53,6 @@ function saveService(e) {
 
 	if (!formData.modul.length) {
 		showDialog('Error', 'Please add a modul');
-		return false;
-	}
-
-	if (!parseInt(formData.order_id)) {
-		showDialog('Error', 'Please select an order');
 		return false;
 	}
 
@@ -110,6 +105,8 @@ function doService(params) {
 	$('.containerBox').live('click', openModulDetail);
 
 	$('.addBox').live('click', openListModul);
+	
+	$('.service-standard').live('click', showStandard);
 
 	draw();
 
@@ -160,6 +157,18 @@ function doService(params) {
 			e.handled = true;
 		}
 	}
+	
+	function showStandard(event) {
+//		console.log($(this).data('href'));
+		$.ajax({
+			url : $(this).data('href'),
+			type : 'post',
+		}).done(function(data) {
+			var obj = $.parseJSON(data);
+			listModules = obj.listModules;
+			draw();
+		});
+	}
 
 	function addToService(e) {
 		e.preventDefault();
@@ -187,9 +196,6 @@ function doService(params) {
 		$.each(listModules, function(index, value) {
 			var containerBox = createBox(value);
 			modulList.append(containerBox);
-			// if(index + 1 < listModules.length) {
-			// modulList.append(createArrow());
-			// }
 		});
 		modulList.append(createAddModul('right'));
 	}

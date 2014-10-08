@@ -1,10 +1,13 @@
 <?php
 class Service extends Ext_Controller {
+	const STANDARD_TYPE = 'standard';
+	const NORMAL_TYPE = 'Normal';
+	
 	function __construct() {
 		parent::__construct();
 		
 		$this->_role = array(
-				'role_developer' => array('action' => array('show', 'save', 'load_service', 'show_modul_detail')),
+				'role_developer' => array('action' => array('show', 'save', 'load_service', 'show_modul_detail', 'get_standard')),
 				'role_hotline' => array('action' => array()),
 				'role_planer' => array('action' => array()),
 				'role_entwickler' => array('action' => array()),
@@ -14,7 +17,10 @@ class Service extends Ext_Controller {
 		$this->checkRole();
 	}
 	
-	function show($type = 'Standard', $id = null, $orderId = null) {
+	function show($type = self::STANDARD_TYPE, $id = null, $orderId = null) {
+		$data['orderId'] = $orderId;
+		$data['type'] = $type;
+		
 		$this->load->model('product');
 		$product = new Product();
 		$data['products'] = $product->getProducts();
@@ -22,10 +28,6 @@ class Service extends Ext_Controller {
 		// load Roles
 		$this->load->model('role');
 		$data['roles'] = $this->role->getAlls();
-		
-		// load Orders
-		$this->load->model('order');
-		$data['orders'] = $this->order->getAlls();
 		
 		// load requirement
 		$this->load->model('requirement');
@@ -51,14 +53,13 @@ class Service extends Ext_Controller {
 			}
 			$listModules = array();
 			foreach($data['service'] as $service) {
-				$listModules[] = array('id' => $service->modulId, 'modul' => $service->modulName);
+				$listModules[] = array('id' => $service->modulId, 'modul' => $service->modulName, 'type' => 'normal');
 			}
 			$data['listModules'] = $listModules;
 			
 
 			$this->load->model('comment');
 			$data['comments'] = $this->comment->getCommentByService($id);
-			
 			
 			$this->load->model('service_role');
 			$data['service_role'] = $this->service_role->getRolesByService($id);
@@ -107,7 +108,21 @@ class Service extends Ext_Controller {
 			} else {
 				$serviceId = (int)$service['id'];
 				unset($service['id']);
-				$this->dl->updateService($service, $serviceId);
+				
+				$serviceData = $this->dl->getById($serviceId);
+				if($service['type'] == Dl::TYPE_NORMAL) {
+					if($serviceData->type == Dl::TYPE_NORMAL) {
+						$this->dl->updateService($service, $serviceId);
+					} else {
+						$serviceId = $this->dl->saveService($service);
+					}
+				} else {
+					if($serviceData->type == Dl::TYPE_STANDARD) {
+						$this->dl->updateService($service, $serviceId);
+					} else {
+						$serviceId = $this->dl->saveService($service);
+					}
+				}
 			}
 			
 			$data = array();
@@ -141,5 +156,24 @@ class Service extends Ext_Controller {
  			$this->sendAjax();
 		}
 		exit ( 'You can not access this page' );
+	}
+	
+	function get_standard($id = null) {
+		if(!$id) {
+			$this->sendAjax(1, 'NOt exists service id');
+		}
+		
+		$this->load->model('service_modul');
+		$data['service'] = $this->service_modul->getServiceDetail($id);
+			
+		if(empty($data['service'])) {
+			exit('Service id is no exists');
+		}
+		$listModules = array();
+		foreach($data['service'] as $service) {
+			$listModules[] = array('id' => $service->modulId, 'modul' => $service->modulName, 'type' => 'normal');
+		}
+		$this->response['listModules'] = $listModules;
+		$this->sendAjax();
 	}
 }

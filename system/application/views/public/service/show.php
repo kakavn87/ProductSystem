@@ -1,5 +1,6 @@
 <script type="text/javascript">
 var listModules = <?php echo !isset($listModules) ? '[]' : json_encode($listModules); ?>;
+var typePattern = '<?php echo $type; ?>';
 </script>
 <link rel="stylesheet" type="text/css" href="<?=base_url();?>css/comment.css" media="screen, projection" />
 <div class="grey">
@@ -21,13 +22,12 @@ var listModules = <?php echo !isset($listModules) ? '[]' : json_encode($listModu
 				<div id="scroller" class="scrollerNav modulesNav">
 				<?php foreach($service_standards as $standard): ?>
 				<div class="modul-name">
-					<a href="<?php echo base_url(); ?>service/show/Standard/<?php echo $standard->id; ?>">
+					<a class="service-standard" href="javascript:void(0)" data-href="<?php echo base_url(); ?>service/get_standard/<?php echo $standard->id; ?>">
 					<?php echo $standard->name; ?>
 					</a>
 				</div>
 				<?php endforeach; ?>
 				</div>
-<!-- 				<button class="addToService">+</button> -->
 			</div>
 				<div class="bottomBox2">
 					<h1>DL</h1>
@@ -39,23 +39,6 @@ var listModules = <?php echo !isset($listModules) ? '[]' : json_encode($listModu
 				
 			</div>
 			<div class="filter">
-				<div>
-					<label>Order</label> <select id="orders" name="order_id"
-						data-placeholder="Choose a order ..." style="width: 350px;"
-						class="chosen-select">
-						<option value=""></option>
-	            <?php foreach($orders as $order) : 
-	            	$selected = '';
-	            	if(isset($service)) :
-	            		if($service[0]->order_id == $order->id) :
-	            			$selected="selected='selected'";
-	            		endif;
-	            	endif; 
-	            ?>
-	            	<option <?php echo $selected; ?>value="<?php echo $order->id; ?>"><?php echo $order->number; ?></option>
-	            <?php endforeach;?>
-	          </select>
-				</div>
 				<div>
 					<label>Requirement</label> <select id="requirments" name="requirment_id"
 						data-placeholder="Choose a requirment ..." style="width: 350px;"
@@ -114,8 +97,9 @@ var listModules = <?php echo !isset($listModules) ? '[]' : json_encode($listModu
 					<input <?php echo (isset($service) && $service[0]->customer_view == Dl::CUSTOMER_ALLOW) ? 'checked="checked"': ''; ?> type="checkbox" name="customer_view" id="customer_view" value="1" /> Customer View
 				</div>
 				<div>
-					<input <?php echo (isset($service) && $service[0]->type == Dl::TYPE_STANDARD) ? 'checked="checked"': ''; ?>type="checkbox" name="standard" id="standard" value="1" /> Save as Service Standard
+					<input type="checkbox" name="standard" id="standard" value="1" /> Save as Service Standard
 				</div>
+				<input type="hidden" name="order_id" id="order_id" value="<?php echo $orderId?$orderId:''; ?>" />
 				<input type="hidden" name="id" id="serviceid" value="<?php echo isset($service)?$service[0]->id:''; ?>" />
 				<input type="button" value="Save Service" name="save"
 					id="saveService" />
