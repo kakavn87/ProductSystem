@@ -5,6 +5,12 @@ $(function() {
 	
 	$('ul#navLeft li').live('click', loadService);
 	
+	$('.normal').live('click', normalCLickCallback);
+	
+	$('.standard').live('click', standardCLickCallback);
+	
+	$('.saveas-normal').live('click', saveAsModulNormal);
+	
 	$('#searchmodul').search('.modul-name', function(on) {
 
 		on.all(function(results) {
@@ -25,6 +31,28 @@ $(function() {
 		});
 	});
 });
+
+function saveAsModulNormal(e) {
+	if($(this).is(':checked'))  {
+		$('.resources').show();
+	} else {
+		$('.resources').hide();
+	}
+}
+
+function normalCLickCallback(e) {
+	$('.standard, .normal').removeClass('active');
+	$('.standard, .normal').removeClass('hide');
+	$('div.normal').addClass('active');
+	$('li.standard').addClass('hide');
+}
+
+function standardCLickCallback(e) {
+	$('.standard, .normal').removeClass('active');
+	$('.standard, .normal').removeClass('hide');
+	$('div.standard').addClass('active');
+	$('li.normal').addClass('hide');
+}
 
 function addDocument() {
 	var html = $('.documents').html();

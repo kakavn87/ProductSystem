@@ -23,10 +23,10 @@ class Moduls extends Ext_Controller {
 		
 		// load modul lists
 		$this->load->model('modul');
-		$modul['modules'] = $this->modul->getNormal();
+		$this->load->model('modul_pattern');
+		$modul['modules'] = $this->modul->getAll();
+		$modul['modul_standards'] = $this->modul_pattern->getAll();
 		$data['contentModule'] = $this->load->view('public/modul/list_modul', $modul , TRUE);
-		
-		$data['modul_standards'] = $this->modul->getStandard();
 		
 		$data['title'] = 'Add New Module';
 		$data['documents'] = array();
