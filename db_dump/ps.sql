@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 22, 2014 at 03:48 PM
+-- Generation Time: Oct 09, 2014 at 04:44 PM
 -- Server version: 5.6.15
 -- PHP Version: 5.5.16-1+deb.sury.org~precise+1
 
@@ -23,6 +23,62 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `comments`
+--
+
+CREATE TABLE IF NOT EXISTS `comments` (
+`id` int(11) unsigned NOT NULL,
+  `comment` text,
+  `user_id` int(11) DEFAULT NULL,
+  `service_id` int(11) DEFAULT NULL,
+  `created` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `modified` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `deleted` tinyint(4) DEFAULT '0'
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
+
+--
+-- Dumping data for table `comments`
+--
+
+INSERT INTO `comments` (`id`, `comment`, `user_id`, `service_id`, `created`, `modified`, `deleted`) VALUES
+(3, 'Không chỉ nổi danh với tài năng ngay từ những ngày đầu đến với môn thể dục nghệ thuật, Son Yeon Jae còn được biết đến như là một trong những mỹ nữ thể thao xinh đẹp bậc nhất xứ sở Kim Chi.\n\nBốn năm trước, Son đã xuất sắc mang về huy chương đồng cho môn thể dục dụng cụ Hàn Quốc khi chỉ mới chưa đầy 17 tuổi.\n\nNăm nay, khi vừa bước qua ở tuổi 20, Son được kỳ vọng sẽ mang về HCV cho đoàn Hàn Quốc ở môn thể dục nghệ thuật nữ. Không phụ lòng mong đợi của người hâm mộ nước chủ nhà, cô gái xinh năm 1994 đã xuất sắc giành được ngôi vị cao nhất của phần thi dung toàn năng với tổng số điểm sau bốn phần thi là 71,699 điểm, bỏ xa VĐV đoạt huy chương bạc là Deng Senyue đến gần hai điểm.\n\nTrước đó, trong ngày thi hôm qua, Son cũng đã xuất sắc cùng các đồng đội giành huy chương bạc nội dung đồng đội.\n\nVới chiếc HCV Asiad 17 lần này cộng với tài năng và sắc đẹp của mình, chắc chắn Son Yeon Jae sẽ còn ‘gây sốt’ trên cộng đồng mạng trong những ngày tới. ', 1, 25, '2014-10-02 13:51:31', '2014-10-02 13:51:31', 0),
+(4, 'sdafdsfdf', 1, 25, '2014-10-02 13:51:34', '2014-10-02 13:51:34', 0),
+(5, 'Hellooooooooooo ', 1, 25, '2014-10-02 13:51:43', '2014-10-02 13:51:43', 0),
+(7, 'yahoo', 1, 25, '2014-10-02 13:53:56', '2014-10-02 13:53:56', 0),
+(8, 'lelelel', 1, 9, '2014-10-02 13:54:15', '2014-10-02 13:54:15', 0),
+(9, 'Phuoc khùng', 1, 25, '2014-10-02 14:22:21', '2014-10-02 14:22:21', 0),
+(10, 'fgzds', 1, 24, '2014-10-08 11:02:09', '2014-10-08 11:02:09', 0),
+(11, 'aaaaa', 1, 22, '2014-10-08 11:06:44', '2014-10-08 11:06:44', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `document`
+--
+
+CREATE TABLE IF NOT EXISTS `document` (
+`id` int(11) unsigned NOT NULL,
+  `modul_id` int(11) DEFAULT NULL,
+  `link` varchar(255) DEFAULT NULL,
+  `type` enum('VIDEO','PDF') DEFAULT 'PDF',
+  `description` text,
+  `status` enum('ACTIVE','UNACTIVE') DEFAULT 'ACTIVE',
+  `deleted` tinyint(4) DEFAULT '0'
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19 ;
+
+--
+-- Dumping data for table `document`
+--
+
+INSERT INTO `document` (`id`, `modul_id`, `link`, `type`, `description`, `status`, `deleted`) VALUES
+(15, 4, 'Hello Module', 'PDF', '123123123234', 'ACTIVE', 0),
+(16, 4, 'Hello Module', 'PDF', '', 'ACTIVE', 0),
+(17, 4, 'Hello Module', 'PDF', '', 'ACTIVE', 0),
+(18, 5, 'asdf', 'PDF', 'sdfdfdf', 'ACTIVE', 0);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `modul`
 --
 
@@ -30,21 +86,32 @@ CREATE TABLE IF NOT EXISTS `modul` (
 `id` int(11) NOT NULL,
   `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `description` text COLLATE utf8_unicode_ci,
-  `file_pdf` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `video` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `feedback` text COLLATE utf8_unicode_ci,
-  `deleted` tinyint(4) NOT NULL DEFAULT '0',
-  `status` enum('ACTIVE','UNACTIVE') COLLATE utf8_unicode_ci DEFAULT 'ACTIVE'
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=4 ;
+  `type` enum('Standard','Normal') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'Standard'
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `modul`
 --
 
-INSERT INTO `modul` (`id`, `name`, `description`, `file_pdf`, `video`, `feedback`, `deleted`, `status`) VALUES
-(1, 'modul 1', NULL, NULL, NULL, NULL, 0, 'ACTIVE'),
-(2, 'modul 2', NULL, NULL, NULL, NULL, 0, 'ACTIVE'),
-(3, 'modul 3', NULL, NULL, NULL, NULL, 0, 'ACTIVE');
+INSERT INTO `modul` (`id`, `name`, `description`, `type`) VALUES
+(1, 'modul 1', '', 'Standard'),
+(2, 'modul 2', NULL, 'Normal'),
+(3, 'modul 3', NULL, 'Normal'),
+(4, 'AAAAA', 'sdafdsf', 'Normal'),
+(5, 'test 123123', 'test', 'Normal');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `modul_patterns`
+--
+
+CREATE TABLE IF NOT EXISTS `modul_patterns` (
+`id` int(11) unsigned NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `description` text,
+  `holder_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -55,7 +122,7 @@ INSERT INTO `modul` (`id`, `name`, `description`, `file_pdf`, `video`, `feedback
 CREATE TABLE IF NOT EXISTS `order` (
 `id` int(11) unsigned NOT NULL,
   `number` int(11) DEFAULT NULL,
-  `status` enum('ACTIVE','UNACTIVE') DEFAULT 'ACTIVE',
+  `status` enum('Finished','Unfinished') DEFAULT 'Unfinished',
   `deleted` tinyint(4) DEFAULT '0'
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
@@ -64,8 +131,8 @@ CREATE TABLE IF NOT EXISTS `order` (
 --
 
 INSERT INTO `order` (`id`, `number`, `status`, `deleted`) VALUES
-(1, 123, 'ACTIVE', 0),
-(2, 456, 'ACTIVE', 0);
+(1, 123, 'Finished', 0),
+(2, 456, 'Unfinished', 0);
 
 -- --------------------------------------------------------
 
@@ -153,20 +220,19 @@ CREATE TABLE IF NOT EXISTS `service` (
   `created` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `modified` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `status` enum('ACTIVE','UNACTIVE') DEFAULT 'ACTIVE',
-  `deleted` tinyint(4) DEFAULT '0'
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
+  `deleted` tinyint(4) DEFAULT '0',
+  `type` enum('Standard','Normal') DEFAULT 'Normal',
+  `customer_view` enum('Allow','Deny') DEFAULT 'Deny'
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `service`
 --
 
-INSERT INTO `service` (`id`, `product_id`, `requirement_id`, `order_id`, `role_id`, `name`, `description`, `created`, `modified`, `status`, `deleted`) VALUES
-(6, 1, 2, 1, 2, 'asfdsdfadsf', NULL, '2014-09-22 12:07:46', '2014-09-22 12:07:46', 'ACTIVE', 0),
-(7, 1, 2, 1, 2, 'asfdsdfadsf', NULL, '2014-09-22 12:20:54', '2014-09-22 12:20:54', 'ACTIVE', 0),
-(8, 1, 1, 1, 2, 'AAAAAA', NULL, '2014-09-22 12:28:11', '2014-09-22 12:28:11', 'ACTIVE', 0),
-(9, 1, 1, 1, 2, 'asdfasdfdf', NULL, '2014-09-22 12:28:48', '2014-09-22 12:28:48', 'ACTIVE', 0),
-(10, 1, 2, 1, 2, 'test 1', NULL, '2014-09-22 15:40:21', '2014-09-22 15:40:21', 'ACTIVE', 0),
-(11, 2, 3, 2, 4, 'tes 2', NULL, '2014-09-22 15:47:11', '2014-09-22 15:47:11', 'ACTIVE', 0);
+INSERT INTO `service` (`id`, `product_id`, `requirement_id`, `order_id`, `role_id`, `name`, `description`, `created`, `modified`, `status`, `deleted`, `type`, `customer_view`) VALUES
+(1, 1, 1, 1, NULL, 'Hello', NULL, '2014-10-09 14:18:39', '2014-10-09 14:18:39', 'ACTIVE', 0, 'Normal', 'Deny'),
+(2, 1, 1, 1, NULL, 'Hello 2', NULL, '2014-10-09 14:45:06', '2014-10-09 14:45:06', 'ACTIVE', 0, 'Normal', 'Deny'),
+(3, 1, 1, 1, NULL, 'Hello 2', NULL, '2014-10-09 14:45:22', '2014-10-09 14:45:22', 'ACTIVE', 0, 'Standard', 'Deny');
 
 -- --------------------------------------------------------
 
@@ -179,34 +245,62 @@ CREATE TABLE IF NOT EXISTS `service_modul` (
   `modul_id` int(11) DEFAULT NULL,
   `service_id` int(11) DEFAULT NULL,
   `position` int(11) DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=25 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
 
 --
 -- Dumping data for table `service_modul`
 --
 
 INSERT INTO `service_modul` (`id`, `modul_id`, `service_id`, `position`) VALUES
-(4, 1, 6, 1),
-(5, 2, 6, 2),
-(6, 3, 6, 3),
-(7, 1, 7, 1),
-(8, 2, 7, 2),
-(9, 3, 7, 3),
-(10, 1, 8, 1),
-(11, 2, 8, 2),
-(12, 3, 8, 3),
-(13, 1, 9, 1),
-(14, 2, 9, 2),
-(15, 3, 9, 3),
-(16, 2, 10, 1),
-(17, 2, 10, 1),
-(18, 3, 10, 2),
-(19, 2, 10, 1),
-(20, 3, 10, 2),
-(21, 2, 11, 1),
-(22, 3, 11, 2),
-(23, 2, 11, 1),
-(24, 3, 11, 2);
+(4, 1, 1, 1),
+(5, 2, 1, 2),
+(6, 3, 1, 3),
+(7, 4, 2, 1),
+(8, 3, 2, 2),
+(9, 4, 3, 1),
+(10, 3, 3, 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `service_roles`
+--
+
+CREATE TABLE IF NOT EXISTS `service_roles` (
+`id` int(11) unsigned NOT NULL,
+  `role_id` int(11) DEFAULT NULL,
+  `service_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `service_roles`
+--
+
+INSERT INTO `service_roles` (`id`, `role_id`, `service_id`) VALUES
+(2, 2, 1),
+(3, 2, 2),
+(4, 2, 3);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `stakeholders`
+--
+
+CREATE TABLE IF NOT EXISTS `stakeholders` (
+`id` int(11) unsigned NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `description` text
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+
+--
+-- Dumping data for table `stakeholders`
+--
+
+INSERT INTO `stakeholders` (`id`, `name`, `description`) VALUES
+(1, 'develop', 'Developer'),
+(2, 'partner', 'Partner'),
+(3, 'customer', 'Customer');
 
 -- --------------------------------------------------------
 
@@ -241,9 +335,27 @@ INSERT INTO `user` (`id`, `name`, `mail`, `password`, `role_id`, `organisation_i
 --
 
 --
+-- Indexes for table `comments`
+--
+ALTER TABLE `comments`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `document`
+--
+ALTER TABLE `document`
+ ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `modul`
 --
 ALTER TABLE `modul`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `modul_patterns`
+--
+ALTER TABLE `modul_patterns`
  ADD PRIMARY KEY (`id`);
 
 --
@@ -283,6 +395,18 @@ ALTER TABLE `service_modul`
  ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `service_roles`
+--
+ALTER TABLE `service_roles`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `stakeholders`
+--
+ALTER TABLE `stakeholders`
+ ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
@@ -293,10 +417,25 @@ ALTER TABLE `user`
 --
 
 --
+-- AUTO_INCREMENT for table `comments`
+--
+ALTER TABLE `comments`
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
+--
+-- AUTO_INCREMENT for table `document`
+--
+ALTER TABLE `document`
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=19;
+--
 -- AUTO_INCREMENT for table `modul`
 --
 ALTER TABLE `modul`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT for table `modul_patterns`
+--
+ALTER TABLE `modul_patterns`
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `order`
 --
@@ -321,12 +460,22 @@ MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 -- AUTO_INCREMENT for table `service`
 --
 ALTER TABLE `service`
-MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `service_modul`
 --
 ALTER TABLE `service_modul`
-MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=25;
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+--
+-- AUTO_INCREMENT for table `service_roles`
+--
+ALTER TABLE `service_roles`
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `stakeholders`
+--
+ALTER TABLE `stakeholders`
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `user`
 --
