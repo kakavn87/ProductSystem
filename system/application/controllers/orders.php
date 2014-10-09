@@ -19,6 +19,7 @@ class Orders extends  Ext_Controller {
 
 		$result = $this->order->getOrderId($orderId);
 		if(!empty($result)) {
+			$this->response['orderId'] = $result->id;
 			$this->sendAjax();
 		}
 		$this->sendAjax(1, 'Invalid OrderId');

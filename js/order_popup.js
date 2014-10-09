@@ -22,7 +22,7 @@ $(function() {
 		}).done(function(data) {
 			var obj = $.parseJSON(data);
 			if(!obj.status) {
-				location.href = BASE_URL + 'service/show/Normal/0/' + orderId;  
+				location.href = BASE_URL + 'service/show/Normal/0/' + obj.orderId;  
 			} else {
 				alert(obj.message);
 			}

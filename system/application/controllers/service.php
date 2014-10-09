@@ -17,10 +17,10 @@ class Service extends Ext_Controller {
 		$this->checkRole();
 	}
 
-	function show($type = self::STANDARD_TYPE, $id = null, $orderId = null) {
+	function show($type = null, $id = null, $orderId = null) {
 		$data['orderId'] = $orderId;
 		$data['type'] = $type;
-
+		
 		$this->load->model('product');
 		$product = new Product();
 		$data['products'] = $product->getProducts();

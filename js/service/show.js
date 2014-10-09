@@ -1,5 +1,5 @@
 $(function() {
-
+	
 	$("#products, #roles, #orders, #requirments").chosen();
 
 	$('#searchmodul').search('.modul-name', function(on) {
@@ -85,7 +85,7 @@ function saveService(e) {
 				showDialog("Error", 'Can not create new service');
 			} else {
 				showDialog("Success", 'Create new service successful');
-//				location.href = location.href;
+				location.href = location.href;
 			}
 		});
 
