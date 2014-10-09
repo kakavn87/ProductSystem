@@ -1,0 +1,42 @@
+#list-order {
+	margin: 10px;
+	padding: 0;
+}
+
+#list-order .containerBox {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	text-overflow: ellipsis;
+}
+
+.orderBox {
+	width: 100%;
+	float: left;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: #f2f1f1;
+	border: 1px solid #c7c7c7;
+	margin-right: 0px;
+	margin-bottom: 7px;
+	padding-bottom: 7px;
+}
+.orderBox:last-child {
+	margin-bottom: 0px;
+}
+
+.orderBox>h1 {
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background: #c7c7c7;
+	padding: 10px;
+	color: #fff;
+	font-size: 16px;
+	margin: 0;
+	text-transform: uppercase;
+}
