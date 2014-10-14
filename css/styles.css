@@ -1276,10 +1276,12 @@ div.filter div {
 	float: right;
 }
 
+div.modul-standard-name, div.modul-normal-name, 
 div.modul-name {
 	font-size: 11px;
 }
 
+div.modul-standard-name a,div.modul-normal-name a,
 div.modul-name a {
 	padding: 10px;
 }
@@ -1325,6 +1327,12 @@ div.modul-name a {
 
 .modulList {
 	padding: 5px;
+}
+
+.second {
+	border-top: 1px solid #CCCCCC;
+	margin-top: 10px;
+	padding-top: 15px;
 }
 
 .documents {
@@ -1403,4 +1411,21 @@ div.modul-name a {
 
 .resources {
 	display: none;
+}
+
+.modulLeft {
+	float: left;
+	margin-right: 2px;
+}
+
+.modulRight {
+	float: left;
+}
+
+.modulLeft h3, 
+.modulRight h3 {
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-size: 16px;
 }

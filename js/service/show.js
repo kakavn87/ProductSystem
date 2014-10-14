@@ -21,6 +21,46 @@ $(function() {
 			results.show();
 		});
 	});
+	
+	$('#search-modul-standard').search('.modul-standard-name', function(on) {
+
+		on.all(function(results) {
+			var size = results ? results.size() : 0
+		});
+
+		on.reset(function() {
+			$('.modul-standard-name').show();
+		});
+
+		on.empty(function() {
+			$('.modul-standard-name').hide();
+		});
+
+		on.results(function(results) {
+			$('.modul-standard-name').hide();
+			results.show();
+		});
+	});
+	
+	$('#search-modul-normal').search('.modul-normal-name', function(on) {
+
+		on.all(function(results) {
+			var size = results ? results.size() : 0
+		});
+
+		on.reset(function() {
+			$('.modul-normal-name').show();
+		});
+
+		on.empty(function() {
+			$('.modul-normal-name').hide();
+		});
+
+		on.results(function(results) {
+			$('.modul-normal-name').hide();
+			results.show();
+		});
+	});
 
 	$('#saveService').live('click', saveService);
 	

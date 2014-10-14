@@ -34,6 +34,8 @@ var typePattern = '<?php echo $type; ?>';
 					<div class="clear"></div>
 					
 					<div class="modulList" id="sortable" ></div>
+					<div class="clear"></div>
+					<div class="modulList second" id="sortable" ></div>
 				</div>
 				<div class="clear"></div>
 				
@@ -131,30 +133,58 @@ var typePattern = '<?php echo $type; ?>';
 </div>
 
 <div class="list-modul" style="display: none">
-	<div class="modulesList">
-	<?php foreach($modules as $modul) : 
-		if(isset($service)) :
-			$flag = false;
-			foreach($listModules as $key => $m) :
-				if($m['id'] == $modul->id) :
-					$flag= true;
-					break;
-				endif;
-			endforeach;
-			if($flag) :
-				continue;
-			endif;
-		endif;
-	?>
-		<div class="modul-name modul<?php echo $modul->id; ?>">
-			<input type="checkbox" id="modul" class="modul"
-			data-modulname='{"id": <?php echo $modul->id; ?>, "modul":"<?php echo $modul->name; ?>"}' />
-			<?php echo $modul->name; ?>
+	<div class="modulLeft">
+		<h3>Standard</h3>
+		<div class="searchbox" style="padding: 4px">
+			<span>Search: </span> <input type="text" class="search-modul-standard"
+				id="search-modul-standard" value="" />
 		</div>
+		<div id="scroller" class="scrollerNav">
+		<?php foreach($modul_standards as $modul): ?>
+			<div class="modul-standard-name modul<?php echo $modul->id; ?>">
+				<input type="checkbox" id="modul" class="modul"
+				data-modulname='{"id": <?php echo $modul->id; ?>, "modul":"<?php echo $modul->name; ?>", "type": "standard"}' />
+				<?php echo $modul->name; ?>
+			</div>
 		<?php endforeach; ?>
+		</div>
 	</div>
+	<div class="modulRight">
+		<h3>Normal</h3>
+		<div class="searchbox" style="padding: 4px">
+			<span>Search: </span> <input type="text" class="search-modul-normal"
+				id="search-modul-normal" value="" />
+				<button class="addModule">Add Modul</button>
+		</div>
+		<div id="scroller" class="scrollerNav">
+		
+			<?php foreach($modules as $modul) : 
+				if(isset($service)) :
+					$flag = false;
+					foreach($listModules as $key => $m) :
+						if($m['id'] == $modul->id) :
+							$flag= true;
+							break;
+						endif;
+					endforeach;
+					if($flag) :
+						continue;
+					endif;
+				endif;
+			?>
+			<div class="modulesList">
+				<div class="modul-normal-name modul<?php echo $modul->id; ?>">
+					<input type="checkbox" id="modul" class="modul"
+					data-modulname='{"id": <?php echo $modul->id; ?>, "modul":"<?php echo $modul->name; ?>", "type": "normal"}' />
+					<?php echo $modul->name; ?>
+				</div>
+			</div>
+			<?php endforeach; ?>
+		</div>
 	<input type="hidden" name="position" id="position" value="" />
-	<button class="addToService">Add Modul</button>
+	</div>
+	
+	<button class="addToService">Add To Service</button>
 </div>
 
 <script src="<?=base_url();?>js/service/show.js"></script>

@@ -11,7 +11,8 @@ class Service extends Ext_Controller {
 				'role_hotline' => array('action' => array()),
 				'role_planer' => array('action' => array()),
 				'role_entwickler' => array('action' => array()),
-				'role_technical' => array('action' => array())
+				'role_technical' => array('action' => array()),
+				'role_customer' => array('action' => array())
 		);
 
 		$this->checkRole();
@@ -36,6 +37,10 @@ class Service extends Ext_Controller {
 		// load modul
 		$this->load->model('modul');
 		$data['modules'] = $this->modul->getAll();
+		
+		// load standard modul
+		$this->load->model('modul_pattern');
+		$data['modul_standards'] = $this->modul_pattern->getAll();
 
 		// load service non-standard
 		$this->load->model('dl');
