@@ -1338,6 +1338,7 @@ div.modul-name a {
 #addDocument {
 	cursor: pointer;
 	font-size: 12px;
+	text-indent: 15px;
 }
 
 .addToService {

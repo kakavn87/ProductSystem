@@ -5,7 +5,7 @@
 	<div>
 		<form method="post" action="<?php echo current_url(); ?>">
 			<div id="left">
-				<div class="bottomBox2" style="width: 100%;">
+				<div class="bottomBox2" style="width: 100%; height: auto;">
 					<h1>Edit modul</h1>
 					
 					<div class="info">
@@ -21,11 +21,23 @@
 						name="data[Modul][description]"><?php echo isset($modul)?$modul->description:''; ?></textarea>
 					</div>
 					<div class="clear"></div>
+					
+					<div class="info">
+					<?php if($user->roleName = 'developer') : ?>
+						<label class="user" for="moduletype" >Type:</label>
+						<select class="chosen-select" id="selectType" name="data[Modul][type]">
+							<option value="main">Main</option>
+							<option value="sub">Sub</option>
+							<option value="support">Support</option>
+							<option value="child">Child</option>
+						</select>						
+					<?php endif; ?>
+					</div>
+					<div class="clear"></div>
 
 					<div class="save-as-normal">
 						<input class="saveas-normal"
-							type="checkbox" name="data[Modul][type]" id="type" /> Save as
-						Modul Normal
+							type="checkbox" name="data[normal]" id="normal" /> Save as Modul Normal
 					</div>
 					
 					<div class="resources">
@@ -68,6 +80,9 @@
 			<div class="filter">
 				<input type="hidden" name="data[Modul][id]" id="id"
 					value="<?php echo isset($modul)?$modul->id:''; ?>" />
+					
+				<input type="hidden" name="data[old_type]"
+					value="<?php echo isset($type)?$type:''; ?>" />
 				<button type="submit" class="saveModul">Save Modul</button>
 			</div>
 
@@ -99,5 +114,7 @@
 		<div class="clear"></div>
 	</div>
 </div>
-
+<script type="text/javascript">
+var type = '<?php echo isset($type)?$type:""; ?>';
+</script>
 <script src="<?=base_url();?>js/modul/edit.js"></script>

@@ -23,6 +23,9 @@ class Ext_Controller extends CI_Controller {
 			),
 			'role_technical' => array (
 					'action' => array () 
+			),
+			'role_customer' => array (
+					'action' => array () 
 			) 
 	);
 	function __construct() {

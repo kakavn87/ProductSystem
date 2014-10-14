@@ -6,6 +6,7 @@ class RoleComponent {
 	const ROLE_HOTLINE = 'hotline';
 	const ROLE_PLANER = 'planer';
 	const ROLE_ENTWICKLER = 'entwickler';
+	const ROLE_CUSTOMER = 'customer';
 	
 	/**
 	 * check role of user
@@ -19,23 +20,28 @@ class RoleComponent {
 				}
 				break;
 			case self::ROLE_TECHNICAL :
-				if (isset ( $roleList ['role_developer'] )) {
+				if (isset ( $roleList ['role_technical'] )) {
 					$roles = $roleList ['role_technical'];
 				}
 				break;
 			case self::ROLE_HOTLINE :
-				if (isset ( $roleList ['role_developer'] )) {
+				if (isset ( $roleList ['role_hotline'] )) {
 					$roles = $roleList ['role_hotline'];
 				}
 				break;
 			case self::ROLE_PLANER :
-				if (isset ( $roleList ['role_developer'] )) {
+				if (isset ( $roleList ['role_planer'] )) {
 					$roles = $roleList ['role_planer'];
 				}
 				break;
 			case self::ROLE_ENTWICKLER :
-				if (isset ( $roleList ['role_developer'] )) {
+				if (isset ( $roleList ['role_entwickler'] )) {
 					$roles = $roleList ['role_entwickler'];
+				}
+				break;
+			case self::ROLE_CUSTOMER:
+				if (isset ( $roleList ['role_customer'] )) {
+					$roles = $roleList ['role_customer'];
 				}
 				break;
 			case self::ROLE_ADMINISTRATOR :

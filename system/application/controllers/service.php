@@ -35,7 +35,7 @@ class Service extends Ext_Controller {
 
 		// load modul
 		$this->load->model('modul');
-		$data['modules'] = $this->modul->getAlls();
+		$data['modules'] = $this->modul->getAll();
 
 		// load service non-standard
 		$this->load->model('dl');

@@ -6,39 +6,48 @@ class Moduls extends Ext_Controller {
 		$this->_role = array(
 				'role_developer' => array('action' => array('overview', 'edit', 'add')),
 				'role_hotline' => array('action' => array()),
-				'role_planer' => array('action' => array()),
+				'role_planer' => array('action' => array('overview', 'edit', 'add')),
 				'role_entwickler' => array('action' => array()),
-				'role_technical' => array('action' => array())
+				'role_technical' => array('action' => array()),
+				'role_customer' => array('action' => array('overview', 'edit', 'add'))
 		);
 		
 		$this->checkRole();
 	}
 	
-	function overview($id = null) {
+	function overview($id = null, $type='normal') {
 		$id = (int) $id;
-		
-		$data = array();
 		
 		$this->_save();
 		
-		// load modul lists
 		$this->load->model('modul');
 		$this->load->model('modul_pattern');
-		$modul['modules'] = $this->modul->getAll();
-		$modul['modul_standards'] = $this->modul_pattern->getAll();
-		$data['contentModule'] = $this->load->view('public/modul/list_modul', $modul , TRUE);
 		
+		$data = array();
 		$data['title'] = 'Add New Module';
 		$data['documents'] = array();
 		
 		if($id) {
 			// get modul by id
-			$data['modul'] = $this->modul->getById($id);
+			if($type == 'normal') {
+				$data['modul'] = $this->modul->getById($id);
+			} else {
+				$data['modul'] = $this->modul_pattern->getById($id);
+			}
 			
+			$data['type'] = $type;
 			// get documents by modul Id
 			$this->load->model('document');
 			$data['documents'] = $this->document->getByModulId($id);
 		}
+		// load modul lists
+		$modul['modules'] = $this->modul->getAll();
+		$modul['modul_standards'] = $this->modul_pattern->getAll();
+		$data['contentModule'] = $this->load->view('public/modul/list_modul', $modul , TRUE);
+		
+		$user = $this->session->userdata ( 'user' );
+		$data['user'] = $user;
+		
 		$content = $this->load->view('public/modul/edit', $data, TRUE);
 		
 		$this->load->library('template');
@@ -49,30 +58,92 @@ class Moduls extends Ext_Controller {
 		$this->overview();
 	}
 		
-	function edit($id = null) {
-		$this->overview($id);
+	function edit($id = null, $type = "normal") {
+		$this->overview($id, $type);
 	}
 	
 	function _save() {
 		if($this->input->post()) {
 			$data = $this->input->post('data');
-			$modulData = $data['Modul'];
-			
 			$this->load->model('modul');
 			$this->load->model('document');
-			
-			$this->db->trans_start();
-			if(isset($modulData['type'])) {
-				$modulData['type'] = $modulData['type'] == 'on' ? Modul::TYPE_STANDARD : Modul::TYPE_NORMAL;
+			if(isset($data['normal'])) {
+				$this->_saveModulNormal($data);
 			} else {
-				$modulData['type'] = Modul::TYPE_NORMAL;
+				$this->_saveModulStandard($data);
 			}
+
+			redirect('/moduls/add');
+		}
+	}
+	
+	function _saveModulStandard($data) {
+		$this->load->model('modul_pattern');
+		$this->load->model('stakeholder');
+		
+		$modulData = $data['Modul'];
+		
+		$user = $this->session->userdata ( 'user' );
+		$user_id = $user->id;
+		$role = $user->roleName;
+			
+		$modulData['holder_id'] = $this->stakeholder->saveStake($user_id, $role);
+		
+		if($modulData['holder_id'] != -1) {
+			$this->db->trans_start();
 			
 			if(empty($modulData['id'])) {
+				$modulData['color'] = $this->_getColor(@$modulData['type']);
+				$modulId = $this->modul_pattern->saveModul($modulData);
+			} else {
+				
+				if('normal' == $data['old_type']) {
+					if(isset($modulData['id'])) {
+						unset($modulData['id']);
+					}
+					$modulData['color'] = $this->_getColor(@$modulData['type']);
+					$modulId = $this->modul_pattern->saveModul($modulData);
+				} else {
+					$this->modul_pattern->updateModul($modulData);
+					$modulId = $modulData['id'];
+				}
+			}
+			$this->db->trans_complete();
+			return array('status' => 0);
+		} 
+		return array('status' => 1, 'message' => 'You can not access this page');
+	}
+	
+	function _saveModulNormal($data) {
+		$this->load->model('modul');
+		$this->load->model('stakeholder');
+		
+		$modulData = $data['Modul'];
+		
+		$user = $this->session->userdata ( 'user' );
+		$user_id = $user->id;
+		$role = $user->roleName;
+			
+		$modulData['holder_id'] = $this->stakeholder->saveStake($user_id, $role);
+		
+		$this->db->trans_start();
+		if($modulData['holder_id'] != -1) {
+			$this->db->trans_start();
+			
+			if(empty($modulData['id'])) {
+				$modulData['color'] = $this->_getColor(@$modulData['type']);
 				$modulId = $this->modul->saveModul($modulData);
 			} else {
-				$this->modul->updateModul($modulData);
-				$modulId = $modulData['id'];
+				if('standard' == $data['old_type']) {
+					if(isset($modulData['id'])) {
+						unset($modulData['id']);
+					}
+					$modulData['color'] = $this->_getColor(@$modulData['type']);
+					$modulId = $this->modul->saveModul($modulData);
+				} else {
+					$this->modul->updateModul($modulData);
+					$modulId = $modulData['id'];
+				}
 			}
 			
 			$documents = array();
@@ -87,13 +158,44 @@ class Moduls extends Ext_Controller {
 					);
 				}
 			}
-			
+				
 			$this->document->deleteByModulId($modulId);
 			if(!empty($documents)) {
 				$this->document->saveAll($documents);
 			}
-			
 			$this->db->trans_complete();
+			return array('status' => 0);
 		}
+		return array('status' => 1, 'message' => 'You can not access this page');
+		
+		$this->db->trans_complete();
+	}
+	
+	function _getColor($type) {
+		switch($type) {
+			case 'sub':
+				$color = '#0d3839';
+				break;
+			case 'support':
+				$color = '#0060b6';
+				break;
+			case 'child' :
+				$color = '#fafafa';
+				break;
+			case 'main':
+			default:
+				$user = $this->session->userdata ( 'user' );
+				$this->load->library('roleComponent');
+				if($user->roleName == RoleComponent::ROLE_DEVELOPER) {
+					$color = '#e3fc03';
+				} else if($user->roleName == RoleComponent::ROLE_PLANER) {
+					$color = '#d70318';
+				} else {
+					$color = '#ff00ff';
+				}
+				
+				break;
+		}
+		return $color;
 	}
 }

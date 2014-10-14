@@ -1,4 +1,10 @@
 $(function() {
+	$("#selectType").chosen();
+	if(type == 'normal') {
+		$('.saveas-normal').prop('checked', true);
+		$('.resources').show();
+	}
+	
 	$('#addDocument').live('click', addDocument);
 	
 	$('.remove-document').live('click', removeDocument);

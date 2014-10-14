@@ -1,5 +1,10 @@
 <?php
 class Modul_pattern extends CI_Model {
+	const TYPE_MAIN = 'main';
+	const TYPE_SUB = 'sub';
+	const TYPE_SUPPORT = 'support';
+	const TYPE_CHILD = 'child';
+	
 	function getAll() {
 		$this->db->select ( '*' );
 		$this->db->from ( 'modul_patterns' );
