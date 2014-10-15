@@ -1,5 +1,6 @@
 <script type="text/javascript">
 var listModules = <?php echo !isset($listModules) ? '[]' : json_encode($listModules); ?>;
+var listModuleForCustomers = <?php echo !isset($listModuleCustomers) ? '[]' : json_encode($listModuleCustomers); ?>;
 var typePattern = '<?php echo $type; ?>';
 </script>
 <link rel="stylesheet" type="text/css" href="<?=base_url();?>css/comment.css" media="screen, projection" />
@@ -32,13 +33,13 @@ var typePattern = '<?php echo $type; ?>';
 				<div class="bottomBox2">
 					<h1>DL</h1>
 					<div class="clear"></div>
-					
-					<div class="modulList" id="sortable" ></div>
+
+					<div class="modulList" id="sortableDev" ></div>
 					<div class="clear"></div>
-					<div class="modulList second" id="sortable" ></div>
+					<div class="modulList second" id="sortableCus" ></div>
 				</div>
 				<div class="clear"></div>
-				
+
 			</div>
 			<div class="filter">
 				<div>
@@ -46,7 +47,7 @@ var typePattern = '<?php echo $type; ?>';
 						data-placeholder="Choose a requirment ..." style="width: 350px;"
 						class="chosen-select">
 						<option value=""></option>
-            <?php foreach($requirements as $re) : 
+            <?php foreach($requirements as $re) :
 	            $selected = '';
 	            if(isset($service)) :
 		            if($service[0]->requirement_id == $re->id) :
@@ -63,7 +64,7 @@ var typePattern = '<?php echo $type; ?>';
 						data-placeholder="Choose a role ..." style="width: 350px;"
 						class="chosen-select">
 						<option value=""></option>
-		            <?php foreach($roles as $role) : 
+		            <?php foreach($roles as $role) :
 			            $selected = '';
 			            if(isset($service_role)) :
 			            	foreach($service_role as $serviceRole) :
@@ -71,7 +72,7 @@ var typePattern = '<?php echo $type; ?>';
 				            		$selected="selected='selected'";
 			            			break;
 				            	endif;
-			            	endforeach; 
+			            	endforeach;
 			            endif;
 		            ?>
 		            	<option <?php echo $selected; ?> value="<?php echo $role->id; ?>"><?php echo $role->name; ?></option>
@@ -83,7 +84,7 @@ var typePattern = '<?php echo $type; ?>';
 						data-placeholder="Choose a role ..." style="width: 350px;"
 						class="chosen-select">
 						<option value=""></option>
-	            <?php foreach($products as $product) : 
+	            <?php foreach($products as $product) :
 		            $selected = '';
 		            if(isset($service)) :
 		            	if($service[0]->product_id == $product->id) :
@@ -106,7 +107,7 @@ var typePattern = '<?php echo $type; ?>';
 				<input type="button" value="Save Service" name="save"
 					id="saveService" />
 			</div>
-	
+
 	</form>
 	<div class="clear"></div>
 	<?php if(isset($comments)) : ?>
@@ -116,7 +117,7 @@ var typePattern = '<?php echo $type; ?>';
 			<textarea name="comment" id="comment-text" rows="8" cols="60"></textarea>
 		</div>
 		<button id="addComment">Add Comment</button>
-		
+
 		<div class="comments-list">
 		<?php
 			foreach($comments as $comment) : ?>
@@ -124,7 +125,7 @@ var typePattern = '<?php echo $type; ?>';
 			<div class="avatar"><img src="<?php echo base_url(); ?>css/images/avatar.png" /></div>
 			<div class="comment-user"><?php echo $comment->comment; ?></div>
 			</div><div class="clear"></div>
-		<?php 
+		<?php
 			endforeach;
 		?>
 		</div>
@@ -140,10 +141,17 @@ var typePattern = '<?php echo $type; ?>';
 				id="search-modul-standard" value="" />
 		</div>
 		<div id="scroller" class="scrollerNav">
-		<?php foreach($modul_standards as $modul): ?>
+		<?php foreach($modul_standards as $modul):
+		$data = array(
+				'id' => $modul->id,
+				'modul' => $modul->name,
+				'type' => 'standard',
+				'color' => $modul->color
+		);
+		?>
 			<div class="modul-standard-name modul<?php echo $modul->id; ?>">
 				<input type="checkbox" id="modul" class="modul"
-				data-modulname='{"id": <?php echo $modul->id; ?>, "modul":"<?php echo $modul->name; ?>", "type": "standard"}' />
+				data-modulname='<?php echo json_encode($data); ?>' />
 				<?php echo $modul->name; ?>
 			</div>
 		<?php endforeach; ?>
@@ -154,11 +162,11 @@ var typePattern = '<?php echo $type; ?>';
 		<div class="searchbox" style="padding: 4px">
 			<span>Search: </span> <input type="text" class="search-modul-normal"
 				id="search-modul-normal" value="" />
-				<button class="addModule">Add Modul</button>
+				<button class="add-module">+ Modul</button>
 		</div>
 		<div id="scroller" class="scrollerNav">
-		
-			<?php foreach($modules as $modul) : 
+
+			<?php foreach($modules as $modul) :
 				if(isset($service)) :
 					$flag = false;
 					foreach($listModules as $key => $m) :
@@ -171,20 +179,62 @@ var typePattern = '<?php echo $type; ?>';
 						continue;
 					endif;
 				endif;
+				$data = array(
+						'id' => $modul->id,
+						'modul' => $modul->name,
+						'type' => 'normal',
+						'color' => $modul->color
+				);
 			?>
 			<div class="modulesList">
 				<div class="modul-normal-name modul<?php echo $modul->id; ?>">
 					<input type="checkbox" id="modul" class="modul"
-					data-modulname='{"id": <?php echo $modul->id; ?>, "modul":"<?php echo $modul->name; ?>", "type": "normal"}' />
+					data-modulname='<?php echo json_encode($data); ?>' />
 					<?php echo $modul->name; ?>
 				</div>
 			</div>
 			<?php endforeach; ?>
 		</div>
 	<input type="hidden" name="position" id="position" value="" />
+	<input type="hidden" name="number" id="number" value="" />
 	</div>
-	
+
 	<button class="addToService">Add To Service</button>
+</div>
+<div class="modul-normal-list" style="display: none">
+	<div class="modul-normal-container">
+		<h3>Add Normal Module</h3>
+		<div class="info">
+			<div class="info">
+			<label class="user" for="modulname">Modul Name:</label> <input
+				type="text" id="modulname" name="data[Modul][name]"
+				value="">
+			</div>
+			<div class="clear"></div>
+
+			<div class="info">
+			<label class="user" for="moduldescription">Description:</label>
+			<textarea rows="4" class="moduldescription" cols="47"
+				name="data[Modul][description]"></textarea>
+			</div>
+			<div class="clear"></div>
+
+			<div class="info">
+			<?php
+			$user = $this->session->userdata ( 'user' );
+			if($user->roleName = 'developer') : ?>
+				<label class="user" for="moduletype" >Type:</label>
+				<select class="chosen-select" id="selectType" name="data[Modul][type]">
+					<option value="main">Main</option>
+					<option value="sub">Sub</option>
+					<option value="support">Support</option>
+					<option value="child">Child</option>
+				</select>
+			<?php endif; ?>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
 </div>
 
 <script src="<?=base_url();?>js/service/show.js"></script>

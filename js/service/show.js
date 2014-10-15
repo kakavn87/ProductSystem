@@ -137,6 +137,7 @@ function saveService(e) {
 
 function doService(params) {
 	var modulList = $('.modulList');
+	var modulListSecond = $('.second');
 
 	$('.addToService').live('click', addToService);
 
@@ -147,53 +148,88 @@ function doService(params) {
 	$('.addBox').live('click', openListModul);
 	
 	$('.service-standard').live('click', showStandard);
+	
+	$(".add-module").live('click', showAddModule);
 
 	draw();
 
-	$("#sortable").sortable({
+	$("#sortableDev, #sortableCus").sortable({
 		start : function() {
 		},
 		update : function(event, ui) {
-			var data = $("#sortable").sortable('toArray');
-			listModules = [];
-			$.each(data, function(i, val) {
-				if (val && val != "left" && val != "right") {
-					var json = JSON.stringify(eval("(" + val + ")"));
-					listModules.push($.parseJSON(json));
-				}
-			});
+			var data = $(this).sortable('toArray');
+			
+			var thisId = $(this).attr('id');
+			if(thisId == 'sortableDev') {
+				listModules = [];
+				$.each(data, function(i, val) {
+					if (val && val != "left" && val != "right") {
+						var json = JSON.stringify(eval("(" + val + ")"));
+						listModules.push($.parseJSON(json));
+					}
+				});
+			} else if(thisId == 'sortableCus') {
+				listModuleForCustomers = [];
+				$.each(data, function(i, val) {
+					if (val && val != "left" && val != "right") {
+						var json = JSON.stringify(eval("(" + val + ")"));
+						listModuleForCustomers.push($.parseJSON(json));
+					}
+				});
+				console.log(listModuleForCustomers);
+			}
 		},
 		stop : function() {
 			draw();
 		}
 	});
-	$("#sortable").disableSelection();
+	$("#sortableDev, #sortableCus").disableSelection();
 
 	if (params.allowEdit) {
 		$('.closeBox img').live(
 				'click',
 				function() {
+					var parentId = $(this).parent().parent().parent().attr('id');
 					var removeItem = $(this).data('modulid');
-					listModules = jQuery.grep(listModules, function(value) {
-						return value.id != removeItem;
-					});
+					var type = $(this).data('modultype');
+					if(parentId == 'sortableDev') {
+						listModules = jQuery.grep(listModules, function(value) {
+							return value.id != removeItem;
+						});
+					} else if(parentId == 'sortableCus') {
+						listModuleForCustomers = jQuery.grep(listModuleForCustomers, function(value) {
+							return value.id != removeItem;
+						});
+					}
 					// re-draw
 					draw();
 
-					var $input = createInput($(this).data('modulid'), $(this)
-							.data('modulname'));
-
-					$('.modulesList').append($input);
+//					var $input = createInput($(this).data('modulid'), $(this)
+//							.data('modulname'));
+//
+//					$(this).parent().append($input);
 				});
+	}
+	
+	function showAddModule(e) {
+		e.preventDefault();
+		if (e.handled !== true) {
+			$.fancybox({
+				content : $('.modul-normal-list').html(),
+			});
+			e.handled = true;
+		}
 	}
 
 	function openListModul(e) {
 		e.preventDefault();
 		if (e.handled !== true) {
 			$('#position').val($(this).attr('id'));
+			$('#number').val($(this).data('number'));
 			$.fancybox({
-				content : $('.list-modul').html()
+				content : $('.list-modul').html(),
 			});
+			
 			e.handled = true;
 		}
 	}
@@ -214,12 +250,20 @@ function doService(params) {
 		e.preventDefault();
 		if (e.handled !== true) {
 			$('.modul:checked').each(function(index, value) {
-				if($('#position').val() == 'right') {
-					listModules.push($(this).data('modulname'));
+				if($('#number').val() == 1) {
+					if($('#position').val() == 'right') {
+						listModules.push($(this).data('modulname'));
+					} else {
+						listModules.splice(0, 0, $(this).data('modulname'));
+					}
 				} else {
-					listModules.splice(0, 0, $(this).data('modulname'));
+					if($('#position').val() == 'right') {
+						listModuleForCustomers.push($(this).data('modulname'));
+					} else {
+						listModuleForCustomers.splice(0, 0, $(this).data('modulname'));
+					}
 				}
-				$('.modul' + $(this).data('modulname').id).remove();
+//				$('.modul' + $(this).data('modulname').id).remove();
 			});
 			$.fancybox.close();
 			draw();
@@ -232,23 +276,33 @@ function doService(params) {
 
 	function draw() {
 		modulList.html('');
-		modulList.append(createAddModul('left'));
+		modulList.append(createAddModul('left', 1));
 		$.each(listModules, function(index, value) {
 			var containerBox = createBox(value);
 			modulList.append(containerBox);
 		});
-		modulList.append(createAddModul('right'));
+		modulList.append(createAddModul('right', 1));
+		
+		modulListSecond.html('');
+		modulListSecond.append(createAddModul('left', 2));
+		$.each(listModuleForCustomers, function(index, value) {
+			var containerBox = createBox(value);
+			modulListSecond.append(containerBox);
+		});
+		modulListSecond.append(createAddModul('right', 2));
 	}
 
 	function openModulDetail(e) {
 		if (e.target == this) {
 			var modulId = $(this).data('modulid');
+			var modulType = $(this).data('modultype');
 
 			$.ajax({
 				url : BASE_URL + 'service/show_modul_detail',
 				type : 'post',
 				data : {
-					modul_id : modulId
+					modul_id : modulId,
+					modul_type: modulType
 				},
 			}).done(function(data) {
 				$.fancybox({
@@ -268,27 +322,20 @@ function doService(params) {
 	}
 
 	function createBox(value) {
-		var html = '<div class="containerBox ui-state-default" id=\'{"id": '
-				+ value.id + ', "modul":"' + value.modul
-				+ '"}\' data-modulid="' + value.id
-				+ '"><div class="closeBox"><img data-modulname="' + value.modul
+		var color = 'style="background-color: ' + value.color + ' !important; background-image: none !important; "';
+		var html = '<div ' + color + ' class="containerBox ui-state-default" id=\''
+				+ JSON.stringify(value) + '\' data-modulid="' + value.id
+				+ '" data-modultype="' +  value.type + '"><div class="closeBox"><img data-modultype="' +  value.type + '" data-modulname="' + value.modul
 				+ '" data-modulid="' + value.id + '" src="' + BASE_URL
 				+ 'css/images/deleteIcon.png" /></div>' + value.modul
 				+ '</div>';
 		return html;
 	}
 
-	function createAddModul(position) {
-		var html = '<div id="' + position + '" class="addBox ui-state-default">+</div>';
+	function createAddModul(position, number) {
+		var html = '<div id="' + position + '" data-number="' + number + '" class="addBox ui-state-default">+</div>';
 		return html;
 	}
-
-	function createArrow() {
-		var html = '<div class="arrowBox">';
-		html += '<img class="arrow" src="' + BASE_URL
-				+ 'css/images/arrow32x32.png" />';
-		html += '</div>';
-		return html;
-	}
+	
 	return false;
 }

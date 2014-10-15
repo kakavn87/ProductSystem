@@ -1422,6 +1422,7 @@ div.modul-name a {
 	float: left;
 }
 
+.modul-normal-container h3,
 .modulLeft h3, 
 .modulRight h3 {
 	margin: 0;
@@ -1429,3 +1430,5 @@ div.modul-name a {
 	text-transform: uppercase;
 	font-size: 16px;
 }
+
+.modul-normal-container .info {padding: 10px; font-size: 12px;}

@@ -21,7 +21,7 @@ class Service extends Ext_Controller {
 	function show($type = null, $id = null, $orderId = null) {
 		$data['orderId'] = $orderId;
 		$data['type'] = $type;
-		
+
 		$this->load->model('product');
 		$product = new Product();
 		$data['products'] = $product->getProducts();
@@ -37,7 +37,7 @@ class Service extends Ext_Controller {
 		// load modul
 		$this->load->model('modul');
 		$data['modules'] = $this->modul->getAll();
-		
+
 		// load standard modul
 		$this->load->model('modul_pattern');
 		$data['modul_standards'] = $this->modul_pattern->getAll();
@@ -59,7 +59,7 @@ class Service extends Ext_Controller {
 			}
 			$listModules = array();
 			foreach($data['service'] as $service) {
-				$listModules[] = array('id' => $service->modulId, 'modul' => $service->modulName, 'type' => 'normal');
+				$listModules[] = array('id' => $service->modulId, 'modul' => $service->modulName, 'type' => 'normal', 'color' => $service->color);
 			}
 			$data['listModules'] = $listModules;
 
@@ -80,13 +80,19 @@ class Service extends Ext_Controller {
 	function show_modul_detail() {
 		if ($this->input->is_ajax_request ()) {
 			$modul_id = (int)$this->input->post('modul_id');
+			$modul_type = $this->input->post('modul_type');
 
 			$this->load->model('modul');
+			$this->load->model('modul_pattern');
 			$this->load->model('document');
 
-			$data['modul'] = $this->modul->getById($modul_id);
-			$data['documents'] = $this->document->getByModulId($modul_id);
-
+			if($modul_type == 'normal') {
+				$data['modul'] = $this->modul->getById($modul_id);
+				$data['documents'] = $this->document->getByModulId($modul_id);
+			} else {
+				$data['modul'] = $this->modul_pattern->getById($modul_id);
+				$data['documents'] = array();
+			}
 			$this->load->view('public/service/show_modul_detail', $data);
 		} else {
 			exit ( 'You can not access this page' );
@@ -177,7 +183,7 @@ class Service extends Ext_Controller {
 		}
 		$listModules = array();
 		foreach($data['service'] as $service) {
-			$listModules[] = array('id' => $service->modulId, 'modul' => $service->modulName, 'type' => 'normal');
+			$listModules[] = array('id' => $service->modulId, 'modul' => $service->modulName, 'type' => 'normal', 'color' => $service->color);
 		}
 		$this->response['listModules'] = $listModules;
 		$this->sendAjax();
