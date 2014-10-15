@@ -58,10 +58,16 @@ class Service extends Ext_Controller {
 				exit('Service id is no exists');
 			}
 			$listModules = array();
+			$listModuleCustomers = array();
 			foreach($data['service'] as $service) {
-				$listModules[] = array('id' => $service->modulId, 'modul' => $service->modulName, 'type' => 'normal', 'color' => $service->color);
+				if($service->serviceModulRole == Service_modul::ROLE_DEVELOPER) {
+					$listModules[] = array('id' => $service->modulId, 'modul' => $service->modulName, 'type' => 'normal', 'color' => $service->color);
+				} else {
+					$listModuleCustomers[] = array('id' => $service->modulId, 'modul' => $service->modulName, 'type' => 'normal', 'color' => $service->color);
+				}
 			}
 			$data['listModules'] = $listModules;
+			$data['listModuleCustomers'] = $listModuleCustomers;
 
 
 			$this->load->model('comment');
@@ -103,18 +109,19 @@ class Service extends Ext_Controller {
 		if ($this->input->is_ajax_request ()) {
 			$this->load->model('dl');
 
-			// TODO: save service
 			$service = $this->input->post();
 
 			$roleList = $service['role_id'];
 			unset($service['role_id']);
 
-
 			$modules = $service['modul'];
 			unset($service['modul']);
+			$modules_cus = $service['modul_customer'];
+			unset($service['modul_customer']);
+			
 			$service['type'] = $service['type'] == 'true' ? Dl::TYPE_STANDARD : Dl::TYPE_NORMAL;
 			$service['customer_view'] = $service['customer_view'] == 'true' ? Dl::CUSTOMER_ALLOW : Dl::CUSTOMER_DENY;
-
+			
 			if(empty($service['id'])) {
 	 			$serviceId = $this->dl->saveService($service);
 			} else {
@@ -136,7 +143,7 @@ class Service extends Ext_Controller {
 					}
 				}
 			}
-
+			
 			$data = array();
 			$idx = 0;
 			foreach($roleList as $role) {
@@ -149,21 +156,18 @@ class Service extends Ext_Controller {
 			$this->load->model('service_role');
 			$this->service_role->deleteData($serviceId);
 			$this->service_role->saveData($data);
-
- 			$data = array();
- 			$idx = 0;
- 			foreach($modules as $modul) {
- 				$data[] = array(
- 						'service_id' => $serviceId,
- 						'modul_id' => $modul,
- 						'position' => ++$idx
- 				);
- 			}
-
+			
+			$this->load->library('serviceComponent');
+			$serviceComponent = new ServiceComponent();
+			
+			$data_dev = $serviceComponent->getDataToCreateServiceModul($serviceId, $modules, 'developer');
+ 			$data_cus = $serviceComponent->getDataToCreateServiceModul($serviceId, $modules_cus, 'customer');
+ 			$data = array_merge($data_dev, $data_cus);
+ 			
  			$this->load->model('service_modul');
  			$this->service_modul->deleteData($serviceId);
  			$this->service_modul->saveData($data);
-
+ 			
  			$this->response['serviceId'] = $serviceId;
  			$this->sendAjax();
 		}
@@ -177,15 +181,23 @@ class Service extends Ext_Controller {
 
 		$this->load->model('service_modul');
 		$data['service'] = $this->service_modul->getServiceDetail($id);
+		
 
 		if(empty($data['service'])) {
 			exit('Service id is no exists');
 		}
+		
 		$listModules = array();
+		$listModuleCustomers = array();
 		foreach($data['service'] as $service) {
-			$listModules[] = array('id' => $service->modulId, 'modul' => $service->modulName, 'type' => 'normal', 'color' => $service->color);
+			if($service->serviceModulRole == Service_modul::ROLE_DEVELOPER) {
+				$listModules[] = array('id' => $service->modulId, 'modul' => $service->modulName, 'type' => 'normal', 'color' => $service->color);
+			} else {
+				$listModuleCustomers[] = array('id' => $service->modulId, 'modul' => $service->modulName, 'type' => 'normal', 'color' => $service->color);
+			}
 		}
 		$this->response['listModules'] = $listModules;
+		$this->response['listModuleCustomers'] = $listModuleCustomers;
 		$this->sendAjax();
 	}
 }

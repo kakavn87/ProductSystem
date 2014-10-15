@@ -77,7 +77,11 @@ function saveService(e) {
 	formData.name = $('#name').val();
 	formData.modul = [];
 	$.each(listModules, function(index, value) {
-		formData.modul.push(value.id);
+		formData.modul.push(value);
+	});
+	formData.modul_customer = [];
+	$.each(listModuleForCustomers, function(index, value) {
+		formData.modul_customer.push(value);
 	});
 	formData.order_id = $("#order_id").val();
 	formData.requirement_id = $('#requirments').val();
@@ -140,16 +144,66 @@ function doService(params) {
 	var modulListSecond = $('.second');
 
 	$('.addToService').live('click', addToService);
-
 	$('ul#navLeft li').live('click', loadService);
-
 	$('.containerBox').live('click', openModulDetail);
-
 	$('.addBox').live('click', openListModul);
-	
 	$('.service-standard').live('click', showStandard);
-	
 	$(".add-module").live('click', showAddModule);
+	$('#addDocument').live('click', addDocument);
+	$('.remove-document').live('click', removeDocument);
+	$('.save-modul').live('click', saveModul);
+	
+	function saveModul(e) {
+		e.preventDefault();
+		
+//		console.log($('form.create-modul').serializeArray());
+//		return false;
+		
+		if (e.handled !== true) {
+			$.ajax({
+				url : BASE_URL + 'moduls/saveAjax',
+				type : 'post',
+				data : $('form.create-modul').serialize(),
+				beforeSend : function(xhr) {
+
+				}
+			}).done(function(data) {
+				var obj = $.parseJSON(data);
+				if(!obj.status) {
+					var modulObj = $.parseJSON(obj.modul);
+					if($('#number').val() == 1) {
+						if($('#position').val() == 'right') {
+							listModules.push(modulObj);
+						} else {
+							listModules.splice(0, 0, modulObj);
+						}
+					} else {
+						if($('#position').val() == 'right') {
+							listModuleForCustomers.push(modulObj);
+						} else {
+							listModuleForCustomers.splice(0, 0, modulObj);
+						}
+					}
+					$.fancybox.close();
+					draw();
+				} else {
+					alert(obj.message);
+				}
+			});
+
+			// this next line *must* be within this if statement
+			e.handled = true;
+		}
+	}
+	
+	function addDocument() {
+		var html = $('.documents').html();
+		$('.list-document').append(html);
+	}
+
+	function removeDocument() {
+		$(this).parent().remove();
+	}
 
 	draw();
 
@@ -176,7 +230,6 @@ function doService(params) {
 						listModuleForCustomers.push($.parseJSON(json));
 					}
 				});
-				console.log(listModuleForCustomers);
 			}
 		},
 		stop : function() {
@@ -226,6 +279,7 @@ function doService(params) {
 		if (e.handled !== true) {
 			$('#position').val($(this).attr('id'));
 			$('#number').val($(this).data('number'));
+			
 			$.fancybox({
 				content : $('.list-modul').html(),
 			});
@@ -241,7 +295,10 @@ function doService(params) {
 			type : 'post',
 		}).done(function(data) {
 			var obj = $.parseJSON(data);
+			
 			listModules = obj.listModules;
+			listModuleForCustomers = obj.listModuleCustomers;
+			
 			draw();
 		});
 	}

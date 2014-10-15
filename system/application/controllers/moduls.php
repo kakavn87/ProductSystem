@@ -4,12 +4,12 @@ class Moduls extends Ext_Controller {
 		parent::__construct();
 		
 		$this->_role = array(
-				'role_developer' => array('action' => array('overview', 'edit', 'add')),
+				'role_developer' => array('action' => array('overview', 'edit', 'add', 'saveAjax')),
 				'role_hotline' => array('action' => array()),
-				'role_planer' => array('action' => array('overview', 'edit', 'add')),
+				'role_planer' => array('action' => array('overview', 'edit', 'add', 'saveAjax')),
 				'role_entwickler' => array('action' => array()),
 				'role_technical' => array('action' => array()),
-				'role_customer' => array('action' => array('overview', 'edit', 'add'))
+				'role_customer' => array('action' => array('overview', 'edit', 'add', 'saveAjax'))
 		);
 		
 		$this->checkRole();
@@ -62,6 +62,33 @@ class Moduls extends Ext_Controller {
 		$this->overview($id, $type);
 	}
 	
+	function saveAjax() {
+		if ($this->input->is_ajax_request ()) {
+			$data = $this->input->post('data');
+			$this->load->model('modul');
+			$this->load->model('document');
+			if(isset($data['normal'])) {
+				$result = $this->_saveModulNormal($data);
+				if(!$result['status']) {
+					$modul = $this->modul->getById($result['return_id']);		
+				}		
+			} else {
+				$result = $this->_saveModulStandard($data);
+				if(!$result['status']) {
+					$modul = $this->modul_pattern->getById($result['return_id']);
+				}
+			}
+			if(!$result['status']) {
+				$data = array('id' => $modul->id, 'modul' => $modul->name, 'type' => 'normal', 'color' => $modul->color);
+				$this->response['modul'] = json_encode($data);
+				$this->sendAjax();
+			} 
+			$this->sendAjax(1, $result['message']);
+		} else {
+			exit ( 'You can not access this page' );
+		}
+	}
+	
 	function _save() {
 		if($this->input->post()) {
 			$data = $this->input->post('data');
@@ -109,7 +136,7 @@ class Moduls extends Ext_Controller {
 				}
 			}
 			$this->db->trans_complete();
-			return array('status' => 0);
+			return array('status' => 0, 'return_id' => $modulId);
 		} 
 		return array('status' => 1, 'message' => 'You can not access this page');
 	}
@@ -164,11 +191,9 @@ class Moduls extends Ext_Controller {
 				$this->document->saveAll($documents);
 			}
 			$this->db->trans_complete();
-			return array('status' => 0);
+			return array('status' => 0, 'return_id' => $modulId);
 		}
 		return array('status' => 1, 'message' => 'You can not access this page');
-		
-		$this->db->trans_complete();
 	}
 	
 	function _getColor($type) {

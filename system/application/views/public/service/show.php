@@ -195,7 +195,7 @@ var typePattern = '<?php echo $type; ?>';
 			</div>
 			<?php endforeach; ?>
 		</div>
-	<input type="hidden" name="position" id="position" value="" />
+	<input type="hidden" name="position" id="position" class="position" value="" />
 	<input type="hidden" name="number" id="number" value="" />
 	</div>
 
@@ -203,7 +203,12 @@ var typePattern = '<?php echo $type; ?>';
 </div>
 <div class="modul-normal-list" style="display: none">
 	<div class="modul-normal-container">
+		<form class="create-modul">
 		<h3>Add Normal Module</h3>
+		<input type="hidden" name="data[Modul][id]" id="id" value="" />
+		<input type="hidden" name="data[old_type]" value="" />
+		<input type="hidden" name="data[normal]" value="normal" />
+		<button class="save-modul" type="button">Save Modul</button>
 		<div class="info">
 			<div class="info">
 			<label class="user" for="modulname">Modul Name:</label> <input
@@ -233,8 +238,36 @@ var typePattern = '<?php echo $type; ?>';
 			<?php endif; ?>
 			</div>
 			<div class="clear"></div>
+			
+			<div id="addDocument">+ Add Document</div>
+			<div class="list-document">
+			</div>
 		</div>
+		</form>
 	</div>
+	<div class="documents">
+	<div class="item">
+		<label class="user" for="link">Link:</label> <input type="text"
+			id="link" name="data[Document][link][]" value="">
+		<div class="clear"></div>
+
+		<label class="user" for="documentdescription">Description:</label>
+		<textarea rows="4" class="documentdescription" cols="50"
+			name="data[Document][description][]"></textarea>
+		<div class="clear"></div>
+
+		<label class="user" for="type">Type:</label> <select
+			name="data[Document][type][]" id="type">
+			<option value='PDF'>Pdf</option>
+			<option value='VIDEO'>Video</option>
+		</select>
+		<div class="clear"></div>
+
+		<img src="<?php echo base_url(); ?>css/images/deleteIcon.png"
+			class="remove-document" />
+		<div class="clear"></div>
+	</div>
+</div>
 </div>
 
 <script src="<?=base_url();?>js/service/show.js"></script>

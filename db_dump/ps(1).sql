@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 09, 2014 at 04:44 PM
+-- Generation Time: Oct 15, 2014 at 03:30 PM
 -- Server version: 5.6.15
 -- PHP Version: 5.5.16-1+deb.sury.org~precise+1
 
@@ -64,17 +64,14 @@ CREATE TABLE IF NOT EXISTS `document` (
   `description` text,
   `status` enum('ACTIVE','UNACTIVE') DEFAULT 'ACTIVE',
   `deleted` tinyint(4) DEFAULT '0'
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=20 ;
 
 --
 -- Dumping data for table `document`
 --
 
 INSERT INTO `document` (`id`, `modul_id`, `link`, `type`, `description`, `status`, `deleted`) VALUES
-(15, 4, 'Hello Module', 'PDF', '123123123234', 'ACTIVE', 0),
-(16, 4, 'Hello Module', 'PDF', '', 'ACTIVE', 0),
-(17, 4, 'Hello Module', 'PDF', '', 'ACTIVE', 0),
-(18, 5, 'asdf', 'PDF', 'sdfdfdf', 'ACTIVE', 0);
+(19, 2, 'wer', 'PDF', 'ewrdsafdsf', 'ACTIVE', 0);
 
 -- --------------------------------------------------------
 
@@ -83,22 +80,35 @@ INSERT INTO `document` (`id`, `modul_id`, `link`, `type`, `description`, `status
 --
 
 CREATE TABLE IF NOT EXISTS `modul` (
-`id` int(11) NOT NULL,
-  `name` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `description` text COLLATE utf8_unicode_ci,
-  `type` enum('Standard','Normal') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'Standard'
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=6 ;
+`id` int(11) unsigned NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `description` text,
+  `holder_id` int(11) DEFAULT NULL,
+  `type` enum('main','sub','support','child') DEFAULT 'main',
+  `color` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
 
 --
 -- Dumping data for table `modul`
 --
 
-INSERT INTO `modul` (`id`, `name`, `description`, `type`) VALUES
-(1, 'modul 1', '', 'Standard'),
-(2, 'modul 2', NULL, 'Normal'),
-(3, 'modul 3', NULL, 'Normal'),
-(4, 'AAAAA', 'sdafdsf', 'Normal'),
-(5, 'test 123123', 'test', 'Normal');
+INSERT INTO `modul` (`id`, `name`, `description`, `holder_id`, `type`, `color`) VALUES
+(1, 'BBB', 'BBB', 5, 'main', '#e3fc03'),
+(2, 'AAA', 'AAAA', 5, 'main', '#e3fc03'),
+(3, 'TEST', 'test', 5, 'main', '#e3fc03'),
+(4, 'DDD', 'DDD', 5, 'main', '#e3fc03'),
+(5, 'EEE', 'EEE', 5, 'support', '#0060b6'),
+(6, 'hehe', '', 5, 'main', '#e3fc03'),
+(7, 'ojoj', 'jojoj', 5, 'main', '#e3fc03'),
+(8, 'aaaa', '', 5, 'main', '#e3fc03'),
+(9, 'asdasd', '', 5, 'main', '#e3fc03'),
+(10, 'sdddd', 'ddd', 5, 'main', '#e3fc03'),
+(11, 'gaga', 'gaga', 5, 'main', '#e3fc03'),
+(12, 'bobo', '', 5, 'sub', '#0d3839'),
+(13, 'toto', '', 5, 'support', '#0060b6'),
+(14, '', '', 5, 'child', '#fafafa'),
+(15, 'yaya', 'yaya', 5, 'main', '#e3fc03'),
+(16, 'tata', '', 5, 'child', '#fafafa');
 
 -- --------------------------------------------------------
 
@@ -110,8 +120,23 @@ CREATE TABLE IF NOT EXISTS `modul_patterns` (
 `id` int(11) unsigned NOT NULL,
   `name` varchar(255) DEFAULT NULL,
   `description` text,
-  `holder_id` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+  `holder_id` int(11) DEFAULT NULL,
+  `type` enum('main','sub','support','child') DEFAULT 'main',
+  `color` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
+
+--
+-- Dumping data for table `modul_patterns`
+--
+
+INSERT INTO `modul_patterns` (`id`, `name`, `description`, `holder_id`, `type`, `color`) VALUES
+(1, 'TEST', 'test', 5, 'main', '#e3fc03'),
+(2, 'AAA', 'AAAA', 5, 'main', '#e3fc03'),
+(3, 'BBB', 'BBB', 5, 'main', '#e3fc03'),
+(4, 'CCC', 'CCC', 5, 'main', '#e3fc03'),
+(5, 'DDD', 'DDD', 5, 'main', '#e3fc03'),
+(6, 'EEE', 'EEE', 5, 'support', '#0060b6'),
+(7, 'TESTDDD', 'test', 5, 'main', '#e3fc03');
 
 -- --------------------------------------------------------
 
@@ -189,7 +214,7 @@ CREATE TABLE IF NOT EXISTS `role` (
   `name` varchar(255) DEFAULT NULL,
   `deleted` tinyint(4) DEFAULT '0',
   `status` enum('ACTIVE','UNACTIVE') NOT NULL DEFAULT 'ACTIVE'
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
 
 --
 -- Dumping data for table `role`
@@ -200,8 +225,9 @@ INSERT INTO `role` (`id`, `name`, `deleted`, `status`) VALUES
 (2, 'developer', 0, 'ACTIVE'),
 (3, 'technical', 0, 'ACTIVE'),
 (4, 'hotline', 0, 'ACTIVE'),
-(5, 'planer', 0, 'ACTIVE'),
-(6, 'entwickler', 0, 'ACTIVE');
+(5, 'partner', 0, 'ACTIVE'),
+(6, 'entwickler', 0, 'ACTIVE'),
+(7, 'customer', 0, 'ACTIVE');
 
 -- --------------------------------------------------------
 
@@ -214,7 +240,6 @@ CREATE TABLE IF NOT EXISTS `service` (
   `product_id` int(11) DEFAULT NULL,
   `requirement_id` int(11) DEFAULT NULL,
   `order_id` int(11) DEFAULT NULL,
-  `role_id` int(11) DEFAULT NULL,
   `name` varchar(255) DEFAULT NULL,
   `description` text,
   `created` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
@@ -223,16 +248,17 @@ CREATE TABLE IF NOT EXISTS `service` (
   `deleted` tinyint(4) DEFAULT '0',
   `type` enum('Standard','Normal') DEFAULT 'Normal',
   `customer_view` enum('Allow','Deny') DEFAULT 'Deny'
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `service`
 --
 
-INSERT INTO `service` (`id`, `product_id`, `requirement_id`, `order_id`, `role_id`, `name`, `description`, `created`, `modified`, `status`, `deleted`, `type`, `customer_view`) VALUES
-(1, 1, 1, 1, NULL, 'Hello', NULL, '2014-10-09 14:18:39', '2014-10-09 14:18:39', 'ACTIVE', 0, 'Normal', 'Deny'),
-(2, 1, 1, 1, NULL, 'Hello 2', NULL, '2014-10-09 14:45:06', '2014-10-09 14:45:06', 'ACTIVE', 0, 'Normal', 'Deny'),
-(3, 1, 1, 1, NULL, 'Hello 2', NULL, '2014-10-09 14:45:22', '2014-10-09 14:45:22', 'ACTIVE', 0, 'Standard', 'Deny');
+INSERT INTO `service` (`id`, `product_id`, `requirement_id`, `order_id`, `name`, `description`, `created`, `modified`, `status`, `deleted`, `type`, `customer_view`) VALUES
+(1, 1, 1, 1, 'AAA', NULL, '2014-10-15 14:15:26', '2014-10-15 14:15:26', 'ACTIVE', 0, 'Normal', 'Deny'),
+(2, 1, 1, 1, 'AAA', NULL, '2014-10-15 14:23:34', '2014-10-15 14:23:34', 'ACTIVE', 0, 'Standard', 'Deny'),
+(3, 1, 1, 1, 'ahasfgsdfdf', NULL, '2014-10-15 15:15:47', '2014-10-15 15:15:47', 'ACTIVE', 0, 'Standard', 'Deny'),
+(4, 1, 1, 1, 'hello', NULL, '2014-10-15 15:16:22', '2014-10-15 15:16:22', 'ACTIVE', 0, 'Normal', 'Allow');
 
 -- --------------------------------------------------------
 
@@ -244,21 +270,36 @@ CREATE TABLE IF NOT EXISTS `service_modul` (
 `id` int(11) unsigned NOT NULL,
   `modul_id` int(11) DEFAULT NULL,
   `service_id` int(11) DEFAULT NULL,
-  `position` int(11) DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
+  `position` int(11) DEFAULT NULL,
+  `role` enum('developer','customer') DEFAULT 'developer',
+  `status` enum('deny','allow') DEFAULT 'allow'
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=26 ;
 
 --
 -- Dumping data for table `service_modul`
 --
 
-INSERT INTO `service_modul` (`id`, `modul_id`, `service_id`, `position`) VALUES
-(4, 1, 1, 1),
-(5, 2, 1, 2),
-(6, 3, 1, 3),
-(7, 4, 2, 1),
-(8, 3, 2, 2),
-(9, 4, 3, 1),
-(10, 3, 3, 2);
+INSERT INTO `service_modul` (`id`, `modul_id`, `service_id`, `position`, `role`, `status`) VALUES
+(6, 4, 1, 1, 'developer', 'allow'),
+(7, 1, 1, 2, 'developer', 'allow'),
+(8, 2, 1, 3, 'developer', 'allow'),
+(9, 3, 1, 4, 'developer', 'allow'),
+(10, 4, 1, 1, 'customer', 'allow'),
+(11, 5, 1, 2, 'customer', 'allow'),
+(12, 4, 2, 1, 'developer', 'allow'),
+(13, 1, 2, 2, 'developer', 'allow'),
+(14, 2, 2, 3, 'developer', 'allow'),
+(15, 3, 2, 4, 'developer', 'allow'),
+(16, 4, 2, 1, 'customer', 'allow'),
+(17, 5, 2, 2, 'customer', 'allow'),
+(18, 11, 3, 1, 'developer', 'allow'),
+(19, 12, 3, 2, 'developer', 'allow'),
+(20, 13, 3, 3, 'developer', 'allow'),
+(21, 16, 3, 1, 'customer', 'allow'),
+(22, 11, 4, 1, 'developer', 'allow'),
+(23, 12, 4, 2, 'developer', 'allow'),
+(24, 13, 4, 3, 'developer', 'allow'),
+(25, 16, 4, 1, 'customer', 'allow');
 
 -- --------------------------------------------------------
 
@@ -270,7 +311,7 @@ CREATE TABLE IF NOT EXISTS `service_roles` (
 `id` int(11) unsigned NOT NULL,
   `role_id` int(11) DEFAULT NULL,
   `service_id` int(11) DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `service_roles`
@@ -279,7 +320,8 @@ CREATE TABLE IF NOT EXISTS `service_roles` (
 INSERT INTO `service_roles` (`id`, `role_id`, `service_id`) VALUES
 (2, 2, 1),
 (3, 2, 2),
-(4, 2, 3);
+(4, 2, 3),
+(5, 2, 4);
 
 -- --------------------------------------------------------
 
@@ -289,18 +331,16 @@ INSERT INTO `service_roles` (`id`, `role_id`, `service_id`) VALUES
 
 CREATE TABLE IF NOT EXISTS `stakeholders` (
 `id` int(11) unsigned NOT NULL,
-  `name` varchar(255) DEFAULT NULL,
-  `description` text
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+  `user_id` int(11) DEFAULT NULL,
+  `role` varchar(255) DEFAULT ''
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `stakeholders`
 --
 
-INSERT INTO `stakeholders` (`id`, `name`, `description`) VALUES
-(1, 'develop', 'Developer'),
-(2, 'partner', 'Partner'),
-(3, 'customer', 'Customer');
+INSERT INTO `stakeholders` (`id`, `user_id`, `role`) VALUES
+(5, 1, 'developer');
 
 -- --------------------------------------------------------
 
@@ -425,17 +465,17 @@ MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
 -- AUTO_INCREMENT for table `document`
 --
 ALTER TABLE `document`
-MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=19;
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=20;
 --
 -- AUTO_INCREMENT for table `modul`
 --
 ALTER TABLE `modul`
-MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT for table `modul_patterns`
 --
 ALTER TABLE `modul_patterns`
-MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT;
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `order`
 --
@@ -455,27 +495,27 @@ MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 -- AUTO_INCREMENT for table `role`
 --
 ALTER TABLE `role`
-MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT for table `service`
 --
 ALTER TABLE `service`
-MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT for table `service_modul`
 --
 ALTER TABLE `service_modul`
-MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=26;
 --
 -- AUTO_INCREMENT for table `service_roles`
 --
 ALTER TABLE `service_roles`
-MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `stakeholders`
 --
 ALTER TABLE `stakeholders`
-MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `user`
 --
