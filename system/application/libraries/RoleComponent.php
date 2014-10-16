@@ -92,4 +92,51 @@ class RoleComponent {
 		}
 		return $url;
 	}
+	
+	public function getSidebars() {
+		$CI =& get_instance();
+		$user = $CI->session->userdata ( 'user' );
+		
+		$sidebar = array();
+		switch ($user->roleName) {
+			case self::ROLE_DEVELOPER :
+				$sidebar = array(
+					array('id' => 'moduls', 'url' => 'moduls/overview', 'name' => 'Module'),
+					array('id' => 'orders', 'url' => 'orders/lists', 'name' => 'Order'),
+				);
+				break;
+			case self::ROLE_TECHNICAL :
+				$sidebar = array(
+						array('id' => 'moduls', 'url' => 'moduls/overview', 'name' => 'Module'),
+						array('id' => 'orders', 'url' => 'orders/lists', 'name' => 'Order'),
+				);
+				break;
+			case self::ROLE_HOTLINE :
+				$sidebar = array(
+					array('id' => 'moduls', 'url' => 'moduls/overview', 'name' => 'Module'),
+					array('id' => 'orders', 'url' => 'orders/lists', 'name' => 'Order'),
+				);
+				break;
+			case self::ROLE_PLANER :
+				$sidebar = array(
+					array('id' => 'moduls', 'url' => 'moduls/overview', 'name' => 'Module'),
+				);
+				break;
+			case self::ROLE_ENTWICKLER :
+				$sidebar = array(
+					array('id' => 'moduls', 'url' => 'moduls/overview', 'name' => 'Module'),
+					array('id' => 'orders', 'url' => 'orders/lists', 'name' => 'Order'),
+				);
+				break;
+			case self::ROLE_ADMINISTRATOR :
+			default :
+				$sidebar = array(
+					array('id' => 'moduls', 'url' => 'moduls/overview', 'name' => 'Module'),
+					array('id' => 'orders', 'url' => 'orders/lists', 'name' => 'Order'),
+				);
+				break;
+		}
+		
+		return $sidebar;
+	}
 }

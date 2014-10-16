@@ -1,10 +1,14 @@
+<?php 
+$CI =& get_instance();
+$CI->load->library('roleComponent');
+$roleComponent = new RoleComponent();
+$sidebars = $roleComponent->getSidebars();
+?>
 <ul id="navTop">
 <?php $navstate = $this->uri->segment(1); ?>
 <img src="<?=base_url();?>css/images/logo_small.jpg" alt="Revierkönig" />
-  <li <?php if ($navstate == 'moduls') { echo 'class="active"'; }?>><a href="<?=base_url();?>moduls/overview">Module</a></li>
-  <li <?php if ($navstate == 'orders') { echo 'class="active"'; }?>><a href="<?=base_url();?>orders/lists">Order</a></li>
-  <li <?php if ($navstate == 'branch') { echo 'class="active"'; }?>><a href="<?=base_url();?>branch/show">Requirement</a></li>
-  <li <?php if ($navstate == 'group') { echo 'class="active"'; }?>><a href="<?=base_url();?>group/show">Product</a></li>
-  <li <?php if ($navstate == 'search') { echo 'class="active"'; }?>><a href="<?=base_url();?>search/show">Organisation</a></li>
+	<?php foreach($sidebars as $sidebar): ?>
+  <li <?php if ($navstate == $sidebar['id']) { echo 'class="active"'; }?>><a href="<?=base_url() . $sidebar['url'];?>"><?php echo $sidebar['name']; ?></a></li>
+  <?php endforeach; ?>
   <div class="clear"></div>
 </ul>
