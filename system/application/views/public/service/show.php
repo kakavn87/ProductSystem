@@ -123,7 +123,7 @@ var typePattern = '<?php echo $type; ?>';
 			foreach($comments as $comment) : ?>
 			<div class="list">
 			<div class="avatar"><img src="<?php echo base_url(); ?>css/images/avatar.png" /></div>
-			<div class="comment-user"><?php echo $comment->comment; ?></div>
+			<div class="comment-user"><div class="name-user"><?php echo $comment->name; ?></div><div class="comment-content"><?php echo $comment->comment; ?></div></div>
 			</div><div class="clear"></div>
 		<?php
 			endforeach;

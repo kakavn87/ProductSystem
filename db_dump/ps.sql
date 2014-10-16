@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 15, 2014 at 03:30 PM
+-- Generation Time: Oct 16, 2014 at 03:45 PM
 -- Server version: 5.6.15
 -- PHP Version: 5.5.16-1+deb.sury.org~precise+1
 
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `comments` (
   `created` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `modified` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `deleted` tinyint(4) DEFAULT '0'
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
 
 --
 -- Dumping data for table `comments`
@@ -48,7 +48,12 @@ INSERT INTO `comments` (`id`, `comment`, `user_id`, `service_id`, `created`, `mo
 (8, 'lelelel', 1, 9, '2014-10-02 13:54:15', '2014-10-02 13:54:15', 0),
 (9, 'Phuoc khùng', 1, 25, '2014-10-02 14:22:21', '2014-10-02 14:22:21', 0),
 (10, 'fgzds', 1, 24, '2014-10-08 11:02:09', '2014-10-08 11:02:09', 0),
-(11, 'aaaaa', 1, 22, '2014-10-08 11:06:44', '2014-10-08 11:06:44', 0);
+(11, 'aaaaa', 1, 22, '2014-10-08 11:06:44', '2014-10-08 11:06:44', 0),
+(12, 'hehehe', 1, 4, '2014-10-16 15:26:01', '2014-10-16 15:26:01', 0),
+(13, 'asdfdsf', 1, 4, '2014-10-16 15:30:43', '2014-10-16 15:30:43', 0),
+(14, 'sfasdfd', 1, 4, '2014-10-16 15:32:26', '2014-10-16 15:32:26', 0),
+(15, 'yoo', 1, 4, '2014-10-16 15:32:51', '2014-10-16 15:32:51', 0),
+(16, 'ten', 4, 4, '2014-10-16 15:38:18', '2014-10-16 15:38:18', 0);
 
 -- --------------------------------------------------------
 
@@ -123,7 +128,7 @@ CREATE TABLE IF NOT EXISTS `modul_patterns` (
   `holder_id` int(11) DEFAULT NULL,
   `type` enum('main','sub','support','child') DEFAULT 'main',
   `color` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
 
 --
 -- Dumping data for table `modul_patterns`
@@ -135,8 +140,9 @@ INSERT INTO `modul_patterns` (`id`, `name`, `description`, `holder_id`, `type`, 
 (3, 'BBB', 'BBB', 5, 'main', '#e3fc03'),
 (4, 'CCC', 'CCC', 5, 'main', '#e3fc03'),
 (5, 'DDD', 'DDD', 5, 'main', '#e3fc03'),
-(6, 'EEE', 'EEE', 5, 'support', '#0060b6'),
-(7, 'TESTDDD', 'test', 5, 'main', '#e3fc03');
+(6, 'EEE', 'EEEbbb', 5, 'support', '#0060b6'),
+(7, 'TESTDDD', 'test', 5, 'main', '#e3fc03'),
+(8, 'heheheCCC', 'CCC', 6, 'main', '#d70318');
 
 -- --------------------------------------------------------
 
@@ -272,34 +278,36 @@ CREATE TABLE IF NOT EXISTS `service_modul` (
   `service_id` int(11) DEFAULT NULL,
   `position` int(11) DEFAULT NULL,
   `role` enum('developer','customer') DEFAULT 'developer',
-  `status` enum('deny','allow') DEFAULT 'allow'
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=26 ;
+  `status` enum('deny','allow') DEFAULT 'allow',
+  `user_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=31 ;
 
 --
 -- Dumping data for table `service_modul`
 --
 
-INSERT INTO `service_modul` (`id`, `modul_id`, `service_id`, `position`, `role`, `status`) VALUES
-(6, 4, 1, 1, 'developer', 'allow'),
-(7, 1, 1, 2, 'developer', 'allow'),
-(8, 2, 1, 3, 'developer', 'allow'),
-(9, 3, 1, 4, 'developer', 'allow'),
-(10, 4, 1, 1, 'customer', 'allow'),
-(11, 5, 1, 2, 'customer', 'allow'),
-(12, 4, 2, 1, 'developer', 'allow'),
-(13, 1, 2, 2, 'developer', 'allow'),
-(14, 2, 2, 3, 'developer', 'allow'),
-(15, 3, 2, 4, 'developer', 'allow'),
-(16, 4, 2, 1, 'customer', 'allow'),
-(17, 5, 2, 2, 'customer', 'allow'),
-(18, 11, 3, 1, 'developer', 'allow'),
-(19, 12, 3, 2, 'developer', 'allow'),
-(20, 13, 3, 3, 'developer', 'allow'),
-(21, 16, 3, 1, 'customer', 'allow'),
-(22, 11, 4, 1, 'developer', 'allow'),
-(23, 12, 4, 2, 'developer', 'allow'),
-(24, 13, 4, 3, 'developer', 'allow'),
-(25, 16, 4, 1, 'customer', 'allow');
+INSERT INTO `service_modul` (`id`, `modul_id`, `service_id`, `position`, `role`, `status`, `user_id`) VALUES
+(6, 4, 1, 1, 'developer', 'allow', 1),
+(7, 1, 1, 2, 'developer', 'allow', 1),
+(8, 2, 1, 3, 'developer', 'allow', 1),
+(9, 3, 1, 4, 'developer', 'allow', 1),
+(10, 4, 1, 1, 'customer', 'allow', 1),
+(11, 5, 1, 2, 'customer', 'allow', 1),
+(12, 4, 2, 1, 'developer', 'allow', 1),
+(13, 1, 2, 2, 'developer', 'allow', 1),
+(14, 2, 2, 3, 'developer', 'allow', 1),
+(15, 3, 2, 4, 'developer', 'allow', 1),
+(16, 4, 2, 1, 'customer', 'allow', 1),
+(17, 5, 2, 2, 'customer', 'allow', 1),
+(18, 11, 3, 1, 'developer', 'allow', 1),
+(19, 12, 3, 2, 'developer', 'allow', 1),
+(20, 13, 3, 3, 'developer', 'allow', 1),
+(21, 16, 3, 1, 'customer', 'allow', 1),
+(26, 11, 4, 1, 'developer', 'allow', 4),
+(27, 12, 4, 2, 'developer', 'allow', 4),
+(28, 13, 4, 3, 'developer', 'allow', 4),
+(29, 1, 4, 4, 'developer', 'allow', 4),
+(30, 16, 4, 1, 'customer', 'allow', 4);
 
 -- --------------------------------------------------------
 
@@ -311,7 +319,7 @@ CREATE TABLE IF NOT EXISTS `service_roles` (
 `id` int(11) unsigned NOT NULL,
   `role_id` int(11) DEFAULT NULL,
   `service_id` int(11) DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
 
 --
 -- Dumping data for table `service_roles`
@@ -321,7 +329,7 @@ INSERT INTO `service_roles` (`id`, `role_id`, `service_id`) VALUES
 (2, 2, 1),
 (3, 2, 2),
 (4, 2, 3),
-(5, 2, 4);
+(8, 2, 4);
 
 -- --------------------------------------------------------
 
@@ -333,14 +341,15 @@ CREATE TABLE IF NOT EXISTS `stakeholders` (
 `id` int(11) unsigned NOT NULL,
   `user_id` int(11) DEFAULT NULL,
   `role` varchar(255) DEFAULT ''
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
 
 --
 -- Dumping data for table `stakeholders`
 --
 
 INSERT INTO `stakeholders` (`id`, `user_id`, `role`) VALUES
-(5, 1, 'developer');
+(5, 1, 'developer'),
+(6, 2, 'partner');
 
 -- --------------------------------------------------------
 
@@ -365,7 +374,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 
 INSERT INTO `user` (`id`, `name`, `mail`, `password`, `role_id`, `organisation_id`, `deleted`, `status`) VALUES
 (1, 'Danny Wagner', 'wagner@expositio.de', '7c4a8d09ca3762af61e59520943dc26494f8941b', 2, NULL, 0, 'ACTIVE'),
-(2, 'Thorsten Klein', 'klein@expositio.de', '7c4a8d09ca3762af61e59520943dc26494f8941b', 2, NULL, 0, 'ACTIVE'),
+(2, 'Thorsten Klein', 'klein@expositio.de', '7c4a8d09ca3762af61e59520943dc26494f8941b', 5, NULL, 0, 'ACTIVE'),
 (5, 'Sandra Caspers', 'sandra.caspers@revierkoenig.de', '7c4a8d09ca3762af61e59520943dc26494f8941b', 2, NULL, 0, 'ACTIVE'),
 (4, 'Sandra Rappl', 'sandra.rappl@revierkoenig.de', '7c4a8d09ca3762af61e59520943dc26494f8941b', 2, NULL, 0, 'ACTIVE'),
 (6, 'Carla Gatter', 'carla.gatter@revierkoenig.de', '7c4a8d09ca3762af61e59520943dc26494f8941b', 2, NULL, 0, 'ACTIVE');
@@ -460,7 +469,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT for table `document`
 --
@@ -475,7 +484,7 @@ MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
 -- AUTO_INCREMENT for table `modul_patterns`
 --
 ALTER TABLE `modul_patterns`
-MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `order`
 --
@@ -505,17 +514,17 @@ MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 -- AUTO_INCREMENT for table `service_modul`
 --
 ALTER TABLE `service_modul`
-MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=26;
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=31;
 --
 -- AUTO_INCREMENT for table `service_roles`
 --
 ALTER TABLE `service_roles`
-MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT for table `stakeholders`
 --
 ALTER TABLE `stakeholders`
-MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT for table `user`
 --

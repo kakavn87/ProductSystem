@@ -49,7 +49,8 @@ function login(form) {
 					content : obj.viewHtmlPopup
 				});
 			} else {
-				location.href = obj.url;
+//				alert(BASE_URL + obj.url);
+				location.href = BASE_URL + obj.url;
 			}
 		} else {
 			showDialog('Error', obj.message);

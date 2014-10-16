@@ -18,6 +18,8 @@ class Moduls extends Ext_Controller {
 	function overview($id = null, $type='normal') {
 		$id = (int) $id;
 		
+		$this->load->library('roleComponent');
+		
 		$this->_save();
 		
 		$this->load->model('modul');
@@ -26,6 +28,9 @@ class Moduls extends Ext_Controller {
 		$data = array();
 		$data['title'] = 'Add New Module';
 		$data['documents'] = array();
+		
+		$user = $this->session->userdata ( 'user' );
+		$data['user'] = $user;
 		
 		if($id) {
 			// get modul by id
@@ -41,12 +46,13 @@ class Moduls extends Ext_Controller {
 			$data['documents'] = $this->document->getByModulId($id);
 		}
 		// load modul lists
-		$modul['modules'] = $this->modul->getAll();
-		$modul['modul_standards'] = $this->modul_pattern->getAll();
+		$modul['modules'] = $this->modul->getByUserId($user->id);
+		$modul['modul_standards'] = $this->modul_pattern->getByUserId($user->id);
+		$modul['show_normal'] = true;
+		if($user->roleName == RoleComponent::ROLE_PLANER) {
+			$modul['show_normal'] = false;
+		}
 		$data['contentModule'] = $this->load->view('public/modul/list_modul', $modul , TRUE);
-		
-		$user = $this->session->userdata ( 'user' );
-		$data['user'] = $user;
 		
 		$content = $this->load->view('public/modul/edit', $data, TRUE);
 		

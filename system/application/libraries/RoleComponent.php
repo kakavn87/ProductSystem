@@ -4,7 +4,7 @@ class RoleComponent {
 	const ROLE_DEVELOPER = 'developer';
 	const ROLE_TECHNICAL = 'technical';
 	const ROLE_HOTLINE = 'hotline';
-	const ROLE_PLANER = 'planer';
+	const ROLE_PLANER = 'partner';
 	const ROLE_ENTWICKLER = 'entwickler';
 	const ROLE_CUSTOMER = 'customer';
 	
@@ -67,28 +67,28 @@ class RoleComponent {
 		$url = '';
 		switch ($roleUser) {
 			case self::ROLE_DEVELOPER :
-				$url = '/service/show/';
+				$url = 'service/show/';
 				break;
 			case self::ROLE_TECHNICAL :
-				$url = '/service/show/';
+				$url = 'service/show/';
 				break;
 			case self::ROLE_HOTLINE :
-				$url = '/service/show/';
+				$url = 'service/show/';
 				break;
 			case self::ROLE_PLANER :
-				$url = '/service/show/';
+				$url = 'moduls/overview/';
 				break;
 			case self::ROLE_ENTWICKLER :
-				$url = '/service/show/';
+				$url = 'service/show/';
 				break;
 			case self::ROLE_ADMINISTRATOR :
 			default :
-				$url = '/service/show/';
+				$url = 'service/show/';
 				break;
 		}
 	
 		if(!$return) {
-			redirect($url, 'refresh');
+			redirect('/' . $url, 'refresh');
 		}
 		return $url;
 	}

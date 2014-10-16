@@ -25,4 +25,15 @@ class Modul extends CI_Model {
 		$query = $this->db->get ();
 		return $query->row ();
 	}
+	
+	function getByUserId($user_id) {
+		$this->db->select ( 'm.*' );
+		$this->db->from ( 'modul as m' );
+		$this->db->join('stakeholders as s', 's.id = m.holder_id');
+		$this->db->where('s.user_id', $user_id);
+		$query = $this->db->get ();
+		return $query->result ();
+	}
+	
+	
 }

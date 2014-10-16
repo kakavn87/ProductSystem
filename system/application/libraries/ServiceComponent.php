@@ -18,12 +18,15 @@ class ServiceComponent {
 				unset($modulStandard['id']);
 				$modul_id = $CI->modul->saveModul($modulStandard);
 			}
+			
+			$user = $CI->session->userdata ( 'user' );
 		
 			$data[] = array(
 					'service_id' => $serviceId,
 					'modul_id' => $modul_id,
 					'position' => ++$idx, 
-					'role' => $role
+					'role' => $role,
+					'user_id' => $user->id
 			);
 		}
 		

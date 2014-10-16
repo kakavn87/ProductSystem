@@ -21,3 +21,13 @@
 	float: left;
 	width: 580px;
 }
+
+.name-user {
+	font-size: 11px;
+	color: blue;
+	display: block;
+}
+
+.comment-content {
+	
+}

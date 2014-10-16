@@ -23,7 +23,7 @@
 					<div class="clear"></div>
 					
 					<div class="info">
-					<?php if($user->roleName = 'developer') : ?>
+					<?php if($user->roleName == 'developer') : ?>
 						<label class="user" for="moduletype" >Type:</label>
 						<select class="chosen-select" id="selectType" name="data[Modul][type]">
 							<option value="main">Main</option>
@@ -35,10 +35,12 @@
 					</div>
 					<div class="clear"></div>
 
+					<?php if($user->roleName != 'partner') : ?>
 					<div class="save-as-normal">
 						<input class="saveas-normal"
 							type="checkbox" name="data[normal]" id="normal" /> Save as Modul Normal
 					</div>
+					<?php endif; ?>
 					
 					<div class="resources">
 						<div id="addDocument">+ Add Document</div>

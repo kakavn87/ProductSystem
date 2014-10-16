@@ -8,10 +8,11 @@ class Comment extends CI_Model {
 	}
 	
 	public function getCommentByService($serviceId) {
-		$this->db->select ( '*' );
+		$this->db->select ( 'comments.*, user.name' );
 		$this->db->from ( 'comments' );
-		$this->db->where('service_id', $serviceId);
-		$this->db->order_by('created DESC');
+		$this->db->join('user',  'user.id = comments.user_id');
+		$this->db->where('comments.service_id', $serviceId);
+		$this->db->order_by('comments.created DESC');
 		$query = $this->db->get ();
 		$result = $query->result ();
 		return $result;
