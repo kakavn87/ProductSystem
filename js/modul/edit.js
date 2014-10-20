@@ -5,6 +5,18 @@ $(function() {
 		$('.resources').show();
 	}
 	
+	$('.type').live('change', function() {
+		console.log($(this).parent().parent().find('.fileInfo').html());
+		if($(this).val() == 'PDF') {
+			$(this).parent().parent().find('.fileInfo').show();
+			$(this).parent().parent().find('.linkInfo').hide();
+		} else {
+			$(this).parent().parent().find('.fileInfo').hide();
+			$(this).parent().parent().find('.linkInfo').show();
+		}
+	});
+	
+	
 	$('#addDocument').live('click', addDocument);
 	
 	$('.remove-document').live('click', removeDocument);

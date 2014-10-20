@@ -66,6 +66,7 @@ class RoleComponent {
 	public function redirect($roleUser, $return = false) {
 		$url = '';
 		switch ($roleUser) {
+			case self::ROLE_CUSTOMER:
 			case self::ROLE_DEVELOPER :
 				$url = 'service/show/';
 				break;
@@ -99,6 +100,7 @@ class RoleComponent {
 		
 		$sidebar = array();
 		switch ($user->roleName) {
+			case self::ROLE_CUSTOMER:
 			case self::ROLE_DEVELOPER :
 				$sidebar = array(
 					array('id' => 'moduls', 'url' => 'moduls/overview', 'name' => 'Module'),

@@ -7,18 +7,20 @@ class Service extends Ext_Controller {
 		parent::__construct();
 
 		$this->_role = array(
-				'role_developer' => array('action' => array('show', 'save', 'load_service', 'show_modul_detail', 'get_standard')),
+				'role_developer' => array('action' => array('allowServiceModul', 'show', 'save', 'load_service', 'show_modul_detail', 'get_standard')),
 				'role_hotline' => array('action' => array()),
 				'role_planer' => array('action' => array()),
 				'role_entwickler' => array('action' => array()),
 				'role_technical' => array('action' => array()),
-				'role_customer' => array('action' => array())
+				'role_customer' => array('action' => array('show', 'save', 'load_service', 'show_modul_detail', 'get_standard'))
 		);
 
 		$this->checkRole();
 	}
 
 	function show($type = null, $id = null, $orderId = null) {
+		$this->load->library('roleComponent');
+		
 		$data['orderId'] = $orderId;
 		$data['type'] = $type;
 
@@ -44,26 +46,36 @@ class Service extends Ext_Controller {
 
 		// load service non-standard
 		$this->load->model('dl');
-		$service['services'] = $this->dl->getServices(Dl::TYPE_NORMAL, $orderId);
+		$user = $this->session->userdata ( 'user' );
+		$data['user'] = $user;
+		
+		$service['services'] = $this->dl->getServices(Dl::TYPE_NORMAL, $orderId, ($user->roleName == RoleComponent::ROLE_CUSTOMER));
 		$service['orderId'] = $orderId;
 		$data['contentModule'] = $this->load->view('public/service/list_service', $service , TRUE);
 
 		$data['service_standards'] = $this->dl->getServices(Dl::TYPE_STANDARD);
+		
+		// load model report document
+		$this->load->model('report_document');
+		$data['report_documents'] = $this->report_document->getAll();
 
 		if($id) {
 			$this->load->model('service_modul');
 			$data['service'] = $this->service_modul->getServiceDetail($id);
-
 			if(empty($data['service'])) {
 				exit('Service id is no exists');
+			}
+			
+			if($data['service'][0]->customer_view == Dl::CUSTOMER_DENY) {
+				die('You can not open this service');
 			}
 			$listModules = array();
 			$listModuleCustomers = array();
 			foreach($data['service'] as $service) {
 				if($service->serviceModulRole == Service_modul::ROLE_DEVELOPER) {
-					$listModules[] = array('id' => $service->modulId, 'modul' => $service->modulName, 'type' => 'normal', 'color' => $service->color);
+					$listModules[] = array('id' => $service->modulId, 'modul' => $service->modulName, 'type' => 'normal', 'color' => $service->color, 'status' => $service->smStatus, 'smId' => $service->smId);
 				} else {
-					$listModuleCustomers[] = array('id' => $service->modulId, 'modul' => $service->modulName, 'type' => 'normal', 'color' => $service->color);
+					$listModuleCustomers[] = array('id' => $service->modulId, 'modul' => $service->modulName, 'type' => 'normal', 'color' => $service->color, 'status' => 'allow', 'smId' => 0);
 				}
 			}
 			$data['listModules'] = $listModules;
@@ -100,6 +112,18 @@ class Service extends Ext_Controller {
 				$data['documents'] = array();
 			}
 			$this->load->view('public/service/show_modul_detail', $data);
+		} else {
+			exit ( 'You can not access this page' );
+		}
+	}
+	
+	function allowServiceModul() {
+		if ($this->input->is_ajax_request ()) {
+			$data = $this->input->post();
+			
+			$this->load->model('service_modul');
+			$this->service_modul->allowServiceModul($data['smId']);
+			$this->sendAjax();
 		} else {
 			exit ( 'You can not access this page' );
 		}
@@ -191,9 +215,9 @@ class Service extends Ext_Controller {
 		$listModuleCustomers = array();
 		foreach($data['service'] as $service) {
 			if($service->serviceModulRole == Service_modul::ROLE_DEVELOPER) {
-				$listModules[] = array('id' => $service->modulId, 'modul' => $service->modulName, 'type' => 'normal', 'color' => $service->color);
+				$listModules[] = array('id' => $service->modulId, 'modul' => $service->modulName, 'type' => 'normal', 'color' => $service->color, 'status' => $service->smStatus, 'smId' => $service->smId);
 			} else {
-				$listModuleCustomers[] = array('id' => $service->modulId, 'modul' => $service->modulName, 'type' => 'normal', 'color' => $service->color);
+				$listModuleCustomers[] = array('id' => $service->modulId, 'modul' => $service->modulName, 'type' => 'normal', 'color' => $service->color, 'status' => 'allow', 'smId' => 0);
 			}
 		}
 		$this->response['listModules'] = $listModules;

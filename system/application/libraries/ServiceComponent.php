@@ -26,6 +26,7 @@ class ServiceComponent {
 					'modul_id' => $modul_id,
 					'position' => ++$idx, 
 					'role' => $role,
+					'status' => $modul['status'],
 					'user_id' => $user->id
 			);
 		}

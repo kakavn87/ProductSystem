@@ -26,7 +26,7 @@ class Login extends Ext_Controller {
        $url = $roleComponent->redirect($result->roleName, true);
        
        $show_popup = false;
-       $allow_role = array(RoleComponent::ROLE_DEVELOPER);
+       $allow_role = array(RoleComponent::ROLE_DEVELOPER, RoleComponent::ROLE_CUSTOMER);
        if(in_array($result->roleName, $allow_role)) {
        		$show_popup = true;
        }

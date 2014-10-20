@@ -7,7 +7,8 @@ class Orders extends  Ext_Controller {
 				'role_hotline' => array('action' => array()),
 				'role_planer' => array('action' => array()),
 				'role_entwickler' => array('action' => array()),
-				'role_technical' => array('action' => array())
+				'role_technical' => array('action' => array()),
+				'role_customer' => array('action' => array('check_valid', 'lists'))
 		);
 
 		$this->checkRole();

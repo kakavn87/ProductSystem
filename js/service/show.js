@@ -1,6 +1,10 @@
 $(function() {
+	if(roleName == 'customer') {
+		$('#customer_view').parent().hide();
+		$('#standard').parent().hide();
+	}
 	
-	$("#products, #roles, #orders, #requirments").chosen();
+	$("#products, #roles, #orders, #requirments, #report_id").chosen();
 
 	$('#searchmodul').search('.modul-name', function(on) {
 
@@ -156,9 +160,6 @@ function doService(params) {
 	function saveModul(e) {
 		e.preventDefault();
 		
-//		console.log($('form.create-modul').serializeArray());
-//		return false;
-		
 		if (e.handled !== true) {
 			$.ajax({
 				url : BASE_URL + 'moduls/saveAjax',
@@ -256,12 +257,21 @@ function doService(params) {
 					}
 					// re-draw
 					draw();
-
-//					var $input = createInput($(this).data('modulid'), $(this)
-//							.data('modulname'));
-//
-//					$(this).parent().append($input);
 				});
+	}
+	
+	if(roleName == 'developer') {
+		$('.status-box img').live('click', function(e){
+			var id = $(this).parent().parent().attr('id');
+			var parent = $(this).parent();
+			$.ajax({
+				url : BASE_URL + 'service/allowServiceModul',
+				type : 'post',
+				data: JSON.parse(id)
+			}).done(function(data) {
+				parent.remove();
+			});
+		});
 	}
 	
 	function showAddModule(e) {
@@ -307,17 +317,23 @@ function doService(params) {
 		e.preventDefault();
 		if (e.handled !== true) {
 			$('.modul:checked').each(function(index, value) {
+				var data = $(this).data('modulname');
+				data.status = 'allow';
 				if($('#number').val() == 1) {
+					if(roleName == 'customer') {
+						data.status = 'deny';
+					}
+					
 					if($('#position').val() == 'right') {
-						listModules.push($(this).data('modulname'));
+						listModules.push(data);
 					} else {
-						listModules.splice(0, 0, $(this).data('modulname'));
+						listModules.splice(0, 0, data);
 					}
 				} else {
 					if($('#position').val() == 'right') {
-						listModuleForCustomers.push($(this).data('modulname'));
+						listModuleForCustomers.push(data);
 					} else {
-						listModuleForCustomers.splice(0, 0, $(this).data('modulname'));
+						listModuleForCustomers.splice(0, 0, data);
 					}
 				}
 //				$('.modul' + $(this).data('modulname').id).remove();
@@ -379,12 +395,16 @@ function doService(params) {
 	}
 
 	function createBox(value) {
+		var status = '';
+		if(value.status == 'deny') {
+			status = '<div class="status-box"><img src="' + BASE_URL + 'css/images/danger.png" /></div>';
+		}
 		var color = 'style="background-color: ' + value.color + ' !important; background-image: none !important; "';
 		var html = '<div ' + color + ' class="containerBox ui-state-default" id=\''
 				+ JSON.stringify(value) + '\' data-modulid="' + value.id
 				+ '" data-modultype="' +  value.type + '"><div class="closeBox"><img data-modultype="' +  value.type + '" data-modulname="' + value.modul
 				+ '" data-modulid="' + value.id + '" src="' + BASE_URL
-				+ 'css/images/deleteIcon.png" /></div>' + value.modul
+				+ 'css/images/deleteIcon.png" /></div>' + status + value.modul
 				+ '</div>';
 		return html;
 	}

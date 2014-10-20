@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Oct 16, 2014 at 03:45 PM
+-- Generation Time: Oct 20, 2014 at 03:59 PM
 -- Server version: 5.6.15
 -- PHP Version: 5.5.16-1+deb.sury.org~precise+1
 
@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `comments` (
   `created` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `modified` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `deleted` tinyint(4) DEFAULT '0'
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=18 ;
 
 --
 -- Dumping data for table `comments`
@@ -53,7 +53,8 @@ INSERT INTO `comments` (`id`, `comment`, `user_id`, `service_id`, `created`, `mo
 (13, 'asdfdsf', 1, 4, '2014-10-16 15:30:43', '2014-10-16 15:30:43', 0),
 (14, 'sfasdfd', 1, 4, '2014-10-16 15:32:26', '2014-10-16 15:32:26', 0),
 (15, 'yoo', 1, 4, '2014-10-16 15:32:51', '2014-10-16 15:32:51', 0),
-(16, 'ten', 4, 4, '2014-10-16 15:38:18', '2014-10-16 15:38:18', 0);
+(16, 'ten', 4, 4, '2014-10-16 15:38:18', '2014-10-16 15:38:18', 0),
+(17, 'sadfdsfdsfdf', 6, 4, '2014-10-20 12:33:06', '2014-10-20 12:33:06', 0);
 
 -- --------------------------------------------------------
 
@@ -69,14 +70,18 @@ CREATE TABLE IF NOT EXISTS `document` (
   `description` text,
   `status` enum('ACTIVE','UNACTIVE') DEFAULT 'ACTIVE',
   `deleted` tinyint(4) DEFAULT '0'
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=20 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=26 ;
 
 --
 -- Dumping data for table `document`
 --
 
 INSERT INTO `document` (`id`, `modul_id`, `link`, `type`, `description`, `status`, `deleted`) VALUES
-(19, 2, 'wer', 'PDF', 'ewrdsafdsf', 'ACTIVE', 0);
+(19, 2, 'wer', 'PDF', 'ewrdsafdsf', 'ACTIVE', 0),
+(20, 17, 'uploads/pdf/174a23d07cc805350a48b52e4ece1c1c.jpg', 'PDF', '', 'ACTIVE', 0),
+(21, 17, 'dfdfdfd', 'VIDEO', '', 'ACTIVE', 0),
+(22, 17, 'uploads/pdf/2ff7e6f1ea09a9bc6d38f6c75a425f9d.png', 'PDF', '', 'ACTIVE', 0),
+(25, 18, 'uploads/pdf/174a23d07cc805350a48b52e4ece1c1c.jpg', 'PDF', '', 'ACTIVE', 0);
 
 -- --------------------------------------------------------
 
@@ -91,7 +96,7 @@ CREATE TABLE IF NOT EXISTS `modul` (
   `holder_id` int(11) DEFAULT NULL,
   `type` enum('main','sub','support','child') DEFAULT 'main',
   `color` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19 ;
 
 --
 -- Dumping data for table `modul`
@@ -113,7 +118,9 @@ INSERT INTO `modul` (`id`, `name`, `description`, `holder_id`, `type`, `color`) 
 (13, 'toto', '', 5, 'support', '#0060b6'),
 (14, '', '', 5, 'child', '#fafafa'),
 (15, 'yaya', 'yaya', 5, 'main', '#e3fc03'),
-(16, 'tata', '', 5, 'child', '#fafafa');
+(16, 'tata', '', 5, 'child', '#fafafa'),
+(17, '', '', 5, 'main', '#e3fc03'),
+(18, 'lululu', 'hahah', 5, 'main', '#e3fc03');
 
 -- --------------------------------------------------------
 
@@ -190,6 +197,41 @@ INSERT INTO `product` (`id`, `name`, `description`, `status`, `deleted`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `report_documents`
+--
+
+CREATE TABLE IF NOT EXISTS `report_documents` (
+`id` int(11) unsigned NOT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `description` text
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `report_documents`
+--
+
+INSERT INTO `report_documents` (`id`, `name`, `description`) VALUES
+(1, 'Records', NULL),
+(2, 'Certifications', NULL),
+(3, 'Feedback', NULL),
+(4, 'Reports', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `report_document_details`
+--
+
+CREATE TABLE IF NOT EXISTS `report_document_details` (
+`id` int(11) unsigned NOT NULL,
+  `report_id` int(11) DEFAULT NULL,
+  `service_id` int(11) DEFAULT NULL,
+  `url` varchar(255) DEFAULT ''
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `requirement`
 --
 
@@ -250,7 +292,7 @@ CREATE TABLE IF NOT EXISTS `service` (
   `description` text,
   `created` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
   `modified` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  `status` enum('ACTIVE','UNACTIVE') DEFAULT 'ACTIVE',
+  `status` enum('ACTIVE','UNACTIVE','DONE') DEFAULT 'ACTIVE',
   `deleted` tinyint(4) DEFAULT '0',
   `type` enum('Standard','Normal') DEFAULT 'Normal',
   `customer_view` enum('Allow','Deny') DEFAULT 'Deny'
@@ -264,7 +306,7 @@ INSERT INTO `service` (`id`, `product_id`, `requirement_id`, `order_id`, `name`,
 (1, 1, 1, 1, 'AAA', NULL, '2014-10-15 14:15:26', '2014-10-15 14:15:26', 'ACTIVE', 0, 'Normal', 'Deny'),
 (2, 1, 1, 1, 'AAA', NULL, '2014-10-15 14:23:34', '2014-10-15 14:23:34', 'ACTIVE', 0, 'Standard', 'Deny'),
 (3, 1, 1, 1, 'ahasfgsdfdf', NULL, '2014-10-15 15:15:47', '2014-10-15 15:15:47', 'ACTIVE', 0, 'Standard', 'Deny'),
-(4, 1, 1, 1, 'hello', NULL, '2014-10-15 15:16:22', '2014-10-15 15:16:22', 'ACTIVE', 0, 'Normal', 'Allow');
+(4, 1, 1, 1, 'ahello', NULL, '2014-10-15 15:16:22', '2014-10-15 15:16:22', 'ACTIVE', 0, 'Normal', 'Allow');
 
 -- --------------------------------------------------------
 
@@ -280,7 +322,7 @@ CREATE TABLE IF NOT EXISTS `service_modul` (
   `role` enum('developer','customer') DEFAULT 'developer',
   `status` enum('deny','allow') DEFAULT 'allow',
   `user_id` int(11) DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=31 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=48 ;
 
 --
 -- Dumping data for table `service_modul`
@@ -303,11 +345,13 @@ INSERT INTO `service_modul` (`id`, `modul_id`, `service_id`, `position`, `role`,
 (19, 12, 3, 2, 'developer', 'allow', 1),
 (20, 13, 3, 3, 'developer', 'allow', 1),
 (21, 16, 3, 1, 'customer', 'allow', 1),
-(26, 11, 4, 1, 'developer', 'allow', 4),
-(27, 12, 4, 2, 'developer', 'allow', 4),
-(28, 13, 4, 3, 'developer', 'allow', 4),
-(29, 1, 4, 4, 'developer', 'allow', 4),
-(30, 16, 4, 1, 'customer', 'allow', 4);
+(41, 13, 4, 1, 'developer', 'allow', 6),
+(42, 1, 4, 2, 'developer', 'allow', 6),
+(43, 11, 4, 3, 'developer', 'allow', 6),
+(44, 12, 4, 4, 'developer', 'allow', 6),
+(45, 2, 4, 5, 'developer', 'allow', 6),
+(46, 16, 4, 1, 'customer', 'allow', 6),
+(47, 2, 4, 2, 'customer', 'allow', 6);
 
 -- --------------------------------------------------------
 
@@ -319,7 +363,7 @@ CREATE TABLE IF NOT EXISTS `service_roles` (
 `id` int(11) unsigned NOT NULL,
   `role_id` int(11) DEFAULT NULL,
   `service_id` int(11) DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
 
 --
 -- Dumping data for table `service_roles`
@@ -329,7 +373,7 @@ INSERT INTO `service_roles` (`id`, `role_id`, `service_id`) VALUES
 (2, 2, 1),
 (3, 2, 2),
 (4, 2, 3),
-(8, 2, 4);
+(11, 2, 4);
 
 -- --------------------------------------------------------
 
@@ -377,7 +421,7 @@ INSERT INTO `user` (`id`, `name`, `mail`, `password`, `role_id`, `organisation_i
 (2, 'Thorsten Klein', 'klein@expositio.de', '7c4a8d09ca3762af61e59520943dc26494f8941b', 5, NULL, 0, 'ACTIVE'),
 (5, 'Sandra Caspers', 'sandra.caspers@revierkoenig.de', '7c4a8d09ca3762af61e59520943dc26494f8941b', 2, NULL, 0, 'ACTIVE'),
 (4, 'Sandra Rappl', 'sandra.rappl@revierkoenig.de', '7c4a8d09ca3762af61e59520943dc26494f8941b', 2, NULL, 0, 'ACTIVE'),
-(6, 'Carla Gatter', 'carla.gatter@revierkoenig.de', '7c4a8d09ca3762af61e59520943dc26494f8941b', 2, NULL, 0, 'ACTIVE');
+(6, 'Carla Gatter', 'carla.gatter@revierkoenig.de', '7c4a8d09ca3762af61e59520943dc26494f8941b', 7, NULL, 0, 'ACTIVE');
 
 --
 -- Indexes for dumped tables
@@ -417,6 +461,18 @@ ALTER TABLE `order`
 -- Indexes for table `product`
 --
 ALTER TABLE `product`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `report_documents`
+--
+ALTER TABLE `report_documents`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `report_document_details`
+--
+ALTER TABLE `report_document_details`
  ADD PRIMARY KEY (`id`);
 
 --
@@ -469,17 +525,17 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=18;
 --
 -- AUTO_INCREMENT for table `document`
 --
 ALTER TABLE `document`
-MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=20;
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=26;
 --
 -- AUTO_INCREMENT for table `modul`
 --
 ALTER TABLE `modul`
-MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=19;
 --
 -- AUTO_INCREMENT for table `modul_patterns`
 --
@@ -495,6 +551,16 @@ MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 ALTER TABLE `product`
 MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT for table `report_documents`
+--
+ALTER TABLE `report_documents`
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT for table `report_document_details`
+--
+ALTER TABLE `report_document_details`
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `requirement`
 --
@@ -514,12 +580,12 @@ MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 -- AUTO_INCREMENT for table `service_modul`
 --
 ALTER TABLE `service_modul`
-MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=31;
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=48;
 --
 -- AUTO_INCREMENT for table `service_roles`
 --
 ALTER TABLE `service_roles`
-MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `stakeholders`
 --

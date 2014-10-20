@@ -3,7 +3,7 @@
 			<?php echo $title; ?>
 		</h1>
 	<div>
-		<form method="post" action="<?php echo current_url(); ?>">
+		<form method="post" action="<?php echo current_url(); ?>" enctype="multipart/form-data">
 			<div id="left">
 				<div class="bottomBox2" style="width: 100%; height: auto;">
 					<h1>Edit modul</h1>
@@ -47,16 +47,23 @@
 						<div class="list-document">
 						<?php foreach($documents as $document) : ?>
 							<div class="item">
-								<label class="user" for="link">Link:</label> <input type="text"
-									id="link" name="data[Document][link][]"
-									value="<?php echo $document->link; ?>">
-								<div class="clear"></div>
-	
-								<label class="user" for="documentdescription">Description:</label>
-								<textarea rows="4" class="documentdescription" cols="50"
-									name="data[Document][description][]"><?php echo $document->description; ?></textarea>
-								<div class="clear"></div>
-	
+								<div <?php echo $document->type == 'VIDEO'?'style="display: none"':''; ?> class="fileInfo">
+									<label class="user" for="link">File:</label> <input type="file" name="file[]">
+									<a target='_blank' href="<?php echo base_url() . $document->link; ?>">Download PDF</a>
+									<div class="clear"></div>
+								</div>
+								<div <?php echo $document->type == 'PDF'?'style="display: none"':''; ?> class="linkInfo">
+									<label class="user" for="link">Link:</label> <input type="text"
+										class="link" name="data[Document][link][]" value="<?php echo $document->link; ?>">
+									<div class="clear"></div>
+								</div>
+								<div>
+									<label class="user" for="documentdescription">Description:</label>
+									<textarea rows="4" class="documentdescription" cols="50"
+										name="data[Document][description][]"><?php echo $document->description; ?></textarea>
+									<div class="clear"></div>
+								</div>	
+								<div>
 								<label class="user" for="type">Type:</label> <select
 									name="data[Document][type][]" id="type">
 									<option
@@ -67,7 +74,7 @@
 										value='VIDEO'>Video</option>
 								</select>
 								<div class="clear"></div>
-	
+								</div>
 								<img src="<?php echo base_url(); ?>css/images/deleteIcon.png"
 									class="remove-document" />
 								<div class="clear"></div>
@@ -95,22 +102,29 @@
 
 <div class="documents">
 	<div class="item">
-		<label class="user" for="link">Link:</label> <input type="text"
-			id="link" name="data[Document][link][]" value="">
+		<div class="fileInfo">
+		<label class="user" for="link">File:</label> <input type="file" name="file[]">
 		<div class="clear"></div>
-
+		</div>
+		<div style="display: none" class="linkInfo">
+		<label class="user" for="link">Link:</label> <input type="text"
+			class="link" name="data[Document][link][]" value="">
+		<div class="clear"></div>
+		</div>
+		<div>
 		<label class="user" for="documentdescription">Description:</label>
 		<textarea rows="4" class="documentdescription" cols="50"
 			name="data[Document][description][]"></textarea>
 		<div class="clear"></div>
-
+		</div>
+		<div>
 		<label class="user" for="type">Type:</label> <select
-			name="data[Document][type][]" id="type">
+			name="data[Document][type][]" class="type">
 			<option value='PDF'>Pdf</option>
 			<option value='VIDEO'>Video</option>
 		</select>
 		<div class="clear"></div>
-
+		</div>
 		<img src="<?php echo base_url(); ?>css/images/deleteIcon.png"
 			class="remove-document" />
 		<div class="clear"></div>

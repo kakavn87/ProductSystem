@@ -23,12 +23,15 @@ class Dl extends CI_Model {
 				'status' => null
 		);
 	}
-	public function getServices($type = self::TYPE_NORMAL, $orderId = null) {
+	public function getServices($type = self::TYPE_NORMAL, $orderId = null, $isCustomer = false) {
 		$this->db->select ( '*' );
 		$this->db->from ( 'service' );
 		$this->db->where('type', $type);
 		if($orderId) {
 			$this->db->where('order_id', $orderId);
+		}
+		if($isCustomer) {
+			$this->db->where('customer_view', self::CUSTOMER_ALLOW);
 		}
 		$this->db->order_by('created DESC');
 		$query = $this->db->get ();

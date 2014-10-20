@@ -1314,6 +1314,13 @@ div.modul-name a {
 	line-height: 10px;
 }
 
+.status-box {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	line-height: 10px;
+}
+
 .arrowBox {
 	line-height: 60px;
 	float: left;

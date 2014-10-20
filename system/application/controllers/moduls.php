@@ -152,7 +152,6 @@ class Moduls extends Ext_Controller {
 		$this->load->model('stakeholder');
 		
 		$modulData = $data['Modul'];
-		
 		$user = $this->session->userdata ( 'user' );
 		$user_id = $user->id;
 		$role = $user->roleName;
@@ -181,10 +180,22 @@ class Moduls extends Ext_Controller {
 			
 			$documents = array();
 			if(isset($data['Document'])) {
+				
 				$idx = 0;
-				for($i=0, $n=count($data['Document']['link']); $i < $n ; $i ++) {
+				for($i=0, $n=count($data['Document']['description']); $i < $n ; $i ++) {
+					if($data['Document']['type'][$i] == 'PDF') {
+						if(isset($_FILES['file'])) {
+							$target_dir = "uploads/pdf/";
+							list($filename, $ext) = explode('.', $_FILES["file"]["name"][$i]);
+							$target_dir = $target_dir . md5($filename) . '.' . $ext;
+						
+							move_uploaded_file($_FILES["file"]["tmp_name"][$i], $target_dir);
+						}
+					} else {
+						$target_dir = $data['Document']['link'][$i];
+					}
 					$documents[] = array(
-							'link' => $data['Document']['link'][$i],
+							'link' => $target_dir,
 							'description' => $data['Document']['description'][$i],
 							'type' => $data['Document']['type'][$i],
 							'modul_id' => $modulId

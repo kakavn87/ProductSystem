@@ -2,6 +2,7 @@
 var listModules = <?php echo !isset($listModules) ? '[]' : json_encode($listModules); ?>;
 var listModuleForCustomers = <?php echo !isset($listModuleCustomers) ? '[]' : json_encode($listModuleCustomers); ?>;
 var typePattern = '<?php echo $type; ?>';
+var roleName = '<?php echo $user->roleName; ?>';
 </script>
 <link rel="stylesheet" type="text/css" href="<?=base_url();?>css/comment.css" media="screen, projection" />
 <div class="grey">
@@ -76,6 +77,26 @@ var typePattern = '<?php echo $type; ?>';
 			            endif;
 		            ?>
 		            	<option <?php echo $selected; ?> value="<?php echo $role->id; ?>"><?php echo $role->name; ?></option>
+		            <?php endforeach;?>
+		          </select>
+				</div>
+				<div>
+					<label>Report documents</label> <select id="report_id" name="report_id" multiple
+						data-placeholder="Choose a report document ..." style="width: 350px;"
+						class="chosen-select">
+						<option value=""></option>
+		            <?php foreach($report_documents as $report) :
+			            $selected = '';
+// 			            if(isset($service_role)) :
+// 			            	foreach($service_role as $serviceRole) :
+// 				            	if($serviceRole->role_id == $role->id) :
+// 				            		$selected="selected='selected'";
+// 			            			break;
+// 				            	endif;
+// 			            	endforeach;
+// 			            endif;
+		            ?>
+		            	<option <?php echo $selected; ?> value="<?php echo $report->id; ?>"><?php echo $report->name; ?></option>
 		            <?php endforeach;?>
 		          </select>
 				</div>
