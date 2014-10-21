@@ -1364,10 +1364,12 @@ div.modul-name a {
 	margin: 10px 0;
 }
 
+.report-content,
 .modul_details {
 	width: 500px;
 }
 
+.report-content h3,
 .modul_details h3 {
 	text-transform: uppercase;
 	font-size: 16px;
@@ -1401,8 +1403,9 @@ div.modul-name a {
 .bottomBox2 input {
 	vertical-align: top;
 }
-
-.bottomBox2 input, textarea {
+.report-content input,
+.report-content textarea,
+.bottomBox2 input, .bottomBox2 textarea {
 	margin: 0;
 	padding: 0;
 }
@@ -1438,4 +1441,22 @@ div.modul-name a {
 	font-size: 16px;
 }
 
+.report-content .info, 
 .modul-normal-container .info {padding: 10px; font-size: 12px;}
+
+.grey h1 span {
+	font-style: italic;
+}
+
+span.add-more-report {
+	font-style: italic;
+	font-size: 11px;
+	cursor: pointer; 
+}
+
+.report-item {
+	margin: 5px;
+}
+.report-item em {
+	font-size: 12px;
+}

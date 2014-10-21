@@ -7,7 +7,7 @@ class RoleComponent {
 	const ROLE_PLANER = 'partner';
 	const ROLE_ENTWICKLER = 'entwickler';
 	const ROLE_CUSTOMER = 'customer';
-	
+
 	/**
 	 * check role of user
 	 */
@@ -46,23 +46,23 @@ class RoleComponent {
 				break;
 			case self::ROLE_ADMINISTRATOR :
 			default :
-				
+
 				foreach ( $roleList as $r ) {
 					$roles ['action'] = array_merge ( $roles ['action'], $r ['action'] );
 				}
 				break;
 		}
-		
+
 		$CI =& get_instance();
 		// get action
 		$action = $CI->uri->segment (2);
-	
+
 		if (! in_array ( $action, $roles ['action'] )) {
 			return false;
 		}
 		return true;
 	}
-	
+
 	public function redirect($roleUser, $return = false) {
 		$url = '';
 		switch ($roleUser) {
@@ -71,7 +71,7 @@ class RoleComponent {
 				$url = 'service/show/';
 				break;
 			case self::ROLE_TECHNICAL :
-				$url = 'service/show/';
+				$url = 'orders/lists/';
 				break;
 			case self::ROLE_HOTLINE :
 				$url = 'service/show/';
@@ -87,17 +87,17 @@ class RoleComponent {
 				$url = 'service/show/';
 				break;
 		}
-	
+
 		if(!$return) {
 			redirect('/' . $url, 'refresh');
 		}
 		return $url;
 	}
-	
+
 	public function getSidebars() {
 		$CI =& get_instance();
 		$user = $CI->session->userdata ( 'user' );
-		
+
 		$sidebar = array();
 		switch ($user->roleName) {
 			case self::ROLE_CUSTOMER:
@@ -138,7 +138,7 @@ class RoleComponent {
 				);
 				break;
 		}
-		
+
 		return $sidebar;
 	}
 }

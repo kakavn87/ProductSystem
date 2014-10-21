@@ -87,18 +87,18 @@ var roleName = '<?php echo $user->roleName; ?>';
 						<option value=""></option>
 		            <?php foreach($report_documents as $report) :
 			            $selected = '';
-// 			            if(isset($service_role)) :
-// 			            	foreach($service_role as $serviceRole) :
-// 				            	if($serviceRole->role_id == $role->id) :
-// 				            		$selected="selected='selected'";
-// 			            			break;
-// 				            	endif;
-// 			            	endforeach;
-// 			            endif;
+			            if(isset($service_report)) :
+			            	foreach($service_report as $serviceReport) :
+				            	if($serviceReport->report_id == $report->id) :
+				            		$selected="selected='selected'";
+			            			break;
+				            	endif;
+			            	endforeach;
+			            endif;
 		            ?>
 		            	<option <?php echo $selected; ?> value="<?php echo $report->id; ?>"><?php echo $report->name; ?></option>
 		            <?php endforeach;?>
-		          </select>
+		          </select> <span class="add-more-report">+ Add more</span>
 				</div>
 				<div>
 					<label>Products</label> <select id="products" name="product_id"
@@ -259,7 +259,7 @@ var roleName = '<?php echo $user->roleName; ?>';
 			<?php endif; ?>
 			</div>
 			<div class="clear"></div>
-			
+
 			<div id="addDocument">+ Add Document</div>
 			<div class="list-document">
 			</div>
@@ -290,6 +290,21 @@ var roleName = '<?php echo $user->roleName; ?>';
 	</div>
 </div>
 </div>
-
+<div class="report-document" style="display: none">
+	<form class="report-form">
+	<div class="report-content">
+		<h3>Add Report Document: </h3>
+		<div class="info">
+			<label>Name:</label>
+			<input type="text" name="data[Report][name]" id="reportName" />
+		</div>
+		<div class="info">
+			<label>Description:</label>
+			<textarea rows="5" name="data[Report][description]" cols="58" id="reportDescription"></textarea>
+		</div>
+		<button class="add-report">Add Report</button>
+	</div>
+	</form>
+</div>
 <script src="<?=base_url();?>js/service/show.js"></script>
 <script src="<?=base_url();?>js/service/comment.js"></script>

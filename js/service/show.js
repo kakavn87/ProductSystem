@@ -91,6 +91,7 @@ function saveService(e) {
 	formData.requirement_id = $('#requirments').val();
 	formData.role_id = $('#roles').val();
 	formData.product_id = $('#products').val();
+	formData.report_id = $('#report_id').val();
 	formData.type = $('#standard').is(':checked');
 	formData.customer_view = $('#customer_view').is(':checked');
 
@@ -147,6 +148,7 @@ function doService(params) {
 	var modulList = $('.modulList');
 	var modulListSecond = $('.second');
 
+	
 	$('.addToService').live('click', addToService);
 	$('ul#navLeft li').live('click', loadService);
 	$('.containerBox').live('click', openModulDetail);
@@ -156,6 +158,41 @@ function doService(params) {
 	$('#addDocument').live('click', addDocument);
 	$('.remove-document').live('click', removeDocument);
 	$('.save-modul').live('click', saveModul);
+	$('.add-more-report').live('click', function() {
+		$.fancybox({
+			content : $('.report-document').html(),
+		});
+	});
+	$('.add-report').live('click', saveReport);
+	
+	function saveReport(e) {
+		e.preventDefault();
+		if (e.handled !== true) {
+			var form = $(this).parent().parent();
+			if(!$.trim(form.find('#reportName').val()).length) {
+				alert('Report name can not empty');
+				return false;
+			}
+			
+			$.ajax({
+				url : BASE_URL + 'reports/save_report',
+				type : 'post',
+				data : form.serialize(),
+			}).done(function(data) {
+				var obj = $.parseJSON(data);
+				if(!obj.status) {
+					$('#report_id').append('<option value="' + obj.report_id +'">' + $.trim(form.find('#reportName').val()) + '</option>');
+					$('#report_id').trigger('chosen:updated');
+					
+					$.fancybox.close();
+				}
+				
+				form.find('#reportName').val('');
+				form.find('#reportDescription').val('');
+			});
+			e.handled = true;
+		}
+	}
 	
 	function saveModul(e) {
 		e.preventDefault();
