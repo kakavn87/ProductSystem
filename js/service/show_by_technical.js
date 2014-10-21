@@ -1,72 +1,32 @@
+var formData = {};
+formData.files = [];
+formData.listIds = [];
 $(function() {
-	if(roleName == 'customer') {
-		$('#customer_view').parent().hide();
-		$('#standard').parent().hide();
-	}
-	
-	$("#products, #roles, #orders, #requirments, #report_id").chosen();
-
-	$('#searchmodul').search('.modul-name', function(on) {
-
-		on.all(function(results) {
-			var size = results ? results.size() : 0
-		});
-
-		on.reset(function() {
-			$('.modul-name').show();
-		});
-
-		on.empty(function() {
-			$('.modul-name').hide();
-		});
-
-		on.results(function(results) {
-			$('.modul-name').hide();
-			results.show();
-		});
-	});
-	
-	$('#search-modul-standard').search('.modul-standard-name', function(on) {
-
-		on.all(function(results) {
-			var size = results ? results.size() : 0
-		});
-
-		on.reset(function() {
-			$('.modul-standard-name').show();
-		});
-
-		on.empty(function() {
-			$('.modul-standard-name').hide();
-		});
-
-		on.results(function(results) {
-			$('.modul-standard-name').hide();
-			results.show();
-		});
-	});
-	
-	$('#search-modul-normal').search('.modul-normal-name', function(on) {
-
-		on.all(function(results) {
-			var size = results ? results.size() : 0
-		});
-
-		on.reset(function() {
-			$('.modul-normal-name').show();
-		});
-
-		on.empty(function() {
-			$('.modul-normal-name').hide();
-		});
-
-		on.results(function(results) {
-			$('.modul-normal-name').hide();
-			results.show();
-		});
-	});
+	$("#report_id").chosen();
 
 	$('#saveService').live('click', saveService);
+	
+	$.each($('input[type=file]'), function (index, file) {
+		formData.files[index] = '';
+		formData.listIds[index] = 0;
+	});
+	
+	$('.fileupload').fileupload({
+        url: BASE_URL + 'service/upload',
+        dataType: 'json',
+        done: function (e, data) {
+            $.each(data.result.files, function (index, file) {
+            	var idx = $(e.target).data('index');
+            	var id = $(e.target).data('id');
+
+            	var html = '<a href="' + file.url + '">' + file.name + '</a>';
+            	$(e.target).parent().parent().find('.files').html(html);
+            	formData.files[idx - 1] = file.url;
+            	formData.listIds[idx - 1] = id;
+            });
+        },
+    }).prop('disabled', !$.support.fileInput)
+        .parent().addClass($.support.fileInput ? undefined : 'disabled');
 	
 	doService({
 		allowEdit : true
@@ -75,53 +35,19 @@ $(function() {
 
 function saveService(e) {
 	e.preventDefault();
-
-	var formData = {};
-	formData.id = $('#serviceid').val();
-	formData.files = $('.files').files;
-	console.log(formData.files);
-	return false;
-
-	if (!formData.name.trim().length) {
-		showDialog('Error', 'Please enter service name');
-		return false;
-	}
-
-	if (!formData.modul.length) {
-		showDialog('Error', 'Please add a modul');
-		return false;
-	}
-
-	if (!parseInt(formData.requirement_id)) {
-		showDialog('Error', 'Please select a requirement');
-		return false;
-	}
-
-	if (!parseInt(formData.role_id)) {
-		showDialog('Error', 'Please select a role');
-		return false;
-	}
-
-	if (!parseInt(formData.product_id)) {
-		showDialog('Error', 'Please select a product');
-		return false;
-	}
-
 	if (e.handled !== true) {
+		formData.id = $('#serviceid').val();
+		
 		$.ajax({
-			url : BASE_URL + 'service/save',
+			url : BASE_URL + 'service/update',
 			type : 'post',
 			data : formData,
-			beforeSend : function(xhr) {
-
-			}
 		}).done(function(data) {
 			var obj = $.parseJSON(data);
-			if(obj.status) {
-				showDialog("Error", 'Can not create new service');
-			} else {
-				showDialog("Success", 'Create new service successful');
+			if(!obj.status) {
 				location.href = location.href;
+			} else {
+				alert('Please upload all files');
 			}
 		});
 

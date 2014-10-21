@@ -11,7 +11,7 @@ class Service extends Ext_Controller {
 				'role_hotline' => array('action' => array()),
 				'role_planer' => array('action' => array()),
 				'role_entwickler' => array('action' => array()),
-				'role_technical' => array('action' => array('show', 'show_modul_detail')),
+				'role_technical' => array('action' => array('show', 'show_modul_detail', 'update', 'upload')),
 				'role_customer' => array('action' => array('show', 'save', 'load_service', 'show_modul_detail', 'get_standard'))
 		);
 
@@ -306,5 +306,61 @@ class Service extends Ext_Controller {
 		$this->response['listModules'] = $listModules;
 		$this->response['listModuleCustomers'] = $listModuleCustomers;
 		$this->sendAjax();
+	}
+	
+	function update() {
+		if ($this->input->is_ajax_request ()) {
+			$data = $this->input->post();
+			
+			$this->load->model('report_document_detail');
+			$this->load->model('dl');
+			
+			$files = $data['files'];
+			
+			if(!count($files)) {
+				$this->sendAjax(1, 'Please upload all files');
+			}
+			foreach($files as $file) {
+				if(empty($file)) {
+					$this->sendAjax(1, 'Please upload all files');
+				}
+			}
+			$listIds = $data['listIds'];
+			$id = $data['id'];
+			foreach($listIds as $key => $rddId) {
+				$file = $files[$key];
+				$list = explode('/', $file);
+				list($name, $ext) = explode('.', end($list));
+				$desc = 'uploads/reports/' . md5($name) . '.' . $ext;
+				@copy($file, $desc);
+				
+				$this->report_document_detail->updateData($rddId, base_url() . $desc);
+			}
+			
+			$service = array('status' => Dl::STATUS_DONE);
+			$this->dl->updateService($service, $id);
+			
+			// clean files
+			$this->_cleanFiles('files/thumbnail/');
+			$this->_cleanFiles('files/');
+			$this->sendAjax();
+		}
+		
+		exit ( 'You can not access this page' );
+	}
+	
+	function _cleanFiles($sources) {
+		
+		//get all image files with a .jpg extension.
+		$files = glob($sources . "*.*");
+		//print each file name
+		foreach($files as $file)
+		{
+			@unlink($file);
+		}
+	}
+	
+	function upload() {
+		$this->load->library('uploadHandler');
 	}
 }

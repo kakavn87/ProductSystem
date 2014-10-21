@@ -6,7 +6,6 @@ $(function() {
 	}
 	
 	$('.type').live('change', function() {
-		console.log($(this).parent().parent().find('.fileInfo').html());
 		if($(this).val() == 'PDF') {
 			$(this).parent().parent().find('.fileInfo').show();
 			$(this).parent().parent().find('.linkInfo').hide();

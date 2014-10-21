@@ -27,4 +27,9 @@ class Report_document_detail extends CI_Model {
 		$result = $query->result ();
 		return $result;
 	}
+	
+	function updateData($id, $url) {
+		$this->db->where('id', $id);
+		$this->db->update('report_document_details', array('url' => $url));
+	}
 }
