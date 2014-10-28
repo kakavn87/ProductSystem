@@ -121,7 +121,9 @@ class RoleComponent {
 				break;
 			case self::ROLE_PLANER :
 				$sidebar = array(
-					array('id' => 'moduls', 'url' => 'moduls/overview', 'name' => 'Module'),
+					array('id' => 'profiles', 'url' => 'profiles/index', 'name' => 'Profile'),
+					array('id' => 'moduls', 'url' => 'moduls/overview', 'name' => 'Portfolie'),
+					array('id' => 'applications', 'url' => 'applications/lists', 'name' => 'Application')
 				);
 				break;
 			case self::ROLE_ENTWICKLER :
