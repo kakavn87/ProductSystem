@@ -1460,3 +1460,30 @@ span.add-more-report {
 .report-item em {
 	font-size: 12px;
 }
+
+.outsourcing {
+	float: right;
+}
+
+.info-input div {
+	margin: 10px;
+	position: relative;
+}
+
+.info-input {
+	position: relative;
+}
+
+.info-input div.remove {
+	position: absolute;
+	top: -10px;
+	right: 0;
+	color: red;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.apply {
+	cursor: pointer;
+	color: blue;
+}

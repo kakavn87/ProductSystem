@@ -407,18 +407,22 @@ function doService(params) {
 			var modulId = $(this).data('modulid');
 			var modulType = $(this).data('modultype');
 
-			$.ajax({
-				url : BASE_URL + 'service/show_modul_detail',
-				type : 'post',
-				data : {
-					modul_id : modulId,
-					modul_type: modulType
-				},
-			}).done(function(data) {
-				$.fancybox({
-					content : data
+			if(modulType == 'normal') {
+				$.ajax({
+					url : BASE_URL + 'service/show_modul_detail',
+					type : 'post',
+					data : {
+						modul_id : modulId,
+						modul_type: modulType
+					},
+				}).done(function(data) {
+					$.fancybox({
+						content : data
+					});
 				});
-			});
+			} else {
+				alert('This modul is standard. Please saving before view detail');
+			}
 		}
 	}
 

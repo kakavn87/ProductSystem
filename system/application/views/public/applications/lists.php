@@ -16,7 +16,8 @@
 					<tr>
 						<td class="profile-lists"><?php echo $app->modulName; ?></td>
 						<td class="profile-lists"><?php echo $app->serviceName; ?></td>
-						<td class="apply" data-appId="<?php echo $app->id; ?>"><a href="javascript:void(0)">Apply</a></td>
+						<td class="apply" data-appId="<?php echo $app->id; ?>">Apply</td>
+						<td class="view" style="display: none" data-appId="<?php echo $app->id; ?>">View</td>
 					</tr>
 					<?php endforeach; ?>
 				</table>

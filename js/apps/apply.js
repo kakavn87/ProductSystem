@@ -1,16 +1,15 @@
 $(function() {
 	$('.apply').live('click', function(e) {
-		var appId = $(this).data('appId');
-		
+		var appId = $(this).data('appid');
 		$.ajax({
 			url : BASE_URL + 'applications/apply',
 			type : 'post',
 			data : {'app_id': appId},
 		}).done(function(data) {
-			console.log(data);return false;
 			var obj = $.parseJSON(data);
 			if(!obj.status) {
-				// TODO abc
+				$(this).hide();
+				$('.view').show();
 			} else {
 				showDialog('Error', obj.message);
 			}
