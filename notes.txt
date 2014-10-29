@@ -1,7 +1,7 @@
 + developer chọn outsourcing
 save modul_id, service_id > applications table
 
-+ table modul_applyies
++ table modul_applies
 app_id, partner_id, status
 
 

@@ -18,12 +18,13 @@ class Profiles extends Ext_Controller {
 		$this->checkRole();
 		$this->load->model('profile');
 	}
-	
+
 	function index() {
-		$data['profiles'] = $this->profile->getAll();
-		
+		$user = $this->session->userdata ( 'user' );
+		$data['profiles'] = $this->profile->getByUserId($user->id);
+
 		$content = $this->load->view('public/profiles/lists', $data, TRUE);
-		
+
 		$this->load->library('template');
 		$this->template->load($content);
 	}
@@ -33,22 +34,24 @@ class Profiles extends Ext_Controller {
 		if($id) {
 			$data['profile'] = $this->profile->getById($id);
 		}
-		
+
 		$content = $this->load->view('public/profiles/edit', $data, TRUE);
-		
+
 		$this->load->library('template');
 		$this->template->load($content);
 	}
-	
+
 	function save() {
 		$data = $this->input->post('data');
-		
+		$user = $this->session->userdata ( 'user' );
+		$data['user_id'] = $user->id;
+
 		if(empty($data['id'])) {
 			$this->profile->saveProfile($data);
 		} else {
 			$this->profile->updateProfile($data);
 		}
-		
+
 		redirect('/profiles/index');
 	}
 }

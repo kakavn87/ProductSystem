@@ -40,3 +40,34 @@
 	margin: 0;
 	text-transform: uppercase;
 }
+
+.orderBox table {
+	width: 98%; 
+	margin: 10px;
+}
+
+.orderBox table , 
+.orderBox table tr,
+.orderBox table tr th,
+.orderBox table tr td{
+	border: 1px solid #c7c7c7;
+	border-collapse: collapse;
+}
+
+.orderBox table tr th {
+	font-size: 14px;
+	padding: 5px;
+}
+
+.orderBox table tr td {
+	font-size: 12px;
+	padding: 5px;
+}
+
+.orderBox .info, .orderBox button {
+	margin: 10px;
+}
+
+.orderBox h1 > button {
+	margin: 0;
+}
