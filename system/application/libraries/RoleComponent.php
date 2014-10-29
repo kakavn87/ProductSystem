@@ -101,10 +101,15 @@ class RoleComponent {
 		$sidebar = array();
 		switch ($user->roleName) {
 			case self::ROLE_CUSTOMER:
+				$sidebar = array(
+					array('id' => 'moduls', 'url' => 'moduls/overview', 'name' => 'Module'),
+					array('id' => 'orders', 'url' => 'orders/lists', 'name' => 'Order')
+				);
 			case self::ROLE_DEVELOPER :
 				$sidebar = array(
 					array('id' => 'moduls', 'url' => 'moduls/overview', 'name' => 'Module'),
 					array('id' => 'orders', 'url' => 'orders/lists', 'name' => 'Order'),
+					array('id' => 'applications', 'url' => 'applications/view_list', 'name' => 'Application')
 				);
 				break;
 			case self::ROLE_TECHNICAL :

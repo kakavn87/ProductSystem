@@ -1,18 +1,1 @@
-+ developer chọn outsourcing
-save modul_id, service_id > applications table
-
-+ table modul_applies
-app_id, partner_id, status
-
-
-+ partner apply
-update partner_id, status => 0 with app_id
-
-+ developer duyệt
-i. applications
-update status => 1, developer_id
-ii. modul_applies
-update status
-
-
-
++ reload when selecting modul on service

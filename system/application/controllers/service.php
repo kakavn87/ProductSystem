@@ -435,12 +435,14 @@ class Service extends Ext_Controller {
 				$this->sendAjax(1, 'Invalid data');
 			}
 
+			$this->load->model('application');
+			$app_id = $this->application->saveApplication(array('service_id' => $service_id, 'modul_id' => $data['modulId']));
+			
 			$array = array();
 			foreach($data['name'] as $key => $value) {
 				if(!empty($value)) {
 					$array[] = array(
-						'modul_id' => $data['modulId'],
-						'service_id' => $service_id,
+						'app_id' => $app_id,
 						'name' => $value,
 						'organization' => $data['organization'][$key],
 						'developer_id' => $user->id
@@ -450,11 +452,9 @@ class Service extends Ext_Controller {
 
 			if(!empty($array)) {
 				$this->load->model('modul_requirement');
-				$this->modul_requirement->deleteData($service_id, $data['modulId']);
+				
+				$this->modul_requirement->deleteData($app_id);
 				$this->modul_requirement->saveData($array);
-
-				$this->load->model('application');
-				$this->application->saveApplication(array('service_id' => $service_id, 'modul_id' => $data['modulId']));
 			}
 
 			$this->sendAjax();

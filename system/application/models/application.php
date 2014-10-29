@@ -7,10 +7,11 @@ class Application extends CI_Model {
 	}
 
 	function getAll() {
-		$this->db->select ( 'app.*, modul.name as modulName, service.name as serviceName' );
+		$this->db->select ( 'ma.id as mrId, app.*, modul.name as modulName, service.name as serviceName' );
 		$this->db->from ( $this->_tableName  . ' as app');
 		$this->db->join('modul', 'modul.id = app.modul_id');
 		$this->db->join('service', 'service.id = app.service_id');
+		$this->db->join('modul_applies as ma', 'app.id = ma.app_id', "LEFT");
 		$this->db->where('app.status', 0);
 		$query = $this->db->get ();
 		$result = $query->result ();

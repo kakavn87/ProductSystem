@@ -16,17 +16,16 @@
 					<tr>
 						<td class="profile-lists"><?php echo $app->modulName; ?></td>
 						<td class="profile-lists"><?php echo $app->serviceName; ?></td>
-						<?php 
-						if(empty($app->mrId)) :
-							$apply = '';
-							$view = 'style="display: none"';
-						else :
-							$view = '';
-							$apply = 'style="display: none"';
-						endif;  
-						?>
-						<td class="apply" <?php echo $apply; ?> data-appId="<?php echo $app->id; ?>">Apply</td>
-						<td class="view" <?php echo $view; ?> data-appId="<?php echo $app->id; ?>">View</td>
+						<?php if(!$app->appStatus) : ?>
+						<td class="view-develop" data-appid="<?php echo $app->app_id; ?>">View</td>
+						<?php else : ?>
+						<td class="view-develop-done" data-appid="<?php echo $app->app_id; ?>">Selected</td>
+						<?php endif; ?>
+					</tr>
+					<tr class="app-content" style="display: none">
+						<td colspan="3" >
+							
+						</td>
 					</tr>
 					<?php endforeach; ?>
 				</table>

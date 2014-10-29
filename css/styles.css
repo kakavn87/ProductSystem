@@ -1483,7 +1483,8 @@ span.add-more-report {
 	cursor: pointer;
 }
 
-.apply {
+.partner-selected, .partner-name, 
+.apply, .view, .view-develop, .view-develop-done {
 	cursor: pointer;
-	color: blue;
+	color: #03739c;
 }

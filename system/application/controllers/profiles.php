@@ -7,7 +7,7 @@ class Profiles extends Ext_Controller {
 		parent::__construct();
 
 		$this->_role = array(
-				'role_developer' => array('action' => array()),
+				'role_developer' => array('action' => array('view_profile')),
 				'role_hotline' => array('action' => array()),
 				'role_planer' => array('action' => array('index', 'edit', 'save')),
 				'role_entwickler' => array('action' => array()),
@@ -53,5 +53,11 @@ class Profiles extends Ext_Controller {
 		}
 
 		redirect('/profiles/index');
+	}
+	
+	function view_profile() {
+		$post = $this->input->post();
+		$data['profiles'] = $this->profile->getByUserId($post['user_id']);
+		$this->load->view('public/profiles/view_profile', $data);
 	}
 }
