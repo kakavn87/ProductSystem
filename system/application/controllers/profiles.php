@@ -9,7 +9,7 @@ class Profiles extends Ext_Controller {
 		$this->_role = array(
 				'role_developer' => array('action' => array('view_profile')),
 				'role_hotline' => array('action' => array()),
-				'role_planer' => array('action' => array('index', 'edit', 'save')),
+				'role_planer' => array('action' => array('index', 'edit', 'save', 'delete')),
 				'role_entwickler' => array('action' => array()),
 				'role_technical' => array('action' => array()),
 				'role_customer' => array('action' => array())
@@ -41,6 +41,14 @@ class Profiles extends Ext_Controller {
 		$this->template->load($content);
 	}
 
+	function delete($id = null) {
+		if($id) {
+			$this->profile->deleteProfile($id);
+		}
+
+		redirect('/profiles/index');
+	}
+
 	function save() {
 		$data = $this->input->post('data');
 		$user = $this->session->userdata ( 'user' );
@@ -54,7 +62,7 @@ class Profiles extends Ext_Controller {
 
 		redirect('/profiles/index');
 	}
-	
+
 	function view_profile() {
 		$post = $this->input->post();
 		$data['profiles'] = $this->profile->getByUserId($post['user_id']);

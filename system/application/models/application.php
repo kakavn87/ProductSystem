@@ -18,10 +18,13 @@ class Application extends CI_Model {
 		return $result;
 	}
 
-	function getByUserId($user_id) {
-		$this->db->select ( '*' );
-		$this->db->from ( $this->_tableName );
-		$this->db->where('user_id', $user_id);
+	function getByPartnerId($partner_id) {
+		$this->db->select ( 'ma.id as mrId, app.*, modul.name as modulName, service.name as serviceName' );
+		$this->db->from ( $this->_tableName  . ' as app');
+		$this->db->join('modul', 'modul.id = app.modul_id');
+		$this->db->join('service', 'service.id = app.service_id');
+		$this->db->join('modul_applies as ma', "app.id = ma.app_id AND `ma`.`partner_id` = $partner_id", "LEFT");
+		$this->db->where('app.status', 0);
 		$query = $this->db->get ();
 		$result = $query->result ();
 		return $result;

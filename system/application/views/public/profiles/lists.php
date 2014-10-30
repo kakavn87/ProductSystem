@@ -11,8 +11,11 @@
 					<?php foreach($profiles as $profile): ?>
 					<tr>
 						<td class="profile-lists"><?php echo $profile->name; ?></td>
-						<td><a href="<?php echo base_url(); ?>profiles/edit/<?php echo $profile->id; ?>">Edit</a></td>
-					</tr>	
+						<td>
+						<a href="<?php echo base_url(); ?>profiles/edit/<?php echo $profile->id; ?>">Edit</a>&nbsp;
+						<a href="javascript:void(0);" class="profile-delete" data-href="<?php echo base_url(); ?>profiles/delete/<?php echo $profile->id; ?>">Delete</a>
+						</td>
+					</tr>
 					<?php endforeach; ?>
 				</table>
 		</div>

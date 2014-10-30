@@ -103,6 +103,7 @@ $(function() {
 			type : 'post',
 			data : {'app_id': appId, 'id': id},
 		}).done(function(data) {
+			location.href = location.href;
 		});
 	});
 	
