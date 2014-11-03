@@ -1278,7 +1278,7 @@ div.filter div {
 
 div.modul-standard-name, div.modul-normal-name, 
 div.modul-name {
-	font-size: 11px;
+	font-size: 14px;
 }
 
 div.modul-standard-name a,div.modul-normal-name a,
@@ -1296,8 +1296,8 @@ div.modul-name a {
 .addBox, .containerBox {
 	border: 1px solid #c7c7c7;
 	font-size: 11px;
-	height: 60px;
-	line-height: 60px;
+	height: 85px;
+	line-height: 42px;
 	text-align: center;
 	text-transform: uppercase;
 	width: 60px;
@@ -1432,8 +1432,6 @@ div.modul-name a {
 	float: left;
 }
 
-.requirement-container h3,
-.modul-outsourcing h3, 
 .modul-normal-container h3,
 .modulLeft h3, 
 .modulRight h3 {
@@ -1443,15 +1441,8 @@ div.modul-name a {
 	font-size: 16px;
 }
 
-.requirement-container .info,
-.modul-outsourcing .info, 
 .report-content .info, 
 .modul-normal-container .info {padding: 10px; font-size: 12px;}
-
-.modul-outsourcing table {
-	border: 1px solid #CCC;
-	border-collapse: collapse;
-}
 
 .grey h1 span {
 	font-style: italic;
@@ -1496,29 +1487,4 @@ span.add-more-report {
 .apply, .view, .view-develop, .view-develop-done {
 	cursor: pointer;
 	color: #03739c;
-}
-
-.toolbar-modul {
-	float: right; 
-	font-size: 12px;
-}
-span.add-requirement {
-	cursor: pointer;
-	color: blue;
-	font-weight: bold;
-}
-
-.requirement-container {
-	position:absolute;
-	top: 39%;
-	left: 50%;
-	margin-top: -50px; /* this is half the height of your div*/
-	margin-left: -100px; /*this is half of width of your div*/
-	border: 5px solid #CCC;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	z-index: 9999;
-	padding: 20px;
-	background: #CCC;
 }
