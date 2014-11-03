@@ -5,6 +5,16 @@ $(function() {
 	}
 	
 	$("#products, #roles, #orders, #requirments, #report_id").chosen();
+	
+	$('.cbOutsourcing').live('click', function() {
+		if ($(this).is(':checked')) {
+			$('.modul-normal-container').hide();
+			$('.modul-outsourcing').show();
+        } else {
+        	$('.modul-normal-container').show();
+        	$('.modul-outsourcing').hide();
+        }
+	});
 
 	$('#searchmodul').search('.modul-name', function(on) {
 
@@ -164,6 +174,16 @@ function doService(params) {
 		});
 	});
 	$('.add-report').live('click', saveReport);
+	
+	$('.add-requirement').live('click', function(e) {
+		console.log('add-requirement');
+		
+		$('.requirement-container').toggle();
+	});
+	
+	$('.re-cancel').live('click', function(e) {
+		$('.requirement-container').hide();
+	});
 	
 	function saveReport(e) {
 		e.preventDefault();

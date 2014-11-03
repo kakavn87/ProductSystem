@@ -223,6 +223,66 @@ var roleName = '<?php echo $user->roleName; ?>';
 	<button class="addToService">Add To Service</button>
 </div>
 <div class="modul-normal-list" style="display: none">
+	<div class="toolbar-modul">
+		<input type="checkbox" class="cbOutsourcing" /> OutSourcing
+	</div>
+	<div class="requirement-container" style="display: none">
+		<h3>Add Requirement</h3>
+		<div class="info">
+			<label>Name</label>
+			<input type="text" name="data[ModulRequirement][name]" />
+		</div>
+		<div class="info">
+			<label>Type</label>
+			<select name="data[ModulRequirement][type]">
+				<option value="organisation">Organisation</option>
+				<option value="modul">Modul</option>
+				<option value="provider">Provider</option>
+			</select>
+		</div>
+		<div class="info">
+			<label>Description</label>
+			<textarea name="data[ModulRequirement][description]"></textarea>
+		</div>
+		<button type="button" class="re-add">Add</button>
+		<button type="button" class="re-cancel">Cancel</button>
+	</div>
+	<div class="modul-outsourcing"  style="display: none">
+		<form class="create-modul">
+		<h3>Add Module</h3>
+		<input type="hidden" name="data[Modul][id]" id="id" value="" />
+		<input type="hidden" name="data[old_type]" value="" />
+		<input type="hidden" name="data[normal]" value="normal" />
+		<button class="save-modul-outsourcing" type="button">Save Modul</button>
+		<div class="info">
+			<div class="info">
+			<label class="user" for="modulname">Modul Name:</label> <input
+				type="text" id="modulname" name="data[Modul][name]"
+				value="">
+			</div>
+			<div class="clear"></div>
+
+			<div class="info">
+			<label class="user" for="moduldescription">Description:</label>
+			<textarea rows="4" class="moduldescription" cols="47"
+				name="data[Modul][description]"></textarea>
+			</div>
+			<div class="clear"></div>
+			
+			<div class="info">
+				<span class="add-requirement">+ Add Requirement</span>
+				<table width="100%">
+					<tr>
+						<th>Name</th>
+						<th>TYPE</th>
+						<th>Organization</th>
+					</tr>
+					<tr class="tdRequirement"></tr>
+				</table>
+			</div>
+		</div>
+		</form>
+	</div>
 	<div class="modul-normal-container">
 		<form class="create-modul">
 		<h3>Add Normal Module</h3>
