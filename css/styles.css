@@ -626,7 +626,7 @@ input.active {
 
 .bottomBox2 {
 	width: 79%;
-	/*height: 300px;*/
+	height: 300px;
 	float: left;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -678,7 +678,7 @@ input.active {
 	-moz-border-radius-topright: 10px;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
-	background: #0A8476;
+	background: #c7c7c7;
 	padding: 10px;
 	color: #fff;
 	font-size: 16px;
@@ -1268,15 +1268,12 @@ div.filter div {
 	border-radius: 5px;
 	color: #fff;
 	font-size: 14px;
-	margin-right: 12px;
+	margin-right: 7px;
 	margin-top: 8px;
 	padding-top: 4px;
 	text-align: center;
 	text-shadow: none;
-	float: inherit;
-	background: #0A8476;
-	height: 40px;
-	vertical-align: middle;
+	float: right;
 }
 
 div.modul-standard-name, div.modul-normal-name, 
