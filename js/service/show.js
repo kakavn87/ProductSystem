@@ -1,3 +1,4 @@
+var modulRequirement = [];
 $(function() {
 	if(roleName == 'customer') {
 		$('#customer_view').parent().hide();
@@ -5,6 +6,19 @@ $(function() {
 	}
 	
 	$("#products, #roles, #orders, #requirments, #report_id").chosen();
+	
+	$('.search-choice').live('click',function(){             
+		var index = $(this).find('.search-choice-close').data('option-array-index');
+		$.ajax({
+			url : BASE_URL + 'reports/get_report',
+			type : 'post',
+			data : {report_id: index},
+		}).done(function(html) {
+			$.fancybox({
+				content : html,
+			});
+		});
+	});
 	
 	$('.cbOutsourcing').live('click', function() {
 		if ($(this).is(':checked')) {
@@ -168,6 +182,7 @@ function doService(params) {
 	$('#addDocument').live('click', addDocument);
 	$('.remove-document').live('click', removeDocument);
 	$('.save-modul').live('click', saveModul);
+	$('.save-modul-outsourcing').live('click', saveModulOutsourcing);
 	$('.add-more-report').live('click', function() {
 		$.fancybox({
 			content : $('.report-document').html(),
@@ -176,14 +191,101 @@ function doService(params) {
 	$('.add-report').live('click', saveReport);
 	
 	$('.add-requirement').live('click', function(e) {
-		console.log('add-requirement');
-		
-		$('.requirement-container').toggle();
+		$('.re-box, .requirement-container').toggle();
 	});
 	
 	$('.re-cancel').live('click', function(e) {
-		$('.requirement-container').hide();
+		$('.re-box, .requirement-container').hide();
 	});
+	
+	$('.re-add').live('click', function(e) {
+		var name = $(this).parent().find('.mr_name').val();
+		var type = $(this).parent().find('.mr_type').val();
+		var desc = $(this).parent().find('.mr_desc').val();
+		if(!name.trim().length) {
+			alert('Name is not empty');
+			return false;
+		}
+		
+		modulRequirement.push({
+			name: name, 
+			type: type, 
+			description: desc
+		});
+		
+		$('table.tbl-requirement').append('<tr class="second"><td>' + name + '</td><td>' + type + '</td><td>' + desc + '</td></tr>');
+		
+		$(this).parent().find('.mr_name').val('');
+		$(this).parent().find('.mr_desc').val('');
+		
+		$('.re-box, .requirement-container').hide();
+		console.log(modulRequirement);
+	});
+	
+	
+	function saveModulOutsourcing(e) {
+		e.preventDefault();
+		
+		var formData = $('form.create-modul-outsourcing').serializeArray();
+		$.each(modulRequirement, function (i, e) {
+			formData.push({
+				name: 'data[modulRequirement][name][]',
+				value: e.name
+			});
+			formData.push({
+				name: 'data[modulRequirement][type][]',
+				value: e.type
+			});
+			formData.push({
+				name: 'data[modulRequirement][description][]',
+				value: e.description
+			});
+		})
+		if (e.handled !== true) {
+			$.ajax({
+				url : BASE_URL + 'moduls/saveOutSourcingAjax',
+				type : 'post',
+				data : formData,
+				beforeSend : function(xhr) {
+					$.fancybox.showActivity();
+				}
+			}).done(function(data) {
+				$('table.tbl-requirement tr.second').remove();
+				$.fancybox.hideActivity();
+				
+				var obj = $.parseJSON(data);
+				if(!obj.status) {
+					var modulObj = $.parseJSON(obj.modul);
+					modulObj.status = 'allow';
+					if($('#number').val() == 1) {
+						if(roleName == 'customer') {
+							modulObj.status = 'deny';
+						}
+						if($('#position').val() == 'right') {
+							listModules.push(modulObj);
+						} else {
+							listModules.splice(0, 0, modulObj);
+						}
+					} else {
+						if($('#position').val() == 'right') {
+							listModuleForCustomers.push(modulObj);
+						} else {
+							listModuleForCustomers.splice(0, 0, modulObj);
+						}
+					}
+					
+					modulRequirement = [];
+					$.fancybox.close();
+					draw();
+				} else {
+					alert(obj.message);
+				}
+			});
+
+			// this next line *must* be within this if statement
+			e.handled = true;
+		}
+	}
 	
 	function saveReport(e) {
 		e.preventDefault();
@@ -229,7 +331,12 @@ function doService(params) {
 				var obj = $.parseJSON(data);
 				if(!obj.status) {
 					var modulObj = $.parseJSON(obj.modul);
+					modulObj.status = 'allow';
 					if($('#number').val() == 1) {
+						if(roleName == 'customer') {
+							modulObj.status = 'deny';
+						}
+						
 						if($('#position').val() == 'right') {
 							listModules.push(modulObj);
 						} else {
@@ -432,6 +539,7 @@ function doService(params) {
 					url : BASE_URL + 'service/show_modul_detail',
 					type : 'post',
 					data : {
+						service_id: $('#serviceid').val(),
 						modul_id : modulId,
 						modul_type: modulType
 					},

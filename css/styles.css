@@ -1487,4 +1487,58 @@ span.add-more-report {
 .apply, .view, .view-develop, .view-develop-done {
 	cursor: pointer;
 	color: #03739c;
+<<<<<<< HEAD
+=======
+}
+
+.toolbar-modul {
+	float: right; 
+	font-size: 12px;
+}
+span.add-requirement {
+	cursor: pointer;
+	color: blue;
+	font-weight: bold;
+}
+
+.re-box {
+	width: 100%;
+	height: 100%;
+	background: #CCC;
+	z-index: 9999;
+	opacity: 0.5;
+	position: absolute;
+}
+.requirement-container {
+	position:absolute;
+	top: 39%;
+	left: 39%;
+	margin-top: -50px; /* this is half the height of your div*/
+	margin-left: -100px; /*this is half of width of your div*/
+	border: 5px solid #CCC;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	z-index: 9999;
+	padding: 10px;
+	background: #CCC;
+}
+
+.modul-outsourcing,
+.modul-normal-list {
+	min-height: 500px;
+}
+
+.tbl-requirement-detail {
+	border: 1px solid #CCC;
+	border-collapse: collapse;
+	font-size: 12px;
+}
+
+.tbl-requirement-detail tr th, .tbl-requirement-detail tr td,
+.tbl-requirement tr th, .tbl-requirement tr td {border: 1px solid #CCC;padding: 3px;}
+
+label.title {
+	font-size: 12px;
+>>>>>>> 7328487a1cb0cfb799d703a7607d9085e6cc1110
 }

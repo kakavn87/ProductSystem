@@ -226,29 +226,30 @@ var roleName = '<?php echo $user->roleName; ?>';
 	<div class="toolbar-modul">
 		<input type="checkbox" class="cbOutsourcing" /> OutSourcing
 	</div>
+	<div class="re-box" style="display: none"></div>
 	<div class="requirement-container" style="display: none">
 		<h3>Add Requirement</h3>
 		<div class="info">
 			<label>Name</label>
-			<input type="text" name="data[ModulRequirement][name]" />
+			<input type="text" name="data[ModulRequirement][name]" class="mr_name" value="" />
 		</div>
 		<div class="info">
 			<label>Type</label>
-			<select name="data[ModulRequirement][type]">
-				<option value="organisation">Organisation</option>
+			<select name="data[ModulRequirement][type]" class="mr_type">
+				<option value="organization">Organization</option>
 				<option value="modul">Modul</option>
 				<option value="provider">Provider</option>
 			</select>
 		</div>
 		<div class="info">
 			<label>Description</label>
-			<textarea name="data[ModulRequirement][description]"></textarea>
+			<textarea name="data[ModulRequirement][description]" class="mr_desc"></textarea>
 		</div>
 		<button type="button" class="re-add">Add</button>
 		<button type="button" class="re-cancel">Cancel</button>
 	</div>
 	<div class="modul-outsourcing"  style="display: none">
-		<form class="create-modul">
+		<form class="create-modul-outsourcing">
 		<h3>Add Module</h3>
 		<input type="hidden" name="data[Modul][id]" id="id" value="" />
 		<input type="hidden" name="data[old_type]" value="" />
@@ -268,16 +269,15 @@ var roleName = '<?php echo $user->roleName; ?>';
 				name="data[Modul][description]"></textarea>
 			</div>
 			<div class="clear"></div>
-			
+
 			<div class="info">
 				<span class="add-requirement">+ Add Requirement</span>
-				<table width="100%">
-					<tr>
+				<table width="100%" class="tbl-requirement">
+					<tr class="first">
 						<th>Name</th>
 						<th>TYPE</th>
 						<th>Organization</th>
 					</tr>
-					<tr class="tdRequirement"></tr>
 				</table>
 			</div>
 		</div>

@@ -47,6 +47,16 @@ class Application extends CI_Model {
 		return $query->row ();
 	}
 
+	function getAppDetail($modul_id, $service_id) {
+		$this->db->select ( 'mr.*' );
+		$this->db->from ( $this->_tableName . ' as app');
+		$this->db->where('modul_id', $modul_id);
+		$this->db->where('service_id', $service_id);
+		$this->db->join('modul_requirements as mr', 'mr.app_id = app.id');
+		$query = $this->db->get ();
+		return $query->result ();
+	}
+
 	function saveApplication($data) {
 		$app = $this->getApp($data['modul_id'], $data['service_id']);
 		if(empty($app)) {
