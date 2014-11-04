@@ -94,7 +94,7 @@ tr.txtarea  td.textarea, tr.trAbsage td.textarea {
 }
 
 #innerWrapper {
-	width: 970px;
+	width: 100%;
 	background: url(images/bg.png) repeat-y #fff;
 }
 
@@ -317,7 +317,7 @@ span.navArrow {
 }
 
 #rightBox {
-	width: 695px;
+	width: 80%;
 	float: left;
 }
 
@@ -375,7 +375,7 @@ td>h1 {
 }
 
 #content>.grey {
-	width: 631px;
+	width: 100%;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
@@ -612,7 +612,7 @@ input.active {
 
 /* Unten */
 .bottomBox {
-	width: 210px;
+	width: 20%;
 	height: 300px;
 	float: left;
 	-webkit-border-radius: 10px;
@@ -625,7 +625,7 @@ input.active {
 }
 
 .bottomBox2 {
-	width: 408px;
+	width: 79%;
 	height: 300px;
 	float: left;
 	-webkit-border-radius: 10px;
@@ -1296,11 +1296,11 @@ div.modul-name a {
 .addBox, .containerBox {
 	border: 1px solid #c7c7c7;
 	font-size: 11px;
-	height: 85px;
+	height: 70px;
 	line-height: 42px;
 	text-align: center;
 	text-transform: uppercase;
-	width: 60px;
+	width: 200px;
 	float: left;
 	position: relative;
 	margin: 0px 4px 4px 0;
