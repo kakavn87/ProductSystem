@@ -1589,5 +1589,13 @@ span.add-requirement {
 
 label.title {
 	font-size: 12px;
->>>>>>> 7328487a1cb0cfb799d703a7607d9085e6cc1110
+}
+
+.label {
+	float: left;
+	margin-right: 0.5em;
+	margin-top: 10px;
+	padding-left: 5px;
+	text-align: justify;
+	width: 180px;
 }

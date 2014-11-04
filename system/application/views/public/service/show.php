@@ -44,7 +44,7 @@ var roleName = '<?php echo $user->roleName; ?>';
 			</div>
 			<div class="filter">
 				<div>
-					<label>Requirement</label> <select id="requirments" name="requirment_id"
+					<label class="label">Requirement</label> <select id="requirments" name="requirment_id"
 						data-placeholder="Choose a requirment ..." style="width: 350px;"
 						class="chosen-select">
 						<option value=""></option>
@@ -61,7 +61,7 @@ var roleName = '<?php echo $user->roleName; ?>';
           </select>
 				</div>
 				<div>
-					<label>Role</label> <select id="roles" name="role_id" multiple
+					<label class="label">Role</label> <select id="roles" name="role_id" multiple
 						data-placeholder="Choose a role ..." style="width: 350px;"
 						class="chosen-select">
 						<option value=""></option>
@@ -81,7 +81,7 @@ var roleName = '<?php echo $user->roleName; ?>';
 		          </select>
 				</div>
 				<div>
-					<label>Report documents</label> <select id="report_id" name="report_id" multiple
+					<label class="label">Report documents</label> <select id="report_id" name="report_id" multiple
 						data-placeholder="Choose a report document ..." style="width: 350px;"
 						class="chosen-select">
 						<option value=""></option>
@@ -101,7 +101,7 @@ var roleName = '<?php echo $user->roleName; ?>';
 		          </select> <span class="add-more-report">+ Add more</span>
 				</div>
 				<div>
-					<label>Products</label> <select id="products" name="product_id"
+					<label class="label">Products</label> <select id="products" name="product_id"
 						data-placeholder="Choose a role ..." style="width: 350px;"
 						class="chosen-select">
 						<option value=""></option>
