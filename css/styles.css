@@ -78,7 +78,7 @@ tr.txtarea  td.textarea, tr.trAbsage td.textarea {
 }
 
 .scrollerNav {
-	width: 275px !important;
+	width: 100% !important;
 	_top: 232px !important;
 	height: 350px;
 	background: #F3F3F3;
@@ -1261,7 +1261,7 @@ div.filter div {
 	padding: 3px;
 }
 
-#saveService, .saveModul {
+#saveService, .saveModul, .add-report {
 	background-image: -moz-linear-gradient(center bottom, rgb(30, 144, 255)
 		40%, rgb(135, 206, 250) 70%);
 	border: 1px solid #fff;
@@ -1279,9 +1279,37 @@ div.filter div {
 	vertical-align: middle;
 }
 
+
+ .add-module {
+	background-image: -moz-linear-gradient(center bottom, rgb(30, 144, 255)
+		40%, rgb(135, 206, 250) 70%);
+	border: 1px solid #fff;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 14px;
+	
+	margin-top: 8px;
+	padding-top: 4px;
+	text-align: center;
+	text-shadow: none;
+	float: inherit;
+	background: #0A8476;
+	height: 30px;
+	vertical-align: middle;
+}
+
+
 div.modul-standard-name, div.modul-normal-name, 
 div.modul-name {
 	font-size: 14px;
+	height: 25px;
+	vertical-align: baseline;
+	background: #e2e2e2;
+	border-bottom: 1px solid #c7c7c7;
+	font-size: 14px;
+	font-weight: bold;
+	color: #4a4a4a;
+	cursor: pointer;
 }
 
 div.modul-standard-name a,div.modul-normal-name a,
@@ -1361,7 +1389,19 @@ div.modul-name a {
 
 .addToService {
 	margin-left: 5px;
-}
+	border: 1px solid #fff;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 14px;
+	margin-right: 12px;
+	margin-top: 8px;
+	padding-top: 4px;
+	text-align: center;
+	text-shadow: none;
+	float: inherit;
+	background: #0A8476;
+	height: 40px;
+	vertical-align: middle;}
 
 .list-document {
 	margin: 10px 0;
@@ -1373,14 +1413,17 @@ div.modul-name a {
 }
 
 .report-content h3,
-.modul_details h3 {
+.modul_details h3, 
+.modulLeft h3, .modulRight h3
+{
 	text-transform: uppercase;
 	font-size: 16px;
-	border-top: 5px solid #c9c9c9;
-	border-bottom: 5px solid #c9c9c9;
+	border-top: 2px solid #c9c9c9;
+	border-bottom: 1px solid #c9c9c9;
 	padding: 10px 0px;
-	background-color: #eeeeed;
+	background-color: #0A8476;
 	text-indent: 10px;
+	color: white;
 }
 
 .modul_details h4 {
@@ -1428,11 +1471,13 @@ div.modul-name a {
 
 .modulLeft {
 	float: left;
-	margin-right: 2px;
+	width: 45%;
+	margin-right: 12px;
 }
 
 .modulRight {
 	float: left;
+	width: 45%;
 }
 
 .modul-normal-container h3,
@@ -1453,8 +1498,9 @@ div.modul-name a {
 
 span.add-more-report {
 	font-style: italic;
-	font-size: 11px;
-	cursor: pointer; 
+	font-size: 13px;
+	cursor: pointer;
+	color: darkcyan; 
 }
 
 .report-item {
