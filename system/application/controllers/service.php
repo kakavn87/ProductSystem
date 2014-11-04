@@ -220,18 +220,23 @@ class Service extends Ext_Controller {
 		if ($this->input->is_ajax_request ()) {
 			$modul_id = ( int ) $this->input->post ( 'modul_id' );
 			$modul_type = $this->input->post ( 'modul_type' );
+			$service_id = ( int ) $this->input->post ( 'service_id' );
 
 			$this->load->model ( 'modul' );
 			$this->load->model ( 'modul_pattern' );
 			$this->load->model ( 'document' );
+			$this->load->model ( 'application' );
 
 			if ($modul_type == 'normal') {
 				$data ['modul'] = $this->modul->getById ( $modul_id );
 				$data ['documents'] = $this->document->getByModulId ( $modul_id );
+				$data ['app'] = $this->application->getAppDetail($modul_id, $service_id);
 			} else {
 				$data ['modul'] = $this->modul_pattern->getById ( $modul_id );
 				$data ['documents'] = array ();
+				$data ['app'] = array();
 			}
+
 			$this->load->view ( 'public/service/show_modul_detail', $data );
 		} else {
 			exit ( 'You can not access this page' );
@@ -262,8 +267,13 @@ class Service extends Ext_Controller {
 
 			$modules = $service ['modul'];
 			unset ( $service ['modul'] );
-			$modules_cus = $service ['modul_customer'];
-			unset ( $service ['modul_customer'] );
+
+			$modules_cus = array();
+			if(isset($service ['modul_customer'])) {
+				$modules_cus = $service ['modul_customer'];
+				unset ( $service ['modul_customer'] );
+			}
+
 
 			$service ['type'] = $service ['type'] == 'true' ? Dl::TYPE_STANDARD : Dl::TYPE_NORMAL;
 			$service ['customer_view'] = $service ['customer_view'] == 'true' ? Dl::CUSTOMER_ALLOW : Dl::CUSTOMER_DENY;
@@ -437,7 +447,7 @@ class Service extends Ext_Controller {
 
 			$this->load->model('application');
 			$app_id = $this->application->saveApplication(array('service_id' => $service_id, 'modul_id' => $data['modulId']));
-			
+
 			$array = array();
 			foreach($data['name'] as $key => $value) {
 				if(!empty($value)) {
@@ -452,7 +462,7 @@ class Service extends Ext_Controller {
 
 			if(!empty($array)) {
 				$this->load->model('modul_requirement');
-				
+
 				$this->modul_requirement->deleteData($app_id);
 				$this->modul_requirement->saveData($array);
 			}
