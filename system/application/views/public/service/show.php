@@ -137,7 +137,7 @@ var roleName = '<?php echo $user->roleName; ?>';
 		<div>
 			<textarea name="comment" id="comment-text" rows="8" cols="60"></textarea>
 		</div>
-		<button id="addComment">Add Comment</button>
+		<button id="saveService">Add Comment</button>
 
 		<div class="comments-list">
 		<?php
