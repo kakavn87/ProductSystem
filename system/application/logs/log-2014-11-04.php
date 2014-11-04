@@ -7166,3 +7166,779 @@ DEBUG - 2014-11-04 14:51:29 --> File loaded: C:/xampp/htdocs/ProducSystemCI/syst
 DEBUG - 2014-11-04 14:51:29 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
 DEBUG - 2014-11-04 14:51:29 --> Final output sent to browser
 DEBUG - 2014-11-04 14:51:29 --> Total execution time: 0.4224
+DEBUG - 2014-11-04 15:08:38 --> Config Class Initialized
+DEBUG - 2014-11-04 15:08:38 --> Hooks Class Initialized
+DEBUG - 2014-11-04 15:08:38 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 15:08:38 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 15:08:38 --> URI Class Initialized
+DEBUG - 2014-11-04 15:08:38 --> Router Class Initialized
+DEBUG - 2014-11-04 15:08:38 --> No URI present. Default controller set.
+DEBUG - 2014-11-04 15:08:38 --> Output Class Initialized
+DEBUG - 2014-11-04 15:08:38 --> Security Class Initialized
+DEBUG - 2014-11-04 15:08:38 --> Input Class Initialized
+DEBUG - 2014-11-04 15:08:38 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 15:08:38 --> Language Class Initialized
+ERROR - 2014-11-04 15:08:38 --> Severity: Notice  --> A session had already been started - ignoring session_start() /var/www/html/ps/system/application/controllers/login.php 2
+DEBUG - 2014-11-04 15:08:38 --> Loader Class Initialized
+DEBUG - 2014-11-04 15:08:38 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 15:08:38 --> Database Driver Class Initialized
+ERROR - 2014-11-04 15:08:38 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/html/ps/system/database/drivers/mysql/mysql_driver.php 91
+ERROR - 2014-11-04 15:08:38 --> Severity: Warning  --> mysql_pconnect(): Access denied for user 'root'@'localhost' (using password: NO) /var/www/html/ps/system/database/drivers/mysql/mysql_driver.php 91
+ERROR - 2014-11-04 15:08:38 --> Unable to connect to the database
+DEBUG - 2014-11-04 15:08:38 --> Language file loaded: language/english/db_lang.php
+DEBUG - 2014-11-04 15:08:59 --> Config Class Initialized
+DEBUG - 2014-11-04 15:08:59 --> Hooks Class Initialized
+DEBUG - 2014-11-04 15:08:59 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 15:08:59 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 15:08:59 --> URI Class Initialized
+DEBUG - 2014-11-04 15:08:59 --> Router Class Initialized
+DEBUG - 2014-11-04 15:08:59 --> No URI present. Default controller set.
+DEBUG - 2014-11-04 15:08:59 --> Output Class Initialized
+DEBUG - 2014-11-04 15:08:59 --> Security Class Initialized
+DEBUG - 2014-11-04 15:08:59 --> Input Class Initialized
+DEBUG - 2014-11-04 15:08:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 15:08:59 --> Language Class Initialized
+ERROR - 2014-11-04 15:08:59 --> Severity: Notice  --> A session had already been started - ignoring session_start() /var/www/html/ps/system/application/controllers/login.php 2
+DEBUG - 2014-11-04 15:08:59 --> Loader Class Initialized
+DEBUG - 2014-11-04 15:08:59 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 15:08:59 --> Database Driver Class Initialized
+ERROR - 2014-11-04 15:08:59 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/html/ps/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-11-04 15:08:59 --> Session Class Initialized
+DEBUG - 2014-11-04 15:08:59 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 15:08:59 --> A session cookie was not found.
+DEBUG - 2014-11-04 15:08:59 --> Session routines successfully run
+DEBUG - 2014-11-04 15:08:59 --> Controller Class Initialized
+DEBUG - 2014-11-04 15:08:59 --> Config Class Initialized
+DEBUG - 2014-11-04 15:08:59 --> Hooks Class Initialized
+DEBUG - 2014-11-04 15:08:59 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 15:08:59 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 15:08:59 --> URI Class Initialized
+DEBUG - 2014-11-04 15:08:59 --> Router Class Initialized
+DEBUG - 2014-11-04 15:08:59 --> Output Class Initialized
+DEBUG - 2014-11-04 15:08:59 --> Security Class Initialized
+DEBUG - 2014-11-04 15:08:59 --> Input Class Initialized
+DEBUG - 2014-11-04 15:08:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 15:08:59 --> Language Class Initialized
+ERROR - 2014-11-04 15:08:59 --> Severity: Notice  --> A session had already been started - ignoring session_start() /var/www/html/ps/system/application/controllers/login.php 2
+DEBUG - 2014-11-04 15:08:59 --> Loader Class Initialized
+DEBUG - 2014-11-04 15:08:59 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 15:08:59 --> Database Driver Class Initialized
+ERROR - 2014-11-04 15:08:59 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/html/ps/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-11-04 15:08:59 --> Session Class Initialized
+DEBUG - 2014-11-04 15:08:59 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 15:08:59 --> Session routines successfully run
+DEBUG - 2014-11-04 15:08:59 --> Controller Class Initialized
+DEBUG - 2014-11-04 15:08:59 --> Model Class Initialized
+DEBUG - 2014-11-04 15:08:59 --> Model Class Initialized
+DEBUG - 2014-11-04 15:08:59 --> File loaded: /var/www/html/ps/system/application/views/_template/public_header.html
+DEBUG - 2014-11-04 15:08:59 --> File loaded: /var/www/html/ps/system/application/views/public/login/login.php
+DEBUG - 2014-11-04 15:08:59 --> Final output sent to browser
+DEBUG - 2014-11-04 15:08:59 --> Total execution time: 0.2011
+DEBUG - 2014-11-04 15:09:00 --> Config Class Initialized
+DEBUG - 2014-11-04 15:09:00 --> Hooks Class Initialized
+DEBUG - 2014-11-04 15:09:00 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 15:09:00 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 15:09:00 --> URI Class Initialized
+DEBUG - 2014-11-04 15:09:00 --> Router Class Initialized
+ERROR - 2014-11-04 15:09:00 --> 404 Page Not Found --> search
+DEBUG - 2014-11-04 15:09:03 --> Config Class Initialized
+DEBUG - 2014-11-04 15:09:03 --> Hooks Class Initialized
+DEBUG - 2014-11-04 15:09:03 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 15:09:03 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 15:09:03 --> URI Class Initialized
+DEBUG - 2014-11-04 15:09:03 --> Router Class Initialized
+DEBUG - 2014-11-04 15:09:03 --> Output Class Initialized
+DEBUG - 2014-11-04 15:09:03 --> Security Class Initialized
+DEBUG - 2014-11-04 15:09:03 --> Input Class Initialized
+DEBUG - 2014-11-04 15:09:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 15:09:03 --> Language Class Initialized
+ERROR - 2014-11-04 15:09:03 --> Severity: Notice  --> A session had already been started - ignoring session_start() /var/www/html/ps/system/application/controllers/login.php 2
+DEBUG - 2014-11-04 15:09:03 --> Loader Class Initialized
+DEBUG - 2014-11-04 15:09:03 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 15:09:03 --> Database Driver Class Initialized
+ERROR - 2014-11-04 15:09:03 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/html/ps/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-11-04 15:09:03 --> Session Class Initialized
+DEBUG - 2014-11-04 15:09:03 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 15:09:03 --> Session routines successfully run
+DEBUG - 2014-11-04 15:09:03 --> Controller Class Initialized
+DEBUG - 2014-11-04 15:09:03 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:03 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:03 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:03 --> File loaded: /var/www/html/ps/system/application/views/public/login/order_popup.php
+DEBUG - 2014-11-04 15:09:08 --> Config Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Hooks Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 15:09:08 --> URI Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Router Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Output Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Security Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Input Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 15:09:08 --> Language Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Loader Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 15:09:08 --> Database Driver Class Initialized
+ERROR - 2014-11-04 15:09:08 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/html/ps/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-11-04 15:09:08 --> Session Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 15:09:08 --> Session routines successfully run
+DEBUG - 2014-11-04 15:09:08 --> Controller Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Config Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Hooks Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 15:09:08 --> URI Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Router Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Output Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Security Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Input Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 15:09:08 --> Language Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Loader Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 15:09:08 --> Database Driver Class Initialized
+ERROR - 2014-11-04 15:09:08 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/html/ps/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-11-04 15:09:08 --> Session Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 15:09:08 --> Session routines successfully run
+DEBUG - 2014-11-04 15:09:08 --> Controller Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:09:08 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:09:08 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> File loaded: /var/www/html/ps/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-04 15:09:08 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:08 --> File loaded: /var/www/html/ps/system/application/views/public/service/show.php
+DEBUG - 2014-11-04 15:09:08 --> File loaded: /var/www/html/ps/system/application/views/public/inc/header.php
+DEBUG - 2014-11-04 15:09:08 --> File loaded: /var/www/html/ps/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-04 15:09:08 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:09:08 --> File loaded: /var/www/html/ps/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-04 15:09:08 --> File loaded: /var/www/html/ps/system/application/views/public/inc/template.php
+DEBUG - 2014-11-04 15:09:08 --> Final output sent to browser
+DEBUG - 2014-11-04 15:09:08 --> Total execution time: 0.4772
+DEBUG - 2014-11-04 15:09:12 --> Config Class Initialized
+DEBUG - 2014-11-04 15:09:12 --> Hooks Class Initialized
+DEBUG - 2014-11-04 15:09:12 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 15:09:12 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 15:09:12 --> URI Class Initialized
+DEBUG - 2014-11-04 15:09:12 --> Router Class Initialized
+DEBUG - 2014-11-04 15:09:12 --> Output Class Initialized
+DEBUG - 2014-11-04 15:09:12 --> Security Class Initialized
+DEBUG - 2014-11-04 15:09:12 --> Input Class Initialized
+DEBUG - 2014-11-04 15:09:12 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 15:09:12 --> Language Class Initialized
+DEBUG - 2014-11-04 15:09:12 --> Loader Class Initialized
+DEBUG - 2014-11-04 15:09:12 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 15:09:12 --> Database Driver Class Initialized
+ERROR - 2014-11-04 15:09:12 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/html/ps/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-11-04 15:09:12 --> Session Class Initialized
+DEBUG - 2014-11-04 15:09:12 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 15:09:12 --> Session routines successfully run
+DEBUG - 2014-11-04 15:09:12 --> Controller Class Initialized
+DEBUG - 2014-11-04 15:09:12 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:09:12 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:09:12 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:12 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:12 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:12 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:12 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:12 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:12 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:12 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:12 --> File loaded: /var/www/html/ps/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-04 15:09:12 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:12 --> File loaded: /var/www/html/ps/system/application/views/public/service/show.php
+DEBUG - 2014-11-04 15:09:12 --> File loaded: /var/www/html/ps/system/application/views/public/inc/header.php
+DEBUG - 2014-11-04 15:09:12 --> File loaded: /var/www/html/ps/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-04 15:09:12 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:09:12 --> File loaded: /var/www/html/ps/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-04 15:09:12 --> File loaded: /var/www/html/ps/system/application/views/public/inc/template.php
+DEBUG - 2014-11-04 15:09:12 --> Final output sent to browser
+DEBUG - 2014-11-04 15:09:12 --> Total execution time: 0.2433
+DEBUG - 2014-11-04 15:09:27 --> Config Class Initialized
+DEBUG - 2014-11-04 15:09:27 --> Hooks Class Initialized
+DEBUG - 2014-11-04 15:09:27 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 15:09:27 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 15:09:27 --> URI Class Initialized
+DEBUG - 2014-11-04 15:09:27 --> Router Class Initialized
+DEBUG - 2014-11-04 15:09:27 --> Output Class Initialized
+DEBUG - 2014-11-04 15:09:27 --> Security Class Initialized
+DEBUG - 2014-11-04 15:09:27 --> Input Class Initialized
+DEBUG - 2014-11-04 15:09:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 15:09:27 --> Language Class Initialized
+DEBUG - 2014-11-04 15:09:27 --> Loader Class Initialized
+DEBUG - 2014-11-04 15:09:27 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 15:09:27 --> Database Driver Class Initialized
+ERROR - 2014-11-04 15:09:27 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/html/ps/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-11-04 15:09:27 --> Session Class Initialized
+DEBUG - 2014-11-04 15:09:27 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 15:09:27 --> Session routines successfully run
+DEBUG - 2014-11-04 15:09:27 --> Controller Class Initialized
+DEBUG - 2014-11-04 15:09:27 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:09:27 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:09:27 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:27 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:27 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:27 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:27 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:27 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:27 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:27 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:27 --> File loaded: /var/www/html/ps/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-04 15:09:27 --> Model Class Initialized
+DEBUG - 2014-11-04 15:09:27 --> File loaded: /var/www/html/ps/system/application/views/public/service/show.php
+DEBUG - 2014-11-04 15:09:27 --> File loaded: /var/www/html/ps/system/application/views/public/inc/header.php
+DEBUG - 2014-11-04 15:09:27 --> File loaded: /var/www/html/ps/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-04 15:09:27 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:09:27 --> File loaded: /var/www/html/ps/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-04 15:09:27 --> File loaded: /var/www/html/ps/system/application/views/public/inc/template.php
+DEBUG - 2014-11-04 15:09:27 --> Final output sent to browser
+DEBUG - 2014-11-04 15:09:27 --> Total execution time: 0.4861
+DEBUG - 2014-11-04 15:11:13 --> Config Class Initialized
+DEBUG - 2014-11-04 15:11:13 --> Hooks Class Initialized
+DEBUG - 2014-11-04 15:11:13 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 15:11:13 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 15:11:13 --> URI Class Initialized
+DEBUG - 2014-11-04 15:11:13 --> Router Class Initialized
+DEBUG - 2014-11-04 15:11:13 --> Output Class Initialized
+DEBUG - 2014-11-04 15:11:13 --> Security Class Initialized
+DEBUG - 2014-11-04 15:11:13 --> Input Class Initialized
+DEBUG - 2014-11-04 15:11:13 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 15:11:13 --> Language Class Initialized
+DEBUG - 2014-11-04 15:11:13 --> Loader Class Initialized
+DEBUG - 2014-11-04 15:11:13 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 15:11:13 --> Database Driver Class Initialized
+ERROR - 2014-11-04 15:11:13 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/html/ps/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-11-04 15:11:13 --> Session Class Initialized
+DEBUG - 2014-11-04 15:11:13 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 15:11:13 --> Session routines successfully run
+DEBUG - 2014-11-04 15:11:13 --> Controller Class Initialized
+DEBUG - 2014-11-04 15:11:13 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:13 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:13 --> File loaded: /var/www/html/ps/system/application/views/public/reports/detail.php
+DEBUG - 2014-11-04 15:11:13 --> Final output sent to browser
+DEBUG - 2014-11-04 15:11:13 --> Total execution time: 0.2046
+DEBUG - 2014-11-04 15:11:30 --> Config Class Initialized
+DEBUG - 2014-11-04 15:11:30 --> Hooks Class Initialized
+DEBUG - 2014-11-04 15:11:30 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 15:11:30 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 15:11:30 --> URI Class Initialized
+DEBUG - 2014-11-04 15:11:30 --> Router Class Initialized
+DEBUG - 2014-11-04 15:11:30 --> Output Class Initialized
+DEBUG - 2014-11-04 15:11:30 --> Security Class Initialized
+DEBUG - 2014-11-04 15:11:30 --> Input Class Initialized
+DEBUG - 2014-11-04 15:11:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 15:11:30 --> Language Class Initialized
+DEBUG - 2014-11-04 15:11:30 --> Loader Class Initialized
+DEBUG - 2014-11-04 15:11:30 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 15:11:30 --> Database Driver Class Initialized
+ERROR - 2014-11-04 15:11:31 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/html/ps/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-11-04 15:11:31 --> Session Class Initialized
+DEBUG - 2014-11-04 15:11:31 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 15:11:31 --> Session routines successfully run
+DEBUG - 2014-11-04 15:11:31 --> Controller Class Initialized
+DEBUG - 2014-11-04 15:11:31 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:31 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:31 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:31 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:31 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:31 --> File loaded: /var/www/html/ps/system/application/views/public/applications/view_list.php
+DEBUG - 2014-11-04 15:11:31 --> File loaded: /var/www/html/ps/system/application/views/public/inc/header.php
+DEBUG - 2014-11-04 15:11:31 --> File loaded: /var/www/html/ps/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-04 15:11:31 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:11:31 --> File loaded: /var/www/html/ps/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-04 15:11:31 --> File loaded: /var/www/html/ps/system/application/views/public/inc/template.php
+DEBUG - 2014-11-04 15:11:31 --> Final output sent to browser
+DEBUG - 2014-11-04 15:11:31 --> Total execution time: 0.4172
+DEBUG - 2014-11-04 15:11:49 --> Config Class Initialized
+DEBUG - 2014-11-04 15:11:49 --> Hooks Class Initialized
+DEBUG - 2014-11-04 15:11:49 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 15:11:49 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 15:11:49 --> URI Class Initialized
+DEBUG - 2014-11-04 15:11:49 --> Router Class Initialized
+DEBUG - 2014-11-04 15:11:49 --> Output Class Initialized
+DEBUG - 2014-11-04 15:11:49 --> Security Class Initialized
+DEBUG - 2014-11-04 15:11:49 --> Input Class Initialized
+DEBUG - 2014-11-04 15:11:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 15:11:49 --> Language Class Initialized
+DEBUG - 2014-11-04 15:11:49 --> Loader Class Initialized
+DEBUG - 2014-11-04 15:11:49 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 15:11:49 --> Database Driver Class Initialized
+ERROR - 2014-11-04 15:11:49 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/html/ps/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-11-04 15:11:49 --> Session Class Initialized
+DEBUG - 2014-11-04 15:11:49 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 15:11:49 --> Session routines successfully run
+DEBUG - 2014-11-04 15:11:49 --> Controller Class Initialized
+DEBUG - 2014-11-04 15:11:49 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:49 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:49 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:49 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:49 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:49 --> File loaded: /var/www/html/ps/system/application/views/public/applications/partners.php
+DEBUG - 2014-11-04 15:11:49 --> Final output sent to browser
+DEBUG - 2014-11-04 15:11:49 --> Total execution time: 0.2199
+DEBUG - 2014-11-04 15:11:51 --> Config Class Initialized
+DEBUG - 2014-11-04 15:11:51 --> Hooks Class Initialized
+DEBUG - 2014-11-04 15:11:51 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 15:11:51 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 15:11:51 --> URI Class Initialized
+DEBUG - 2014-11-04 15:11:51 --> Router Class Initialized
+DEBUG - 2014-11-04 15:11:51 --> Output Class Initialized
+DEBUG - 2014-11-04 15:11:51 --> Security Class Initialized
+DEBUG - 2014-11-04 15:11:51 --> Input Class Initialized
+DEBUG - 2014-11-04 15:11:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 15:11:51 --> Language Class Initialized
+DEBUG - 2014-11-04 15:11:51 --> Loader Class Initialized
+DEBUG - 2014-11-04 15:11:51 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 15:11:51 --> Database Driver Class Initialized
+ERROR - 2014-11-04 15:11:51 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/html/ps/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-11-04 15:11:51 --> Session Class Initialized
+DEBUG - 2014-11-04 15:11:51 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 15:11:51 --> Session routines successfully run
+DEBUG - 2014-11-04 15:11:51 --> Controller Class Initialized
+DEBUG - 2014-11-04 15:11:51 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:51 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:51 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:51 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:51 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:51 --> File loaded: /var/www/html/ps/system/application/views/public/applications/partners.php
+DEBUG - 2014-11-04 15:11:51 --> Final output sent to browser
+DEBUG - 2014-11-04 15:11:51 --> Total execution time: 0.1358
+DEBUG - 2014-11-04 15:11:54 --> Config Class Initialized
+DEBUG - 2014-11-04 15:11:54 --> Hooks Class Initialized
+DEBUG - 2014-11-04 15:11:54 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 15:11:54 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 15:11:54 --> URI Class Initialized
+DEBUG - 2014-11-04 15:11:54 --> Router Class Initialized
+DEBUG - 2014-11-04 15:11:54 --> Output Class Initialized
+DEBUG - 2014-11-04 15:11:54 --> Security Class Initialized
+DEBUG - 2014-11-04 15:11:54 --> Input Class Initialized
+DEBUG - 2014-11-04 15:11:54 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 15:11:54 --> Language Class Initialized
+DEBUG - 2014-11-04 15:11:54 --> Loader Class Initialized
+DEBUG - 2014-11-04 15:11:54 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 15:11:54 --> Database Driver Class Initialized
+ERROR - 2014-11-04 15:11:54 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/html/ps/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-11-04 15:11:54 --> Session Class Initialized
+DEBUG - 2014-11-04 15:11:54 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 15:11:54 --> Session routines successfully run
+DEBUG - 2014-11-04 15:11:54 --> Controller Class Initialized
+DEBUG - 2014-11-04 15:11:54 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:54 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:54 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:54 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:54 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:54 --> File loaded: /var/www/html/ps/system/application/views/public/applications/partners.php
+DEBUG - 2014-11-04 15:11:54 --> Final output sent to browser
+DEBUG - 2014-11-04 15:11:54 --> Total execution time: 0.1548
+DEBUG - 2014-11-04 15:11:55 --> Config Class Initialized
+DEBUG - 2014-11-04 15:11:55 --> Hooks Class Initialized
+DEBUG - 2014-11-04 15:11:55 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 15:11:55 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 15:11:55 --> URI Class Initialized
+DEBUG - 2014-11-04 15:11:55 --> Router Class Initialized
+DEBUG - 2014-11-04 15:11:55 --> Output Class Initialized
+DEBUG - 2014-11-04 15:11:55 --> Security Class Initialized
+DEBUG - 2014-11-04 15:11:55 --> Input Class Initialized
+DEBUG - 2014-11-04 15:11:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 15:11:55 --> Language Class Initialized
+DEBUG - 2014-11-04 15:11:55 --> Loader Class Initialized
+DEBUG - 2014-11-04 15:11:55 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 15:11:55 --> Database Driver Class Initialized
+ERROR - 2014-11-04 15:11:55 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/html/ps/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-11-04 15:11:55 --> Session Class Initialized
+DEBUG - 2014-11-04 15:11:55 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 15:11:55 --> Session routines successfully run
+DEBUG - 2014-11-04 15:11:55 --> Controller Class Initialized
+DEBUG - 2014-11-04 15:11:55 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:55 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:55 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:55 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:55 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:55 --> File loaded: /var/www/html/ps/system/application/views/public/applications/partners.php
+DEBUG - 2014-11-04 15:11:55 --> Final output sent to browser
+DEBUG - 2014-11-04 15:11:55 --> Total execution time: 0.1397
+DEBUG - 2014-11-04 15:11:58 --> Config Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Hooks Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 15:11:58 --> URI Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Router Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Output Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Security Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Input Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 15:11:58 --> Language Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Loader Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 15:11:58 --> Database Driver Class Initialized
+ERROR - 2014-11-04 15:11:58 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/html/ps/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-11-04 15:11:58 --> Session Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 15:11:58 --> Session routines successfully run
+DEBUG - 2014-11-04 15:11:58 --> Controller Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Config Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Hooks Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 15:11:58 --> URI Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Router Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Output Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Security Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Input Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 15:11:58 --> Language Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Loader Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 15:11:58 --> Database Driver Class Initialized
+ERROR - 2014-11-04 15:11:58 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/html/ps/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-11-04 15:11:58 --> Session Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 15:11:58 --> Session routines successfully run
+DEBUG - 2014-11-04 15:11:58 --> Controller Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> Model Class Initialized
+DEBUG - 2014-11-04 15:11:58 --> File loaded: /var/www/html/ps/system/application/views/public/applications/view_list.php
+DEBUG - 2014-11-04 15:11:58 --> File loaded: /var/www/html/ps/system/application/views/public/inc/header.php
+DEBUG - 2014-11-04 15:11:58 --> File loaded: /var/www/html/ps/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-04 15:11:58 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:11:58 --> File loaded: /var/www/html/ps/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-04 15:11:58 --> File loaded: /var/www/html/ps/system/application/views/public/inc/template.php
+DEBUG - 2014-11-04 15:11:58 --> Final output sent to browser
+DEBUG - 2014-11-04 15:11:58 --> Total execution time: 0.1591
+DEBUG - 2014-11-04 15:12:00 --> Config Class Initialized
+DEBUG - 2014-11-04 15:12:00 --> Hooks Class Initialized
+DEBUG - 2014-11-04 15:12:00 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 15:12:00 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 15:12:00 --> URI Class Initialized
+DEBUG - 2014-11-04 15:12:00 --> Router Class Initialized
+DEBUG - 2014-11-04 15:12:00 --> Output Class Initialized
+DEBUG - 2014-11-04 15:12:00 --> Security Class Initialized
+DEBUG - 2014-11-04 15:12:00 --> Input Class Initialized
+DEBUG - 2014-11-04 15:12:00 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 15:12:00 --> Language Class Initialized
+DEBUG - 2014-11-04 15:12:00 --> Loader Class Initialized
+DEBUG - 2014-11-04 15:12:00 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 15:12:00 --> Database Driver Class Initialized
+ERROR - 2014-11-04 15:12:00 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/html/ps/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-11-04 15:12:00 --> Session Class Initialized
+DEBUG - 2014-11-04 15:12:00 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 15:12:00 --> Session routines successfully run
+DEBUG - 2014-11-04 15:12:00 --> Controller Class Initialized
+DEBUG - 2014-11-04 15:12:00 --> Model Class Initialized
+DEBUG - 2014-11-04 15:12:00 --> Model Class Initialized
+DEBUG - 2014-11-04 15:12:00 --> Model Class Initialized
+DEBUG - 2014-11-04 15:12:00 --> Model Class Initialized
+DEBUG - 2014-11-04 15:12:00 --> Model Class Initialized
+DEBUG - 2014-11-04 15:12:00 --> File loaded: /var/www/html/ps/system/application/views/public/applications/partners.php
+DEBUG - 2014-11-04 15:12:00 --> Final output sent to browser
+DEBUG - 2014-11-04 15:12:00 --> Total execution time: 0.1496
+DEBUG - 2014-11-04 15:12:06 --> Config Class Initialized
+DEBUG - 2014-11-04 15:12:06 --> Hooks Class Initialized
+DEBUG - 2014-11-04 15:12:06 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 15:12:06 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 15:12:06 --> URI Class Initialized
+DEBUG - 2014-11-04 15:12:06 --> Router Class Initialized
+DEBUG - 2014-11-04 15:12:06 --> Output Class Initialized
+DEBUG - 2014-11-04 15:12:06 --> Security Class Initialized
+DEBUG - 2014-11-04 15:12:06 --> Input Class Initialized
+DEBUG - 2014-11-04 15:12:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 15:12:06 --> Language Class Initialized
+DEBUG - 2014-11-04 15:12:06 --> Loader Class Initialized
+DEBUG - 2014-11-04 15:12:06 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 15:12:06 --> Database Driver Class Initialized
+ERROR - 2014-11-04 15:12:06 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/html/ps/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-11-04 15:12:06 --> Session Class Initialized
+DEBUG - 2014-11-04 15:12:06 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 15:12:06 --> Session routines successfully run
+DEBUG - 2014-11-04 15:12:06 --> Controller Class Initialized
+DEBUG - 2014-11-04 15:12:06 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:12:06 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:12:06 --> Model Class Initialized
+DEBUG - 2014-11-04 15:12:06 --> Model Class Initialized
+DEBUG - 2014-11-04 15:12:06 --> Model Class Initialized
+DEBUG - 2014-11-04 15:12:06 --> Model Class Initialized
+DEBUG - 2014-11-04 15:12:06 --> Model Class Initialized
+DEBUG - 2014-11-04 15:12:06 --> Model Class Initialized
+DEBUG - 2014-11-04 15:12:06 --> Model Class Initialized
+DEBUG - 2014-11-04 15:12:06 --> Model Class Initialized
+DEBUG - 2014-11-04 15:12:06 --> File loaded: /var/www/html/ps/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-04 15:12:06 --> Model Class Initialized
+DEBUG - 2014-11-04 15:12:06 --> File loaded: /var/www/html/ps/system/application/views/public/service/show.php
+DEBUG - 2014-11-04 15:12:06 --> File loaded: /var/www/html/ps/system/application/views/public/inc/header.php
+DEBUG - 2014-11-04 15:12:06 --> File loaded: /var/www/html/ps/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-04 15:12:06 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:12:06 --> File loaded: /var/www/html/ps/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-04 15:12:06 --> File loaded: /var/www/html/ps/system/application/views/public/inc/template.php
+DEBUG - 2014-11-04 15:12:06 --> Final output sent to browser
+DEBUG - 2014-11-04 15:12:06 --> Total execution time: 0.2473
+DEBUG - 2014-11-04 15:13:11 --> Config Class Initialized
+DEBUG - 2014-11-04 15:13:11 --> Hooks Class Initialized
+DEBUG - 2014-11-04 15:13:11 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 15:13:11 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 15:13:11 --> URI Class Initialized
+DEBUG - 2014-11-04 15:13:11 --> Router Class Initialized
+DEBUG - 2014-11-04 15:13:11 --> Output Class Initialized
+DEBUG - 2014-11-04 15:13:11 --> Security Class Initialized
+DEBUG - 2014-11-04 15:13:11 --> Input Class Initialized
+DEBUG - 2014-11-04 15:13:11 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 15:13:11 --> Language Class Initialized
+DEBUG - 2014-11-04 15:13:11 --> Loader Class Initialized
+DEBUG - 2014-11-04 15:13:11 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 15:13:11 --> Database Driver Class Initialized
+ERROR - 2014-11-04 15:13:11 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/html/ps/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-11-04 15:13:11 --> Session Class Initialized
+DEBUG - 2014-11-04 15:13:11 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 15:13:11 --> Session routines successfully run
+DEBUG - 2014-11-04 15:13:11 --> Controller Class Initialized
+DEBUG - 2014-11-04 15:13:11 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:13:11 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:13:11 --> Model Class Initialized
+DEBUG - 2014-11-04 15:13:11 --> Model Class Initialized
+DEBUG - 2014-11-04 15:13:11 --> Model Class Initialized
+DEBUG - 2014-11-04 15:13:11 --> Model Class Initialized
+DEBUG - 2014-11-04 15:13:11 --> Model Class Initialized
+DEBUG - 2014-11-04 15:13:11 --> Model Class Initialized
+DEBUG - 2014-11-04 15:13:11 --> Model Class Initialized
+DEBUG - 2014-11-04 15:13:11 --> Model Class Initialized
+DEBUG - 2014-11-04 15:13:11 --> File loaded: /var/www/html/ps/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-04 15:13:11 --> Model Class Initialized
+DEBUG - 2014-11-04 15:13:11 --> File loaded: /var/www/html/ps/system/application/views/public/service/show.php
+DEBUG - 2014-11-04 15:13:11 --> File loaded: /var/www/html/ps/system/application/views/public/inc/header.php
+DEBUG - 2014-11-04 15:13:11 --> File loaded: /var/www/html/ps/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-04 15:13:11 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:13:11 --> File loaded: /var/www/html/ps/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-04 15:13:11 --> File loaded: /var/www/html/ps/system/application/views/public/inc/template.php
+DEBUG - 2014-11-04 15:13:11 --> Final output sent to browser
+DEBUG - 2014-11-04 15:13:11 --> Total execution time: 0.2756
+DEBUG - 2014-11-04 15:13:13 --> Config Class Initialized
+DEBUG - 2014-11-04 15:13:13 --> Hooks Class Initialized
+DEBUG - 2014-11-04 15:13:13 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 15:13:13 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 15:13:13 --> URI Class Initialized
+DEBUG - 2014-11-04 15:13:13 --> Router Class Initialized
+DEBUG - 2014-11-04 15:13:13 --> Output Class Initialized
+DEBUG - 2014-11-04 15:13:13 --> Security Class Initialized
+DEBUG - 2014-11-04 15:13:13 --> Input Class Initialized
+DEBUG - 2014-11-04 15:13:13 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 15:13:13 --> Language Class Initialized
+DEBUG - 2014-11-04 15:13:13 --> Loader Class Initialized
+DEBUG - 2014-11-04 15:13:13 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 15:13:13 --> Database Driver Class Initialized
+ERROR - 2014-11-04 15:13:13 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/html/ps/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-11-04 15:13:13 --> Session Class Initialized
+DEBUG - 2014-11-04 15:13:13 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 15:13:13 --> Session routines successfully run
+DEBUG - 2014-11-04 15:13:13 --> Controller Class Initialized
+DEBUG - 2014-11-04 15:13:13 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:13:13 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:13:13 --> Model Class Initialized
+DEBUG - 2014-11-04 15:13:13 --> Model Class Initialized
+DEBUG - 2014-11-04 15:13:13 --> Model Class Initialized
+DEBUG - 2014-11-04 15:13:13 --> Model Class Initialized
+DEBUG - 2014-11-04 15:13:13 --> Model Class Initialized
+DEBUG - 2014-11-04 15:13:13 --> Model Class Initialized
+DEBUG - 2014-11-04 15:13:13 --> Model Class Initialized
+DEBUG - 2014-11-04 15:13:13 --> Model Class Initialized
+DEBUG - 2014-11-04 15:13:13 --> File loaded: /var/www/html/ps/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-04 15:13:13 --> Model Class Initialized
+DEBUG - 2014-11-04 15:13:13 --> File loaded: /var/www/html/ps/system/application/views/public/service/show.php
+DEBUG - 2014-11-04 15:13:13 --> File loaded: /var/www/html/ps/system/application/views/public/inc/header.php
+DEBUG - 2014-11-04 15:13:13 --> File loaded: /var/www/html/ps/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-04 15:13:13 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:13:13 --> File loaded: /var/www/html/ps/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-04 15:13:13 --> File loaded: /var/www/html/ps/system/application/views/public/inc/template.php
+DEBUG - 2014-11-04 15:13:13 --> Final output sent to browser
+DEBUG - 2014-11-04 15:13:13 --> Total execution time: 0.1739
+DEBUG - 2014-11-04 15:14:38 --> Config Class Initialized
+DEBUG - 2014-11-04 15:14:38 --> Hooks Class Initialized
+DEBUG - 2014-11-04 15:14:38 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 15:14:38 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 15:14:38 --> URI Class Initialized
+DEBUG - 2014-11-04 15:14:38 --> Router Class Initialized
+DEBUG - 2014-11-04 15:14:38 --> Output Class Initialized
+DEBUG - 2014-11-04 15:14:38 --> Security Class Initialized
+DEBUG - 2014-11-04 15:14:38 --> Input Class Initialized
+DEBUG - 2014-11-04 15:14:38 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 15:14:38 --> Language Class Initialized
+DEBUG - 2014-11-04 15:14:38 --> Loader Class Initialized
+DEBUG - 2014-11-04 15:14:38 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 15:14:38 --> Database Driver Class Initialized
+ERROR - 2014-11-04 15:14:38 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/html/ps/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-11-04 15:14:38 --> Session Class Initialized
+DEBUG - 2014-11-04 15:14:38 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 15:14:38 --> Session routines successfully run
+DEBUG - 2014-11-04 15:14:38 --> Controller Class Initialized
+DEBUG - 2014-11-04 15:14:38 --> Model Class Initialized
+DEBUG - 2014-11-04 15:14:38 --> Model Class Initialized
+DEBUG - 2014-11-04 15:14:38 --> File loaded: /var/www/html/ps/system/application/views/public/orders/lists.php
+DEBUG - 2014-11-04 15:14:39 --> File loaded: /var/www/html/ps/system/application/views/public/inc/header.php
+DEBUG - 2014-11-04 15:14:39 --> File loaded: /var/www/html/ps/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-04 15:14:39 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:14:39 --> File loaded: /var/www/html/ps/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-04 15:14:39 --> File loaded: /var/www/html/ps/system/application/views/public/inc/template.php
+DEBUG - 2014-11-04 15:14:39 --> Final output sent to browser
+DEBUG - 2014-11-04 15:14:39 --> Total execution time: 0.1864
+DEBUG - 2014-11-04 15:18:22 --> Config Class Initialized
+DEBUG - 2014-11-04 15:18:22 --> Hooks Class Initialized
+DEBUG - 2014-11-04 15:18:22 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 15:18:22 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 15:18:22 --> URI Class Initialized
+DEBUG - 2014-11-04 15:18:22 --> Router Class Initialized
+DEBUG - 2014-11-04 15:18:22 --> Output Class Initialized
+DEBUG - 2014-11-04 15:18:22 --> Security Class Initialized
+DEBUG - 2014-11-04 15:18:22 --> Input Class Initialized
+DEBUG - 2014-11-04 15:18:22 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 15:18:22 --> Language Class Initialized
+DEBUG - 2014-11-04 15:18:22 --> Loader Class Initialized
+DEBUG - 2014-11-04 15:18:22 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 15:18:22 --> Database Driver Class Initialized
+ERROR - 2014-11-04 15:18:22 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/html/ps/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-11-04 15:18:22 --> Session Class Initialized
+DEBUG - 2014-11-04 15:18:22 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 15:18:22 --> Session routines successfully run
+DEBUG - 2014-11-04 15:18:22 --> Controller Class Initialized
+DEBUG - 2014-11-04 15:18:22 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:18:22 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:18:22 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:22 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:22 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:22 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:22 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:22 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:22 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:22 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:22 --> File loaded: /var/www/html/ps/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-04 15:18:22 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:22 --> File loaded: /var/www/html/ps/system/application/views/public/service/show.php
+DEBUG - 2014-11-04 15:18:22 --> File loaded: /var/www/html/ps/system/application/views/public/inc/header.php
+DEBUG - 2014-11-04 15:18:22 --> File loaded: /var/www/html/ps/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-04 15:18:22 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:18:22 --> File loaded: /var/www/html/ps/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-04 15:18:22 --> File loaded: /var/www/html/ps/system/application/views/public/inc/template.php
+DEBUG - 2014-11-04 15:18:22 --> Final output sent to browser
+DEBUG - 2014-11-04 15:18:22 --> Total execution time: 0.2425
+DEBUG - 2014-11-04 15:18:24 --> Config Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Config Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Hooks Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Hooks Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 15:18:24 --> URI Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Router Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Output Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Security Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 15:18:24 --> Input Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 15:18:24 --> Language Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> URI Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Loader Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 15:18:24 --> Database Driver Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Router Class Initialized
+ERROR - 2014-11-04 15:18:24 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/html/ps/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-11-04 15:18:24 --> Session Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 15:18:24 --> Session routines successfully run
+DEBUG - 2014-11-04 15:18:24 --> Controller Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Output Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:18:24 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:18:24 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Security Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Input Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 15:18:24 --> File loaded: /var/www/html/ps/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-04 15:18:24 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Language Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:24 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:25 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:25 --> File loaded: /var/www/html/ps/system/application/views/public/service/show.php
+DEBUG - 2014-11-04 15:18:25 --> File loaded: /var/www/html/ps/system/application/views/public/inc/header.php
+DEBUG - 2014-11-04 15:18:25 --> File loaded: /var/www/html/ps/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-04 15:18:25 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:18:25 --> File loaded: /var/www/html/ps/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-04 15:18:25 --> File loaded: /var/www/html/ps/system/application/views/public/inc/template.php
+DEBUG - 2014-11-04 15:18:25 --> Final output sent to browser
+DEBUG - 2014-11-04 15:18:25 --> Total execution time: 0.4690
+DEBUG - 2014-11-04 15:18:25 --> Loader Class Initialized
+DEBUG - 2014-11-04 15:18:25 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 15:18:25 --> Database Driver Class Initialized
+ERROR - 2014-11-04 15:18:25 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/html/ps/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-11-04 15:18:25 --> Session Class Initialized
+DEBUG - 2014-11-04 15:18:25 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 15:18:25 --> Session routines successfully run
+DEBUG - 2014-11-04 15:18:25 --> Controller Class Initialized
+DEBUG - 2014-11-04 15:18:25 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:18:25 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:18:25 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:25 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:25 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:25 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:25 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:25 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:25 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:25 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:25 --> File loaded: /var/www/html/ps/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-04 15:18:25 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:25 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:25 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:25 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:25 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:25 --> File loaded: /var/www/html/ps/system/application/views/public/service/show.php
+DEBUG - 2014-11-04 15:18:25 --> File loaded: /var/www/html/ps/system/application/views/public/inc/header.php
+DEBUG - 2014-11-04 15:18:25 --> File loaded: /var/www/html/ps/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-04 15:18:25 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 15:18:25 --> File loaded: /var/www/html/ps/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-04 15:18:25 --> File loaded: /var/www/html/ps/system/application/views/public/inc/template.php
+DEBUG - 2014-11-04 15:18:25 --> Final output sent to browser
+DEBUG - 2014-11-04 15:18:25 --> Total execution time: 0.6955
+DEBUG - 2014-11-04 15:18:31 --> Config Class Initialized
+DEBUG - 2014-11-04 15:18:31 --> Hooks Class Initialized
+DEBUG - 2014-11-04 15:18:31 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 15:18:31 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 15:18:31 --> URI Class Initialized
+DEBUG - 2014-11-04 15:18:31 --> Router Class Initialized
+DEBUG - 2014-11-04 15:18:31 --> Output Class Initialized
+DEBUG - 2014-11-04 15:18:31 --> Security Class Initialized
+DEBUG - 2014-11-04 15:18:31 --> Input Class Initialized
+DEBUG - 2014-11-04 15:18:31 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 15:18:31 --> Language Class Initialized
+DEBUG - 2014-11-04 15:18:31 --> Loader Class Initialized
+DEBUG - 2014-11-04 15:18:31 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 15:18:31 --> Database Driver Class Initialized
+ERROR - 2014-11-04 15:18:31 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/html/ps/system/database/drivers/mysql/mysql_driver.php 91
+DEBUG - 2014-11-04 15:18:31 --> Session Class Initialized
+DEBUG - 2014-11-04 15:18:31 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 15:18:31 --> Session routines successfully run
+DEBUG - 2014-11-04 15:18:31 --> Controller Class Initialized
+DEBUG - 2014-11-04 15:18:31 --> Model Class Initialized
+DEBUG - 2014-11-04 15:18:31 --> Model Class Initialized
