@@ -2189,3 +2189,102 @@ DEBUG - 2014-11-04 02:09:44 --> Model Class Initialized
 DEBUG - 2014-11-04 02:09:44 --> File loaded: /var/www/html/ps/system/application/views/public/reports/detail.php
 DEBUG - 2014-11-04 02:09:44 --> Final output sent to browser
 DEBUG - 2014-11-04 02:09:44 --> Total execution time: 0.2831
+DEBUG - 2014-11-04 03:54:19 --> Config Class Initialized
+DEBUG - 2014-11-04 03:54:19 --> Hooks Class Initialized
+DEBUG - 2014-11-04 03:54:19 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 03:54:19 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 03:54:19 --> URI Class Initialized
+DEBUG - 2014-11-04 03:54:19 --> Router Class Initialized
+DEBUG - 2014-11-04 03:54:19 --> Output Class Initialized
+DEBUG - 2014-11-04 03:54:19 --> Security Class Initialized
+DEBUG - 2014-11-04 03:54:19 --> Input Class Initialized
+DEBUG - 2014-11-04 03:54:19 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 03:54:19 --> Language Class Initialized
+DEBUG - 2014-11-04 03:54:19 --> Loader Class Initialized
+DEBUG - 2014-11-04 03:54:19 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 03:54:19 --> Database Driver Class Initialized
+DEBUG - 2014-11-04 03:54:19 --> Session Class Initialized
+DEBUG - 2014-11-04 03:54:19 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 03:54:19 --> Session routines successfully run
+DEBUG - 2014-11-04 03:54:19 --> Controller Class Initialized
+DEBUG - 2014-11-04 03:54:19 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 03:54:19 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 03:54:19 --> Model Class Initialized
+DEBUG - 2014-11-04 03:54:19 --> Model Class Initialized
+DEBUG - 2014-11-04 03:54:19 --> Model Class Initialized
+DEBUG - 2014-11-04 03:54:19 --> Model Class Initialized
+DEBUG - 2014-11-04 03:54:19 --> Model Class Initialized
+DEBUG - 2014-11-04 03:54:19 --> Model Class Initialized
+DEBUG - 2014-11-04 03:54:19 --> Model Class Initialized
+DEBUG - 2014-11-04 03:54:19 --> Model Class Initialized
+DEBUG - 2014-11-04 03:54:19 --> File loaded: /var/www/html/ps/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-04 03:54:19 --> Model Class Initialized
+DEBUG - 2014-11-04 03:54:19 --> File loaded: /var/www/html/ps/system/application/views/public/service/show.php
+DEBUG - 2014-11-04 03:54:19 --> File loaded: /var/www/html/ps/system/application/views/public/inc/header.php
+DEBUG - 2014-11-04 03:54:19 --> File loaded: /var/www/html/ps/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-04 03:54:19 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 03:54:19 --> File loaded: /var/www/html/ps/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-04 03:54:19 --> File loaded: /var/www/html/ps/system/application/views/public/inc/template.php
+DEBUG - 2014-11-04 03:54:19 --> Final output sent to browser
+DEBUG - 2014-11-04 03:54:19 --> Total execution time: 0.5287
+DEBUG - 2014-11-04 03:56:06 --> Config Class Initialized
+DEBUG - 2014-11-04 03:56:06 --> Hooks Class Initialized
+DEBUG - 2014-11-04 03:56:06 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 03:56:06 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 03:56:06 --> URI Class Initialized
+DEBUG - 2014-11-04 03:56:06 --> Router Class Initialized
+DEBUG - 2014-11-04 03:56:06 --> Output Class Initialized
+DEBUG - 2014-11-04 03:56:06 --> Security Class Initialized
+DEBUG - 2014-11-04 03:56:06 --> Input Class Initialized
+DEBUG - 2014-11-04 03:56:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 03:56:06 --> Language Class Initialized
+DEBUG - 2014-11-04 03:56:06 --> Loader Class Initialized
+DEBUG - 2014-11-04 03:56:06 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 03:56:06 --> Database Driver Class Initialized
+DEBUG - 2014-11-04 03:56:06 --> Session Class Initialized
+DEBUG - 2014-11-04 03:56:06 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 03:56:06 --> Session routines successfully run
+DEBUG - 2014-11-04 03:56:06 --> Controller Class Initialized
+DEBUG - 2014-11-04 03:56:06 --> Model Class Initialized
+DEBUG - 2014-11-04 03:56:06 --> Model Class Initialized
+DEBUG - 2014-11-04 03:56:06 --> File loaded: /var/www/html/ps/system/application/views/public/reports/detail.php
+DEBUG - 2014-11-04 03:56:06 --> Final output sent to browser
+DEBUG - 2014-11-04 03:56:06 --> Total execution time: 0.2909
+DEBUG - 2014-11-04 03:58:55 --> Config Class Initialized
+DEBUG - 2014-11-04 03:58:55 --> Hooks Class Initialized
+DEBUG - 2014-11-04 03:58:55 --> Utf8 Class Initialized
+DEBUG - 2014-11-04 03:58:55 --> UTF-8 Support Enabled
+DEBUG - 2014-11-04 03:58:55 --> URI Class Initialized
+DEBUG - 2014-11-04 03:58:55 --> Router Class Initialized
+DEBUG - 2014-11-04 03:58:55 --> Output Class Initialized
+DEBUG - 2014-11-04 03:58:55 --> Security Class Initialized
+DEBUG - 2014-11-04 03:58:55 --> Input Class Initialized
+DEBUG - 2014-11-04 03:58:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-04 03:58:55 --> Language Class Initialized
+DEBUG - 2014-11-04 03:58:55 --> Loader Class Initialized
+DEBUG - 2014-11-04 03:58:55 --> Helper loaded: url_helper
+DEBUG - 2014-11-04 03:58:55 --> Database Driver Class Initialized
+DEBUG - 2014-11-04 03:58:55 --> Session Class Initialized
+DEBUG - 2014-11-04 03:58:55 --> Helper loaded: string_helper
+DEBUG - 2014-11-04 03:58:55 --> Session routines successfully run
+DEBUG - 2014-11-04 03:58:55 --> Controller Class Initialized
+DEBUG - 2014-11-04 03:58:55 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 03:58:55 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 03:58:55 --> Model Class Initialized
+DEBUG - 2014-11-04 03:58:55 --> Model Class Initialized
+DEBUG - 2014-11-04 03:58:55 --> Model Class Initialized
+DEBUG - 2014-11-04 03:58:55 --> Model Class Initialized
+DEBUG - 2014-11-04 03:58:55 --> Model Class Initialized
+DEBUG - 2014-11-04 03:58:55 --> Model Class Initialized
+DEBUG - 2014-11-04 03:58:55 --> Model Class Initialized
+DEBUG - 2014-11-04 03:58:55 --> Model Class Initialized
+DEBUG - 2014-11-04 03:58:55 --> File loaded: /var/www/html/ps/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-04 03:58:55 --> Model Class Initialized
+DEBUG - 2014-11-04 03:58:55 --> File loaded: /var/www/html/ps/system/application/views/public/service/show.php
+DEBUG - 2014-11-04 03:58:55 --> File loaded: /var/www/html/ps/system/application/views/public/inc/header.php
+DEBUG - 2014-11-04 03:58:55 --> File loaded: /var/www/html/ps/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-04 03:58:55 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-04 03:58:55 --> File loaded: /var/www/html/ps/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-04 03:58:55 --> File loaded: /var/www/html/ps/system/application/views/public/inc/template.php
+DEBUG - 2014-11-04 03:58:55 --> Final output sent to browser
+DEBUG - 2014-11-04 03:58:55 --> Total execution time: 0.4857

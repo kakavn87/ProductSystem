@@ -242,6 +242,16 @@ var roleName = '<?php echo $user->roleName; ?>';
 			</select>
 		</div>
 		<div class="info">
+			<label>Operator</label>
+			<select name="data[ModulRequirement][operator]" class="mr_operator">
+				<option value="=">=</option>
+				<option value="<"><</option>
+				<option value=">">></option>
+				<option value=">=">>=</option>
+				<option value="<="><=</option>
+			</select>
+		</div>
+		<div class="info">
 			<label>Description</label>
 			<textarea name="data[ModulRequirement][description]" class="mr_desc"></textarea>
 		</div>

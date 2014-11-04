@@ -16,30 +16,7 @@
 			<?php endforeach; ?>
 		</div>
 		<?php endif; ?>
-		<form id="outsourceForm">
-		<input type="hidden" name="modulId" value="<?php echo $modul->id; ?>" />
-		<div class="outsourcing-content" style="display: none">
-			<div class="info-container">
-				<div class="info-input">
-					<div>
-						<label>Name</label>
-						<input type="text" name="name[]" />
-					</div>
-					<div>
-						<label>Organization</label>
-						<input type="text" name="organization[]" />
-					</div>
-				</div>
-			</div>
-			<div>
-				<a href="javascript:void(0)" class="add-more">+ Add more</a>
-			</div>
-			<div>
-				<button type="button" class="update-outsource">Update</button>
-			</div>
-		</div>
-		</form>
-	<?php else: ?>
+	<?php endif; ?>
 	<label class="title">Requirement: </label>
 	<table width="100%" class="tbl-requirement-detail">
 		<tr class="first">
@@ -55,8 +32,29 @@
 			</tr>
 		<?php endforeach; ?>
 	</table>
-	<?php endif; ?>
-
+	<form id="outsourceForm">
+	<input type="hidden" name="modulId" value="<?php echo $modul->id; ?>" />
+	<div class="outsourcing-content" style="<?php echo empty($app)?'display: none':''; ?>">
+		<div class="info-container">
+			<div class="info-input">
+				<div>
+					<label>Name</label>
+					<input type="text" name="name[]" />
+				</div>
+				<div>
+					<label>Organization</label>
+					<input type="text" name="organization[]" />
+				</div>
+			</div>
+		</div>
+		<div>
+			<a href="javascript:void(0)" class="add-more">+ Add more</a>
+		</div>
+		<div>
+			<button type="button" class="update-outsource">Update</button>
+		</div>
+	</div>
+	</form>
 	<br />
 	<br />
 </div>
