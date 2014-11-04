@@ -242,7 +242,9 @@ var roleName = '<?php echo $user->roleName; ?>';
 			</select>
 		</div>
 		<div class="info">
-			<label>Operator</label>
+			
+		</div>
+		<div class="info operator" style="display: none">
 			<select name="data[ModulRequirement][operator]" class="mr_operator">
 				<option value="=">=</option>
 				<option value="<"><</option>
@@ -250,6 +252,9 @@ var roleName = '<?php echo $user->roleName; ?>';
 				<option value=">=">>=</option>
 				<option value="<="><=</option>
 			</select>
+			<input type="text" name="data[ModulRequirement][value]" class="mr_value" value="" />
+		</div>
+		<div class="info">
 		</div>
 		<div class="info">
 			<label>Description</label>

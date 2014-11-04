@@ -198,10 +198,21 @@ function doService(params) {
 		$('.re-box, .requirement-container').hide();
 	});
 	
+	$('.mr_type').live('change', function(e) {
+		if($(this).val() == 'modul') {
+			$('.operator').show();
+		} else {
+			$('.operator').hide();
+		}
+	});
+	
 	$('.re-add').live('click', function(e) {
 		var name = $(this).parent().find('.mr_name').val();
 		var type = $(this).parent().find('.mr_type').val();
 		var desc = $(this).parent().find('.mr_desc').val();
+		var value = $(this).parent().find('.mr_value').val();
+		var operator = $(this).parent().find('.mr_operator').val();
+
 		if(!name.trim().length) {
 			alert('Name is not empty');
 			return false;
@@ -210,10 +221,19 @@ function doService(params) {
 		modulRequirement.push({
 			name: name, 
 			type: type, 
-			description: desc
+			description: desc,
+			operator: operator,
+			value: value
 		});
 		
-		$('table.tbl-requirement').append('<tr class="second"><td>' + name + '</td><td>' + type + '</td><td>' + desc + '</td></tr>');
+		var html = '<tr class="second">';
+		if(type != 'modul') {
+			html += '<td>' + name + '</td><td>' + type + '</td><td>' + desc + '</td>';
+		} else {
+			html += '<td>' + name + ' ' + operator + ' ' + value + '</td><td>' + type + '</td><td>' + desc + '</td>';
+		}
+		html += '</tr>';
+		$('table.tbl-requirement').append(html);
 		
 		$(this).parent().find('.mr_name').val('');
 		$(this).parent().find('.mr_desc').val('');
@@ -239,6 +259,14 @@ function doService(params) {
 			formData.push({
 				name: 'data[modulRequirement][description][]',
 				value: e.description
+			});
+			formData.push({
+				name: 'data[modulRequirement][operator][]',
+				value: e.operator
+			});
+			formData.push({
+				name: 'data[modulRequirement][value][]',
+				value: e.value
 			});
 		})
 		if (e.handled !== true) {

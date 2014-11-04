@@ -123,6 +123,8 @@ class Moduls extends Ext_Controller {
 					$tmp['name'] = $value;
 					$tmp['type'] = $data['modulRequirement']['type'][$key];
 					$tmp['organization'] = $data['modulRequirement']['description'][$key];
+					$tmp['operator'] = $data['modulRequirement']['operator'][$key];
+					$tmp['value'] = $data['modulRequirement']['value'][$key];
 					$tmp['app_id'] = $appId;
 					$tmp['developer_id'] = $user->id;
 

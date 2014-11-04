@@ -221,6 +221,11 @@ class Service extends Ext_Controller {
 			$modul_id = ( int ) $this->input->post ( 'modul_id' );
 			$modul_type = $this->input->post ( 'modul_type' );
 			$service_id = ( int ) $this->input->post ( 'service_id' );
+			
+			$user = $this->session->userdata ( 'user' );
+			if(!$service_id) {
+				$service_id = $user->id * (-1);
+			}
 
 			$this->load->model ( 'modul' );
 			$this->load->model ( 'modul_pattern' );
