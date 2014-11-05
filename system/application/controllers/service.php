@@ -14,7 +14,8 @@ class Service extends Ext_Controller {
 								'save',
 								'load_service',
 								'show_modul_detail',
-								'get_standard'
+								'get_standard',
+								'remove_requirement'
 						)
 				),
 				'role_hotline' => array (
@@ -40,7 +41,8 @@ class Service extends Ext_Controller {
 								'save',
 								'load_service',
 								'show_modul_detail',
-								'get_standard'
+								'get_standard',
+								'remove_requirement'
 						)
 				)
 		);
@@ -221,7 +223,7 @@ class Service extends Ext_Controller {
 			$modul_id = ( int ) $this->input->post ( 'modul_id' );
 			$modul_type = $this->input->post ( 'modul_type' );
 			$service_id = ( int ) $this->input->post ( 'service_id' );
-			
+
 			$user = $this->session->userdata ( 'user' );
 			if(!$service_id) {
 				$service_id = $user->id * (-1);
@@ -443,35 +445,42 @@ class Service extends Ext_Controller {
 
 	function update_outsource($service_id = null) {
 		if ($this->input->is_ajax_request ()) {
-			$data = $this->input->post();
+			$data = $this->input->post('data');
+			$modulId = $this->input->post('modulId');
 			$user = $this->session->userdata ( 'user' );
 
-			if(empty($data['name'][0])) {
-				$this->sendAjax(1, 'Invalid data');
+			$service_id = (int)$service_id;
+			if(!$service_id) {
+				$service_id = $user->id * (-1);
+			}
+
+			if(empty($data['ModulRequirement']['name'])) {
+				$this->sendAjax(1, 'Name can not empty');
 			}
 
 			$this->load->model('application');
-			$app_id = $this->application->saveApplication(array('service_id' => $service_id, 'modul_id' => $data['modulId']));
+			$app_id = $this->application->saveApplication(array('service_id' => $service_id, 'modul_id' => $modulId));
 
+			$data['ModulRequirement']['app_id'] = $app_id;
 			$array = array();
-			foreach($data['name'] as $key => $value) {
-				if(!empty($value)) {
-					$array[] = array(
-						'app_id' => $app_id,
-						'name' => $value,
-						'organization' => $data['organization'][$key],
-						'developer_id' => $user->id
-					);
-				}
-			}
+			$array[] = $data['ModulRequirement'];
 
 			if(!empty($array)) {
 				$this->load->model('modul_requirement');
-
-				$this->modul_requirement->deleteData($app_id);
 				$this->modul_requirement->saveData($array);
 			}
 
+			$this->sendAjax();
+		} else {
+			exit ( 'You can not access this page' );
+		}
+	}
+
+	function remove_requirement() {
+		if ($this->input->is_ajax_request ()) {
+			$mrId = (int)$this->input->post('mrid');
+			$this->load->model('modul_requirement');
+			$this->modul_requirement->deleteById($mrId);
 			$this->sendAjax();
 		} else {
 			exit ( 'You can not access this page' );

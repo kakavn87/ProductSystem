@@ -14,6 +14,11 @@ class Modul_requirement extends CI_Model {
 		$this->db->delete ( $this->_tableName );
 	}
 
+	function deleteById($id) {
+		$this->db->where ( 'id', $id );
+		$this->db->delete ( $this->_tableName );
+	}
+
 	function getByAppId($app_id) {
 		$this->db->select ( '*' );
 		$this->db->from ( $this->_tableName );
@@ -21,7 +26,7 @@ class Modul_requirement extends CI_Model {
 		$query = $this->db->get ();
 		return $query->result ();
 	}
-	
+
 	function getModulAndServiceByUserId($developer_id) {
 		$this->db->select ( 'mr.*, app.status as appStatus, modul.name as modulName, service.name as serviceName' );
 		$this->db->from ( $this->_tableName . ' as mr');

@@ -317,7 +317,7 @@ span.navArrow {
 }
 
 #rightBox {
-	width: 80%;
+	width: 79%;
 	float: left;
 }
 
@@ -625,7 +625,7 @@ input.active {
 }
 
 .bottomBox2 {
-	width: 79%;
+	width: 78%;
 	/*height: 300px;*/
 	float: left;
 	-webkit-border-radius: 10px;
@@ -1480,6 +1480,8 @@ div.modul-name a {
 	width: 45%;
 }
 
+.modul-outsourcing h3,
+.requirement-container h3, 
 .modul-normal-container h3,
 .modulLeft h3, 
 .modulRight h3 {
@@ -1489,6 +1491,8 @@ div.modul-name a {
 	font-size: 16px;
 }
 
+.requirement-container .info, 
+.modul-outsourcing .info,
 .report-content .info, 
 .modul-normal-container .info {padding: 10px; font-size: 12px;}
 
@@ -1576,6 +1580,7 @@ span.add-requirement {
 	min-height: 500px;
 }
 
+.tbl-requirement, 
 .tbl-requirement-detail {
 	border: 1px solid #CCC;
 	border-collapse: collapse;
@@ -1596,4 +1601,10 @@ label.title {
 	padding-left: 5px;
 	text-align: justify;
 	width: 180px;
+}
+
+.td-remove-detail, 
+.td-remove {
+	cursor: pointer;
+	color: red;
 }

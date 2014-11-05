@@ -206,6 +206,14 @@ function doService(params) {
 		}
 	});
 	
+	$('.td-remove').live('click', function(e) {
+		var index = $(this).data('index');
+		modulRequirement = jQuery.grep(modulRequirement, function(value) {
+			return value.name != index;
+		});
+		$(this).parent().remove();
+	});
+	
 	$('.re-add').live('click', function(e) {
 		var name = $(this).parent().find('.mr_name').val();
 		var type = $(this).parent().find('.mr_type').val();
@@ -226,12 +234,14 @@ function doService(params) {
 			value: value
 		});
 		
-		var html = '<tr class="second">';
+		var html = '<tr class="tr-second">';
 		if(type != 'modul') {
 			html += '<td>' + name + '</td><td>' + type + '</td><td>' + desc + '</td>';
 		} else {
 			html += '<td>' + name + ' ' + operator + ' ' + value + '</td><td>' + type + '</td><td>' + desc + '</td>';
 		}
+		
+		html += '<td class="td-remove" data-index="' + name + '">Delete</td>';
 		html += '</tr>';
 		$('table.tbl-requirement').append(html);
 		
@@ -278,7 +288,7 @@ function doService(params) {
 					$.fancybox.showActivity();
 				}
 			}).done(function(data) {
-				$('table.tbl-requirement tr.second').remove();
+				$('table.tbl-requirement tr.tr-second').remove();
 				$.fancybox.hideActivity();
 				
 				var obj = $.parseJSON(data);
