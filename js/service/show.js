@@ -606,7 +606,7 @@ function doService(params) {
 		if(value.status == 'deny') {
 			status = '<div class="status-box"><img src="' + BASE_URL + 'css/images/danger.png" /></div>';
 		}
-		var color = 'style="background-color: ' + value.color + ' !important; background-image: none !important; "';
+		var color = 'style="background-image: url(\'/css/images/' + value.color + '\') !important; background-color: none !important; "';
 		var html = '<div ' + color + ' class="containerBox ui-state-default" id=\''
 				+ JSON.stringify(value) + '\' data-modulid="' + value.id
 				+ '" data-modultype="' +  value.type + '"><div class="closeBox"><img data-modultype="' +  value.type + '" data-modulname="' + value.modul

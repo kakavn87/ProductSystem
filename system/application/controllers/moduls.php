@@ -264,24 +264,27 @@ class Moduls extends Ext_Controller {
 	function _getColor($type) {
 		switch($type) {
 			case 'sub':
-				$color = '#0d3839';
+				$color = 'modul_bg_grune.png';
 				break;
 			case 'support':
-				$color = '#0060b6';
+				$color = 'modul_bg_blau.png';
 				break;
 			case 'child' :
-				$color = '#fafafa';
+				$color = 'modul_bg_silve.png';
 				break;
 			case 'main':
 			default:
 				$user = $this->session->userdata ( 'user' );
 				$this->load->library('roleComponent');
 				if($user->roleName == RoleComponent::ROLE_DEVELOPER) {
-					$color = '#e3fc03';
+// 					$color = '#e3fc03'; // yellow
+					$color = 'modul_bg_orange.png';
 				} else if($user->roleName == RoleComponent::ROLE_PLANER) {
-					$color = '#d70318';
+// 					$color = '#d70318'; // red
+					$color = 'modul_bg_red.png';
 				} else {
-					$color = '#ff00ff';
+// 					$color = '#ff00ff'; // pink
+					$color = 'modul_bg_lila.png';
 				}
 
 				break;
