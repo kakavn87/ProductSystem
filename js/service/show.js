@@ -198,10 +198,29 @@ function doService(params) {
 		$('.re-box, .requirement-container').hide();
 	});
 	
+	$('.mr_type').live('change', function(e) {
+		if($(this).val() == 'modul') {
+			$('.operator').show();
+		} else {
+			$('.operator').hide();
+		}
+	});
+	
+	$('.td-remove').live('click', function(e) {
+		var index = $(this).data('index');
+		modulRequirement = jQuery.grep(modulRequirement, function(value) {
+			return value.name != index;
+		});
+		$(this).parent().remove();
+	});
+	
 	$('.re-add').live('click', function(e) {
 		var name = $(this).parent().find('.mr_name').val();
 		var type = $(this).parent().find('.mr_type').val();
 		var desc = $(this).parent().find('.mr_desc').val();
+		var value = $(this).parent().find('.mr_value').val();
+		var operator = $(this).parent().find('.mr_operator').val();
+
 		if(!name.trim().length) {
 			alert('Name is not empty');
 			return false;
@@ -210,10 +229,21 @@ function doService(params) {
 		modulRequirement.push({
 			name: name, 
 			type: type, 
-			description: desc
+			description: desc,
+			operator: operator,
+			value: value
 		});
 		
-		$('table.tbl-requirement').append('<tr class="second"><td>' + name + '</td><td>' + type + '</td><td>' + desc + '</td></tr>');
+		var html = '<tr class="tr-second">';
+		if(type != 'modul') {
+			html += '<td>' + name + '</td><td>' + type + '</td><td>' + desc + '</td>';
+		} else {
+			html += '<td>' + name + ' ' + operator + ' ' + value + '</td><td>' + type + '</td><td>' + desc + '</td>';
+		}
+		
+		html += '<td class="td-remove" data-index="' + name + '">Delete</td>';
+		html += '</tr>';
+		$('table.tbl-requirement').append(html);
 		
 		$(this).parent().find('.mr_name').val('');
 		$(this).parent().find('.mr_desc').val('');
@@ -240,6 +270,14 @@ function doService(params) {
 				name: 'data[modulRequirement][description][]',
 				value: e.description
 			});
+			formData.push({
+				name: 'data[modulRequirement][operator][]',
+				value: e.operator
+			});
+			formData.push({
+				name: 'data[modulRequirement][value][]',
+				value: e.value
+			});
 		})
 		if (e.handled !== true) {
 			$.ajax({
@@ -250,7 +288,7 @@ function doService(params) {
 					$.fancybox.showActivity();
 				}
 			}).done(function(data) {
-				$('table.tbl-requirement tr.second').remove();
+				$('table.tbl-requirement tr.tr-second').remove();
 				$.fancybox.hideActivity();
 				
 				var obj = $.parseJSON(data);
@@ -568,7 +606,7 @@ function doService(params) {
 		if(value.status == 'deny') {
 			status = '<div class="status-box"><img src="' + BASE_URL + 'css/images/danger.png" /></div>';
 		}
-		var color = 'style="background-color: ' + value.color + ' !important; background-image: none !important; "';
+		var color = 'style="background-image: url(\'/css/images/' + value.color + '\') !important; background-color: none !important; "';
 		var html = '<div ' + color + ' class="containerBox ui-state-default" id=\''
 				+ JSON.stringify(value) + '\' data-modulid="' + value.id
 				+ '" data-modultype="' +  value.type + '"><div class="closeBox"><img data-modultype="' +  value.type + '" data-modulname="' + value.modul

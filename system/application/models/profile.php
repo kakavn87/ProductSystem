@@ -1,5 +1,9 @@
 <?php
 class Profile extends CI_Model {
+	const TYPE_MODUL = 'modul';
+	const TYPE_ORGANIZATION = 'organization';
+	const TYPE_PROVIDER = 'provider';
+
 	public function __construct() {
 		parent::__construct ();
 
