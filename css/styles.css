@@ -317,7 +317,7 @@ span.navArrow {
 }
 
 #rightBox {
-	width: 80%;
+	width: 920px;
 	float: left;
 }
 
@@ -625,7 +625,7 @@ input.active {
 }
 
 .bottomBox2 {
-	width: 79%;
+	width: 78%;
 	/*height: 300px;*/
 	float: left;
 	-webkit-border-radius: 10px;
@@ -1261,7 +1261,7 @@ div.filter div {
 	padding: 3px;
 }
 
-#saveService, .saveModul, .add-report {
+#saveService, .saveModul, .add-report, #addComment {
 	background-image: -moz-linear-gradient(center bottom, rgb(30, 144, 255)
 		40%, rgb(135, 206, 250) 70%);
 	border: 1px solid #fff;
@@ -1278,6 +1278,7 @@ div.filter div {
 	height: 40px;
 	vertical-align: middle;
 }
+
 
 
  .add-module {
