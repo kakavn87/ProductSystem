@@ -7,8 +7,20 @@
 			<h1>Edit</h1>
 			<div class="clear"></div>
 			<div class="info">
+				<label>Type</label>
+				<select class="type" name="data[type]">
+					<option value="organization" <?php echo isset($profile) && $profile->type == 'organization'?'selected="selected"':'';?>>Organization</option>
+					<option value="modul" <?php echo isset($profile) && $profile->type == 'modul'?'selected="selected"':'';?>>Modul</option>
+					<option value="provider" <?php echo isset($profile) && $profile->type == 'provider'?'selected="selected"':'';?>>Provider</option>
+				</select>
+			</div>
+			<div class="info ui-widget">
 				<label>Name:</label>
-				<input type="text" name="data[name]" value="<?php echo isset($profile)?$profile->name:'';?>" />
+				<input type="text" name="data[name]" class="name-profile" value="<?php echo isset($profile)?$profile->name:'';?>" />
+				<select name="data[operator]" class="operator" style="<?php echo isset($profile) && $profile->type != 'modul'?'display: none"':'';?>">
+					<option value="=" <?php echo isset($profile) && $profile->operator == '='?'selected="selected"':'';?>>=</option>
+				</select>
+				<input style="<?php echo isset($profile) && $profile->type != 'modul'?'display: none"':'';?>" class="value" type="text" name="data[value]" value="<?php echo isset($profile)?$profile->value:'';?>" />
 			</div>
 			<div class="info">
 				<label>Organization: </label>

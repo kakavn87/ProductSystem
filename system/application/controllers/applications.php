@@ -37,13 +37,26 @@ class Applications extends Ext_Controller {
 
 			$listModulRequiment = $this->modul_requirement->getByAppId($app_id);
 			$profiles = $this->profile->getByUserId($user->id);
-
 			$flag = false;
-			foreach($listModulRequiment as $item) {
-				foreach($profiles as &$profile) {
-					if(strtolower($item->name) === strtolower($profile->name)) {
-						$flag = true;
-						break;
+			foreach($profiles as &$profile) {
+				foreach($listModulRequiment as $item) {
+					switch($item->type) {
+						case Modul_requirement::TYPE_MODUL:
+							if(strtolower($item->name) === strtolower($profile->name)
+								&& $profile->type == 'modul') {
+									$operator = $item->operator == '='? '==' : $item->operator;
+									eval("\$flag = " . $profile->value . $operator . $item->value . ";");
+									if($flag) {
+										$profile->flag = true;
+									}
+							}
+							break;
+						case Modul_requirement::TYPE_ORGANIZATION:
+						case Modul_requirement::TYPE_PROVIDER:
+							if(strtolower($item->name) === strtolower($profile->name)) {
+								$profile->flag = true;
+							}
+							break;
 					}
 				}
 			}
@@ -76,10 +89,25 @@ class Applications extends Ext_Controller {
 			$listModulRequiment = $this->modul_requirement->getByAppId($app_id);
 			$profiles = $this->profile->getByUserId($user->id);
 
-			foreach($listModulRequiment as $item) {
-				foreach($profiles as &$profile) {
-					if(strtolower($item->name) === strtolower($profile->name)) {
-						$profile->flag = true;
+			foreach($profiles as &$profile) {
+				foreach($listModulRequiment as $item) {
+					switch($item->type) {
+						case Modul_requirement::TYPE_MODUL:
+							if(strtolower($item->name) === strtolower($profile->name)
+							&& $profile->type == 'modul') {
+								$operator = $item->operator == '='? '==' : $item->operator;
+								eval("\$flag = " . $profile->value . $operator . $item->value . ";");
+								if($flag) {
+									$profile->flag = true;
+								}
+							}
+							break;
+						case Modul_requirement::TYPE_ORGANIZATION:
+						case Modul_requirement::TYPE_PROVIDER:
+							if(strtolower($item->name) === strtolower($profile->name)) {
+								$profile->flag = true;
+							}
+							break;
 					}
 				}
 			}

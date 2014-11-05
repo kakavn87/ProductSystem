@@ -1430,6 +1430,12 @@ div.modul-name a {
 	font-size: 14px;
 }
 
+.modul_details table {
+	width: 100%;
+	padding: 2px;
+	table-layout:fixed;
+}
+
 .comments {
 	margin-top: 10px;
 }
@@ -1608,3 +1614,4 @@ label.title {
 	cursor: pointer;
 	color: red;
 }
+

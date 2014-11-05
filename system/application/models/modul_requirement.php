@@ -1,5 +1,9 @@
 <?php
 class Modul_requirement extends CI_Model {
+	const TYPE_MODUL = 'modul';
+	const TYPE_ORGANIZATION = 'organization';
+	const TYPE_PROVIDER = 'provider';
+
 	public function __construct() {
 		parent::__construct ();
 
@@ -35,6 +39,16 @@ class Modul_requirement extends CI_Model {
 		$this->db->join('service', 'service.id = app.service_id');
 		$this->db->where('mr.developer_id', $developer_id);
 		$this->db->group_by('mr.app_id');
+		$query = $this->db->get ();
+		return $query->result ();
+	}
+
+	function getByKeyword($keyword, $type) {
+		$this->db->select ( '*' );
+		$this->db->from ( $this->_tableName );
+		$this->db->where('type', $type);
+		$this->db->like('name', $keyword);
+		$this->db->group_by('name');
 		$query = $this->db->get ();
 		return $query->result ();
 	}

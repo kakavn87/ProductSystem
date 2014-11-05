@@ -8,9 +8,17 @@
 			<div class="clear"></div>
 				<table width="100%" style="border-color: #CCC; border-collapse:collapse" border="1">
 					<tr><th align="left">Name</th><th></th></tr>
-					<?php foreach($profiles as $profile): ?>
+					<?php foreach($profiles as $profile):
+					$name = '';
+					if(isset($profile)) :
+						$name = $profile->name;
+						if($profile->type == 'modul') :
+							$name = $name . ' ' . $profile->operator . ' '. $profile->value;
+						endif;
+					endif;
+					?>
 					<tr>
-						<td class="profile-lists"><?php echo $profile->name; ?></td>
+						<td class="profile-lists"><?php echo $name; ?></td>
 						<td>
 						<a href="<?php echo base_url(); ?>profiles/edit/<?php echo $profile->id; ?>">Edit</a>&nbsp;
 						<a href="javascript:void(0);" class="profile-delete" data-href="<?php echo base_url(); ?>profiles/delete/<?php echo $profile->id; ?>">Delete</a>

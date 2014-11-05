@@ -4,12 +4,16 @@
 		<tr>
 		<?php
 		$i = 0;
-		foreach($listModulRequiment as $item) : 
+		foreach($listModulRequiment as $item) :
 			if($i > 0 && $i % 4 == 0) :
 				echo '</tr><tr>';
 			endif;
+			$name = $item->name;
+			if($item->type == 'modul') :
+				$name = $name . ' ' . $item->operator . ' '. $item->value;
+			endif;
 		?>
-			<td><?php echo $item->name; ?></td>
+			<td><?php echo $name; ?></td>
 		<?php $i++; endforeach; ?>
 		</tr>
 	</table>
@@ -18,16 +22,21 @@
 		<tr>
 		<?php
 		$i = 0;
-		foreach($profiles as $profile) : 
+		foreach($profiles as $profile) :
 			if($i > 0 && $i % 4 == 0) :
 				echo '</tr><tr>';
 			endif;
-			$color = '';
+			$color = 'style="color: red";';
 			if(isset($profile->flag) && $profile->flag) :
 				$color = 'style="color: green";';
 			endif;
+
+			$name = $profile->name;
+			if($profile->operator) :
+				$name = $name . ' ' . $profile->operator . ' '. $profile->value;
+			endif;
 		?>
-			<td <?php echo $color; ?>><?php echo $profile->name; ?></td>
+			<td <?php echo $color; ?>><?php echo $name; ?></td>
 		<?php $i++; endforeach; ?>
 		</tr>
 	</table>

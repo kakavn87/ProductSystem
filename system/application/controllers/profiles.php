@@ -9,7 +9,7 @@ class Profiles extends Ext_Controller {
 		$this->_role = array(
 				'role_developer' => array('action' => array('view_profile')),
 				'role_hotline' => array('action' => array()),
-				'role_planer' => array('action' => array('index', 'edit', 'save', 'delete')),
+				'role_planer' => array('action' => array('index', 'edit', 'save', 'delete', 'get_profiles')),
 				'role_entwickler' => array('action' => array()),
 				'role_technical' => array('action' => array()),
 				'role_customer' => array('action' => array())
@@ -54,6 +54,9 @@ class Profiles extends Ext_Controller {
 		$user = $this->session->userdata ( 'user' );
 		$data['user_id'] = $user->id;
 
+		if($data['type'] != Profile::TYPE_MODUL) {
+			$data['operator'] = $data['value'] = null;
+		}
 		if(empty($data['id'])) {
 			$this->profile->saveProfile($data);
 		} else {
@@ -67,5 +70,24 @@ class Profiles extends Ext_Controller {
 		$post = $this->input->post();
 		$data['profiles'] = $this->profile->getByUserId($post['user_id']);
 		$this->load->view('public/profiles/view_profile', $data);
+	}
+
+	function get_profiles() {
+		$keyword = trim(strip_tags($this->input->get('q')));
+		$type = trim($this->input->get('type'));
+
+		$this->load->model('modul_requirement');
+
+		$lists = $this->modul_requirement->getByKeyword($keyword, $type);
+
+		$data = array();
+		foreach($lists as $item) {
+			$data[] = array(
+				'name' => $item->name
+			);
+		}
+
+		echo json_encode($data);
+		exit;
 	}
 }
