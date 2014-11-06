@@ -10,7 +10,9 @@
 			<div class="clear"></div>
 			<div id="list-order">
 				<?php foreach($order_unfinished as $order): ?>
-					<div class="containerBox ui-state-default" data-href="<?php echo base_url(); ?>service/show/Normal/0/<?php echo $order->id; ?>"><?php echo $order->number; ?></div>
+					<div class="containerBox ui-state-default" data-href="<?php echo base_url(); ?>service/show/Normal/0/<?php echo $order->id; ?>">
+						<p class="oder_nummer_todo"><?php echo $order->number; ?></p>
+					</div>
 				<?php endforeach; ?>
 			</div>
 		</div>
@@ -20,10 +22,14 @@
 			<div class="clear"></div>
 			<div id="list-order">
 				<?php foreach($order_finished as $order): ?>
-					<div class="containerBox ui-state-default" data-href="<?php echo base_url(); ?>service/show/Normal/0/<?php echo $order->id; ?>"><?php echo $order->number; ?></div>
+					<div class="containerBox ui-state-default" data-href="<?php echo base_url(); ?>service/show/Normal/0/<?php echo $order->id; ?>">
+						<p class="oder_nummer_finish"><?php echo $order->number; ?></p>
+					</div>
 				<?php endforeach; ?>
 			</div>
 		</div>
+		<div class="clear"></div>
+		
 	</div>
 </form>
 </div>

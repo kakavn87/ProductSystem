@@ -2043,3 +2043,3022 @@ DEBUG - 2014-11-05 22:29:28 --> UTF-8 Support Enabled
 DEBUG - 2014-11-05 22:29:28 --> URI Class Initialized
 DEBUG - 2014-11-05 22:29:28 --> Router Class Initialized
 ERROR - 2014-11-05 22:29:28 --> 404 Page Not Found --> font
+DEBUG - 2014-11-05 22:36:27 --> Config Class Initialized
+DEBUG - 2014-11-05 22:36:27 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:36:27 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:36:27 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:36:27 --> URI Class Initialized
+DEBUG - 2014-11-05 22:36:27 --> Router Class Initialized
+DEBUG - 2014-11-05 22:36:27 --> Output Class Initialized
+DEBUG - 2014-11-05 22:36:27 --> Security Class Initialized
+DEBUG - 2014-11-05 22:36:27 --> Input Class Initialized
+DEBUG - 2014-11-05 22:36:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 22:36:27 --> Language Class Initialized
+DEBUG - 2014-11-05 22:36:27 --> Loader Class Initialized
+DEBUG - 2014-11-05 22:36:27 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 22:36:27 --> Database Driver Class Initialized
+ERROR - 2014-11-05 22:36:27 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 22:36:27 --> Session Class Initialized
+DEBUG - 2014-11-05 22:36:27 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 22:36:27 --> Session routines successfully run
+DEBUG - 2014-11-05 22:36:27 --> Controller Class Initialized
+DEBUG - 2014-11-05 22:36:27 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:36:27 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:36:27 --> Model Class Initialized
+DEBUG - 2014-11-05 22:36:27 --> Model Class Initialized
+DEBUG - 2014-11-05 22:36:27 --> Model Class Initialized
+DEBUG - 2014-11-05 22:36:27 --> Model Class Initialized
+DEBUG - 2014-11-05 22:36:27 --> Model Class Initialized
+DEBUG - 2014-11-05 22:36:27 --> Model Class Initialized
+DEBUG - 2014-11-05 22:36:27 --> Model Class Initialized
+DEBUG - 2014-11-05 22:36:27 --> Model Class Initialized
+DEBUG - 2014-11-05 22:36:27 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-05 22:36:27 --> Model Class Initialized
+DEBUG - 2014-11-05 22:36:27 --> Model Class Initialized
+DEBUG - 2014-11-05 22:36:27 --> Model Class Initialized
+DEBUG - 2014-11-05 22:36:27 --> Model Class Initialized
+DEBUG - 2014-11-05 22:36:27 --> Model Class Initialized
+DEBUG - 2014-11-05 22:36:27 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/show.php
+DEBUG - 2014-11-05 22:36:27 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 22:36:27 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 22:36:27 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:36:27 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 22:36:27 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 22:36:27 --> Final output sent to browser
+DEBUG - 2014-11-05 22:36:27 --> Total execution time: 0.2401
+DEBUG - 2014-11-05 22:37:14 --> Config Class Initialized
+DEBUG - 2014-11-05 22:37:14 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:37:14 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:37:14 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:37:14 --> URI Class Initialized
+DEBUG - 2014-11-05 22:37:14 --> Router Class Initialized
+DEBUG - 2014-11-05 22:37:14 --> Output Class Initialized
+DEBUG - 2014-11-05 22:37:14 --> Security Class Initialized
+DEBUG - 2014-11-05 22:37:14 --> Input Class Initialized
+DEBUG - 2014-11-05 22:37:14 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 22:37:14 --> Language Class Initialized
+DEBUG - 2014-11-05 22:37:14 --> Loader Class Initialized
+DEBUG - 2014-11-05 22:37:14 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 22:37:14 --> Database Driver Class Initialized
+ERROR - 2014-11-05 22:37:14 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 22:37:14 --> Session Class Initialized
+DEBUG - 2014-11-05 22:37:14 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 22:37:14 --> Session routines successfully run
+DEBUG - 2014-11-05 22:37:14 --> Controller Class Initialized
+DEBUG - 2014-11-05 22:37:14 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:37:14 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:37:14 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:14 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:14 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:14 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:14 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:14 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:14 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:14 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:14 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-05 22:37:14 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:14 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:14 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:14 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:14 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:14 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/show.php
+DEBUG - 2014-11-05 22:37:14 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 22:37:14 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 22:37:14 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:37:14 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 22:37:14 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 22:37:14 --> Final output sent to browser
+DEBUG - 2014-11-05 22:37:14 --> Total execution time: 0.2072
+DEBUG - 2014-11-05 22:37:48 --> Config Class Initialized
+DEBUG - 2014-11-05 22:37:48 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:37:48 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:37:48 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:37:48 --> URI Class Initialized
+DEBUG - 2014-11-05 22:37:48 --> Router Class Initialized
+DEBUG - 2014-11-05 22:37:48 --> Output Class Initialized
+DEBUG - 2014-11-05 22:37:48 --> Security Class Initialized
+DEBUG - 2014-11-05 22:37:48 --> Input Class Initialized
+DEBUG - 2014-11-05 22:37:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 22:37:48 --> Language Class Initialized
+ERROR - 2014-11-05 22:37:48 --> Severity: Notice  --> A session had already been started - ignoring session_start() C:\xampp\htdocs\ProducSystemCI\system\application\controllers\login.php 2
+DEBUG - 2014-11-05 22:37:48 --> Loader Class Initialized
+DEBUG - 2014-11-05 22:37:48 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 22:37:48 --> Database Driver Class Initialized
+ERROR - 2014-11-05 22:37:48 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 22:37:48 --> Session Class Initialized
+DEBUG - 2014-11-05 22:37:48 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 22:37:48 --> Session routines successfully run
+DEBUG - 2014-11-05 22:37:48 --> Controller Class Initialized
+DEBUG - 2014-11-05 22:37:48 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:48 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:48 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/_template/public_header.html
+DEBUG - 2014-11-05 22:37:48 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/login/login.php
+DEBUG - 2014-11-05 22:37:48 --> Final output sent to browser
+DEBUG - 2014-11-05 22:37:48 --> Total execution time: 0.1060
+DEBUG - 2014-11-05 22:37:49 --> Config Class Initialized
+DEBUG - 2014-11-05 22:37:49 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:37:49 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:37:49 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:37:49 --> URI Class Initialized
+DEBUG - 2014-11-05 22:37:49 --> Router Class Initialized
+ERROR - 2014-11-05 22:37:49 --> 404 Page Not Found --> search
+DEBUG - 2014-11-05 22:37:53 --> Config Class Initialized
+DEBUG - 2014-11-05 22:37:53 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:37:53 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:37:53 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:37:53 --> URI Class Initialized
+DEBUG - 2014-11-05 22:37:53 --> Router Class Initialized
+DEBUG - 2014-11-05 22:37:53 --> Output Class Initialized
+DEBUG - 2014-11-05 22:37:53 --> Security Class Initialized
+DEBUG - 2014-11-05 22:37:53 --> Input Class Initialized
+DEBUG - 2014-11-05 22:37:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 22:37:53 --> Language Class Initialized
+ERROR - 2014-11-05 22:37:53 --> Severity: Notice  --> A session had already been started - ignoring session_start() C:\xampp\htdocs\ProducSystemCI\system\application\controllers\login.php 2
+DEBUG - 2014-11-05 22:37:53 --> Loader Class Initialized
+DEBUG - 2014-11-05 22:37:53 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 22:37:53 --> Database Driver Class Initialized
+ERROR - 2014-11-05 22:37:53 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 22:37:53 --> Session Class Initialized
+DEBUG - 2014-11-05 22:37:53 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 22:37:53 --> Session routines successfully run
+DEBUG - 2014-11-05 22:37:53 --> Controller Class Initialized
+DEBUG - 2014-11-05 22:37:53 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:53 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:53 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:53 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/login/order_popup.php
+DEBUG - 2014-11-05 22:37:57 --> Config Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:37:57 --> URI Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Router Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Output Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Security Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Input Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 22:37:57 --> Language Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Loader Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 22:37:57 --> Database Driver Class Initialized
+ERROR - 2014-11-05 22:37:57 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 22:37:57 --> Session Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 22:37:57 --> Session routines successfully run
+DEBUG - 2014-11-05 22:37:57 --> Controller Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Config Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:37:57 --> URI Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Router Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Output Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Security Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Input Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 22:37:57 --> Language Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Loader Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 22:37:57 --> Database Driver Class Initialized
+ERROR - 2014-11-05 22:37:57 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 22:37:57 --> Session Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 22:37:57 --> Session routines successfully run
+DEBUG - 2014-11-05 22:37:57 --> Controller Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:37:57 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:37:57 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-05 22:37:57 --> Model Class Initialized
+DEBUG - 2014-11-05 22:37:57 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/show.php
+DEBUG - 2014-11-05 22:37:57 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 22:37:57 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 22:37:57 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:37:57 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 22:37:57 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 22:37:57 --> Final output sent to browser
+DEBUG - 2014-11-05 22:37:57 --> Total execution time: 0.1531
+DEBUG - 2014-11-05 22:43:03 --> Config Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:43:03 --> URI Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Router Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Output Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Security Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Input Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 22:43:03 --> Language Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Loader Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 22:43:03 --> Database Driver Class Initialized
+ERROR - 2014-11-05 22:43:03 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 22:43:03 --> Session Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 22:43:03 --> Session routines successfully run
+DEBUG - 2014-11-05 22:43:03 --> Controller Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:03 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:03 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-05 22:43:03 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/show.php
+DEBUG - 2014-11-05 22:43:03 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 22:43:03 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 22:43:03 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:03 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 22:43:03 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 22:43:03 --> Final output sent to browser
+DEBUG - 2014-11-05 22:43:03 --> Total execution time: 0.1930
+DEBUG - 2014-11-05 22:43:03 --> Config Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:43:03 --> URI Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Router Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Output Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Security Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Input Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 22:43:03 --> Language Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Loader Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 22:43:03 --> Database Driver Class Initialized
+ERROR - 2014-11-05 22:43:03 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 22:43:03 --> Session Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 22:43:03 --> Session routines successfully run
+DEBUG - 2014-11-05 22:43:03 --> Controller Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:03 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:03 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-05 22:43:03 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/show.php
+DEBUG - 2014-11-05 22:43:03 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 22:43:03 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 22:43:03 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:03 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 22:43:03 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 22:43:03 --> Final output sent to browser
+DEBUG - 2014-11-05 22:43:03 --> Total execution time: 0.1879
+DEBUG - 2014-11-05 22:43:03 --> Config Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:43:03 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:43:03 --> URI Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Router Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Output Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Security Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Input Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 22:43:04 --> Language Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Loader Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 22:43:04 --> Database Driver Class Initialized
+ERROR - 2014-11-05 22:43:04 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 22:43:04 --> Session Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 22:43:04 --> Session routines successfully run
+DEBUG - 2014-11-05 22:43:04 --> Controller Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:04 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:04 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-05 22:43:04 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/show.php
+DEBUG - 2014-11-05 22:43:04 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 22:43:04 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 22:43:04 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:04 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 22:43:04 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 22:43:04 --> Final output sent to browser
+DEBUG - 2014-11-05 22:43:04 --> Total execution time: 0.1715
+DEBUG - 2014-11-05 22:43:04 --> Config Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:43:04 --> URI Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Router Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Output Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Security Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Input Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 22:43:04 --> Language Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Loader Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 22:43:04 --> Database Driver Class Initialized
+ERROR - 2014-11-05 22:43:04 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 22:43:04 --> Session Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 22:43:04 --> Session routines successfully run
+DEBUG - 2014-11-05 22:43:04 --> Controller Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:04 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:04 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-05 22:43:04 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:04 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/show.php
+DEBUG - 2014-11-05 22:43:04 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 22:43:04 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 22:43:04 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:04 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 22:43:04 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 22:43:04 --> Final output sent to browser
+DEBUG - 2014-11-05 22:43:04 --> Total execution time: 0.1695
+DEBUG - 2014-11-05 22:43:07 --> Config Class Initialized
+DEBUG - 2014-11-05 22:43:07 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:43:07 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:43:07 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:43:07 --> URI Class Initialized
+DEBUG - 2014-11-05 22:43:07 --> Router Class Initialized
+DEBUG - 2014-11-05 22:43:07 --> Output Class Initialized
+DEBUG - 2014-11-05 22:43:07 --> Security Class Initialized
+DEBUG - 2014-11-05 22:43:07 --> Input Class Initialized
+DEBUG - 2014-11-05 22:43:07 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 22:43:07 --> Language Class Initialized
+DEBUG - 2014-11-05 22:43:07 --> Loader Class Initialized
+DEBUG - 2014-11-05 22:43:07 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 22:43:07 --> Database Driver Class Initialized
+ERROR - 2014-11-05 22:43:07 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 22:43:07 --> Session Class Initialized
+DEBUG - 2014-11-05 22:43:07 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 22:43:07 --> Session routines successfully run
+DEBUG - 2014-11-05 22:43:07 --> Controller Class Initialized
+DEBUG - 2014-11-05 22:43:07 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:07 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:07 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:07 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:07 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:07 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:07 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:07 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:07 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:07 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:07 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-05 22:43:07 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:07 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/show.php
+DEBUG - 2014-11-05 22:43:07 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 22:43:07 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 22:43:07 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:07 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 22:43:07 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 22:43:07 --> Final output sent to browser
+DEBUG - 2014-11-05 22:43:07 --> Total execution time: 0.1665
+DEBUG - 2014-11-05 22:43:17 --> Config Class Initialized
+DEBUG - 2014-11-05 22:43:17 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:43:17 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:43:17 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:43:17 --> URI Class Initialized
+DEBUG - 2014-11-05 22:43:17 --> Router Class Initialized
+DEBUG - 2014-11-05 22:43:17 --> Output Class Initialized
+DEBUG - 2014-11-05 22:43:17 --> Security Class Initialized
+DEBUG - 2014-11-05 22:43:17 --> Input Class Initialized
+DEBUG - 2014-11-05 22:43:17 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 22:43:17 --> Language Class Initialized
+DEBUG - 2014-11-05 22:43:17 --> Loader Class Initialized
+DEBUG - 2014-11-05 22:43:17 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 22:43:17 --> Database Driver Class Initialized
+ERROR - 2014-11-05 22:43:17 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 22:43:17 --> Session Class Initialized
+DEBUG - 2014-11-05 22:43:17 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 22:43:17 --> Session routines successfully run
+DEBUG - 2014-11-05 22:43:17 --> Controller Class Initialized
+DEBUG - 2014-11-05 22:43:17 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:17 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:17 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:17 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:17 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:17 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:17 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:17 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:17 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:17 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:17 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-05 22:43:17 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:17 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/show.php
+DEBUG - 2014-11-05 22:43:17 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 22:43:17 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 22:43:17 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:17 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 22:43:17 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 22:43:17 --> Final output sent to browser
+DEBUG - 2014-11-05 22:43:17 --> Total execution time: 0.1725
+DEBUG - 2014-11-05 22:43:18 --> Config Class Initialized
+DEBUG - 2014-11-05 22:43:18 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:43:18 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:43:18 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:43:18 --> URI Class Initialized
+DEBUG - 2014-11-05 22:43:18 --> Router Class Initialized
+DEBUG - 2014-11-05 22:43:18 --> Output Class Initialized
+DEBUG - 2014-11-05 22:43:18 --> Security Class Initialized
+DEBUG - 2014-11-05 22:43:18 --> Input Class Initialized
+DEBUG - 2014-11-05 22:43:18 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 22:43:18 --> Language Class Initialized
+DEBUG - 2014-11-05 22:43:18 --> Loader Class Initialized
+DEBUG - 2014-11-05 22:43:18 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 22:43:18 --> Database Driver Class Initialized
+ERROR - 2014-11-05 22:43:18 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 22:43:18 --> Session Class Initialized
+DEBUG - 2014-11-05 22:43:18 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 22:43:18 --> Session routines successfully run
+DEBUG - 2014-11-05 22:43:18 --> Controller Class Initialized
+DEBUG - 2014-11-05 22:43:18 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:18 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:18 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:18 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:18 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:18 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:18 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:18 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:18 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:18 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:18 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-05 22:43:18 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:18 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/show.php
+DEBUG - 2014-11-05 22:43:18 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 22:43:18 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 22:43:18 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:18 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 22:43:18 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 22:43:18 --> Final output sent to browser
+DEBUG - 2014-11-05 22:43:18 --> Total execution time: 0.1716
+DEBUG - 2014-11-05 22:43:21 --> Config Class Initialized
+DEBUG - 2014-11-05 22:43:21 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:43:21 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:43:21 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:43:21 --> URI Class Initialized
+DEBUG - 2014-11-05 22:43:21 --> Router Class Initialized
+DEBUG - 2014-11-05 22:43:21 --> Output Class Initialized
+DEBUG - 2014-11-05 22:43:21 --> Security Class Initialized
+DEBUG - 2014-11-05 22:43:21 --> Input Class Initialized
+DEBUG - 2014-11-05 22:43:21 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 22:43:21 --> Language Class Initialized
+DEBUG - 2014-11-05 22:43:21 --> Loader Class Initialized
+DEBUG - 2014-11-05 22:43:21 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 22:43:21 --> Database Driver Class Initialized
+ERROR - 2014-11-05 22:43:21 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 22:43:21 --> Session Class Initialized
+DEBUG - 2014-11-05 22:43:21 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 22:43:21 --> Session routines successfully run
+DEBUG - 2014-11-05 22:43:21 --> Controller Class Initialized
+DEBUG - 2014-11-05 22:43:21 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:21 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:21 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:21 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:21 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:21 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:21 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:21 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:21 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:21 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:21 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-05 22:43:21 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:21 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/show.php
+DEBUG - 2014-11-05 22:43:21 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 22:43:21 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 22:43:21 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:21 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 22:43:21 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 22:43:21 --> Final output sent to browser
+DEBUG - 2014-11-05 22:43:21 --> Total execution time: 0.1681
+DEBUG - 2014-11-05 22:43:23 --> Config Class Initialized
+DEBUG - 2014-11-05 22:43:23 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:43:23 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:43:23 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:43:23 --> URI Class Initialized
+DEBUG - 2014-11-05 22:43:23 --> Router Class Initialized
+DEBUG - 2014-11-05 22:43:23 --> Output Class Initialized
+DEBUG - 2014-11-05 22:43:23 --> Security Class Initialized
+DEBUG - 2014-11-05 22:43:23 --> Input Class Initialized
+DEBUG - 2014-11-05 22:43:23 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 22:43:23 --> Language Class Initialized
+DEBUG - 2014-11-05 22:43:23 --> Loader Class Initialized
+DEBUG - 2014-11-05 22:43:23 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 22:43:23 --> Database Driver Class Initialized
+ERROR - 2014-11-05 22:43:23 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 22:43:23 --> Session Class Initialized
+DEBUG - 2014-11-05 22:43:23 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 22:43:23 --> Session routines successfully run
+DEBUG - 2014-11-05 22:43:23 --> Controller Class Initialized
+DEBUG - 2014-11-05 22:43:23 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:23 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:23 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:23 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:23 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:23 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:23 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:23 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:23 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:23 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:23 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-05 22:43:23 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:23 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/show.php
+DEBUG - 2014-11-05 22:43:23 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 22:43:23 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 22:43:23 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:23 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 22:43:23 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 22:43:23 --> Final output sent to browser
+DEBUG - 2014-11-05 22:43:23 --> Total execution time: 0.1691
+DEBUG - 2014-11-05 22:43:30 --> Config Class Initialized
+DEBUG - 2014-11-05 22:43:30 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:43:30 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:43:30 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:43:30 --> URI Class Initialized
+DEBUG - 2014-11-05 22:43:30 --> Router Class Initialized
+DEBUG - 2014-11-05 22:43:30 --> Output Class Initialized
+DEBUG - 2014-11-05 22:43:30 --> Security Class Initialized
+DEBUG - 2014-11-05 22:43:30 --> Input Class Initialized
+DEBUG - 2014-11-05 22:43:30 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 22:43:30 --> Language Class Initialized
+DEBUG - 2014-11-05 22:43:30 --> Loader Class Initialized
+DEBUG - 2014-11-05 22:43:30 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 22:43:30 --> Database Driver Class Initialized
+ERROR - 2014-11-05 22:43:30 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 22:43:30 --> Session Class Initialized
+DEBUG - 2014-11-05 22:43:30 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 22:43:30 --> Session routines successfully run
+DEBUG - 2014-11-05 22:43:30 --> Controller Class Initialized
+DEBUG - 2014-11-05 22:43:30 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:30 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:30 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:30 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:30 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:30 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:30 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:30 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:30 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:30 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:30 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-05 22:43:30 --> Model Class Initialized
+DEBUG - 2014-11-05 22:43:30 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/show.php
+DEBUG - 2014-11-05 22:43:30 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 22:43:30 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 22:43:30 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:43:30 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 22:43:30 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 22:43:30 --> Final output sent to browser
+DEBUG - 2014-11-05 22:43:30 --> Total execution time: 0.2051
+DEBUG - 2014-11-05 22:43:31 --> Config Class Initialized
+DEBUG - 2014-11-05 22:43:31 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:43:31 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:43:31 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:43:31 --> URI Class Initialized
+DEBUG - 2014-11-05 22:43:31 --> Router Class Initialized
+ERROR - 2014-11-05 22:43:31 --> 404 Page Not Found --> css
+DEBUG - 2014-11-05 22:44:27 --> Config Class Initialized
+DEBUG - 2014-11-05 22:44:27 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:44:27 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:44:27 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:44:27 --> URI Class Initialized
+DEBUG - 2014-11-05 22:44:27 --> Router Class Initialized
+ERROR - 2014-11-05 22:44:27 --> 404 Page Not Found --> images
+DEBUG - 2014-11-05 22:44:51 --> Config Class Initialized
+DEBUG - 2014-11-05 22:44:51 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:44:51 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:44:51 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:44:51 --> URI Class Initialized
+DEBUG - 2014-11-05 22:44:51 --> Router Class Initialized
+DEBUG - 2014-11-05 22:44:51 --> Output Class Initialized
+DEBUG - 2014-11-05 22:44:51 --> Security Class Initialized
+DEBUG - 2014-11-05 22:44:51 --> Input Class Initialized
+DEBUG - 2014-11-05 22:44:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 22:44:51 --> Language Class Initialized
+DEBUG - 2014-11-05 22:44:51 --> Loader Class Initialized
+DEBUG - 2014-11-05 22:44:51 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 22:44:51 --> Database Driver Class Initialized
+ERROR - 2014-11-05 22:44:51 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 22:44:51 --> Session Class Initialized
+DEBUG - 2014-11-05 22:44:51 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 22:44:51 --> Session routines successfully run
+DEBUG - 2014-11-05 22:44:51 --> Controller Class Initialized
+DEBUG - 2014-11-05 22:44:51 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:44:51 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:44:51 --> Model Class Initialized
+DEBUG - 2014-11-05 22:44:51 --> Model Class Initialized
+DEBUG - 2014-11-05 22:44:51 --> Model Class Initialized
+DEBUG - 2014-11-05 22:44:51 --> Model Class Initialized
+DEBUG - 2014-11-05 22:44:51 --> Model Class Initialized
+DEBUG - 2014-11-05 22:44:51 --> Model Class Initialized
+DEBUG - 2014-11-05 22:44:51 --> Model Class Initialized
+DEBUG - 2014-11-05 22:44:51 --> Model Class Initialized
+DEBUG - 2014-11-05 22:44:51 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-05 22:44:51 --> Model Class Initialized
+DEBUG - 2014-11-05 22:44:51 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/show.php
+DEBUG - 2014-11-05 22:44:51 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 22:44:51 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 22:44:51 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:44:51 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 22:44:51 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 22:44:51 --> Final output sent to browser
+DEBUG - 2014-11-05 22:44:51 --> Total execution time: 0.1734
+DEBUG - 2014-11-05 22:45:12 --> Config Class Initialized
+DEBUG - 2014-11-05 22:45:12 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:45:12 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:45:12 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:45:12 --> URI Class Initialized
+DEBUG - 2014-11-05 22:45:12 --> Router Class Initialized
+ERROR - 2014-11-05 22:45:12 --> 404 Page Not Found --> css
+DEBUG - 2014-11-05 22:45:14 --> Config Class Initialized
+DEBUG - 2014-11-05 22:45:14 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:45:14 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:45:14 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:45:14 --> URI Class Initialized
+DEBUG - 2014-11-05 22:45:14 --> Router Class Initialized
+ERROR - 2014-11-05 22:45:14 --> 404 Page Not Found --> css
+DEBUG - 2014-11-05 22:45:22 --> Config Class Initialized
+DEBUG - 2014-11-05 22:45:22 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:45:22 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:45:22 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:45:22 --> URI Class Initialized
+DEBUG - 2014-11-05 22:45:22 --> Router Class Initialized
+ERROR - 2014-11-05 22:45:22 --> 404 Page Not Found --> css
+DEBUG - 2014-11-05 22:45:25 --> Config Class Initialized
+DEBUG - 2014-11-05 22:45:25 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:45:26 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:45:26 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:45:26 --> URI Class Initialized
+DEBUG - 2014-11-05 22:45:26 --> Router Class Initialized
+DEBUG - 2014-11-05 22:45:26 --> Output Class Initialized
+DEBUG - 2014-11-05 22:45:26 --> Security Class Initialized
+DEBUG - 2014-11-05 22:45:26 --> Input Class Initialized
+DEBUG - 2014-11-05 22:45:26 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 22:45:26 --> Language Class Initialized
+DEBUG - 2014-11-05 22:45:26 --> Loader Class Initialized
+DEBUG - 2014-11-05 22:45:26 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 22:45:26 --> Database Driver Class Initialized
+ERROR - 2014-11-05 22:45:26 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 22:45:26 --> Session Class Initialized
+DEBUG - 2014-11-05 22:45:26 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 22:45:26 --> Session routines successfully run
+DEBUG - 2014-11-05 22:45:26 --> Controller Class Initialized
+DEBUG - 2014-11-05 22:45:26 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:45:26 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:45:26 --> Model Class Initialized
+DEBUG - 2014-11-05 22:45:26 --> Model Class Initialized
+DEBUG - 2014-11-05 22:45:26 --> Model Class Initialized
+DEBUG - 2014-11-05 22:45:26 --> Model Class Initialized
+DEBUG - 2014-11-05 22:45:26 --> Model Class Initialized
+DEBUG - 2014-11-05 22:45:26 --> Model Class Initialized
+DEBUG - 2014-11-05 22:45:26 --> Model Class Initialized
+DEBUG - 2014-11-05 22:45:26 --> Model Class Initialized
+DEBUG - 2014-11-05 22:45:26 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-05 22:45:26 --> Model Class Initialized
+DEBUG - 2014-11-05 22:45:26 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/show.php
+DEBUG - 2014-11-05 22:45:26 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 22:45:26 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 22:45:26 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:45:26 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 22:45:26 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 22:45:26 --> Final output sent to browser
+DEBUG - 2014-11-05 22:45:26 --> Total execution time: 0.1834
+DEBUG - 2014-11-05 22:45:31 --> Config Class Initialized
+DEBUG - 2014-11-05 22:45:31 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:45:31 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:45:31 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:45:31 --> URI Class Initialized
+DEBUG - 2014-11-05 22:45:31 --> Router Class Initialized
+DEBUG - 2014-11-05 22:45:31 --> Output Class Initialized
+DEBUG - 2014-11-05 22:45:31 --> Security Class Initialized
+DEBUG - 2014-11-05 22:45:31 --> Input Class Initialized
+DEBUG - 2014-11-05 22:45:31 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 22:45:31 --> Language Class Initialized
+DEBUG - 2014-11-05 22:45:31 --> Loader Class Initialized
+DEBUG - 2014-11-05 22:45:31 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 22:45:31 --> Database Driver Class Initialized
+ERROR - 2014-11-05 22:45:31 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 22:45:31 --> Session Class Initialized
+DEBUG - 2014-11-05 22:45:31 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 22:45:31 --> Session routines successfully run
+DEBUG - 2014-11-05 22:45:31 --> Controller Class Initialized
+DEBUG - 2014-11-05 22:45:31 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:45:31 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:45:31 --> Model Class Initialized
+DEBUG - 2014-11-05 22:45:31 --> Model Class Initialized
+DEBUG - 2014-11-05 22:45:31 --> Model Class Initialized
+DEBUG - 2014-11-05 22:45:31 --> Model Class Initialized
+DEBUG - 2014-11-05 22:45:31 --> Model Class Initialized
+DEBUG - 2014-11-05 22:45:31 --> Model Class Initialized
+DEBUG - 2014-11-05 22:45:31 --> Model Class Initialized
+DEBUG - 2014-11-05 22:45:31 --> Model Class Initialized
+DEBUG - 2014-11-05 22:45:31 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-05 22:45:31 --> Model Class Initialized
+DEBUG - 2014-11-05 22:45:31 --> Model Class Initialized
+DEBUG - 2014-11-05 22:45:31 --> Model Class Initialized
+DEBUG - 2014-11-05 22:45:31 --> Model Class Initialized
+DEBUG - 2014-11-05 22:45:31 --> Model Class Initialized
+DEBUG - 2014-11-05 22:45:31 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/show.php
+DEBUG - 2014-11-05 22:45:31 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 22:45:31 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 22:45:31 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:45:31 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 22:45:31 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 22:45:31 --> Final output sent to browser
+DEBUG - 2014-11-05 22:45:31 --> Total execution time: 0.2139
+DEBUG - 2014-11-05 22:48:59 --> Config Class Initialized
+DEBUG - 2014-11-05 22:48:59 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:48:59 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:48:59 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:48:59 --> URI Class Initialized
+DEBUG - 2014-11-05 22:48:59 --> Router Class Initialized
+DEBUG - 2014-11-05 22:48:59 --> Output Class Initialized
+DEBUG - 2014-11-05 22:48:59 --> Security Class Initialized
+DEBUG - 2014-11-05 22:48:59 --> Input Class Initialized
+DEBUG - 2014-11-05 22:48:59 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 22:48:59 --> Language Class Initialized
+DEBUG - 2014-11-05 22:48:59 --> Loader Class Initialized
+DEBUG - 2014-11-05 22:48:59 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 22:48:59 --> Database Driver Class Initialized
+ERROR - 2014-11-05 22:48:59 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 22:48:59 --> Session Class Initialized
+DEBUG - 2014-11-05 22:48:59 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 22:48:59 --> Session routines successfully run
+DEBUG - 2014-11-05 22:48:59 --> Controller Class Initialized
+DEBUG - 2014-11-05 22:48:59 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:48:59 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:48:59 --> Model Class Initialized
+DEBUG - 2014-11-05 22:48:59 --> Model Class Initialized
+DEBUG - 2014-11-05 22:48:59 --> Model Class Initialized
+DEBUG - 2014-11-05 22:48:59 --> Model Class Initialized
+DEBUG - 2014-11-05 22:48:59 --> Model Class Initialized
+DEBUG - 2014-11-05 22:48:59 --> Model Class Initialized
+DEBUG - 2014-11-05 22:48:59 --> Model Class Initialized
+DEBUG - 2014-11-05 22:48:59 --> Model Class Initialized
+DEBUG - 2014-11-05 22:48:59 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-05 22:48:59 --> Model Class Initialized
+DEBUG - 2014-11-05 22:48:59 --> Model Class Initialized
+DEBUG - 2014-11-05 22:48:59 --> Model Class Initialized
+DEBUG - 2014-11-05 22:48:59 --> Model Class Initialized
+DEBUG - 2014-11-05 22:48:59 --> Model Class Initialized
+DEBUG - 2014-11-05 22:48:59 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/show.php
+DEBUG - 2014-11-05 22:48:59 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 22:48:59 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 22:48:59 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:48:59 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 22:48:59 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 22:48:59 --> Final output sent to browser
+DEBUG - 2014-11-05 22:48:59 --> Total execution time: 0.1927
+DEBUG - 2014-11-05 22:55:17 --> Config Class Initialized
+DEBUG - 2014-11-05 22:55:17 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:55:17 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:55:17 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:55:17 --> URI Class Initialized
+DEBUG - 2014-11-05 22:55:17 --> Router Class Initialized
+ERROR - 2014-11-05 22:55:17 --> 404 Page Not Found --> css
+DEBUG - 2014-11-05 22:55:19 --> Config Class Initialized
+DEBUG - 2014-11-05 22:55:19 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:55:19 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:55:19 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:55:19 --> URI Class Initialized
+DEBUG - 2014-11-05 22:55:19 --> Router Class Initialized
+ERROR - 2014-11-05 22:55:19 --> 404 Page Not Found --> css
+DEBUG - 2014-11-05 22:55:26 --> Config Class Initialized
+DEBUG - 2014-11-05 22:55:26 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:55:26 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:55:26 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:55:26 --> URI Class Initialized
+DEBUG - 2014-11-05 22:55:26 --> Router Class Initialized
+ERROR - 2014-11-05 22:55:26 --> 404 Page Not Found --> css
+DEBUG - 2014-11-05 22:56:11 --> Config Class Initialized
+DEBUG - 2014-11-05 22:56:11 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:56:11 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:56:11 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:56:11 --> URI Class Initialized
+DEBUG - 2014-11-05 22:56:11 --> Router Class Initialized
+DEBUG - 2014-11-05 22:56:12 --> Output Class Initialized
+DEBUG - 2014-11-05 22:56:12 --> Security Class Initialized
+DEBUG - 2014-11-05 22:56:12 --> Input Class Initialized
+DEBUG - 2014-11-05 22:56:12 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 22:56:12 --> Language Class Initialized
+DEBUG - 2014-11-05 22:56:12 --> Loader Class Initialized
+DEBUG - 2014-11-05 22:56:12 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 22:56:12 --> Database Driver Class Initialized
+ERROR - 2014-11-05 22:56:12 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 22:56:12 --> Session Class Initialized
+DEBUG - 2014-11-05 22:56:12 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 22:56:12 --> Session routines successfully run
+DEBUG - 2014-11-05 22:56:12 --> Controller Class Initialized
+DEBUG - 2014-11-05 22:56:12 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:56:12 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:56:12 --> Model Class Initialized
+DEBUG - 2014-11-05 22:56:12 --> Model Class Initialized
+DEBUG - 2014-11-05 22:56:12 --> Model Class Initialized
+DEBUG - 2014-11-05 22:56:12 --> Model Class Initialized
+DEBUG - 2014-11-05 22:56:12 --> Model Class Initialized
+DEBUG - 2014-11-05 22:56:12 --> Model Class Initialized
+DEBUG - 2014-11-05 22:56:12 --> Model Class Initialized
+DEBUG - 2014-11-05 22:56:12 --> Model Class Initialized
+DEBUG - 2014-11-05 22:56:12 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-05 22:56:12 --> Model Class Initialized
+DEBUG - 2014-11-05 22:56:12 --> Model Class Initialized
+DEBUG - 2014-11-05 22:56:12 --> Model Class Initialized
+DEBUG - 2014-11-05 22:56:12 --> Model Class Initialized
+DEBUG - 2014-11-05 22:56:12 --> Model Class Initialized
+DEBUG - 2014-11-05 22:56:12 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/show.php
+DEBUG - 2014-11-05 22:56:12 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 22:56:12 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 22:56:12 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:56:12 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 22:56:12 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 22:56:12 --> Final output sent to browser
+DEBUG - 2014-11-05 22:56:12 --> Total execution time: 0.2086
+DEBUG - 2014-11-05 22:57:48 --> Config Class Initialized
+DEBUG - 2014-11-05 22:57:48 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:57:48 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:57:48 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:57:48 --> URI Class Initialized
+DEBUG - 2014-11-05 22:57:49 --> Router Class Initialized
+DEBUG - 2014-11-05 22:57:49 --> Output Class Initialized
+DEBUG - 2014-11-05 22:57:49 --> Security Class Initialized
+DEBUG - 2014-11-05 22:57:49 --> Input Class Initialized
+DEBUG - 2014-11-05 22:57:49 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 22:57:49 --> Language Class Initialized
+DEBUG - 2014-11-05 22:57:49 --> Loader Class Initialized
+DEBUG - 2014-11-05 22:57:49 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 22:57:49 --> Database Driver Class Initialized
+ERROR - 2014-11-05 22:57:49 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 22:57:49 --> Session Class Initialized
+DEBUG - 2014-11-05 22:57:49 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 22:57:49 --> Session routines successfully run
+DEBUG - 2014-11-05 22:57:49 --> Controller Class Initialized
+DEBUG - 2014-11-05 22:57:49 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:57:49 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:57:49 --> Model Class Initialized
+DEBUG - 2014-11-05 22:57:49 --> Model Class Initialized
+DEBUG - 2014-11-05 22:57:49 --> Model Class Initialized
+DEBUG - 2014-11-05 22:57:49 --> Model Class Initialized
+DEBUG - 2014-11-05 22:57:49 --> Model Class Initialized
+DEBUG - 2014-11-05 22:57:49 --> Model Class Initialized
+DEBUG - 2014-11-05 22:57:49 --> Model Class Initialized
+DEBUG - 2014-11-05 22:57:49 --> Model Class Initialized
+DEBUG - 2014-11-05 22:57:49 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-05 22:57:49 --> Model Class Initialized
+DEBUG - 2014-11-05 22:57:49 --> Model Class Initialized
+DEBUG - 2014-11-05 22:57:49 --> Model Class Initialized
+DEBUG - 2014-11-05 22:57:49 --> Model Class Initialized
+DEBUG - 2014-11-05 22:57:49 --> Model Class Initialized
+DEBUG - 2014-11-05 22:57:49 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/show.php
+DEBUG - 2014-11-05 22:57:49 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 22:57:49 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 22:57:49 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:57:49 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 22:57:49 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 22:57:49 --> Final output sent to browser
+DEBUG - 2014-11-05 22:57:49 --> Total execution time: 0.1926
+DEBUG - 2014-11-05 22:59:05 --> Config Class Initialized
+DEBUG - 2014-11-05 22:59:05 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:59:05 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:59:05 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:59:05 --> URI Class Initialized
+DEBUG - 2014-11-05 22:59:05 --> Router Class Initialized
+ERROR - 2014-11-05 22:59:05 --> 404 Page Not Found --> css
+DEBUG - 2014-11-05 22:59:08 --> Config Class Initialized
+DEBUG - 2014-11-05 22:59:08 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:59:08 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:59:08 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:59:08 --> URI Class Initialized
+DEBUG - 2014-11-05 22:59:08 --> Router Class Initialized
+ERROR - 2014-11-05 22:59:08 --> 404 Page Not Found --> css
+DEBUG - 2014-11-05 22:59:14 --> Config Class Initialized
+DEBUG - 2014-11-05 22:59:14 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:59:14 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:59:14 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:59:14 --> URI Class Initialized
+DEBUG - 2014-11-05 22:59:14 --> Router Class Initialized
+DEBUG - 2014-11-05 22:59:14 --> Output Class Initialized
+DEBUG - 2014-11-05 22:59:14 --> Security Class Initialized
+DEBUG - 2014-11-05 22:59:14 --> Input Class Initialized
+DEBUG - 2014-11-05 22:59:14 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 22:59:14 --> Language Class Initialized
+DEBUG - 2014-11-05 22:59:14 --> Loader Class Initialized
+DEBUG - 2014-11-05 22:59:14 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 22:59:14 --> Database Driver Class Initialized
+ERROR - 2014-11-05 22:59:14 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 22:59:14 --> Session Class Initialized
+DEBUG - 2014-11-05 22:59:14 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 22:59:14 --> Session routines successfully run
+DEBUG - 2014-11-05 22:59:14 --> Controller Class Initialized
+DEBUG - 2014-11-05 22:59:14 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:59:14 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:59:14 --> Model Class Initialized
+DEBUG - 2014-11-05 22:59:14 --> Model Class Initialized
+DEBUG - 2014-11-05 22:59:14 --> Model Class Initialized
+DEBUG - 2014-11-05 22:59:15 --> Model Class Initialized
+DEBUG - 2014-11-05 22:59:15 --> Model Class Initialized
+DEBUG - 2014-11-05 22:59:15 --> Model Class Initialized
+DEBUG - 2014-11-05 22:59:15 --> Model Class Initialized
+DEBUG - 2014-11-05 22:59:15 --> Model Class Initialized
+DEBUG - 2014-11-05 22:59:15 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-05 22:59:15 --> Model Class Initialized
+DEBUG - 2014-11-05 22:59:15 --> Model Class Initialized
+DEBUG - 2014-11-05 22:59:15 --> Model Class Initialized
+DEBUG - 2014-11-05 22:59:15 --> Model Class Initialized
+DEBUG - 2014-11-05 22:59:15 --> Model Class Initialized
+DEBUG - 2014-11-05 22:59:15 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/show.php
+DEBUG - 2014-11-05 22:59:15 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 22:59:15 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 22:59:15 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:59:15 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 22:59:15 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 22:59:15 --> Final output sent to browser
+DEBUG - 2014-11-05 22:59:15 --> Total execution time: 0.2186
+DEBUG - 2014-11-05 22:59:42 --> Config Class Initialized
+DEBUG - 2014-11-05 22:59:42 --> Hooks Class Initialized
+DEBUG - 2014-11-05 22:59:42 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 22:59:42 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 22:59:42 --> URI Class Initialized
+DEBUG - 2014-11-05 22:59:42 --> Router Class Initialized
+DEBUG - 2014-11-05 22:59:42 --> Output Class Initialized
+DEBUG - 2014-11-05 22:59:42 --> Security Class Initialized
+DEBUG - 2014-11-05 22:59:42 --> Input Class Initialized
+DEBUG - 2014-11-05 22:59:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 22:59:42 --> Language Class Initialized
+DEBUG - 2014-11-05 22:59:42 --> Loader Class Initialized
+DEBUG - 2014-11-05 22:59:42 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 22:59:42 --> Database Driver Class Initialized
+ERROR - 2014-11-05 22:59:42 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 22:59:42 --> Session Class Initialized
+DEBUG - 2014-11-05 22:59:42 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 22:59:42 --> Session routines successfully run
+DEBUG - 2014-11-05 22:59:42 --> Controller Class Initialized
+DEBUG - 2014-11-05 22:59:42 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:59:42 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:59:42 --> Model Class Initialized
+DEBUG - 2014-11-05 22:59:42 --> Model Class Initialized
+DEBUG - 2014-11-05 22:59:42 --> Model Class Initialized
+DEBUG - 2014-11-05 22:59:42 --> Model Class Initialized
+DEBUG - 2014-11-05 22:59:42 --> Model Class Initialized
+DEBUG - 2014-11-05 22:59:42 --> Model Class Initialized
+DEBUG - 2014-11-05 22:59:42 --> Model Class Initialized
+DEBUG - 2014-11-05 22:59:42 --> Model Class Initialized
+DEBUG - 2014-11-05 22:59:42 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-05 22:59:42 --> Model Class Initialized
+DEBUG - 2014-11-05 22:59:42 --> Model Class Initialized
+DEBUG - 2014-11-05 22:59:42 --> Model Class Initialized
+DEBUG - 2014-11-05 22:59:42 --> Model Class Initialized
+DEBUG - 2014-11-05 22:59:42 --> Model Class Initialized
+DEBUG - 2014-11-05 22:59:43 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/show.php
+DEBUG - 2014-11-05 22:59:43 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 22:59:43 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 22:59:43 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 22:59:43 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 22:59:43 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 22:59:43 --> Final output sent to browser
+DEBUG - 2014-11-05 22:59:43 --> Total execution time: 0.2415
+DEBUG - 2014-11-05 23:01:41 --> Config Class Initialized
+DEBUG - 2014-11-05 23:01:41 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:01:41 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:01:41 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:01:41 --> URI Class Initialized
+DEBUG - 2014-11-05 23:01:41 --> Router Class Initialized
+DEBUG - 2014-11-05 23:01:41 --> Output Class Initialized
+DEBUG - 2014-11-05 23:01:41 --> Security Class Initialized
+DEBUG - 2014-11-05 23:01:41 --> Input Class Initialized
+DEBUG - 2014-11-05 23:01:41 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:01:41 --> Language Class Initialized
+DEBUG - 2014-11-05 23:01:41 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:01:41 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:01:41 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:01:41 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:01:41 --> Session Class Initialized
+DEBUG - 2014-11-05 23:01:41 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:01:41 --> Session routines successfully run
+DEBUG - 2014-11-05 23:01:41 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:01:41 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:01:41 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:01:41 --> Model Class Initialized
+DEBUG - 2014-11-05 23:01:41 --> Model Class Initialized
+DEBUG - 2014-11-05 23:01:41 --> Model Class Initialized
+DEBUG - 2014-11-05 23:01:41 --> Model Class Initialized
+DEBUG - 2014-11-05 23:01:41 --> Model Class Initialized
+DEBUG - 2014-11-05 23:01:41 --> Model Class Initialized
+DEBUG - 2014-11-05 23:01:41 --> Model Class Initialized
+DEBUG - 2014-11-05 23:01:41 --> Model Class Initialized
+DEBUG - 2014-11-05 23:01:41 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-05 23:01:41 --> Model Class Initialized
+DEBUG - 2014-11-05 23:01:41 --> Model Class Initialized
+DEBUG - 2014-11-05 23:01:41 --> Model Class Initialized
+DEBUG - 2014-11-05 23:01:42 --> Model Class Initialized
+DEBUG - 2014-11-05 23:01:42 --> Model Class Initialized
+DEBUG - 2014-11-05 23:01:42 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/show.php
+DEBUG - 2014-11-05 23:01:42 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:01:42 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:01:42 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:01:42 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:01:42 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:01:42 --> Final output sent to browser
+DEBUG - 2014-11-05 23:01:42 --> Total execution time: 0.2331
+DEBUG - 2014-11-05 23:01:54 --> Config Class Initialized
+DEBUG - 2014-11-05 23:01:54 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:01:54 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:01:54 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:01:54 --> URI Class Initialized
+DEBUG - 2014-11-05 23:01:54 --> Router Class Initialized
+DEBUG - 2014-11-05 23:01:54 --> Output Class Initialized
+DEBUG - 2014-11-05 23:01:54 --> Security Class Initialized
+DEBUG - 2014-11-05 23:01:54 --> Input Class Initialized
+DEBUG - 2014-11-05 23:01:54 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:01:54 --> Language Class Initialized
+DEBUG - 2014-11-05 23:01:54 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:01:54 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:01:54 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:01:54 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:01:54 --> Session Class Initialized
+DEBUG - 2014-11-05 23:01:54 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:01:54 --> Session routines successfully run
+DEBUG - 2014-11-05 23:01:54 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:02:01 --> Config Class Initialized
+DEBUG - 2014-11-05 23:02:01 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:02:01 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:02:01 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:02:01 --> URI Class Initialized
+DEBUG - 2014-11-05 23:02:01 --> Router Class Initialized
+DEBUG - 2014-11-05 23:02:01 --> Output Class Initialized
+DEBUG - 2014-11-05 23:02:01 --> Security Class Initialized
+DEBUG - 2014-11-05 23:02:01 --> Input Class Initialized
+DEBUG - 2014-11-05 23:02:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:02:01 --> Language Class Initialized
+DEBUG - 2014-11-05 23:02:01 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:02:01 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:02:01 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:02:01 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:02:01 --> Session Class Initialized
+DEBUG - 2014-11-05 23:02:01 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:02:01 --> Session routines successfully run
+DEBUG - 2014-11-05 23:02:01 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:02:01 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:02:01 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:02:01 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:01 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:01 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:01 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:01 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:01 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:01 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:01 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:01 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-05 23:02:01 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:01 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:01 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:01 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:01 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:01 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/show.php
+DEBUG - 2014-11-05 23:02:01 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:02:01 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:02:01 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:02:01 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:02:01 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:02:01 --> Final output sent to browser
+DEBUG - 2014-11-05 23:02:01 --> Total execution time: 0.1959
+DEBUG - 2014-11-05 23:02:04 --> Config Class Initialized
+DEBUG - 2014-11-05 23:02:04 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:02:04 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:02:04 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:02:04 --> URI Class Initialized
+DEBUG - 2014-11-05 23:02:04 --> Router Class Initialized
+DEBUG - 2014-11-05 23:02:04 --> Output Class Initialized
+DEBUG - 2014-11-05 23:02:04 --> Security Class Initialized
+DEBUG - 2014-11-05 23:02:04 --> Input Class Initialized
+DEBUG - 2014-11-05 23:02:04 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:02:04 --> Language Class Initialized
+DEBUG - 2014-11-05 23:02:04 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:02:04 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:02:04 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:02:04 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:02:04 --> Session Class Initialized
+DEBUG - 2014-11-05 23:02:04 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:02:04 --> Session routines successfully run
+DEBUG - 2014-11-05 23:02:04 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:02:04 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:02:04 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:04 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:04 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:04 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/modul/list_modul.php
+DEBUG - 2014-11-05 23:02:04 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/modul/edit.php
+DEBUG - 2014-11-05 23:02:04 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:02:04 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:02:04 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:02:04 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:02:04 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:02:04 --> Final output sent to browser
+DEBUG - 2014-11-05 23:02:04 --> Total execution time: 0.1539
+DEBUG - 2014-11-05 23:02:07 --> Config Class Initialized
+DEBUG - 2014-11-05 23:02:07 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:02:07 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:02:07 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:02:07 --> URI Class Initialized
+DEBUG - 2014-11-05 23:02:07 --> Router Class Initialized
+DEBUG - 2014-11-05 23:02:07 --> Output Class Initialized
+DEBUG - 2014-11-05 23:02:07 --> Security Class Initialized
+DEBUG - 2014-11-05 23:02:07 --> Input Class Initialized
+DEBUG - 2014-11-05 23:02:07 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:02:07 --> Language Class Initialized
+DEBUG - 2014-11-05 23:02:07 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:02:07 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:02:07 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:02:07 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:02:07 --> Session Class Initialized
+DEBUG - 2014-11-05 23:02:07 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:02:07 --> Session routines successfully run
+DEBUG - 2014-11-05 23:02:07 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:02:07 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:07 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:07 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/orders/lists.php
+DEBUG - 2014-11-05 23:02:07 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:02:07 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:02:07 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:02:07 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:02:07 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:02:07 --> Final output sent to browser
+DEBUG - 2014-11-05 23:02:07 --> Total execution time: 0.1223
+DEBUG - 2014-11-05 23:02:10 --> Config Class Initialized
+DEBUG - 2014-11-05 23:02:10 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:02:10 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:02:10 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:02:10 --> URI Class Initialized
+DEBUG - 2014-11-05 23:02:10 --> Router Class Initialized
+DEBUG - 2014-11-05 23:02:10 --> Output Class Initialized
+DEBUG - 2014-11-05 23:02:10 --> Security Class Initialized
+DEBUG - 2014-11-05 23:02:10 --> Input Class Initialized
+DEBUG - 2014-11-05 23:02:10 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:02:10 --> Language Class Initialized
+DEBUG - 2014-11-05 23:02:10 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:02:10 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:02:10 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:02:10 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:02:10 --> Session Class Initialized
+DEBUG - 2014-11-05 23:02:10 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:02:10 --> Session routines successfully run
+DEBUG - 2014-11-05 23:02:10 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:02:10 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:02:10 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:02:10 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:10 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:10 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:10 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:10 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:10 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:10 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:10 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:10 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-05 23:02:10 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:10 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/show.php
+DEBUG - 2014-11-05 23:02:10 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:02:10 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:02:10 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:02:10 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:02:10 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:02:10 --> Final output sent to browser
+DEBUG - 2014-11-05 23:02:10 --> Total execution time: 0.1605
+DEBUG - 2014-11-05 23:02:13 --> Config Class Initialized
+DEBUG - 2014-11-05 23:02:13 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:02:13 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:02:13 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:02:13 --> URI Class Initialized
+DEBUG - 2014-11-05 23:02:13 --> Router Class Initialized
+DEBUG - 2014-11-05 23:02:13 --> Output Class Initialized
+DEBUG - 2014-11-05 23:02:13 --> Security Class Initialized
+DEBUG - 2014-11-05 23:02:13 --> Input Class Initialized
+DEBUG - 2014-11-05 23:02:13 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:02:13 --> Language Class Initialized
+DEBUG - 2014-11-05 23:02:13 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:02:13 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:02:13 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:02:13 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:02:13 --> Session Class Initialized
+DEBUG - 2014-11-05 23:02:13 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:02:13 --> Session routines successfully run
+DEBUG - 2014-11-05 23:02:13 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:02:13 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:02:13 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:02:13 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:13 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:13 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:13 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:13 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:13 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:13 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:13 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:13 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/list_service.php
+DEBUG - 2014-11-05 23:02:13 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:13 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:13 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:13 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:13 --> Model Class Initialized
+DEBUG - 2014-11-05 23:02:13 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/service/show.php
+DEBUG - 2014-11-05 23:02:13 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:02:13 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:02:13 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:02:13 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:02:13 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:02:13 --> Final output sent to browser
+DEBUG - 2014-11-05 23:02:13 --> Total execution time: 0.2097
+DEBUG - 2014-11-05 23:04:36 --> Config Class Initialized
+DEBUG - 2014-11-05 23:04:36 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:04:36 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:04:36 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:04:36 --> URI Class Initialized
+DEBUG - 2014-11-05 23:04:36 --> Router Class Initialized
+DEBUG - 2014-11-05 23:04:36 --> Output Class Initialized
+DEBUG - 2014-11-05 23:04:36 --> Security Class Initialized
+DEBUG - 2014-11-05 23:04:36 --> Input Class Initialized
+DEBUG - 2014-11-05 23:04:36 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:04:36 --> Language Class Initialized
+ERROR - 2014-11-05 23:04:36 --> Severity: Notice  --> A session had already been started - ignoring session_start() C:\xampp\htdocs\ProducSystemCI\system\application\controllers\login.php 2
+DEBUG - 2014-11-05 23:04:36 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:04:36 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:04:36 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:04:36 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:04:36 --> Session Class Initialized
+DEBUG - 2014-11-05 23:04:36 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:04:36 --> Session routines successfully run
+DEBUG - 2014-11-05 23:04:36 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:04:36 --> Model Class Initialized
+DEBUG - 2014-11-05 23:04:36 --> Model Class Initialized
+DEBUG - 2014-11-05 23:04:36 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/_template/public_header.html
+DEBUG - 2014-11-05 23:04:36 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/login/login.php
+DEBUG - 2014-11-05 23:04:36 --> Final output sent to browser
+DEBUG - 2014-11-05 23:04:36 --> Total execution time: 0.1099
+DEBUG - 2014-11-05 23:04:37 --> Config Class Initialized
+DEBUG - 2014-11-05 23:04:37 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:04:37 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:04:37 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:04:37 --> URI Class Initialized
+DEBUG - 2014-11-05 23:04:37 --> Router Class Initialized
+ERROR - 2014-11-05 23:04:37 --> 404 Page Not Found --> search
+DEBUG - 2014-11-05 23:04:47 --> Config Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:04:47 --> URI Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> Router Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> Output Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> Security Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> Input Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:04:47 --> Language Class Initialized
+ERROR - 2014-11-05 23:04:47 --> Severity: Notice  --> A session had already been started - ignoring session_start() C:\xampp\htdocs\ProducSystemCI\system\application\controllers\login.php 2
+DEBUG - 2014-11-05 23:04:47 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:04:47 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:04:47 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:04:47 --> Session Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:04:47 --> Session routines successfully run
+DEBUG - 2014-11-05 23:04:47 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> Model Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> Model Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> Model Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/login/order_popup.php
+DEBUG - 2014-11-05 23:04:47 --> Config Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:04:47 --> URI Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> Router Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> Output Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> Security Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> Input Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:04:47 --> Language Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:04:47 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:04:47 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:04:47 --> Session Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:04:47 --> Session routines successfully run
+DEBUG - 2014-11-05 23:04:47 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:04:47 --> Model Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> Model Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> Model Class Initialized
+DEBUG - 2014-11-05 23:04:47 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/modul/list_modul.php
+DEBUG - 2014-11-05 23:04:47 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/modul/edit.php
+DEBUG - 2014-11-05 23:04:47 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:04:47 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:04:47 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:04:47 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:04:47 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:04:47 --> Final output sent to browser
+DEBUG - 2014-11-05 23:04:47 --> Total execution time: 0.1317
+DEBUG - 2014-11-05 23:04:50 --> Config Class Initialized
+DEBUG - 2014-11-05 23:04:50 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:04:50 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:04:50 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:04:50 --> URI Class Initialized
+DEBUG - 2014-11-05 23:04:50 --> Router Class Initialized
+DEBUG - 2014-11-05 23:04:50 --> Output Class Initialized
+DEBUG - 2014-11-05 23:04:50 --> Security Class Initialized
+DEBUG - 2014-11-05 23:04:50 --> Input Class Initialized
+DEBUG - 2014-11-05 23:04:50 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:04:50 --> Language Class Initialized
+DEBUG - 2014-11-05 23:04:50 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:04:50 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:04:50 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:04:50 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:04:50 --> Session Class Initialized
+DEBUG - 2014-11-05 23:04:50 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:04:50 --> Session routines successfully run
+DEBUG - 2014-11-05 23:04:50 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:04:50 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:04:50 --> Model Class Initialized
+DEBUG - 2014-11-05 23:04:50 --> Model Class Initialized
+DEBUG - 2014-11-05 23:04:50 --> Model Class Initialized
+DEBUG - 2014-11-05 23:04:50 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/modul/list_modul.php
+DEBUG - 2014-11-05 23:04:50 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/modul/edit.php
+DEBUG - 2014-11-05 23:04:50 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:04:50 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:04:50 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:04:50 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:04:50 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:04:50 --> Final output sent to browser
+DEBUG - 2014-11-05 23:04:50 --> Total execution time: 0.1246
+DEBUG - 2014-11-05 23:04:53 --> Config Class Initialized
+DEBUG - 2014-11-05 23:04:53 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:04:53 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:04:53 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:04:53 --> URI Class Initialized
+DEBUG - 2014-11-05 23:04:53 --> Router Class Initialized
+DEBUG - 2014-11-05 23:04:53 --> Output Class Initialized
+DEBUG - 2014-11-05 23:04:53 --> Security Class Initialized
+DEBUG - 2014-11-05 23:04:53 --> Input Class Initialized
+DEBUG - 2014-11-05 23:04:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:04:53 --> Language Class Initialized
+DEBUG - 2014-11-05 23:04:53 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:04:53 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:04:53 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:04:53 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:04:53 --> Session Class Initialized
+DEBUG - 2014-11-05 23:04:53 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:04:53 --> Session routines successfully run
+DEBUG - 2014-11-05 23:04:53 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:04:53 --> Model Class Initialized
+DEBUG - 2014-11-05 23:04:53 --> Model Class Initialized
+ERROR - 2014-11-05 23:04:53 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\views\public\profiles\lists.php 15
+ERROR - 2014-11-05 23:04:53 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\views\public\profiles\lists.php 15
+DEBUG - 2014-11-05 23:04:53 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/profiles/lists.php
+DEBUG - 2014-11-05 23:04:53 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:04:53 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:04:53 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:04:53 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:04:53 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:04:53 --> Final output sent to browser
+DEBUG - 2014-11-05 23:04:53 --> Total execution time: 0.1211
+DEBUG - 2014-11-05 23:05:01 --> Config Class Initialized
+DEBUG - 2014-11-05 23:05:01 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:05:01 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:05:01 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:05:01 --> URI Class Initialized
+DEBUG - 2014-11-05 23:05:01 --> Router Class Initialized
+DEBUG - 2014-11-05 23:05:01 --> Output Class Initialized
+DEBUG - 2014-11-05 23:05:01 --> Security Class Initialized
+DEBUG - 2014-11-05 23:05:01 --> Input Class Initialized
+DEBUG - 2014-11-05 23:05:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:05:01 --> Language Class Initialized
+DEBUG - 2014-11-05 23:05:01 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:05:01 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:05:01 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:05:01 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:05:01 --> Session Class Initialized
+DEBUG - 2014-11-05 23:05:01 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:05:01 --> Session routines successfully run
+DEBUG - 2014-11-05 23:05:01 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:05:01 --> Model Class Initialized
+DEBUG - 2014-11-05 23:05:01 --> Model Class Initialized
+ERROR - 2014-11-05 23:05:01 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\views\public\profiles\lists.php 15
+ERROR - 2014-11-05 23:05:01 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\views\public\profiles\lists.php 15
+DEBUG - 2014-11-05 23:05:01 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/profiles/lists.php
+DEBUG - 2014-11-05 23:05:01 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:05:01 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:05:01 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:05:01 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:05:01 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:05:01 --> Final output sent to browser
+DEBUG - 2014-11-05 23:05:01 --> Total execution time: 0.1315
+DEBUG - 2014-11-05 23:05:08 --> Config Class Initialized
+DEBUG - 2014-11-05 23:05:08 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:05:08 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:05:08 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:05:08 --> URI Class Initialized
+DEBUG - 2014-11-05 23:05:08 --> Router Class Initialized
+DEBUG - 2014-11-05 23:05:08 --> Output Class Initialized
+DEBUG - 2014-11-05 23:05:08 --> Security Class Initialized
+DEBUG - 2014-11-05 23:05:08 --> Input Class Initialized
+DEBUG - 2014-11-05 23:05:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:05:08 --> Language Class Initialized
+DEBUG - 2014-11-05 23:05:08 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:05:08 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:05:08 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:05:08 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:05:08 --> Session Class Initialized
+DEBUG - 2014-11-05 23:05:08 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:05:08 --> Session routines successfully run
+DEBUG - 2014-11-05 23:05:08 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:05:08 --> Model Class Initialized
+DEBUG - 2014-11-05 23:05:08 --> Model Class Initialized
+ERROR - 2014-11-05 23:05:08 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\views\public\profiles\lists.php 15
+ERROR - 2014-11-05 23:05:08 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\views\public\profiles\lists.php 15
+DEBUG - 2014-11-05 23:05:08 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/profiles/lists.php
+DEBUG - 2014-11-05 23:05:08 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:05:08 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:05:08 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:05:08 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:05:08 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:05:08 --> Final output sent to browser
+DEBUG - 2014-11-05 23:05:08 --> Total execution time: 0.1256
+DEBUG - 2014-11-05 23:05:15 --> Config Class Initialized
+DEBUG - 2014-11-05 23:05:15 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:05:16 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:05:16 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:05:16 --> URI Class Initialized
+DEBUG - 2014-11-05 23:05:16 --> Router Class Initialized
+DEBUG - 2014-11-05 23:05:16 --> Output Class Initialized
+DEBUG - 2014-11-05 23:05:16 --> Security Class Initialized
+DEBUG - 2014-11-05 23:05:16 --> Input Class Initialized
+DEBUG - 2014-11-05 23:05:16 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:05:16 --> Language Class Initialized
+DEBUG - 2014-11-05 23:05:16 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:05:16 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:05:16 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:05:16 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:05:16 --> Session Class Initialized
+DEBUG - 2014-11-05 23:05:16 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:05:16 --> Session routines successfully run
+DEBUG - 2014-11-05 23:05:16 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:05:16 --> Model Class Initialized
+DEBUG - 2014-11-05 23:05:16 --> Model Class Initialized
+DEBUG - 2014-11-05 23:05:16 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/profiles/edit.php
+DEBUG - 2014-11-05 23:05:16 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:05:16 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:05:16 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:05:16 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:05:16 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:05:16 --> Final output sent to browser
+DEBUG - 2014-11-05 23:05:16 --> Total execution time: 0.1144
+DEBUG - 2014-11-05 23:05:16 --> Config Class Initialized
+DEBUG - 2014-11-05 23:05:16 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:05:16 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:05:16 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:05:16 --> URI Class Initialized
+DEBUG - 2014-11-05 23:05:16 --> Router Class Initialized
+ERROR - 2014-11-05 23:05:16 --> 404 Page Not Found --> css
+DEBUG - 2014-11-05 23:06:05 --> Config Class Initialized
+DEBUG - 2014-11-05 23:06:05 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:06:05 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:06:05 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:06:05 --> URI Class Initialized
+DEBUG - 2014-11-05 23:06:05 --> Router Class Initialized
+DEBUG - 2014-11-05 23:06:05 --> Output Class Initialized
+DEBUG - 2014-11-05 23:06:05 --> Security Class Initialized
+DEBUG - 2014-11-05 23:06:05 --> Input Class Initialized
+DEBUG - 2014-11-05 23:06:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:06:05 --> Language Class Initialized
+DEBUG - 2014-11-05 23:06:05 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:06:05 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:06:05 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:06:05 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:06:05 --> Session Class Initialized
+DEBUG - 2014-11-05 23:06:05 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:06:05 --> Session routines successfully run
+DEBUG - 2014-11-05 23:06:05 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:06:05 --> Model Class Initialized
+DEBUG - 2014-11-05 23:06:05 --> Model Class Initialized
+DEBUG - 2014-11-05 23:06:05 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/profiles/edit.php
+DEBUG - 2014-11-05 23:06:05 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:06:05 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:06:05 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:06:05 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:06:05 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:06:05 --> Final output sent to browser
+DEBUG - 2014-11-05 23:06:05 --> Total execution time: 0.1097
+DEBUG - 2014-11-05 23:06:17 --> Config Class Initialized
+DEBUG - 2014-11-05 23:06:17 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:06:17 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:06:17 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:06:17 --> URI Class Initialized
+DEBUG - 2014-11-05 23:06:17 --> Router Class Initialized
+DEBUG - 2014-11-05 23:06:17 --> Output Class Initialized
+DEBUG - 2014-11-05 23:06:17 --> Security Class Initialized
+DEBUG - 2014-11-05 23:06:17 --> Input Class Initialized
+DEBUG - 2014-11-05 23:06:17 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:06:17 --> Language Class Initialized
+DEBUG - 2014-11-05 23:06:17 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:06:17 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:06:17 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:06:17 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:06:17 --> Session Class Initialized
+DEBUG - 2014-11-05 23:06:17 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:06:17 --> Session routines successfully run
+DEBUG - 2014-11-05 23:06:17 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:06:17 --> Model Class Initialized
+DEBUG - 2014-11-05 23:06:17 --> Model Class Initialized
+DEBUG - 2014-11-05 23:06:17 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/profiles/edit.php
+DEBUG - 2014-11-05 23:06:17 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:06:17 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:06:17 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:06:17 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:06:17 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:06:17 --> Final output sent to browser
+DEBUG - 2014-11-05 23:06:17 --> Total execution time: 0.1178
+DEBUG - 2014-11-05 23:06:27 --> Config Class Initialized
+DEBUG - 2014-11-05 23:06:27 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:06:27 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:06:27 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:06:27 --> URI Class Initialized
+DEBUG - 2014-11-05 23:06:27 --> Router Class Initialized
+DEBUG - 2014-11-05 23:06:27 --> Output Class Initialized
+DEBUG - 2014-11-05 23:06:27 --> Security Class Initialized
+DEBUG - 2014-11-05 23:06:27 --> Input Class Initialized
+DEBUG - 2014-11-05 23:06:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:06:27 --> Language Class Initialized
+DEBUG - 2014-11-05 23:06:28 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:06:28 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:06:28 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:06:28 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:06:28 --> Session Class Initialized
+DEBUG - 2014-11-05 23:06:28 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:06:28 --> Session routines successfully run
+DEBUG - 2014-11-05 23:06:28 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:06:28 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:06:28 --> Model Class Initialized
+DEBUG - 2014-11-05 23:06:28 --> Model Class Initialized
+DEBUG - 2014-11-05 23:06:28 --> Model Class Initialized
+DEBUG - 2014-11-05 23:06:28 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/modul/list_modul.php
+DEBUG - 2014-11-05 23:06:28 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/modul/edit.php
+DEBUG - 2014-11-05 23:06:28 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:06:28 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:06:28 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:06:28 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:06:28 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:06:28 --> Final output sent to browser
+DEBUG - 2014-11-05 23:06:28 --> Total execution time: 0.1286
+DEBUG - 2014-11-05 23:06:32 --> Config Class Initialized
+DEBUG - 2014-11-05 23:06:32 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:06:32 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:06:32 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:06:32 --> URI Class Initialized
+DEBUG - 2014-11-05 23:06:32 --> Router Class Initialized
+DEBUG - 2014-11-05 23:06:32 --> Output Class Initialized
+DEBUG - 2014-11-05 23:06:32 --> Security Class Initialized
+DEBUG - 2014-11-05 23:06:32 --> Input Class Initialized
+DEBUG - 2014-11-05 23:06:32 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:06:32 --> Language Class Initialized
+DEBUG - 2014-11-05 23:06:32 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:06:32 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:06:32 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:06:32 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:06:32 --> Session Class Initialized
+DEBUG - 2014-11-05 23:06:32 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:06:32 --> Session routines successfully run
+DEBUG - 2014-11-05 23:06:32 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:06:32 --> Model Class Initialized
+DEBUG - 2014-11-05 23:06:32 --> Model Class Initialized
+DEBUG - 2014-11-05 23:06:32 --> Model Class Initialized
+DEBUG - 2014-11-05 23:06:32 --> Model Class Initialized
+DEBUG - 2014-11-05 23:06:32 --> Model Class Initialized
+DEBUG - 2014-11-05 23:06:32 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/applications/lists.php
+DEBUG - 2014-11-05 23:06:32 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:06:32 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:06:32 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:06:32 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:06:32 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:06:32 --> Final output sent to browser
+DEBUG - 2014-11-05 23:06:32 --> Total execution time: 0.1310
+DEBUG - 2014-11-05 23:06:35 --> Config Class Initialized
+DEBUG - 2014-11-05 23:06:35 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:06:35 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:06:35 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:06:35 --> URI Class Initialized
+DEBUG - 2014-11-05 23:06:35 --> Router Class Initialized
+DEBUG - 2014-11-05 23:06:35 --> Output Class Initialized
+DEBUG - 2014-11-05 23:06:35 --> Security Class Initialized
+DEBUG - 2014-11-05 23:06:35 --> Input Class Initialized
+DEBUG - 2014-11-05 23:06:35 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:06:35 --> Language Class Initialized
+DEBUG - 2014-11-05 23:06:35 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:06:35 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:06:35 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:06:35 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:06:35 --> Session Class Initialized
+DEBUG - 2014-11-05 23:06:35 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:06:35 --> Session routines successfully run
+DEBUG - 2014-11-05 23:06:35 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:06:35 --> Model Class Initialized
+DEBUG - 2014-11-05 23:06:35 --> Model Class Initialized
+DEBUG - 2014-11-05 23:06:35 --> Model Class Initialized
+DEBUG - 2014-11-05 23:06:35 --> Model Class Initialized
+DEBUG - 2014-11-05 23:06:35 --> Model Class Initialized
+ERROR - 2014-11-05 23:06:35 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\controllers\applications.php 94
+ERROR - 2014-11-05 23:06:35 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\controllers\applications.php 94
+ERROR - 2014-11-05 23:06:35 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\views\public\applications\view.php 12
+ERROR - 2014-11-05 23:06:35 --> Severity: Notice  --> Undefined property: stdClass::$operator C:\xampp\htdocs\ProducSystemCI\system\application\views\public\applications\view.php 35
+ERROR - 2014-11-05 23:06:35 --> Severity: Notice  --> Undefined property: stdClass::$operator C:\xampp\htdocs\ProducSystemCI\system\application\views\public\applications\view.php 35
+DEBUG - 2014-11-05 23:06:35 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/applications/view.php
+DEBUG - 2014-11-05 23:06:35 --> Final output sent to browser
+DEBUG - 2014-11-05 23:06:35 --> Total execution time: 0.1172
+DEBUG - 2014-11-05 23:06:51 --> Config Class Initialized
+DEBUG - 2014-11-05 23:06:51 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:06:51 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:06:51 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:06:51 --> URI Class Initialized
+DEBUG - 2014-11-05 23:06:51 --> Router Class Initialized
+DEBUG - 2014-11-05 23:06:51 --> Output Class Initialized
+DEBUG - 2014-11-05 23:06:51 --> Security Class Initialized
+DEBUG - 2014-11-05 23:06:51 --> Input Class Initialized
+DEBUG - 2014-11-05 23:06:51 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:06:51 --> Language Class Initialized
+DEBUG - 2014-11-05 23:06:51 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:06:51 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:06:51 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:06:51 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:06:51 --> Session Class Initialized
+DEBUG - 2014-11-05 23:06:51 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:06:51 --> Session routines successfully run
+DEBUG - 2014-11-05 23:06:51 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:06:51 --> Model Class Initialized
+DEBUG - 2014-11-05 23:06:51 --> Model Class Initialized
+DEBUG - 2014-11-05 23:06:51 --> Model Class Initialized
+DEBUG - 2014-11-05 23:06:51 --> Model Class Initialized
+DEBUG - 2014-11-05 23:06:51 --> Model Class Initialized
+DEBUG - 2014-11-05 23:06:51 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/applications/lists.php
+DEBUG - 2014-11-05 23:06:51 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:06:51 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:06:51 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:06:51 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:06:51 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:06:51 --> Final output sent to browser
+DEBUG - 2014-11-05 23:06:51 --> Total execution time: 0.1332
+DEBUG - 2014-11-05 23:06:54 --> Config Class Initialized
+DEBUG - 2014-11-05 23:06:54 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:06:54 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:06:54 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:06:54 --> URI Class Initialized
+DEBUG - 2014-11-05 23:06:54 --> Router Class Initialized
+DEBUG - 2014-11-05 23:06:54 --> Output Class Initialized
+DEBUG - 2014-11-05 23:06:54 --> Security Class Initialized
+DEBUG - 2014-11-05 23:06:54 --> Input Class Initialized
+DEBUG - 2014-11-05 23:06:54 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:06:54 --> Language Class Initialized
+DEBUG - 2014-11-05 23:06:54 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:06:54 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:06:54 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:06:54 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:06:54 --> Session Class Initialized
+DEBUG - 2014-11-05 23:06:54 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:06:54 --> Session routines successfully run
+DEBUG - 2014-11-05 23:06:54 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:06:54 --> Model Class Initialized
+DEBUG - 2014-11-05 23:06:54 --> Model Class Initialized
+DEBUG - 2014-11-05 23:06:54 --> Model Class Initialized
+DEBUG - 2014-11-05 23:06:54 --> Model Class Initialized
+DEBUG - 2014-11-05 23:06:54 --> Model Class Initialized
+ERROR - 2014-11-05 23:06:54 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\controllers\applications.php 94
+ERROR - 2014-11-05 23:06:54 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\controllers\applications.php 94
+ERROR - 2014-11-05 23:06:54 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\views\public\applications\view.php 12
+ERROR - 2014-11-05 23:06:54 --> Severity: Notice  --> Undefined property: stdClass::$operator C:\xampp\htdocs\ProducSystemCI\system\application\views\public\applications\view.php 35
+ERROR - 2014-11-05 23:06:54 --> Severity: Notice  --> Undefined property: stdClass::$operator C:\xampp\htdocs\ProducSystemCI\system\application\views\public\applications\view.php 35
+DEBUG - 2014-11-05 23:06:54 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/applications/view.php
+DEBUG - 2014-11-05 23:06:54 --> Final output sent to browser
+DEBUG - 2014-11-05 23:06:54 --> Total execution time: 0.1151
+DEBUG - 2014-11-05 23:08:43 --> Config Class Initialized
+DEBUG - 2014-11-05 23:08:43 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:08:43 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:08:43 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:08:43 --> URI Class Initialized
+DEBUG - 2014-11-05 23:08:43 --> Router Class Initialized
+DEBUG - 2014-11-05 23:08:43 --> Output Class Initialized
+DEBUG - 2014-11-05 23:08:43 --> Security Class Initialized
+DEBUG - 2014-11-05 23:08:43 --> Input Class Initialized
+DEBUG - 2014-11-05 23:08:43 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:08:43 --> Language Class Initialized
+DEBUG - 2014-11-05 23:08:43 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:08:43 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:08:43 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:08:43 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:08:43 --> Session Class Initialized
+DEBUG - 2014-11-05 23:08:43 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:08:43 --> Session routines successfully run
+DEBUG - 2014-11-05 23:08:43 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:08:43 --> Model Class Initialized
+DEBUG - 2014-11-05 23:08:43 --> Model Class Initialized
+DEBUG - 2014-11-05 23:08:43 --> Model Class Initialized
+DEBUG - 2014-11-05 23:08:43 --> Model Class Initialized
+DEBUG - 2014-11-05 23:08:43 --> Model Class Initialized
+ERROR - 2014-11-05 23:08:43 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\controllers\applications.php 43
+ERROR - 2014-11-05 23:08:43 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\controllers\applications.php 43
+ERROR - 2014-11-05 23:08:43 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\views\public\applications\view.php 12
+ERROR - 2014-11-05 23:08:43 --> Severity: Notice  --> Undefined property: stdClass::$operator C:\xampp\htdocs\ProducSystemCI\system\application\views\public\applications\view.php 35
+ERROR - 2014-11-05 23:08:43 --> Severity: Notice  --> Undefined property: stdClass::$operator C:\xampp\htdocs\ProducSystemCI\system\application\views\public\applications\view.php 35
+DEBUG - 2014-11-05 23:08:43 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/applications/view.php
+DEBUG - 2014-11-05 23:08:48 --> Config Class Initialized
+DEBUG - 2014-11-05 23:08:48 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:08:48 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:08:48 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:08:48 --> URI Class Initialized
+DEBUG - 2014-11-05 23:08:48 --> Router Class Initialized
+DEBUG - 2014-11-05 23:08:48 --> Output Class Initialized
+DEBUG - 2014-11-05 23:08:48 --> Security Class Initialized
+DEBUG - 2014-11-05 23:08:48 --> Input Class Initialized
+DEBUG - 2014-11-05 23:08:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:08:48 --> Language Class Initialized
+DEBUG - 2014-11-05 23:08:48 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:08:48 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:08:48 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:08:48 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:08:48 --> Session Class Initialized
+DEBUG - 2014-11-05 23:08:48 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:08:48 --> Session routines successfully run
+DEBUG - 2014-11-05 23:08:48 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:08:48 --> Model Class Initialized
+DEBUG - 2014-11-05 23:08:48 --> Model Class Initialized
+DEBUG - 2014-11-05 23:08:49 --> Model Class Initialized
+DEBUG - 2014-11-05 23:08:49 --> Model Class Initialized
+DEBUG - 2014-11-05 23:08:49 --> Model Class Initialized
+ERROR - 2014-11-05 23:08:49 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\controllers\applications.php 43
+ERROR - 2014-11-05 23:08:49 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\controllers\applications.php 43
+ERROR - 2014-11-05 23:08:49 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\views\public\applications\view.php 12
+ERROR - 2014-11-05 23:08:49 --> Severity: Notice  --> Undefined property: stdClass::$operator C:\xampp\htdocs\ProducSystemCI\system\application\views\public\applications\view.php 35
+ERROR - 2014-11-05 23:08:49 --> Severity: Notice  --> Undefined property: stdClass::$operator C:\xampp\htdocs\ProducSystemCI\system\application\views\public\applications\view.php 35
+DEBUG - 2014-11-05 23:08:49 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/applications/view.php
+DEBUG - 2014-11-05 23:08:53 --> Config Class Initialized
+DEBUG - 2014-11-05 23:08:53 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:08:53 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:08:53 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:08:53 --> URI Class Initialized
+DEBUG - 2014-11-05 23:08:53 --> Router Class Initialized
+DEBUG - 2014-11-05 23:08:53 --> Output Class Initialized
+DEBUG - 2014-11-05 23:08:53 --> Security Class Initialized
+DEBUG - 2014-11-05 23:08:53 --> Input Class Initialized
+DEBUG - 2014-11-05 23:08:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:08:53 --> Language Class Initialized
+DEBUG - 2014-11-05 23:08:53 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:08:53 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:08:53 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:08:53 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:08:53 --> Session Class Initialized
+DEBUG - 2014-11-05 23:08:53 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:08:53 --> Session routines successfully run
+DEBUG - 2014-11-05 23:08:53 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:08:53 --> Model Class Initialized
+DEBUG - 2014-11-05 23:08:53 --> Model Class Initialized
+DEBUG - 2014-11-05 23:08:53 --> Model Class Initialized
+DEBUG - 2014-11-05 23:08:53 --> Model Class Initialized
+DEBUG - 2014-11-05 23:08:53 --> Model Class Initialized
+ERROR - 2014-11-05 23:08:53 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\controllers\applications.php 94
+ERROR - 2014-11-05 23:08:53 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\controllers\applications.php 94
+ERROR - 2014-11-05 23:08:53 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\views\public\applications\view.php 12
+ERROR - 2014-11-05 23:08:53 --> Severity: Notice  --> Undefined property: stdClass::$operator C:\xampp\htdocs\ProducSystemCI\system\application\views\public\applications\view.php 35
+ERROR - 2014-11-05 23:08:53 --> Severity: Notice  --> Undefined property: stdClass::$operator C:\xampp\htdocs\ProducSystemCI\system\application\views\public\applications\view.php 35
+DEBUG - 2014-11-05 23:08:53 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/applications/view.php
+DEBUG - 2014-11-05 23:08:53 --> Final output sent to browser
+DEBUG - 2014-11-05 23:08:53 --> Total execution time: 0.1237
+DEBUG - 2014-11-05 23:08:56 --> Config Class Initialized
+DEBUG - 2014-11-05 23:08:56 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:08:56 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:08:56 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:08:56 --> URI Class Initialized
+DEBUG - 2014-11-05 23:08:56 --> Router Class Initialized
+DEBUG - 2014-11-05 23:08:56 --> Output Class Initialized
+DEBUG - 2014-11-05 23:08:56 --> Security Class Initialized
+DEBUG - 2014-11-05 23:08:56 --> Input Class Initialized
+DEBUG - 2014-11-05 23:08:56 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:08:56 --> Language Class Initialized
+DEBUG - 2014-11-05 23:08:56 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:08:56 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:08:56 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:08:56 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:08:56 --> Session Class Initialized
+DEBUG - 2014-11-05 23:08:56 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:08:56 --> Session routines successfully run
+DEBUG - 2014-11-05 23:08:56 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:08:56 --> Model Class Initialized
+DEBUG - 2014-11-05 23:08:56 --> Model Class Initialized
+DEBUG - 2014-11-05 23:08:56 --> Model Class Initialized
+DEBUG - 2014-11-05 23:08:56 --> Model Class Initialized
+DEBUG - 2014-11-05 23:08:56 --> Model Class Initialized
+ERROR - 2014-11-05 23:08:56 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\controllers\applications.php 43
+ERROR - 2014-11-05 23:08:56 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\controllers\applications.php 43
+ERROR - 2014-11-05 23:08:56 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\views\public\applications\view.php 12
+ERROR - 2014-11-05 23:08:56 --> Severity: Notice  --> Undefined property: stdClass::$operator C:\xampp\htdocs\ProducSystemCI\system\application\views\public\applications\view.php 35
+ERROR - 2014-11-05 23:08:56 --> Severity: Notice  --> Undefined property: stdClass::$operator C:\xampp\htdocs\ProducSystemCI\system\application\views\public\applications\view.php 35
+DEBUG - 2014-11-05 23:08:56 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/applications/view.php
+DEBUG - 2014-11-05 23:08:57 --> Config Class Initialized
+DEBUG - 2014-11-05 23:08:57 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:08:57 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:08:57 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:08:57 --> URI Class Initialized
+DEBUG - 2014-11-05 23:08:57 --> Router Class Initialized
+DEBUG - 2014-11-05 23:08:57 --> Output Class Initialized
+DEBUG - 2014-11-05 23:08:57 --> Security Class Initialized
+DEBUG - 2014-11-05 23:08:57 --> Input Class Initialized
+DEBUG - 2014-11-05 23:08:57 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:08:57 --> Language Class Initialized
+DEBUG - 2014-11-05 23:08:57 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:08:57 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:08:57 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:08:57 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:08:57 --> Session Class Initialized
+DEBUG - 2014-11-05 23:08:57 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:08:57 --> Session routines successfully run
+DEBUG - 2014-11-05 23:08:57 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:08:57 --> Model Class Initialized
+DEBUG - 2014-11-05 23:08:57 --> Model Class Initialized
+DEBUG - 2014-11-05 23:08:57 --> Model Class Initialized
+DEBUG - 2014-11-05 23:08:57 --> Model Class Initialized
+DEBUG - 2014-11-05 23:08:57 --> Model Class Initialized
+ERROR - 2014-11-05 23:08:57 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\controllers\applications.php 43
+ERROR - 2014-11-05 23:08:57 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\controllers\applications.php 43
+ERROR - 2014-11-05 23:08:57 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\views\public\applications\view.php 12
+ERROR - 2014-11-05 23:08:57 --> Severity: Notice  --> Undefined property: stdClass::$operator C:\xampp\htdocs\ProducSystemCI\system\application\views\public\applications\view.php 35
+ERROR - 2014-11-05 23:08:57 --> Severity: Notice  --> Undefined property: stdClass::$operator C:\xampp\htdocs\ProducSystemCI\system\application\views\public\applications\view.php 35
+DEBUG - 2014-11-05 23:08:57 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/applications/view.php
+DEBUG - 2014-11-05 23:08:58 --> Config Class Initialized
+DEBUG - 2014-11-05 23:08:58 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:08:58 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:08:58 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:08:58 --> URI Class Initialized
+DEBUG - 2014-11-05 23:08:58 --> Router Class Initialized
+DEBUG - 2014-11-05 23:08:58 --> Output Class Initialized
+DEBUG - 2014-11-05 23:08:58 --> Security Class Initialized
+DEBUG - 2014-11-05 23:08:58 --> Input Class Initialized
+DEBUG - 2014-11-05 23:08:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:08:58 --> Language Class Initialized
+DEBUG - 2014-11-05 23:08:58 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:08:58 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:08:58 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:08:58 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:08:58 --> Session Class Initialized
+DEBUG - 2014-11-05 23:08:58 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:08:58 --> Session routines successfully run
+DEBUG - 2014-11-05 23:08:58 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:08:58 --> Model Class Initialized
+DEBUG - 2014-11-05 23:08:58 --> Model Class Initialized
+DEBUG - 2014-11-05 23:08:58 --> Model Class Initialized
+DEBUG - 2014-11-05 23:08:58 --> Model Class Initialized
+DEBUG - 2014-11-05 23:08:58 --> Model Class Initialized
+DEBUG - 2014-11-05 23:08:58 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/applications/lists.php
+DEBUG - 2014-11-05 23:08:58 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:08:58 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:08:58 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:08:58 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:08:58 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:08:58 --> Final output sent to browser
+DEBUG - 2014-11-05 23:08:58 --> Total execution time: 0.1325
+DEBUG - 2014-11-05 23:09:20 --> Config Class Initialized
+DEBUG - 2014-11-05 23:09:20 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:09:20 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:09:20 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:09:20 --> URI Class Initialized
+DEBUG - 2014-11-05 23:09:20 --> Router Class Initialized
+DEBUG - 2014-11-05 23:09:20 --> Output Class Initialized
+DEBUG - 2014-11-05 23:09:20 --> Security Class Initialized
+DEBUG - 2014-11-05 23:09:20 --> Input Class Initialized
+DEBUG - 2014-11-05 23:09:20 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:09:20 --> Language Class Initialized
+DEBUG - 2014-11-05 23:09:20 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:09:20 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:09:20 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:09:21 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:09:21 --> Session Class Initialized
+DEBUG - 2014-11-05 23:09:21 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:09:21 --> Session routines successfully run
+DEBUG - 2014-11-05 23:09:21 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:09:21 --> Model Class Initialized
+DEBUG - 2014-11-05 23:09:21 --> Model Class Initialized
+ERROR - 2014-11-05 23:09:21 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\views\public\profiles\lists.php 15
+ERROR - 2014-11-05 23:09:21 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\views\public\profiles\lists.php 15
+DEBUG - 2014-11-05 23:09:21 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/profiles/lists.php
+DEBUG - 2014-11-05 23:09:21 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:09:21 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:09:21 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:09:21 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:09:21 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:09:21 --> Final output sent to browser
+DEBUG - 2014-11-05 23:09:21 --> Total execution time: 0.1324
+DEBUG - 2014-11-05 23:09:35 --> Config Class Initialized
+DEBUG - 2014-11-05 23:09:35 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:09:35 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:09:35 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:09:35 --> URI Class Initialized
+DEBUG - 2014-11-05 23:09:35 --> Router Class Initialized
+DEBUG - 2014-11-05 23:09:35 --> Output Class Initialized
+DEBUG - 2014-11-05 23:09:35 --> Security Class Initialized
+DEBUG - 2014-11-05 23:09:35 --> Input Class Initialized
+DEBUG - 2014-11-05 23:09:35 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:09:35 --> Language Class Initialized
+DEBUG - 2014-11-05 23:09:35 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:09:35 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:09:35 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:09:35 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:09:35 --> Session Class Initialized
+DEBUG - 2014-11-05 23:09:35 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:09:35 --> Session routines successfully run
+DEBUG - 2014-11-05 23:09:35 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:09:35 --> Model Class Initialized
+DEBUG - 2014-11-05 23:09:35 --> Model Class Initialized
+ERROR - 2014-11-05 23:09:35 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\views\public\profiles\edit.php 12
+ERROR - 2014-11-05 23:09:35 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\views\public\profiles\edit.php 13
+ERROR - 2014-11-05 23:09:35 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\views\public\profiles\edit.php 14
+ERROR - 2014-11-05 23:09:35 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\views\public\profiles\edit.php 20
+ERROR - 2014-11-05 23:09:35 --> Severity: Notice  --> Undefined property: stdClass::$operator C:\xampp\htdocs\ProducSystemCI\system\application\views\public\profiles\edit.php 21
+ERROR - 2014-11-05 23:09:35 --> Severity: Notice  --> Undefined property: stdClass::$type C:\xampp\htdocs\ProducSystemCI\system\application\views\public\profiles\edit.php 23
+ERROR - 2014-11-05 23:09:35 --> Severity: Notice  --> Undefined property: stdClass::$value C:\xampp\htdocs\ProducSystemCI\system\application\views\public\profiles\edit.php 23
+DEBUG - 2014-11-05 23:09:35 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/profiles/edit.php
+DEBUG - 2014-11-05 23:09:35 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:09:35 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:09:35 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:09:35 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:09:35 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:09:35 --> Final output sent to browser
+DEBUG - 2014-11-05 23:09:35 --> Total execution time: 0.1411
+DEBUG - 2014-11-05 23:15:53 --> Config Class Initialized
+DEBUG - 2014-11-05 23:15:53 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:15:53 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:15:53 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:15:53 --> URI Class Initialized
+DEBUG - 2014-11-05 23:15:53 --> Router Class Initialized
+DEBUG - 2014-11-05 23:15:53 --> Output Class Initialized
+DEBUG - 2014-11-05 23:15:53 --> Security Class Initialized
+DEBUG - 2014-11-05 23:15:53 --> Input Class Initialized
+DEBUG - 2014-11-05 23:15:53 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:15:53 --> Language Class Initialized
+DEBUG - 2014-11-05 23:15:53 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:15:53 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:15:53 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:15:53 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:15:53 --> Session Class Initialized
+DEBUG - 2014-11-05 23:15:53 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:15:53 --> Session routines successfully run
+DEBUG - 2014-11-05 23:15:53 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:15:53 --> Model Class Initialized
+DEBUG - 2014-11-05 23:15:53 --> Model Class Initialized
+ERROR - 2014-11-05 23:15:53 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\ProducSystemCI\system\application\views\public\profiles\edit.php 12
+ERROR - 2014-11-05 23:15:53 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\ProducSystemCI\system\application\views\public\profiles\edit.php 13
+ERROR - 2014-11-05 23:15:53 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\ProducSystemCI\system\application\views\public\profiles\edit.php 14
+ERROR - 2014-11-05 23:15:53 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\ProducSystemCI\system\application\views\public\profiles\edit.php 19
+ERROR - 2014-11-05 23:15:53 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\ProducSystemCI\system\application\views\public\profiles\edit.php 20
+ERROR - 2014-11-05 23:15:53 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\ProducSystemCI\system\application\views\public\profiles\edit.php 21
+ERROR - 2014-11-05 23:15:53 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\ProducSystemCI\system\application\views\public\profiles\edit.php 23
+ERROR - 2014-11-05 23:15:53 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\ProducSystemCI\system\application\views\public\profiles\edit.php 23
+ERROR - 2014-11-05 23:15:53 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\ProducSystemCI\system\application\views\public\profiles\edit.php 27
+ERROR - 2014-11-05 23:15:53 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\ProducSystemCI\system\application\views\public\profiles\edit.php 30
+DEBUG - 2014-11-05 23:15:53 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/profiles/edit.php
+DEBUG - 2014-11-05 23:15:53 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:15:53 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:15:53 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:15:53 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:15:53 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:15:53 --> Final output sent to browser
+DEBUG - 2014-11-05 23:15:53 --> Total execution time: 0.1539
+DEBUG - 2014-11-05 23:16:02 --> Config Class Initialized
+DEBUG - 2014-11-05 23:16:02 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:16:02 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:16:02 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:16:02 --> URI Class Initialized
+DEBUG - 2014-11-05 23:16:02 --> Router Class Initialized
+DEBUG - 2014-11-05 23:16:02 --> Output Class Initialized
+DEBUG - 2014-11-05 23:16:02 --> Security Class Initialized
+DEBUG - 2014-11-05 23:16:02 --> Input Class Initialized
+DEBUG - 2014-11-05 23:16:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:16:02 --> Language Class Initialized
+DEBUG - 2014-11-05 23:16:02 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:16:02 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:16:02 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:16:02 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:16:02 --> Session Class Initialized
+DEBUG - 2014-11-05 23:16:02 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:16:02 --> Session routines successfully run
+DEBUG - 2014-11-05 23:16:02 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:16:02 --> Model Class Initialized
+DEBUG - 2014-11-05 23:16:02 --> Model Class Initialized
+DEBUG - 2014-11-05 23:16:02 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/profiles/lists.php
+DEBUG - 2014-11-05 23:16:02 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:16:02 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:16:02 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:16:02 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:16:02 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:16:02 --> Final output sent to browser
+DEBUG - 2014-11-05 23:16:02 --> Total execution time: 0.1276
+DEBUG - 2014-11-05 23:16:06 --> Config Class Initialized
+DEBUG - 2014-11-05 23:16:06 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:16:06 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:16:06 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:16:06 --> URI Class Initialized
+DEBUG - 2014-11-05 23:16:06 --> Router Class Initialized
+DEBUG - 2014-11-05 23:16:06 --> Output Class Initialized
+DEBUG - 2014-11-05 23:16:06 --> Security Class Initialized
+DEBUG - 2014-11-05 23:16:06 --> Input Class Initialized
+DEBUG - 2014-11-05 23:16:06 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:16:06 --> Language Class Initialized
+DEBUG - 2014-11-05 23:16:06 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:16:06 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:16:06 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:16:06 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:16:06 --> Session Class Initialized
+DEBUG - 2014-11-05 23:16:06 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:16:06 --> Session routines successfully run
+DEBUG - 2014-11-05 23:16:06 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:16:06 --> Model Class Initialized
+DEBUG - 2014-11-05 23:16:06 --> Model Class Initialized
+DEBUG - 2014-11-05 23:16:06 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/profiles/lists.php
+DEBUG - 2014-11-05 23:16:06 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:16:06 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:16:06 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:16:06 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:16:06 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:16:06 --> Final output sent to browser
+DEBUG - 2014-11-05 23:16:06 --> Total execution time: 0.1216
+DEBUG - 2014-11-05 23:16:09 --> Config Class Initialized
+DEBUG - 2014-11-05 23:16:09 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:16:09 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:16:09 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:16:09 --> URI Class Initialized
+DEBUG - 2014-11-05 23:16:09 --> Router Class Initialized
+DEBUG - 2014-11-05 23:16:09 --> Output Class Initialized
+DEBUG - 2014-11-05 23:16:09 --> Security Class Initialized
+DEBUG - 2014-11-05 23:16:09 --> Input Class Initialized
+DEBUG - 2014-11-05 23:16:09 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:16:09 --> Language Class Initialized
+DEBUG - 2014-11-05 23:16:09 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:16:09 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:16:09 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:16:09 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:16:09 --> Session Class Initialized
+DEBUG - 2014-11-05 23:16:09 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:16:09 --> Session routines successfully run
+DEBUG - 2014-11-05 23:16:09 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:16:09 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:16:09 --> Model Class Initialized
+DEBUG - 2014-11-05 23:16:09 --> Model Class Initialized
+DEBUG - 2014-11-05 23:16:09 --> Model Class Initialized
+DEBUG - 2014-11-05 23:16:09 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/modul/list_modul.php
+DEBUG - 2014-11-05 23:16:09 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/modul/edit.php
+DEBUG - 2014-11-05 23:16:09 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:16:09 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:16:09 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:16:09 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:16:09 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:16:09 --> Final output sent to browser
+DEBUG - 2014-11-05 23:16:09 --> Total execution time: 0.1281
+DEBUG - 2014-11-05 23:16:12 --> Config Class Initialized
+DEBUG - 2014-11-05 23:16:12 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:16:12 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:16:12 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:16:12 --> URI Class Initialized
+DEBUG - 2014-11-05 23:16:12 --> Router Class Initialized
+DEBUG - 2014-11-05 23:16:12 --> Output Class Initialized
+DEBUG - 2014-11-05 23:16:12 --> Security Class Initialized
+DEBUG - 2014-11-05 23:16:12 --> Input Class Initialized
+DEBUG - 2014-11-05 23:16:12 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:16:12 --> Language Class Initialized
+DEBUG - 2014-11-05 23:16:12 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:16:12 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:16:12 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:16:12 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:16:12 --> Session Class Initialized
+DEBUG - 2014-11-05 23:16:12 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:16:12 --> Session routines successfully run
+DEBUG - 2014-11-05 23:16:12 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:16:12 --> Model Class Initialized
+DEBUG - 2014-11-05 23:16:12 --> Model Class Initialized
+DEBUG - 2014-11-05 23:16:12 --> Model Class Initialized
+DEBUG - 2014-11-05 23:16:12 --> Model Class Initialized
+DEBUG - 2014-11-05 23:16:12 --> Model Class Initialized
+DEBUG - 2014-11-05 23:16:12 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/applications/lists.php
+DEBUG - 2014-11-05 23:16:12 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:16:12 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:16:12 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:16:12 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:16:12 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:16:12 --> Final output sent to browser
+DEBUG - 2014-11-05 23:16:12 --> Total execution time: 0.1323
+DEBUG - 2014-11-05 23:16:14 --> Config Class Initialized
+DEBUG - 2014-11-05 23:16:14 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:16:14 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:16:14 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:16:14 --> URI Class Initialized
+DEBUG - 2014-11-05 23:16:14 --> Router Class Initialized
+DEBUG - 2014-11-05 23:16:14 --> Output Class Initialized
+DEBUG - 2014-11-05 23:16:14 --> Security Class Initialized
+DEBUG - 2014-11-05 23:16:14 --> Input Class Initialized
+DEBUG - 2014-11-05 23:16:14 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:16:15 --> Language Class Initialized
+DEBUG - 2014-11-05 23:16:15 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:16:15 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:16:15 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:16:15 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:16:15 --> Session Class Initialized
+DEBUG - 2014-11-05 23:16:15 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:16:15 --> Session routines successfully run
+DEBUG - 2014-11-05 23:16:15 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:16:15 --> Model Class Initialized
+DEBUG - 2014-11-05 23:16:15 --> Model Class Initialized
+DEBUG - 2014-11-05 23:16:15 --> Model Class Initialized
+DEBUG - 2014-11-05 23:16:15 --> Model Class Initialized
+DEBUG - 2014-11-05 23:16:15 --> Model Class Initialized
+DEBUG - 2014-11-05 23:16:15 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/applications/view.php
+DEBUG - 2014-11-05 23:16:15 --> Final output sent to browser
+DEBUG - 2014-11-05 23:16:15 --> Total execution time: 0.1070
+DEBUG - 2014-11-05 23:16:24 --> Config Class Initialized
+DEBUG - 2014-11-05 23:16:24 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:16:24 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:16:24 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:16:24 --> URI Class Initialized
+DEBUG - 2014-11-05 23:16:24 --> Router Class Initialized
+DEBUG - 2014-11-05 23:16:24 --> Output Class Initialized
+DEBUG - 2014-11-05 23:16:24 --> Security Class Initialized
+DEBUG - 2014-11-05 23:16:24 --> Input Class Initialized
+DEBUG - 2014-11-05 23:16:24 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:16:24 --> Language Class Initialized
+DEBUG - 2014-11-05 23:16:24 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:16:24 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:16:24 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:16:24 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:16:24 --> Session Class Initialized
+DEBUG - 2014-11-05 23:16:24 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:16:24 --> Session routines successfully run
+DEBUG - 2014-11-05 23:16:24 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:16:24 --> Model Class Initialized
+DEBUG - 2014-11-05 23:16:24 --> Model Class Initialized
+DEBUG - 2014-11-05 23:16:24 --> Model Class Initialized
+DEBUG - 2014-11-05 23:16:24 --> Model Class Initialized
+DEBUG - 2014-11-05 23:16:24 --> Model Class Initialized
+DEBUG - 2014-11-05 23:16:24 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/applications/view.php
+DEBUG - 2014-11-05 23:18:14 --> Config Class Initialized
+DEBUG - 2014-11-05 23:18:14 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:18:14 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:18:14 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:18:14 --> URI Class Initialized
+DEBUG - 2014-11-05 23:18:14 --> Router Class Initialized
+DEBUG - 2014-11-05 23:18:14 --> Output Class Initialized
+DEBUG - 2014-11-05 23:18:14 --> Security Class Initialized
+DEBUG - 2014-11-05 23:18:14 --> Input Class Initialized
+DEBUG - 2014-11-05 23:18:14 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:18:14 --> Language Class Initialized
+DEBUG - 2014-11-05 23:18:14 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:18:14 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:18:14 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:18:14 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:18:14 --> Session Class Initialized
+DEBUG - 2014-11-05 23:18:14 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:18:14 --> Session routines successfully run
+DEBUG - 2014-11-05 23:18:14 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:18:14 --> Model Class Initialized
+DEBUG - 2014-11-05 23:18:14 --> Model Class Initialized
+DEBUG - 2014-11-05 23:18:14 --> Model Class Initialized
+DEBUG - 2014-11-05 23:18:14 --> Model Class Initialized
+DEBUG - 2014-11-05 23:18:14 --> Model Class Initialized
+DEBUG - 2014-11-05 23:18:14 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/applications/view.php
+DEBUG - 2014-11-05 23:18:18 --> Config Class Initialized
+DEBUG - 2014-11-05 23:18:18 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:18:18 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:18:18 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:18:18 --> URI Class Initialized
+DEBUG - 2014-11-05 23:18:18 --> Router Class Initialized
+DEBUG - 2014-11-05 23:18:18 --> Output Class Initialized
+DEBUG - 2014-11-05 23:18:18 --> Security Class Initialized
+DEBUG - 2014-11-05 23:18:18 --> Input Class Initialized
+DEBUG - 2014-11-05 23:18:18 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:18:18 --> Language Class Initialized
+DEBUG - 2014-11-05 23:18:18 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:18:18 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:18:18 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:18:18 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:18:18 --> Session Class Initialized
+DEBUG - 2014-11-05 23:18:18 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:18:18 --> Session routines successfully run
+DEBUG - 2014-11-05 23:18:18 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:18:18 --> Model Class Initialized
+DEBUG - 2014-11-05 23:18:18 --> Model Class Initialized
+DEBUG - 2014-11-05 23:18:18 --> Model Class Initialized
+DEBUG - 2014-11-05 23:18:18 --> Model Class Initialized
+DEBUG - 2014-11-05 23:18:18 --> Model Class Initialized
+DEBUG - 2014-11-05 23:18:18 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/applications/view.php
+DEBUG - 2014-11-05 23:18:22 --> Config Class Initialized
+DEBUG - 2014-11-05 23:18:22 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:18:22 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:18:22 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:18:22 --> URI Class Initialized
+DEBUG - 2014-11-05 23:18:22 --> Router Class Initialized
+DEBUG - 2014-11-05 23:18:22 --> Output Class Initialized
+DEBUG - 2014-11-05 23:18:22 --> Security Class Initialized
+DEBUG - 2014-11-05 23:18:22 --> Input Class Initialized
+DEBUG - 2014-11-05 23:18:22 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:18:22 --> Language Class Initialized
+DEBUG - 2014-11-05 23:18:22 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:18:22 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:18:22 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:18:22 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:18:22 --> Session Class Initialized
+DEBUG - 2014-11-05 23:18:22 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:18:22 --> Session routines successfully run
+DEBUG - 2014-11-05 23:18:22 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:18:22 --> Model Class Initialized
+DEBUG - 2014-11-05 23:18:22 --> Model Class Initialized
+DEBUG - 2014-11-05 23:18:22 --> Model Class Initialized
+DEBUG - 2014-11-05 23:18:22 --> Model Class Initialized
+DEBUG - 2014-11-05 23:18:22 --> Model Class Initialized
+DEBUG - 2014-11-05 23:18:22 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/applications/view.php
+DEBUG - 2014-11-05 23:18:22 --> Final output sent to browser
+DEBUG - 2014-11-05 23:18:22 --> Total execution time: 0.0978
+DEBUG - 2014-11-05 23:18:26 --> Config Class Initialized
+DEBUG - 2014-11-05 23:18:26 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:18:26 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:18:26 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:18:26 --> URI Class Initialized
+DEBUG - 2014-11-05 23:18:26 --> Router Class Initialized
+DEBUG - 2014-11-05 23:18:26 --> Output Class Initialized
+DEBUG - 2014-11-05 23:18:26 --> Security Class Initialized
+DEBUG - 2014-11-05 23:18:26 --> Input Class Initialized
+DEBUG - 2014-11-05 23:18:26 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:18:26 --> Language Class Initialized
+DEBUG - 2014-11-05 23:18:26 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:18:26 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:18:26 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:18:26 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:18:26 --> Session Class Initialized
+DEBUG - 2014-11-05 23:18:26 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:18:26 --> Session routines successfully run
+DEBUG - 2014-11-05 23:18:26 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:18:26 --> Model Class Initialized
+DEBUG - 2014-11-05 23:18:26 --> Model Class Initialized
+DEBUG - 2014-11-05 23:18:26 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/profiles/lists.php
+DEBUG - 2014-11-05 23:18:26 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:18:26 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:18:26 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:18:26 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:18:26 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:18:26 --> Final output sent to browser
+DEBUG - 2014-11-05 23:18:26 --> Total execution time: 0.1218
+DEBUG - 2014-11-05 23:18:29 --> Config Class Initialized
+DEBUG - 2014-11-05 23:18:29 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:18:29 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:18:29 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:18:29 --> URI Class Initialized
+DEBUG - 2014-11-05 23:18:29 --> Router Class Initialized
+DEBUG - 2014-11-05 23:18:29 --> Output Class Initialized
+DEBUG - 2014-11-05 23:18:29 --> Security Class Initialized
+DEBUG - 2014-11-05 23:18:29 --> Input Class Initialized
+DEBUG - 2014-11-05 23:18:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:18:29 --> Language Class Initialized
+DEBUG - 2014-11-05 23:18:29 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:18:29 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:18:29 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:18:29 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:18:29 --> Session Class Initialized
+DEBUG - 2014-11-05 23:18:29 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:18:29 --> Session routines successfully run
+DEBUG - 2014-11-05 23:18:29 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:18:29 --> Model Class Initialized
+DEBUG - 2014-11-05 23:18:29 --> Model Class Initialized
+DEBUG - 2014-11-05 23:18:29 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/profiles/edit.php
+DEBUG - 2014-11-05 23:18:29 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:18:29 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:18:29 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:18:29 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:18:29 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:18:29 --> Final output sent to browser
+DEBUG - 2014-11-05 23:18:29 --> Total execution time: 0.1171
+DEBUG - 2014-11-05 23:18:35 --> Config Class Initialized
+DEBUG - 2014-11-05 23:18:35 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:18:35 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:18:35 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:18:35 --> URI Class Initialized
+DEBUG - 2014-11-05 23:18:35 --> Router Class Initialized
+DEBUG - 2014-11-05 23:18:35 --> Output Class Initialized
+DEBUG - 2014-11-05 23:18:35 --> Security Class Initialized
+DEBUG - 2014-11-05 23:18:35 --> Input Class Initialized
+DEBUG - 2014-11-05 23:18:35 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:18:35 --> Language Class Initialized
+DEBUG - 2014-11-05 23:18:35 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:18:35 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:18:35 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:18:35 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:18:35 --> Session Class Initialized
+DEBUG - 2014-11-05 23:18:35 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:18:35 --> Session routines successfully run
+DEBUG - 2014-11-05 23:18:35 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:18:35 --> Model Class Initialized
+DEBUG - 2014-11-05 23:18:35 --> Model Class Initialized
+DEBUG - 2014-11-05 23:18:35 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> Config Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:19:08 --> URI Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> Router Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> Output Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> Security Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> Input Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:19:08 --> Language Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:19:08 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:19:08 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:19:08 --> Session Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:19:08 --> Session routines successfully run
+DEBUG - 2014-11-05 23:19:08 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> Config Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:19:08 --> URI Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> Router Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> Output Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> Security Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> Input Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:19:08 --> Language Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:19:08 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:19:08 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:19:08 --> Session Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:19:08 --> Session routines successfully run
+DEBUG - 2014-11-05 23:19:08 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:08 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/profiles/lists.php
+DEBUG - 2014-11-05 23:19:08 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:19:08 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:19:08 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:19:08 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:19:08 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:19:08 --> Final output sent to browser
+DEBUG - 2014-11-05 23:19:08 --> Total execution time: 0.1435
+DEBUG - 2014-11-05 23:19:12 --> Config Class Initialized
+DEBUG - 2014-11-05 23:19:12 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:19:12 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:19:12 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:19:12 --> URI Class Initialized
+DEBUG - 2014-11-05 23:19:12 --> Router Class Initialized
+DEBUG - 2014-11-05 23:19:12 --> Output Class Initialized
+DEBUG - 2014-11-05 23:19:12 --> Security Class Initialized
+DEBUG - 2014-11-05 23:19:12 --> Input Class Initialized
+DEBUG - 2014-11-05 23:19:12 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:19:12 --> Language Class Initialized
+DEBUG - 2014-11-05 23:19:12 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:19:12 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:19:12 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:19:12 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:19:12 --> Session Class Initialized
+DEBUG - 2014-11-05 23:19:12 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:19:12 --> Session routines successfully run
+DEBUG - 2014-11-05 23:19:12 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:19:12 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:12 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:12 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/profiles/edit.php
+DEBUG - 2014-11-05 23:19:12 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:19:12 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:19:12 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:19:12 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:19:12 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:19:12 --> Final output sent to browser
+DEBUG - 2014-11-05 23:19:12 --> Total execution time: 0.1235
+DEBUG - 2014-11-05 23:19:16 --> Config Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:19:16 --> URI Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> Router Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> Output Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> Security Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> Input Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:19:16 --> Language Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:19:16 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:19:16 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:19:16 --> Session Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:19:16 --> Session routines successfully run
+DEBUG - 2014-11-05 23:19:16 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> Config Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:19:16 --> URI Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> Router Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> Output Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> Security Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> Input Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:19:16 --> Language Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:19:16 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:19:16 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:19:16 --> Session Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:19:16 --> Session routines successfully run
+DEBUG - 2014-11-05 23:19:16 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:16 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/profiles/lists.php
+DEBUG - 2014-11-05 23:19:16 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:19:16 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:19:16 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:19:16 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:19:16 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:19:16 --> Final output sent to browser
+DEBUG - 2014-11-05 23:19:16 --> Total execution time: 0.1265
+DEBUG - 2014-11-05 23:19:21 --> Config Class Initialized
+DEBUG - 2014-11-05 23:19:21 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:19:21 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:19:21 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:19:21 --> URI Class Initialized
+DEBUG - 2014-11-05 23:19:21 --> Router Class Initialized
+DEBUG - 2014-11-05 23:19:21 --> Output Class Initialized
+DEBUG - 2014-11-05 23:19:21 --> Security Class Initialized
+DEBUG - 2014-11-05 23:19:21 --> Input Class Initialized
+DEBUG - 2014-11-05 23:19:21 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:19:21 --> Language Class Initialized
+DEBUG - 2014-11-05 23:19:21 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:19:21 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:19:21 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:19:21 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:19:21 --> Session Class Initialized
+DEBUG - 2014-11-05 23:19:21 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:19:21 --> Session routines successfully run
+DEBUG - 2014-11-05 23:19:21 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:19:21 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:21 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:21 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/profiles/edit.php
+DEBUG - 2014-11-05 23:19:21 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:19:21 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:19:21 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:19:21 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:19:21 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:19:21 --> Final output sent to browser
+DEBUG - 2014-11-05 23:19:21 --> Total execution time: 0.1180
+DEBUG - 2014-11-05 23:19:25 --> Config Class Initialized
+DEBUG - 2014-11-05 23:19:25 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:19:25 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:19:25 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:19:25 --> URI Class Initialized
+DEBUG - 2014-11-05 23:19:25 --> Router Class Initialized
+DEBUG - 2014-11-05 23:19:25 --> Output Class Initialized
+DEBUG - 2014-11-05 23:19:25 --> Security Class Initialized
+DEBUG - 2014-11-05 23:19:25 --> Input Class Initialized
+DEBUG - 2014-11-05 23:19:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:19:25 --> Language Class Initialized
+DEBUG - 2014-11-05 23:19:25 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:19:25 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:19:25 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:19:25 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:19:25 --> Session Class Initialized
+DEBUG - 2014-11-05 23:19:25 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:19:25 --> Session routines successfully run
+DEBUG - 2014-11-05 23:19:25 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:19:25 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:25 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:25 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:26 --> Config Class Initialized
+DEBUG - 2014-11-05 23:19:26 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:19:26 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:19:26 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:19:26 --> URI Class Initialized
+DEBUG - 2014-11-05 23:19:26 --> Router Class Initialized
+DEBUG - 2014-11-05 23:19:26 --> Output Class Initialized
+DEBUG - 2014-11-05 23:19:26 --> Security Class Initialized
+DEBUG - 2014-11-05 23:19:26 --> Input Class Initialized
+DEBUG - 2014-11-05 23:19:26 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:19:26 --> Language Class Initialized
+DEBUG - 2014-11-05 23:19:26 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:19:26 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:19:26 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:19:26 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:19:26 --> Session Class Initialized
+DEBUG - 2014-11-05 23:19:26 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:19:26 --> Session routines successfully run
+DEBUG - 2014-11-05 23:19:26 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:19:26 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:26 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:26 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Config Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:19:27 --> URI Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Router Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Output Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Security Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Input Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:19:27 --> Language Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:19:27 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:19:27 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:19:27 --> Session Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:19:27 --> Session routines successfully run
+DEBUG - 2014-11-05 23:19:27 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Config Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:19:27 --> URI Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Router Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Output Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Security Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Input Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:19:27 --> Language Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:19:27 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:19:27 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:19:27 --> Session Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:19:27 --> Session routines successfully run
+DEBUG - 2014-11-05 23:19:27 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:27 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:29 --> Config Class Initialized
+DEBUG - 2014-11-05 23:19:29 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:19:29 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:19:29 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:19:29 --> URI Class Initialized
+DEBUG - 2014-11-05 23:19:29 --> Router Class Initialized
+DEBUG - 2014-11-05 23:19:29 --> Output Class Initialized
+DEBUG - 2014-11-05 23:19:29 --> Security Class Initialized
+DEBUG - 2014-11-05 23:19:29 --> Input Class Initialized
+DEBUG - 2014-11-05 23:19:29 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:19:29 --> Language Class Initialized
+DEBUG - 2014-11-05 23:19:29 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:19:29 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:19:29 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:19:29 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:19:29 --> Session Class Initialized
+DEBUG - 2014-11-05 23:19:29 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:19:29 --> Session routines successfully run
+DEBUG - 2014-11-05 23:19:29 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:19:29 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:29 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:29 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> Config Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:19:38 --> URI Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> Router Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> Output Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> Security Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> Input Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:19:38 --> Language Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:19:38 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:19:38 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:19:38 --> Session Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:19:38 --> Session routines successfully run
+DEBUG - 2014-11-05 23:19:38 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> Config Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:19:38 --> URI Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> Router Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> Output Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> Security Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> Input Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:19:38 --> Language Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:19:38 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:19:38 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:19:38 --> Session Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:19:38 --> Session routines successfully run
+DEBUG - 2014-11-05 23:19:38 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:38 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/profiles/lists.php
+DEBUG - 2014-11-05 23:19:38 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:19:38 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:19:38 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:19:38 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:19:38 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:19:38 --> Final output sent to browser
+DEBUG - 2014-11-05 23:19:38 --> Total execution time: 0.1247
+DEBUG - 2014-11-05 23:19:42 --> Config Class Initialized
+DEBUG - 2014-11-05 23:19:42 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:19:42 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:19:42 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:19:42 --> URI Class Initialized
+DEBUG - 2014-11-05 23:19:42 --> Router Class Initialized
+DEBUG - 2014-11-05 23:19:42 --> Output Class Initialized
+DEBUG - 2014-11-05 23:19:42 --> Security Class Initialized
+DEBUG - 2014-11-05 23:19:42 --> Input Class Initialized
+DEBUG - 2014-11-05 23:19:42 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:19:42 --> Language Class Initialized
+DEBUG - 2014-11-05 23:19:42 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:19:42 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:19:43 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:19:43 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:19:43 --> Session Class Initialized
+DEBUG - 2014-11-05 23:19:43 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:19:43 --> Session routines successfully run
+DEBUG - 2014-11-05 23:19:43 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:19:43 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:19:43 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:43 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:43 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:43 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/modul/list_modul.php
+DEBUG - 2014-11-05 23:19:43 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/modul/edit.php
+DEBUG - 2014-11-05 23:19:43 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:19:43 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:19:43 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:19:43 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:19:43 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:19:43 --> Final output sent to browser
+DEBUG - 2014-11-05 23:19:43 --> Total execution time: 0.1653
+DEBUG - 2014-11-05 23:19:45 --> Config Class Initialized
+DEBUG - 2014-11-05 23:19:45 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:19:45 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:19:45 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:19:45 --> URI Class Initialized
+DEBUG - 2014-11-05 23:19:45 --> Router Class Initialized
+DEBUG - 2014-11-05 23:19:45 --> Output Class Initialized
+DEBUG - 2014-11-05 23:19:45 --> Security Class Initialized
+DEBUG - 2014-11-05 23:19:45 --> Input Class Initialized
+DEBUG - 2014-11-05 23:19:45 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:19:45 --> Language Class Initialized
+DEBUG - 2014-11-05 23:19:45 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:19:45 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:19:45 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:19:45 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:19:45 --> Session Class Initialized
+DEBUG - 2014-11-05 23:19:45 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:19:45 --> Session routines successfully run
+DEBUG - 2014-11-05 23:19:45 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:19:45 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:45 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:45 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:45 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:45 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:45 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/applications/lists.php
+DEBUG - 2014-11-05 23:19:45 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:19:45 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:19:45 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:19:45 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:19:45 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:19:45 --> Final output sent to browser
+DEBUG - 2014-11-05 23:19:45 --> Total execution time: 0.1240
+DEBUG - 2014-11-05 23:19:48 --> Config Class Initialized
+DEBUG - 2014-11-05 23:19:48 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:19:48 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:19:48 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:19:48 --> URI Class Initialized
+DEBUG - 2014-11-05 23:19:48 --> Router Class Initialized
+DEBUG - 2014-11-05 23:19:48 --> Output Class Initialized
+DEBUG - 2014-11-05 23:19:48 --> Security Class Initialized
+DEBUG - 2014-11-05 23:19:48 --> Input Class Initialized
+DEBUG - 2014-11-05 23:19:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:19:48 --> Language Class Initialized
+DEBUG - 2014-11-05 23:19:48 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:19:48 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:19:48 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:19:48 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:19:48 --> Session Class Initialized
+DEBUG - 2014-11-05 23:19:48 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:19:48 --> Session routines successfully run
+DEBUG - 2014-11-05 23:19:48 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:19:48 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:48 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:48 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:48 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:48 --> Model Class Initialized
+DEBUG - 2014-11-05 23:19:48 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/applications/view.php
+DEBUG - 2014-11-05 23:19:48 --> Final output sent to browser
+DEBUG - 2014-11-05 23:19:48 --> Total execution time: 0.1654
+DEBUG - 2014-11-05 23:20:10 --> Config Class Initialized
+DEBUG - 2014-11-05 23:20:10 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:20:10 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:20:10 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:20:10 --> URI Class Initialized
+DEBUG - 2014-11-05 23:20:10 --> Router Class Initialized
+DEBUG - 2014-11-05 23:20:10 --> Output Class Initialized
+DEBUG - 2014-11-05 23:20:10 --> Security Class Initialized
+DEBUG - 2014-11-05 23:20:10 --> Input Class Initialized
+DEBUG - 2014-11-05 23:20:10 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:20:10 --> Language Class Initialized
+DEBUG - 2014-11-05 23:20:10 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:20:10 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:20:10 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:20:10 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:20:10 --> Session Class Initialized
+DEBUG - 2014-11-05 23:20:10 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:20:10 --> Session routines successfully run
+DEBUG - 2014-11-05 23:20:10 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:20:10 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:10 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:10 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/profiles/lists.php
+DEBUG - 2014-11-05 23:20:10 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:20:10 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:20:10 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:20:10 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:20:10 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:20:10 --> Final output sent to browser
+DEBUG - 2014-11-05 23:20:10 --> Total execution time: 0.1171
+DEBUG - 2014-11-05 23:20:14 --> Config Class Initialized
+DEBUG - 2014-11-05 23:20:14 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:20:14 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:20:14 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:20:14 --> URI Class Initialized
+DEBUG - 2014-11-05 23:20:14 --> Router Class Initialized
+DEBUG - 2014-11-05 23:20:14 --> Output Class Initialized
+DEBUG - 2014-11-05 23:20:14 --> Security Class Initialized
+DEBUG - 2014-11-05 23:20:14 --> Input Class Initialized
+DEBUG - 2014-11-05 23:20:14 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:20:14 --> Language Class Initialized
+DEBUG - 2014-11-05 23:20:14 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:20:14 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:20:14 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:20:14 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:20:14 --> Session Class Initialized
+DEBUG - 2014-11-05 23:20:14 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:20:14 --> Session routines successfully run
+DEBUG - 2014-11-05 23:20:14 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:20:14 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:14 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:14 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/profiles/edit.php
+DEBUG - 2014-11-05 23:20:14 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:20:14 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:20:14 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:20:14 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:20:14 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:20:14 --> Final output sent to browser
+DEBUG - 2014-11-05 23:20:14 --> Total execution time: 0.1161
+DEBUG - 2014-11-05 23:20:26 --> Config Class Initialized
+DEBUG - 2014-11-05 23:20:26 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:20:26 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:20:27 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:20:27 --> URI Class Initialized
+DEBUG - 2014-11-05 23:20:27 --> Router Class Initialized
+DEBUG - 2014-11-05 23:20:27 --> Output Class Initialized
+DEBUG - 2014-11-05 23:20:27 --> Security Class Initialized
+DEBUG - 2014-11-05 23:20:27 --> Input Class Initialized
+DEBUG - 2014-11-05 23:20:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:20:27 --> Language Class Initialized
+DEBUG - 2014-11-05 23:20:27 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:20:27 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:20:27 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:20:27 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:20:27 --> Session Class Initialized
+DEBUG - 2014-11-05 23:20:27 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:20:27 --> Session routines successfully run
+DEBUG - 2014-11-05 23:20:27 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:20:27 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:27 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:27 --> Config Class Initialized
+DEBUG - 2014-11-05 23:20:27 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:20:27 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:20:27 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:20:27 --> URI Class Initialized
+DEBUG - 2014-11-05 23:20:27 --> Router Class Initialized
+DEBUG - 2014-11-05 23:20:27 --> Output Class Initialized
+DEBUG - 2014-11-05 23:20:27 --> Security Class Initialized
+DEBUG - 2014-11-05 23:20:27 --> Input Class Initialized
+DEBUG - 2014-11-05 23:20:27 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:20:27 --> Language Class Initialized
+DEBUG - 2014-11-05 23:20:27 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:20:27 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:20:27 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:20:27 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:20:27 --> Session Class Initialized
+DEBUG - 2014-11-05 23:20:27 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:20:27 --> Session routines successfully run
+DEBUG - 2014-11-05 23:20:27 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:20:27 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:27 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:27 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/profiles/lists.php
+DEBUG - 2014-11-05 23:20:27 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:20:27 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:20:27 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:20:27 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:20:27 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:20:27 --> Final output sent to browser
+DEBUG - 2014-11-05 23:20:27 --> Total execution time: 0.1265
+DEBUG - 2014-11-05 23:20:37 --> Config Class Initialized
+DEBUG - 2014-11-05 23:20:37 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:20:37 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:20:37 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:20:37 --> URI Class Initialized
+DEBUG - 2014-11-05 23:20:37 --> Router Class Initialized
+DEBUG - 2014-11-05 23:20:37 --> Output Class Initialized
+DEBUG - 2014-11-05 23:20:37 --> Security Class Initialized
+DEBUG - 2014-11-05 23:20:37 --> Input Class Initialized
+DEBUG - 2014-11-05 23:20:37 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:20:37 --> Language Class Initialized
+DEBUG - 2014-11-05 23:20:37 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:20:37 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:20:37 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:20:37 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:20:37 --> Session Class Initialized
+DEBUG - 2014-11-05 23:20:37 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:20:37 --> Session routines successfully run
+DEBUG - 2014-11-05 23:20:37 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:20:37 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:20:37 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:37 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:37 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:37 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/modul/list_modul.php
+DEBUG - 2014-11-05 23:20:37 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/modul/edit.php
+DEBUG - 2014-11-05 23:20:37 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:20:37 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:20:37 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:20:37 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:20:37 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:20:37 --> Final output sent to browser
+DEBUG - 2014-11-05 23:20:37 --> Total execution time: 0.1275
+DEBUG - 2014-11-05 23:20:39 --> Config Class Initialized
+DEBUG - 2014-11-05 23:20:39 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:20:39 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:20:39 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:20:39 --> URI Class Initialized
+DEBUG - 2014-11-05 23:20:39 --> Router Class Initialized
+DEBUG - 2014-11-05 23:20:39 --> Output Class Initialized
+DEBUG - 2014-11-05 23:20:39 --> Security Class Initialized
+DEBUG - 2014-11-05 23:20:39 --> Input Class Initialized
+DEBUG - 2014-11-05 23:20:39 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:20:39 --> Language Class Initialized
+DEBUG - 2014-11-05 23:20:39 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:20:39 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:20:39 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:20:39 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:20:39 --> Session Class Initialized
+DEBUG - 2014-11-05 23:20:39 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:20:39 --> Session routines successfully run
+DEBUG - 2014-11-05 23:20:39 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:20:39 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:39 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:39 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:39 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:39 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:39 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/applications/lists.php
+DEBUG - 2014-11-05 23:20:39 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/header.php
+DEBUG - 2014-11-05 23:20:39 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/footer.php
+DEBUG - 2014-11-05 23:20:39 --> RoleComponent class already loaded. Second attempt ignored.
+DEBUG - 2014-11-05 23:20:39 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/sidebar.php
+DEBUG - 2014-11-05 23:20:39 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/inc/template.php
+DEBUG - 2014-11-05 23:20:39 --> Final output sent to browser
+DEBUG - 2014-11-05 23:20:39 --> Total execution time: 0.1339
+DEBUG - 2014-11-05 23:20:41 --> Config Class Initialized
+DEBUG - 2014-11-05 23:20:41 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:20:41 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:20:41 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:20:41 --> URI Class Initialized
+DEBUG - 2014-11-05 23:20:41 --> Router Class Initialized
+DEBUG - 2014-11-05 23:20:41 --> Output Class Initialized
+DEBUG - 2014-11-05 23:20:41 --> Security Class Initialized
+DEBUG - 2014-11-05 23:20:41 --> Input Class Initialized
+DEBUG - 2014-11-05 23:20:41 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:20:41 --> Language Class Initialized
+DEBUG - 2014-11-05 23:20:41 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:20:41 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:20:41 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:20:41 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:20:41 --> Session Class Initialized
+DEBUG - 2014-11-05 23:20:41 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:20:41 --> Session routines successfully run
+DEBUG - 2014-11-05 23:20:41 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:20:41 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:41 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:41 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:41 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:41 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:41 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/applications/view.php
+DEBUG - 2014-11-05 23:20:41 --> Final output sent to browser
+DEBUG - 2014-11-05 23:20:41 --> Total execution time: 0.1081
+DEBUG - 2014-11-05 23:20:51 --> Config Class Initialized
+DEBUG - 2014-11-05 23:20:51 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:20:51 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:20:51 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:20:51 --> URI Class Initialized
+DEBUG - 2014-11-05 23:20:51 --> Router Class Initialized
+DEBUG - 2014-11-05 23:20:51 --> Output Class Initialized
+DEBUG - 2014-11-05 23:20:51 --> Security Class Initialized
+DEBUG - 2014-11-05 23:20:51 --> Input Class Initialized
+DEBUG - 2014-11-05 23:20:52 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:20:52 --> Language Class Initialized
+DEBUG - 2014-11-05 23:20:52 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:20:52 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:20:52 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:20:52 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:20:52 --> Session Class Initialized
+DEBUG - 2014-11-05 23:20:52 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:20:52 --> Session routines successfully run
+DEBUG - 2014-11-05 23:20:52 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:20:52 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:52 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:52 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:52 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:52 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:52 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/applications/view.php
+DEBUG - 2014-11-05 23:20:58 --> Config Class Initialized
+DEBUG - 2014-11-05 23:20:58 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:20:58 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:20:58 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:20:58 --> URI Class Initialized
+DEBUG - 2014-11-05 23:20:58 --> Router Class Initialized
+DEBUG - 2014-11-05 23:20:58 --> Output Class Initialized
+DEBUG - 2014-11-05 23:20:58 --> Security Class Initialized
+DEBUG - 2014-11-05 23:20:58 --> Input Class Initialized
+DEBUG - 2014-11-05 23:20:58 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:20:58 --> Language Class Initialized
+DEBUG - 2014-11-05 23:20:58 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:20:58 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:20:58 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:20:58 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:20:58 --> Session Class Initialized
+DEBUG - 2014-11-05 23:20:58 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:20:58 --> Session routines successfully run
+DEBUG - 2014-11-05 23:20:58 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:20:58 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:58 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:58 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:58 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:58 --> Model Class Initialized
+DEBUG - 2014-11-05 23:20:58 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/applications/view.php
+DEBUG - 2014-11-05 23:21:16 --> Config Class Initialized
+DEBUG - 2014-11-05 23:21:16 --> Hooks Class Initialized
+DEBUG - 2014-11-05 23:21:16 --> Utf8 Class Initialized
+DEBUG - 2014-11-05 23:21:16 --> UTF-8 Support Enabled
+DEBUG - 2014-11-05 23:21:16 --> URI Class Initialized
+DEBUG - 2014-11-05 23:21:16 --> Router Class Initialized
+DEBUG - 2014-11-05 23:21:16 --> Output Class Initialized
+DEBUG - 2014-11-05 23:21:16 --> Security Class Initialized
+DEBUG - 2014-11-05 23:21:16 --> Input Class Initialized
+DEBUG - 2014-11-05 23:21:16 --> Global POST and COOKIE data sanitized
+DEBUG - 2014-11-05 23:21:16 --> Language Class Initialized
+DEBUG - 2014-11-05 23:21:16 --> Loader Class Initialized
+DEBUG - 2014-11-05 23:21:16 --> Helper loaded: url_helper
+DEBUG - 2014-11-05 23:21:17 --> Database Driver Class Initialized
+ERROR - 2014-11-05 23:21:17 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\xampp\htdocs\ProducSystemCI\system\database\drivers\mysql\mysql_driver.php 91
+DEBUG - 2014-11-05 23:21:17 --> Session Class Initialized
+DEBUG - 2014-11-05 23:21:17 --> Helper loaded: string_helper
+DEBUG - 2014-11-05 23:21:17 --> Session routines successfully run
+DEBUG - 2014-11-05 23:21:17 --> Controller Class Initialized
+DEBUG - 2014-11-05 23:21:17 --> Model Class Initialized
+DEBUG - 2014-11-05 23:21:17 --> Model Class Initialized
+DEBUG - 2014-11-05 23:21:17 --> Model Class Initialized
+DEBUG - 2014-11-05 23:21:17 --> Model Class Initialized
+DEBUG - 2014-11-05 23:21:17 --> Model Class Initialized
+DEBUG - 2014-11-05 23:21:17 --> File loaded: C:/xampp/htdocs/ProducSystemCI/system/application/views/public/applications/view.php

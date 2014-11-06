@@ -617,7 +617,8 @@ function doService(params) {
 	}
 
 	function createAddModul(position, number) {
-		var html = '<div id="' + position + '" data-number="' + number + '" class="addBox ui-state-default">+</div>';
+		var html = '<div id="' + position + '" data-number="' + number + '" class="addBox ui-state-default">'+'<img class="add_modul_icon"  src="' + BASE_URL
+				+ 'css/images/add.png" />'+'</div>';
 		return html;
 	}
 	

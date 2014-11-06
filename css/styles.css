@@ -1328,7 +1328,7 @@ div.modul-name a {
 
 /******* SERVICE **********/
 .addBox, .containerBox {
-	border: 1px solid #c7c7c7;
+	/*border: 1px solid #c7c7c7;*/
 	font-size: 14px;
 	height: 70px;
 	line-height: 70px;
@@ -1337,7 +1337,7 @@ div.modul-name a {
 	width: 200px;
 	float: left;
 	position: relative;
-	margin: 0px 4px 4px 0;
+	margin: 0px -3px 4px 0;
 	cursor: pointer;
 }
 
@@ -1625,4 +1625,33 @@ label.title {
 	cursor: pointer;
 	color: red;
 }
+.add_modul_icon
+{
+	width: 30px;
+	vertical-align: middle;
+}
+.oder_nummer_todo
+{
+	color: white;
+	background-color: brown;
+	border: 2px solid burlywood;
+	height: 60px;
+	width: 100px;
+	border-radius: 10px;
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 15px;
+}
 
+.oder_nummer_finish     
+{
+	color: white;
+	background-color: darkslategrey;
+	border: 2px solid burlywood;
+	height: 60px;
+	width: 100px;
+	border-radius: 10px;
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 15px;
+}
