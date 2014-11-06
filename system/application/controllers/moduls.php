@@ -176,7 +176,6 @@ class Moduls extends Ext_Controller {
 				$modulData['color'] = $this->_getColor(@$modulData['type']);
 				$modulId = $this->modul_pattern->saveModul($modulData);
 			} else {
-
 				if('normal' == $data['old_type']) {
 					if(isset($modulData['id'])) {
 						unset($modulData['id']);
