@@ -450,11 +450,11 @@ function doService(params) {
 					var type = $(this).data('modultype');
 					if(parentId == 'sortableDev') {
 						listModules = jQuery.grep(listModules, function(value) {
-							return value.id != removeItem;
+							return (value.id + '_' + value.type) != removeItem;
 						});
 					} else if(parentId == 'sortableCus') {
 						listModuleForCustomers = jQuery.grep(listModuleForCustomers, function(value) {
-							return value.id != removeItem;
+							return (value.id + '_' + value.type) != removeItem;
 						});
 					}
 					// re-draw
@@ -606,11 +606,11 @@ function doService(params) {
 		if(value.status == 'deny') {
 			status = '<div class="status-box"><img src="' + BASE_URL + 'css/images/danger.png" /></div>';
 		}
-		var color = 'style="background-image: url(\'/css/images/' + value.color + '\') !important; background-color: none !important; "';
+		var color = 'style="background-image: url(\'' + BASE_URL + 'css/images/' + value.color + '\') !important; background-color: none !important; "';
 		var html = '<div ' + color + ' class="containerBox ui-state-default" id=\''
 				+ JSON.stringify(value) + '\' data-modulid="' + value.id
 				+ '" data-modultype="' +  value.type + '"><div class="closeBox"><img data-modultype="' +  value.type + '" data-modulname="' + value.modul
-				+ '" data-modulid="' + value.id + '" src="' + BASE_URL
+				+ '" data-modulid="' + value.id + '_' + value.type + '" src="' + BASE_URL
 				+ 'css/images/deleteIcon.png" /></div>' + status + value.modul
 				+ '</div>';
 		return html;

@@ -176,7 +176,6 @@ class Moduls extends Ext_Controller {
 				$modulData['color'] = $this->_getColor(@$modulData['type']);
 				$modulId = $this->modul_pattern->saveModul($modulData);
 			} else {
-
 				if('normal' == $data['old_type']) {
 					if(isset($modulData['id'])) {
 						unset($modulData['id']);
@@ -277,13 +276,10 @@ class Moduls extends Ext_Controller {
 				$user = $this->session->userdata ( 'user' );
 				$this->load->library('roleComponent');
 				if($user->roleName == RoleComponent::ROLE_DEVELOPER) {
-// 					$color = '#e3fc03'; // yellow
 					$color = 'modul_bg_orange.png';
 				} else if($user->roleName == RoleComponent::ROLE_PLANER) {
-// 					$color = '#d70318'; // red
 					$color = 'modul_bg_red.png';
 				} else {
-// 					$color = '#ff00ff'; // pink
 					$color = 'modul_bg_lila.png';
 				}
 
