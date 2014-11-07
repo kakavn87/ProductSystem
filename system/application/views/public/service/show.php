@@ -43,79 +43,123 @@ var roleName = '<?php echo $user->roleName; ?>';
 
 			</div>
 			<div class="filter">
-				<div>
-					<label class="label">Requirement</label> <select id="requirments" name="requirment_id"
-						data-placeholder="Choose a requirment ..." style="width: 350px;"
-						class="chosen-select">
-						<option value=""></option>
-            <?php foreach($requirements as $re) :
-	            $selected = '';
-	            if(isset($service)) :
-		            if($service[0]->requirement_id == $re->id) :
-		            	$selected="selected='selected'";
-		            endif;
-	            endif;
-            ?>
-            	<option <?php echo $selected; ?> value="<?php echo $re->id; ?>"><?php echo $re->description; ?></option>
-            <?php endforeach;?>
-          </select>
-				</div>
-				<div>
-					<label class="label">Role</label> <select id="roles" name="role_id" multiple
-						data-placeholder="Choose a role ..." style="width: 350px;"
-						class="chosen-select">
-						<option value=""></option>
-		            <?php foreach($roles as $role) :
-			            $selected = '';
-			            if(isset($service_role)) :
-			            	foreach($service_role as $serviceRole) :
-				            	if($serviceRole->role_id == $role->id) :
-				            		$selected="selected='selected'";
-			            			break;
-				            	endif;
-			            	endforeach;
-			            endif;
-		            ?>
-		            	<option <?php echo $selected; ?> value="<?php echo $role->id; ?>"><?php echo $role->name; ?></option>
-		            <?php endforeach;?>
-		          </select>
-				</div>
-				<div>
-					<label class="label">Report documents</label> <select id="report_id" name="report_id" multiple
-						data-placeholder="Choose a report document ..." style="width: 350px;"
-						class="chosen-select">
-						<option value=""></option>
-		            <?php foreach($report_documents as $report) :
-			            $selected = '';
-			            if(isset($service_report)) :
-			            	foreach($service_report as $serviceReport) :
-				            	if($serviceReport->report_id == $report->id) :
-				            		$selected="selected='selected'";
-			            			break;
-				            	endif;
-			            	endforeach;
-			            endif;
-		            ?>
-		            	<option <?php echo $selected; ?> value="<?php echo $report->id; ?>"><?php echo $report->name; ?></option>
-		            <?php endforeach;?>
-		          </select> <span class="add-more-report">+ Add more</span>
-				</div>
-				<div>
-					<label class="label">Products</label> <select id="products" name="product_id"
-						data-placeholder="Choose a role ..." style="width: 350px;"
-						class="chosen-select">
-						<option value=""></option>
-	            <?php foreach($products as $product) :
-		            $selected = '';
-		            if(isset($service)) :
-		            	if($service[0]->product_id == $product->id) :
-		            		$selected="selected='selected'";
-		           		endif;
-		            endif;
-	            ?>
-	            	<option <?php echo $selected; ?> value="<?php echo $product->id; ?>"><?php echo $product->name; ?></option>
-	            <?php endforeach;?>
-	          </select>
+			<br />
+				<div id="tabs">
+					 <ul>
+						<li><a href="#tabs-1">Requirements</a></li>
+						<li><a href="#tabs-2">Role</a></li>
+						<li><a href="#tabs-3">Report documents</a></li>
+						<li><a href="#tabs-4">Products</a></li>
+					</ul>
+					<div id="tabs-1">
+						<div class="info">
+							<label>Description</label>
+							<input type="text" name="data[description]" class="name-requirement" />
+						</div>
+						<div class="info">
+							<button type="button" class="add-requirement">Add Requirement</button>
+						</div>
+						<table>
+							<tr>
+								<th>Description</th>
+								<th></th>
+								<th></th>
+							</tr>
+							<?php foreach($requirements as $re) :
+								$selected = '';
+								if(isset($service)) :
+									if($service[0]->requirement_id == $re->id) :
+										$selected="selected";
+									endif;
+								endif;
+							?>
+								<tr>
+									<td class="edit edit-requirement" data-id="<?php echo $re->id; ?>"><?php echo $re->description; ?></td>
+									<td class="delete delete-requirement" data-id="<?php echo $re->id; ?>">Delete</td>
+									<td class="select select-requirement <?php echo $selected; ?>" data-id="<?php echo $re->id; ?>"><?php echo empty($selected)?'Select':''; ?></td>
+								</tr>
+							<?php endforeach; ?>
+						</table>
+						<input type="hidden" name="data[id]" class="id-requirement" />
+			          	<input type="hidden" name="requirement_id" id="requirments" />
+					</div>
+					<div id="tabs-2">
+						<label class="label">Role</label>
+						<select id="roles" name="role_id" multiple
+							data-placeholder="Choose a role ..." style="width: 350px;"
+							class="chosen-select">
+							<option value=""></option>
+			            <?php foreach($roles as $role) :
+				            $selected = '';
+				            if(isset($service_role)) :
+				            	foreach($service_role as $serviceRole) :
+					            	if($serviceRole->role_id == $role->id) :
+					            		$selected="selected='selected'";
+				            			break;
+					            	endif;
+				            	endforeach;
+				            endif;
+			            ?>
+			            	<option <?php echo $selected; ?> value="<?php echo $role->id; ?>"><?php echo $role->name; ?></option>
+			            <?php endforeach;?>
+			          </select>
+					</div>
+					<div id="tabs-3">
+						<label class="label">Report documents</label> <select id="report_id" name="report_id" multiple
+							data-placeholder="Choose a report document ..." style="width: 350px;"
+							class="chosen-select">
+							<option value=""></option>
+			            <?php foreach($report_documents as $report) :
+				            $selected = '';
+				            if(isset($service_report)) :
+				            	foreach($service_report as $serviceReport) :
+					            	if($serviceReport->report_id == $report->id) :
+					            		$selected="selected='selected'";
+				            			break;
+					            	endif;
+				            	endforeach;
+				            endif;
+			            ?>
+			            	<option <?php echo $selected; ?> value="<?php echo $report->id; ?>"><?php echo $report->name; ?></option>
+			            <?php endforeach;?>
+			          </select> <span class="add-more-report">+ Add more</span>
+					</div>
+					<div id="tabs-4">
+						<div class="info">
+							<label>Name</label>
+							<input type="text" name="data[name]" class="name-product" />
+						</div>
+		          		<div class="info">
+							<label>Description</label>
+							<input type="text" name="data[description]" class="desc-product" />
+						</div>
+						<div class="info">
+							<button type="button" class="add-product">Add Product</button>
+						</div>
+						<table>
+							<tr>
+								<th>Name</th>
+								<th></th>
+								<th></th>
+							</tr>
+							<?php foreach($products as $product) :
+								$selected = '';
+								if(isset($service)) :
+									if($service[0]->product_id == $product->id) :
+										$selected="product_id";
+									endif;
+								endif;
+							?>
+								<tr>
+									<td class="edit edit-product" data-id="<?php echo $product->id; ?>" data-desc="<?php echo $product->description; ?>"><?php echo $product->name; ?></td>
+									<td class="delete delete-product" data-id="<?php echo $product->id; ?>">Delete</td>
+									<td class="select select-product <?php echo $selected; ?>" data-id="<?php echo $product->id; ?>"><?php echo empty($selected)?'Select':''; ?></td>
+								</tr>
+							<?php endforeach; ?>
+						</table>
+						<input type="hidden" name="data[id]" class="id-product" />
+			          	<input type="hidden" name="product_id" id="products" />
+					</div>
 				</div>
 				<div>
 					<input <?php echo (isset($service) && $service[0]->customer_view == Dl::CUSTOMER_ALLOW) ? 'checked="checked"': ''; ?> type="checkbox" name="customer_view" id="customer_view" value="1" /> Customer View
@@ -378,4 +422,6 @@ var roleName = '<?php echo $user->roleName; ?>';
 	</form>
 </div>
 <script src="<?=base_url();?>js/service/show.js"></script>
+<script src="<?=base_url();?>js/service/action_requirement.js"></script>
+<script src="<?=base_url();?>js/service/action_product.js"></script>
 <script src="<?=base_url();?>js/service/comment.js"></script>

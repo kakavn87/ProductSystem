@@ -1,11 +1,12 @@
 var modulRequirement = [];
 $(function() {
+	
 	if(roleName == 'customer') {
 		$('#customer_view').parent().hide();
 		$('#standard').parent().hide();
 	}
 	
-	$("#products, #roles, #orders, #requirments, #report_id").chosen();
+	$(" #roles, #orders, #report_id").chosen();
 	
 	$('.search-choice').live('click',function(){             
 		var index = $(this).find('.search-choice-close').data('option-array-index');
@@ -95,6 +96,7 @@ $(function() {
 	doService({
 		allowEdit : true
 	});
+	$( "#tabs" ).tabs();
 });
 
 function saveService(e) {

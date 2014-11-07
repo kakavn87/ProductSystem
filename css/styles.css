@@ -129,8 +129,8 @@ tr.txtarea  td.textarea, tr.trAbsage td.textarea {
 	-webkit-box-shadow: 0px 0px 4px #a4a4a4;
 	box-shadow: 0px 0px 4px #a4a4a4;
 }
-.showButtonModul .normal,
-.showButtonModul .standard {
+
+.showButtonModul .normal, .showButtonModul .standard {
 	float: left;
 	width: 50%;
 	cursor: pointer;
@@ -317,9 +317,7 @@ span.navArrow {
 }
 
 #rightBox {
-
 	width: 920px;
-
 	float: left;
 }
 
@@ -984,7 +982,8 @@ input.active {
 	float: right;
 	font-size: 14px;
 	padding-top: 4px;
-	margin-top: 8px;margin-right: 7px;
+	margin-top: 8px;
+	margin-right: 7px;
 }
 
 .logout {
@@ -1281,16 +1280,13 @@ div.filter div {
 	vertical-align: middle;
 }
 
-
-
- .add-module {
+.add-module {
 	background-image: -moz-linear-gradient(center bottom, rgb(30, 144, 255)
 		40%, rgb(135, 206, 250) 70%);
 	border: 1px solid #fff;
 	border-radius: 5px;
 	color: #fff;
 	font-size: 14px;
-	
 	margin-top: 8px;
 	padding-top: 4px;
 	text-align: center;
@@ -1301,9 +1297,7 @@ div.filter div {
 	vertical-align: middle;
 }
 
-
-div.modul-standard-name, div.modul-normal-name, 
-div.modul-name {
+div.modul-standard-name, div.modul-normal-name, div.modul-name {
 	font-size: 14px;
 	height: 25px;
 	vertical-align: baseline;
@@ -1315,8 +1309,7 @@ div.modul-name {
 	cursor: pointer;
 }
 
-div.modul-standard-name a,div.modul-normal-name a,
-div.modul-name a {
+div.modul-standard-name a, div.modul-normal-name a, div.modul-name a {
 	padding: 10px;
 }
 
@@ -1412,21 +1405,18 @@ div.modul-name a {
 	float: inherit;
 	background: #0A8476;
 	height: 40px;
-	vertical-align: middle;}
+	vertical-align: middle;
+}
 
 .list-document {
 	margin: 10px 0;
 }
 
-.report-content,
-.modul_details {
+.report-content, .modul_details {
 	width: 500px;
 }
 
-.report-content h3,
-.modul_details h3, 
-.modulLeft h3, .modulRight h3
-{
+.report-content h3, .modul_details h3, .modulLeft h3, .modulRight h3 {
 	text-transform: uppercase;
 	font-size: 16px;
 	border-top: 2px solid #c9c9c9;
@@ -1444,7 +1434,7 @@ div.modul-name a {
 .modul_details table {
 	width: 100%;
 	padding: 2px;
-	table-layout:fixed;
+	table-layout: fixed;
 }
 
 .comments {
@@ -1466,9 +1456,9 @@ div.modul-name a {
 .bottomBox2 input {
 	vertical-align: top;
 }
-.report-content input,
-.report-content textarea,
-.bottomBox2 input, .bottomBox2 textarea {
+
+.report-content input, .report-content textarea, .bottomBox2 input,
+	.bottomBox2 textarea {
 	margin: 0;
 	padding: 0;
 }
@@ -1497,21 +1487,19 @@ div.modul-name a {
 	width: 45%;
 }
 
-.modul-outsourcing h3,
-.requirement-container h3, 
-.modul-normal-container h3,
-.modulLeft h3, 
-.modulRight h3 {
+.modul-outsourcing h3, .requirement-container h3,
+	.modul-normal-container h3, .modulLeft h3, .modulRight h3 {
 	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
 	font-size: 16px;
 }
 
-.requirement-container .info, 
-.modul-outsourcing .info,
-.report-content .info, 
-.modul-normal-container .info {padding: 10px; font-size: 12px;}
+.requirement-container .info, .modul-outsourcing .info, .report-content .info,
+	.modul-normal-container .info {
+	padding: 10px;
+	font-size: 12px;
+}
 
 .grey h1 span {
 	font-style: italic;
@@ -1521,12 +1509,13 @@ span.add-more-report {
 	font-style: italic;
 	font-size: 13px;
 	cursor: pointer;
-	color: darkcyan; 
+	color: darkcyan;
 }
 
 .report-item {
 	margin: 5px;
 }
+
 .report-item em {
 	font-size: 12px;
 }
@@ -1553,16 +1542,17 @@ span.add-more-report {
 	cursor: pointer;
 }
 
-.partner-selected, .partner-name, 
-.apply, .view, .view-develop, .view-develop-done {
+.partner-selected, .partner-name, .apply, .view, .view-develop,
+	.view-develop-done {
 	cursor: pointer;
 	color: #03739c;
 }
 
 .toolbar-modul {
-	float: right; 
+	float: right;
 	font-size: 12px;
 }
+
 span.add-requirement {
 	cursor: pointer;
 	color: blue;
@@ -1577,8 +1567,9 @@ span.add-requirement {
 	opacity: 0.5;
 	position: absolute;
 }
+
 .requirement-container {
-	position:absolute;
+	position: absolute;
 	top: 39%;
 	left: 39%;
 	margin-top: -50px; /* this is half the height of your div*/
@@ -1592,20 +1583,30 @@ span.add-requirement {
 	background: #CCC;
 }
 
-.modul-outsourcing,
-.modul-normal-list {
+.modul-outsourcing, .modul-normal-list {
 	min-height: 500px;
 }
 
-.tbl-requirement, 
-.tbl-requirement-detail {
+#tabs table, .tbl-requirement, .tbl-requirement-detail {
 	border: 1px solid #CCC;
 	border-collapse: collapse;
 	font-size: 12px;
 }
 
-.tbl-requirement-detail tr th, .tbl-requirement-detail tr td,
-.tbl-requirement tr th, .tbl-requirement tr td {border: 1px solid #CCC;padding: 3px;}
+#tabs table {
+	width: 100%;
+}
+
+#tabs table tr th, #tabs table tr td, .tbl-requirement-detail tr th,
+	.tbl-requirement-detail tr td, .tbl-requirement tr th, .tbl-requirement tr td
+	{
+	border: 1px solid #CCC;
+	padding: 3px;
+}
+
+#tabs table tr > td.selected {
+	background: #fde2e2;
+}
 
 label.title {
 	font-size: 12px;
@@ -1620,18 +1621,17 @@ label.title {
 	width: 180px;
 }
 
-.td-remove-detail, 
-.td-remove {
+.td-remove-detail, .td-remove {
 	cursor: pointer;
 	color: red;
 }
-.add_modul_icon
-{
+
+.add_modul_icon {
 	width: 30px;
 	vertical-align: middle;
 }
-.oder_nummer_todo
-{
+
+.oder_nummer_todo {
 	color: white;
 	background-color: brown;
 	border: 2px solid burlywood;
@@ -1643,8 +1643,7 @@ label.title {
 	font-size: 15px;
 }
 
-.oder_nummer_finish     
-{
+.oder_nummer_finish {
 	color: white;
 	background-color: darkslategrey;
 	border: 2px solid burlywood;
@@ -1654,4 +1653,19 @@ label.title {
 	font-family: sans-serif;
 	font-weight: normal;
 	font-size: 15px;
+}
+
+.delete {
+	color: red;
+	cursor: pointer;
+}
+
+.select {
+	color: green;
+	cursor: pointer;
+}
+
+.edit {
+	color: blue;
+	cursor: pointer;
 }
