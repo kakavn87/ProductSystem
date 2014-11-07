@@ -47,9 +47,11 @@ class RoleComponent {
 			case self::ROLE_ADMINISTRATOR :
 			default :
 
-				foreach ( $roleList as $r ) {
-					$roles ['action'] = array_merge ( $roles ['action'], $r ['action'] );
-				}
+// 				foreach ( $roleList as $r ) {
+// 					$roles ['action'] = array_merge ( $roles ['action'], $r ['action'] );
+// 				}
+
+				return true;
 				break;
 		}
 
@@ -84,7 +86,7 @@ class RoleComponent {
 				break;
 			case self::ROLE_ADMINISTRATOR :
 			default :
-				$url = 'service/show/';
+				$url = 'users/lists/';
 				break;
 		}
 
@@ -140,8 +142,7 @@ class RoleComponent {
 			case self::ROLE_ADMINISTRATOR :
 			default :
 				$sidebar = array(
-					array('id' => 'moduls', 'url' => 'moduls/overview', 'name' => 'Module'),
-					array('id' => 'orders', 'url' => 'orders/lists', 'name' => 'Order'),
+					array('id' => 'users', 'url' => 'users/lists', 'name' => 'User'),
 				);
 				break;
 		}
