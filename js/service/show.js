@@ -549,9 +549,7 @@ function doService(params) {
 						modul_type: modulType
 					},
 				}).done(function(data) {
-					$.fancybox({
-						content : data
-					});
+					$('.contain-modul-detail').html(data);
 				});
 			} else {
 				alert('This modul is standard. Please saving before view detail');

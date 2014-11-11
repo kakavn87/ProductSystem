@@ -42,6 +42,7 @@ var roleName = '<?php echo $user->roleName; ?>';
 				<div class="clear"></div>
 
 			</div>
+			<div class="contain-modul-detail"></div>
 			<div class="filter">
 			<br />
 				<div id="tabs">
@@ -65,11 +66,12 @@ var roleName = '<?php echo $user->roleName; ?>';
 								<th></th>
 								<th></th>
 							</tr>
-							<?php foreach($requirements as $re) :
+							<?php $value = ''; foreach($requirements as $re) :
 								$selected = '';
 								if(isset($service)) :
 									if($service[0]->requirement_id == $re->id) :
 										$selected="selected";
+										$value = $re->id;
 									endif;
 								endif;
 							?>
@@ -81,7 +83,7 @@ var roleName = '<?php echo $user->roleName; ?>';
 							<?php endforeach; ?>
 						</table>
 						<input type="hidden" name="data[id]" class="id-requirement" />
-			          	<input type="hidden" name="requirement_id" id="requirments" />
+			          	<input type="hidden" name="requirement_id" id="requirments" value="<?php echo $value; ?>" />
 					</div>
 					<div id="tabs-2">
 						<label class="label">Role</label>
@@ -122,12 +124,16 @@ var roleName = '<?php echo $user->roleName; ?>';
 								<th></th>
 								<th></th>
 							</tr>
-							<?php foreach($report_documents as $report) :
+							<?php
+							$value = array();
+							foreach($report_documents as $report) :
 								$selected = '';
+								
 								if(isset($service_report)) :
 									foreach($service_report as $serviceReport) :
 										if($serviceReport->report_id == $report->id) :
 											$selected="selected";
+											$value[] = $serviceReport->report_id;
 											break;
 										endif;
 									endforeach;
@@ -145,7 +151,7 @@ var roleName = '<?php echo $user->roleName; ?>';
 							<?php endforeach; ?>
 						</table>
 						<input type="hidden" name="data[id]" class="id-report" />
-			          	<input type="hidden" name="report_id" id="report_id" />
+			          	<input type="hidden" name="report_id" id="report_id" value="<?php echo implode(',', $value); ?>" />
 					</div>
 					<div id="tabs-4">
 						<div class="info">
@@ -165,11 +171,12 @@ var roleName = '<?php echo $user->roleName; ?>';
 								<th></th>
 								<th></th>
 							</tr>
-							<?php foreach($products as $product) :
+							<?php $value = '';foreach($products as $product) :
 								$selected = '';
 								if(isset($service)) :
 									if($service[0]->product_id == $product->id) :
 										$selected="selected";
+										$value = $product->id;
 									endif;
 								endif;
 							?>
@@ -181,7 +188,7 @@ var roleName = '<?php echo $user->roleName; ?>';
 							<?php endforeach; ?>
 						</table>
 						<input type="hidden" name="data[id]" class="id-product" />
-			          	<input type="hidden" name="product_id" id="products" />
+			          	<input type="hidden" name="product_id" id="products" value="<?php echo $value; ?>" />
 					</div>
 				</div>
 				<div>

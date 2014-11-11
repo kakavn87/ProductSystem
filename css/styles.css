@@ -1413,7 +1413,7 @@ div.modul-standard-name a, div.modul-normal-name a, div.modul-name a {
 }
 
 .report-content, .modul_details {
-	width: 500px;
+	_width: 500px;
 }
 
 .report-content h3, .modul_details h3, .modulLeft h3, .modulRight h3 {
