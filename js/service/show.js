@@ -6,7 +6,7 @@ $(function() {
 		$('#standard').parent().hide();
 	}
 	
-	$(" #roles, #orders, #report_id").chosen();
+	$(" #roles, #orders").chosen();
 	
 	$('.search-choice').live('click',function(){             
 		var index = $(this).find('.search-choice-close').data('option-array-index');
@@ -185,12 +185,6 @@ function doService(params) {
 	$('.remove-document').live('click', removeDocument);
 	$('.save-modul').live('click', saveModul);
 	$('.save-modul-outsourcing').live('click', saveModulOutsourcing);
-	$('.add-more-report').live('click', function() {
-		$.fancybox({
-			content : $('.report-document').html(),
-		});
-	});
-	$('.add-report').live('click', saveReport);
 	
 	$('.add-requirement').live('click', function(e) {
 		$('.re-box, .requirement-container').toggle();
@@ -323,35 +317,6 @@ function doService(params) {
 			});
 
 			// this next line *must* be within this if statement
-			e.handled = true;
-		}
-	}
-	
-	function saveReport(e) {
-		e.preventDefault();
-		if (e.handled !== true) {
-			var form = $(this).parent().parent();
-			if(!$.trim(form.find('#reportName').val()).length) {
-				alert('Report name can not empty');
-				return false;
-			}
-			
-			$.ajax({
-				url : BASE_URL + 'reports/save_report',
-				type : 'post',
-				data : form.serialize(),
-			}).done(function(data) {
-				var obj = $.parseJSON(data);
-				if(!obj.status) {
-					$('#report_id').append('<option value="' + obj.report_id +'">' + $.trim(form.find('#reportName').val()) + '</option>');
-					$('#report_id').trigger('chosen:updated');
-					
-					$.fancybox.close();
-				}
-				
-				form.find('#reportName').val('');
-				form.find('#reportDescription').val('');
-			});
 			e.handled = true;
 		}
 	}

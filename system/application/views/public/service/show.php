@@ -105,24 +105,47 @@ var roleName = '<?php echo $user->roleName; ?>';
 			          </select>
 					</div>
 					<div id="tabs-3">
-						<label class="label">Report documents</label> <select id="report_id" name="report_id" multiple
-							data-placeholder="Choose a report document ..." style="width: 350px;"
-							class="chosen-select">
-							<option value=""></option>
-			            <?php foreach($report_documents as $report) :
-				            $selected = '';
-				            if(isset($service_report)) :
-				            	foreach($service_report as $serviceReport) :
-					            	if($serviceReport->report_id == $report->id) :
-					            		$selected="selected='selected'";
-				            			break;
-					            	endif;
-				            	endforeach;
-				            endif;
-			            ?>
-			            	<option <?php echo $selected; ?> value="<?php echo $report->id; ?>"><?php echo $report->name; ?></option>
-			            <?php endforeach;?>
-			          </select> <span class="add-more-report">+ Add more</span>
+						<div class="info">
+							<label>Name</label>
+							<input type="text" name="data[name]" class="name-report" />
+						</div>
+		          		<div class="info">
+							<label>Description</label>
+							<textarea rows="5" name="data[description]" cols="58" class="desc-report"></textarea>
+						</div>
+						<div class="info">
+							<button type="button" class="add-report">Add Report</button>
+						</div>
+						<table>
+							<tr>
+								<th>Name</th>
+								<th></th>
+								<th></th>
+							</tr>
+							<?php foreach($report_documents as $report) :
+								$selected = '';
+								if(isset($service_report)) :
+									foreach($service_report as $serviceReport) :
+										if($serviceReport->report_id == $report->id) :
+											$selected="selected";
+											break;
+										endif;
+									endforeach;
+								endif;
+							?>
+								<tr>
+									<td class="edit edit-report" data-id="<?php echo $report->id; ?>" data-desc="<?php echo $report->description; ?>"><?php echo $report->name; ?></td>
+									<?php if($report->user_id) :?>
+									<td class="delete delete-report" data-id="<?php echo $report->id; ?>">Delete</td>
+									<?php else : ?>
+									<td></td>
+									<?php endif; ?>
+									<td class="select select-report <?php echo $selected; ?>" data-id="<?php echo $report->id; ?>"><?php echo empty($selected)?'Select':''; ?></td>
+								</tr>
+							<?php endforeach; ?>
+						</table>
+						<input type="hidden" name="data[id]" class="id-report" />
+			          	<input type="hidden" name="report_id" id="report_id" />
 					</div>
 					<div id="tabs-4">
 						<div class="info">
@@ -131,7 +154,7 @@ var roleName = '<?php echo $user->roleName; ?>';
 						</div>
 		          		<div class="info">
 							<label>Description</label>
-							<input type="text" name="data[description]" class="desc-product" />
+							<textarea rows="5" name="data[description]" cols="58" class="desc-product"></textarea>
 						</div>
 						<div class="info">
 							<button type="button" class="add-product">Add Product</button>
@@ -146,7 +169,7 @@ var roleName = '<?php echo $user->roleName; ?>';
 								$selected = '';
 								if(isset($service)) :
 									if($service[0]->product_id == $product->id) :
-										$selected="product_id";
+										$selected="selected";
 									endif;
 								endif;
 							?>
@@ -424,4 +447,5 @@ var roleName = '<?php echo $user->roleName; ?>';
 <script src="<?=base_url();?>js/service/show.js"></script>
 <script src="<?=base_url();?>js/service/action_requirement.js"></script>
 <script src="<?=base_url();?>js/service/action_product.js"></script>
+<script src="<?=base_url();?>js/service/action_report.js"></script>
 <script src="<?=base_url();?>js/service/comment.js"></script>

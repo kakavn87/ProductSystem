@@ -21,7 +21,15 @@ class Requirements extends Ext_Controller {
 			$this->sendAjax(1, 'Description can not empty');
 		}
 
-		$re_id = $this->requirement->saveRe($data);
+		if(empty($data['id'])) {
+			$re_id = $this->requirement->saveRe($data);
+			$this->response['type'] = 'add';
+		} else {
+			$re_id = $data['id'];
+			$this->requirement->updateRe($data);
+			$this->response['type'] = 'update';
+		}
+		
 		$this->response['requirement_id'] = $re_id;
 		$this->sendAjax();
 	}

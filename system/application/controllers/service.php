@@ -332,11 +332,14 @@ class Service extends Ext_Controller {
 			$this->service_modul->saveData ( $data );
 
 			$data = array ();
+			$reportList = array_filter(explode(',', $reportList));
 			foreach ( $reportList as $reportId ) {
-				$data [] = array (
-						'service_id' => $serviceId,
-						'report_id' => $reportId
-				);
+				if($reportId) {
+					$data [] = array (
+							'service_id' => $serviceId,
+							'report_id' => $reportId
+					);
+				}
 			}
 
 			$this->load->model ( 'report_document_detail' );
