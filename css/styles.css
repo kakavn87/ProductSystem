@@ -414,6 +414,7 @@ td>h1 {
 	height: 100px !important;
 }
 
+.data>.llist-document-modul-detail .item>label.user,
 .data>.list-document .item>label.user, .data>label.user, .data>.toggle>label.user
 	{
 	width: 135px;
@@ -425,6 +426,7 @@ td>h1 {
 	padding-top: 6px;
 }
 
+.data>.llist-document-modul-detail .item>label.user,
 .data>.list-document .item>label.user2, .data>label.user2 {
 	width: 300px;
 	display: block;
@@ -435,6 +437,7 @@ td>h1 {
 	padding-bottom: 10px;
 }
 
+.data>.list-document-modul-detail .item>input
 .data>.list-document .item>input, .data>input, .data>.toggle>input,
 	.productdescription {
 	background: #fbfbfb;
@@ -453,6 +456,7 @@ td>h1 {
 	margin-top: 10px;
 }
 
+.data>.list-document-modul-detail .item>select,
 .data>.list-document .item>select, .data>select, .data>.toggle>select {
 	width: 234px;
 	background: #fbfbfb;
@@ -1377,6 +1381,7 @@ div.modul-standard-name a, div.modul-normal-name a, div.modul-name a {
 	padding-top: 15px;
 }
 
+.documents-modul-detail,
 .documents {
 	display: none;
 }
@@ -1385,6 +1390,7 @@ div.modul-standard-name a, div.modul-normal-name a, div.modul-name a {
 	float: right;
 }
 
+#addDocumentModul,
 #addDocument {
 	cursor: pointer;
 	font-size: 12px;
@@ -1407,7 +1413,7 @@ div.modul-standard-name a, div.modul-normal-name a, div.modul-name a {
 	height: 40px;
 	vertical-align: middle;
 }
-
+.list-document-modul-detail, 
 .list-document {
 	margin: 10px 0;
 }

@@ -1,4 +1,19 @@
+var formDataModulDetail = {};
+formDataModulDetail.files = [];
+formDataModulDetail.links = [];
 $(function() {
+	$('.fileupload').fileupload({
+        url: BASE_URL + 'documents/upload',
+        dataType: 'json',
+        done: function (e, data) {
+            $.each(data.result.files, function (index, file) {
+            	formDataModulDetail.files.push(file.url);
+            });
+        },
+        
+    }).prop('disabled', !$.support.fileInput)
+        .parent().addClass($.support.fileInput ? undefined : 'disabled');
+	
 	$('.mr_type2').live('change', function(e) {
 		if($(this).val() == 'modul') {
 			$('.operator2').show();
@@ -66,4 +81,50 @@ $(function() {
 			e.handled = true;
 		}
 	});
+	
+	$('#addDocumentModul').live('click', function(e) {
+		e.preventDefault();
+		if (e.handled !== true) {
+			var html = $('.documents-modul-detail').html();
+			$('.list-document-modul-detail').append(html);
+			e.handled = true;
+		}
+	});
+	
+	$('.update-modul-detail').live('click', function(e) {
+		e.preventDefault();
+		if (e.handled !== true) {
+			var formData = $('#documentForm').serialize();
+			var modul_id = $(this).data('id');
+			var modul_type = $(this).data('modultype');
+			$.ajax({
+				url : BASE_URL + 'documents/update',
+				type : 'post',
+				data : formData + "&data[Modul][id]=" + modul_id,
+			}).done(function(data) {
+				var obj = $.parseJSON(data);
+				if(!obj.status) {
+					$.each(obj.documents, function(i, e){ 
+						var html = '<div>- <a target="_blank" href="' + e.link + '">' + e.link + '</a></div>';
+						$('.documents-content').append(html);
+					});
+					
+					$('.list-document-modul-detail').html('');
+				}
+			});
+			e.handled = true;
+		}
+	});
+	
+	$('.type-modul-detail').live('change', function() {
+		console.log($(this).val());
+		if($(this).val() == 'PDF') {
+			$(this).parent().find('.link').show();
+			$(this).parent().find('.fileupload').hide();
+		} else {
+			$(this).parent().find('.link').hide();
+			$(this).parent().find('.fileupload').show();
+		}
+	});
+	
 });

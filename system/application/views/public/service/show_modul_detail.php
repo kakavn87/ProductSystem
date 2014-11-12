@@ -8,14 +8,47 @@
 		<?php echo $modul->description; ?>
 	</div>
 	<?php if(empty($app)) : ?>
-		<?php if(!empty($documents)): ?>
+		
 		<div class="documents-content">
 			<h4>Documents: </h4>
-			<?php foreach($documents as $doc)  : ?>
-				<div>- <a target="_blank" href="<?php echo $doc->link; ?>"><?php echo $doc->link; ?></a></div>
-			<?php endforeach; ?>
+			<?php if(!empty($documents)): ?>
+				<?php foreach($documents as $doc)  : ?>
+					<div>- <a target="_blank" href="<?php echo $doc->link; ?>"><?php echo $doc->link; ?></a></div>
+				<?php endforeach; ?>
+			<?php endif; ?>
 		</div>
-		<?php endif; ?>
+		
+		<form id="documentForm" method="post" enctype="multipart/form-data">
+		<div id="addDocumentModul">+ Add Document</div>
+		<div class="list-document-modul-detail">
+		</div>
+		<button type="button" class="update-modul-detail" data-modultype="<?php echo $modul_type; ?>" data-id="<?php echo $modul->id; ?>">Update</button>
+		</form>
+		<div class="documents-modul-detail">
+			<div class="item">
+				<label class="user" for="link">Link:</label> 
+				<input type="text" class="link"
+					id="link" name="data[Document][link][]" value="">
+				<input class="fileupload" type="file" name="files" style="display: none">
+				<div class="clear"></div>
+		
+				<label class="user" for="documentdescription">Description:</label>
+				<textarea rows="4" class="documentdescription" cols="50"
+					name="data[Document][description][]"></textarea>
+				<div class="clear"></div>
+		
+				<label class="user" for="type">Type:</label> <select
+					name="data[Document][type][]" class="type-modul-detail">
+					<option value='PDF'>Pdf</option>
+					<option value='VIDEO'>Video</option>
+				</select>
+				<div class="clear"></div>
+		
+				<img src="<?php echo base_url(); ?>css/images/deleteIcon.png"
+					class="remove-document" />
+				<div class="clear"></div>
+			</div>
+		</div>
 	<?php endif; ?>
 
 	<form id="outsourceForm">
@@ -81,5 +114,12 @@
 	<br />
 	<br />
 </div>
+<!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
+<script src="<?=base_url();?>js/jquery.ui.widget.js"></script>
+<!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+<script src="<?=base_url();?>js/jquery.iframe-transport.js"></script>
+<!-- The basic File Upload plugin -->
+<script src="<?=base_url();?>js/jquery.fileupload.js"></script>
+<!-- Bootstrap JS is not required, but included for the responsive demo navigation -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="<?=base_url();?>js/service/show_modul_detail.js"></script>
-

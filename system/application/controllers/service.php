@@ -243,6 +243,8 @@ class Service extends Ext_Controller {
 				$data ['documents'] = array ();
 				$data ['app'] = array();
 			}
+			
+			$data ['modul_type'] = $modul_type;
 
 			$this->load->view ( 'public/service/show_modul_detail', $data );
 		} else {

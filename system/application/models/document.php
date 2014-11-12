@@ -4,6 +4,7 @@ class Document extends CI_Model {
 	function getAlls() {
 		$this->db->select ( '*' );
 		$this->db->from ( 'document' );
+		$this->db->where('deleted', 0);
 		$query = $this->db->get ();
 		$result = $query->result ();
 		return $result;
@@ -27,6 +28,7 @@ class Document extends CI_Model {
 		$this->db->select ( '*' );
 		$this->db->from ( 'document' );
 		$this->db->where('modul_id', $modulId);
+		$this->db->where('deleted', 0);
 		$query = $this->db->get ();
 		return $query->result ();
 	}

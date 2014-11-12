@@ -6,7 +6,7 @@ var roleName = '<?php echo $user->roleName; ?>';
 </script>
 <link rel="stylesheet" type="text/css" href="<?=base_url();?>css/comment.css" media="screen, projection" />
 <div class="grey">
-	<form action="" method="post">
+	<form action="" method="post" enctype="multipart/form-data">
 		<h1>
 			<input placeholder="Service Name" type="text" id="name"
 				name="name" value="<?php echo isset($service)?$service[0]->name:''; ?>">
