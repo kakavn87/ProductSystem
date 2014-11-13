@@ -1,6 +1,5 @@
 var modulRequirement = [];
 $(function() {
-	
 	if(roleName == 'customer') {
 		$('#customer_view').parent().hide();
 		$('#standard').parent().hide();

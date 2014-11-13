@@ -3,6 +3,7 @@ var listModules = <?php echo !isset($listModules) ? '[]' : json_encode($listModu
 var listModuleForCustomers = <?php echo !isset($listModuleCustomers) ? '[]' : json_encode($listModuleCustomers); ?>;
 var typePattern = '<?php echo $type; ?>';
 var roleName = '<?php echo $user->roleName; ?>';
+var formDataModulDetail = {};
 </script>
 <link rel="stylesheet" type="text/css" href="<?=base_url();?>css/comment.css" media="screen, projection" />
 <div class="grey">
@@ -226,6 +227,7 @@ var roleName = '<?php echo $user->roleName; ?>';
 		</div>
 	</div>
 	<?php endif; ?>
+	
 </div>
 
 <div class="list-modul" style="display: none">

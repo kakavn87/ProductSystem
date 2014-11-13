@@ -11,25 +11,32 @@
 		
 		<div class="documents-content">
 			<h4>Documents: </h4>
+			<div class="content">
 			<?php if(!empty($documents)): ?>
-				<?php foreach($documents as $doc)  : ?>
-					<div>- <a target="_blank" href="<?php echo $doc->link; ?>"><?php echo $doc->link; ?></a></div>
+				<?php foreach($documents as $doc)  : 
+					if($doc->type == 'PDF') :
+						$link = base_url() . $doc->link;
+					else :
+						$link = $doc->link;
+					endif; 
+				?>
+					<div>- <a target="_blank" href="<?php echo $link; ?>"><?php echo $doc->link; ?></a></div>
 				<?php endforeach; ?>
 			<?php endif; ?>
+			</div>
+			<form id="documentForm" method="post" enctype="multipart/form-data">
+			<div id="addDocumentModul">+ Add Document</div>
+			<div class="list-document-modul-detail">
+			</div>
+			<button type="button" class="update-modul-detail" data-modultype="<?php echo $modul_type; ?>" data-id="<?php echo $modul->id; ?>">Update</button>
+			</form>
 		</div>
-		
-		<form id="documentForm" method="post" enctype="multipart/form-data">
-		<div id="addDocumentModul">+ Add Document</div>
-		<div class="list-document-modul-detail">
-		</div>
-		<button type="button" class="update-modul-detail" data-modultype="<?php echo $modul_type; ?>" data-id="<?php echo $modul->id; ?>">Update</button>
-		</form>
 		<div class="documents-modul-detail">
 			<div class="item">
 				<label class="user" for="link">Link:</label> 
 				<input type="text" class="link"
-					id="link" name="data[Document][link][]" value="">
-				<input class="fileupload" type="file" name="files" style="display: none">
+					id="link" name="data[Document][link][]" value="" style="display: none">
+				<input class="fileupload" type="file" name="files" id="fileupload0" >
 				<div class="clear"></div>
 		
 				<label class="user" for="documentdescription">Description:</label>
@@ -111,7 +118,6 @@
 		</div>
 	</div>
 	</form>
-	<br />
 	<br />
 </div>
 <!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->

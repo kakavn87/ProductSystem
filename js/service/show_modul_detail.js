@@ -1,19 +1,6 @@
 var formDataModulDetail = {};
 formDataModulDetail.files = [];
-formDataModulDetail.links = [];
 $(function() {
-	$('.fileupload').fileupload({
-        url: BASE_URL + 'documents/upload',
-        dataType: 'json',
-        done: function (e, data) {
-            $.each(data.result.files, function (index, file) {
-            	formDataModulDetail.files.push(file.url);
-            });
-        },
-        
-    }).prop('disabled', !$.support.fileInput)
-        .parent().addClass($.support.fileInput ? undefined : 'disabled');
-	
 	$('.mr_type2').live('change', function(e) {
 		if($(this).val() == 'modul') {
 			$('.operator2').show();
@@ -87,6 +74,25 @@ $(function() {
 		if (e.handled !== true) {
 			var html = $('.documents-modul-detail').html();
 			$('.list-document-modul-detail').append(html);
+			
+			var idx = $('.list-document-modul-detail').find('.item').length - 1;
+			$('.documents-modul-detail').find('.fileupload').attr('id', 'fileupload' + (idx+1));
+			
+			formDataModulDetail.files = jQuery.grep(formDataModulDetail.files, function(value) {
+				return value.idx != idx;
+			});
+			
+			$('#fileupload' + idx).fileupload({
+		        url: BASE_URL + 'documents/upload',
+		        dataType: 'json',
+		        done: function (e, data) {
+		            $.each(data.result.files, function (index, file) {
+		            	formDataModulDetail.files.push({url: file.url, idx: idx});
+		            });
+		        },
+		        
+		    }).prop('disabled', !$.support.fileInput)
+		        .parent().addClass($.support.fileInput ? undefined : 'disabled');
 			e.handled = true;
 		}
 	});
@@ -97,19 +103,31 @@ $(function() {
 			var formData = $('#documentForm').serialize();
 			var modul_id = $(this).data('id');
 			var modul_type = $(this).data('modultype');
+			var params = '';
+			 $.each(formDataModulDetail.files, function (index, file) {
+				 params += '&data[Document][tmp_link][]=' + file.url
+	        });
 			$.ajax({
 				url : BASE_URL + 'documents/update',
 				type : 'post',
-				data : formData + "&data[Modul][id]=" + modul_id,
+				data : formData + "&data[Modul][id]=" + modul_id + params,
 			}).done(function(data) {
 				var obj = $.parseJSON(data);
 				if(!obj.status) {
+					$('.list-document-modul-detail').html('');
+					$('.documents-modul-detail').find('.fileupload').attr('id', 'fileupload0');
+					
 					$.each(obj.documents, function(i, e){ 
-						var html = '<div>- <a target="_blank" href="' + e.link + '">' + e.link + '</a></div>';
-						$('.documents-content').append(html);
+						if(e.type == 'VIDEO') {
+							var link = e.link;
+						} else {
+							var link = BASE_URL + e.link;
+						}
+						var html = '<div>- <a target="_blank" href="' + link + '">' + e.link + '</a></div>';
+						$('.documents-content .content').append(html);
 					});
 					
-					$('.list-document-modul-detail').html('');
+					
 				}
 			});
 			e.handled = true;
@@ -118,7 +136,7 @@ $(function() {
 	
 	$('.type-modul-detail').live('change', function() {
 		console.log($(this).val());
-		if($(this).val() == 'PDF') {
+		if($(this).val() == 'VIDEO') {
 			$(this).parent().find('.link').show();
 			$(this).parent().find('.fileupload').hide();
 		} else {
