@@ -2,9 +2,24 @@
 class Users extends Ext_Controller {
 	function __construct() {
 		parent::__construct();
+		
+		$this->_role = array(
+				'role_developer' => array('action' => array('profile')),
+				'role_hotline' => array('action' => array('profile')),
+				'role_planer' => array('action' => array('profile')),
+				'role_entwickler' => array('action' => array('profile')),
+				'role_technical' => array('action' => array('profile')),
+				'role_customer' => array('action' => array('profile'))
+		);
+		
 	
 		$this->checkRole();
 		$this->load->model('user');
+	}
+	
+	function profile($id) {
+		$data['user'] = $this->user->getById($id);
+		$this->load->view('public/users/profile', $data);
 	}
 	
 	function lists() {

@@ -17,9 +17,9 @@
 					<div class="logout">
 						<a href="<?=base_url();?>login/logout">&raquo; Logout</a>
 					</div>
-					<div class="info-user">
+					<?php $user = $this->session->userdata ( 'user' ); ?>
+					<div class="info-user" data-id="<?php echo $user->id; ?>">
 					<?php 
-						$user = $this->session->userdata ( 'user' );
 						echo $user->name;  
 						?>
 					</div>
