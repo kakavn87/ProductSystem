@@ -101,10 +101,14 @@ function doService(params) {
 	}
 
 	function createBox(value) {
-		var color = 'style="background-color: ' + value.color + ' !important; background-image: none !important; "';
+		var status = '';
+		if(value.status == 'deny') {
+			status = '<div class="status-box"><img src="' + BASE_URL + 'css/images/danger.png" /></div>';
+		}
+		var color = 'style="background-image: url(\'' + BASE_URL + 'css/images/' + value.color + '\') !important; background-color: none !important; "';
 		var html = '<div ' + color + ' class="containerBox ui-state-default" id=\''
 				+ JSON.stringify(value) + '\' data-modulid="' + value.id
-				+ '" data-modultype="' +  value.type + '">' + value.modul
+				+ '" data-modultype="' +  value.type + '">' + status + value.modul
 				+ '</div>';
 		return html;
 	}

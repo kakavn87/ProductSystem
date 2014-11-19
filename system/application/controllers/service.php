@@ -233,6 +233,8 @@ class Service extends Ext_Controller {
 			$this->load->model ( 'modul_pattern' );
 			$this->load->model ( 'document' );
 			$this->load->model ( 'application' );
+			
+			$this->load->library('roleComponent');
 
 			if ($modul_type == 'normal') {
 				$data ['modul'] = $this->modul->getById ( $modul_id );
@@ -246,7 +248,11 @@ class Service extends Ext_Controller {
 			
 			$data ['modul_type'] = $modul_type;
 
-			$this->load->view ( 'public/service/show_modul_detail', $data );
+			if($user->roleName == RoleComponent::ROLE_TECHNICAL) {
+				$this->load->view ( 'public/service/show_modul_detail_technical', $data );
+			} else {
+				$this->load->view ( 'public/service/show_modul_detail', $data );
+			}
 		} else {
 			exit ( 'You can not access this page' );
 		}
