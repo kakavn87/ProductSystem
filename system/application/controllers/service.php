@@ -212,8 +212,8 @@ class Service extends Ext_Controller {
 			$this->load->model ( 'report_document_detail' );
 			$data ['service_report'] = $this->report_document_detail->getReportsByService ( $id );
 			
-			$this->load->model('document');
-			$data ['documents'] = $this->document->getByServiceId ( $id );
+			$this->load->model('document_service');
+			$data ['documents'] = $this->document_service->getByServiceId ( $id );
 		}
 
 		$content = $this->load->view ( 'public/service/show', $data, TRUE );
@@ -241,7 +241,7 @@ class Service extends Ext_Controller {
 
 			if ($modul_type == 'normal') {
 				$data ['modul'] = $this->modul->getById ( $modul_id );
-				$data ['documents'] = $this->document->getByModulId ( $modul_id );
+				$data ['documents'] = $this->document->getByModulId ( $modul_id, $service_id);
 				$data ['app'] = $this->application->getAppDetail($modul_id, $service_id);
 			} else {
 				$data ['modul'] = $this->modul_pattern->getById ( $modul_id );

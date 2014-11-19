@@ -40,7 +40,8 @@ class Documents extends Ext_Controller {
 					'link' => $data['Document']['type'][$key] == 'VIDEO'?$item:$desc,
 					'description' => $data['Document']['description'][$key],
 					'type' => $data['Document']['type'][$key],
-					'modul_id' => $data['Modul']['id']
+					'modul_id' => $data['Modul']['id'],
+					'service_id' => $data['Service']['id']
 			);
 		}
 		if(!empty($documents)) {

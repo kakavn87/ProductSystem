@@ -72,20 +72,26 @@ $(function() {
 	$('#addDocumentModul').live('click', function(e) {
 		e.preventDefault();
 		if (e.handled !== true) {
+			
+			if(!$('#serviceid').val()) {
+				alert('Please create new service before upload document');
+				return false;
+			}
+			
 			var html = $('.documents-modul-detail').html();
 			$('.list-document-modul-detail').append(html);
 			
 			var idx = $('.list-document-modul-detail').find('.item').length - 1;
 			$('.documents-modul-detail').find('.fileupload').attr('id', 'fileupload' + (idx+1));
 			
-			formDataModulDetail.files = jQuery.grep(formDataModulDetail.files, function(value) {
-				return value.idx != idx;
-			});
-			
 			$('#fileupload' + idx).fileupload({
 		        url: BASE_URL + 'documents/upload',
 		        dataType: 'json',
 		        done: function (e, data) {
+		        	formDataModulDetail.files = jQuery.grep(formDataModulDetail.files, function(value) {
+						return value.idx != idx;
+					});
+		        	
 		            $.each(data.result.files, function (index, file) {
 		            	formDataModulDetail.files.push({url: file.url, idx: idx});
 		            });
@@ -104,13 +110,13 @@ $(function() {
 			var modul_id = $(this).data('id');
 			var modul_type = $(this).data('modultype');
 			var params = '';
-			 $.each(formDataModulDetail.files, function (index, file) {
+			$.each(formDataModulDetail.files, function (index, file) {
 				 params += '&data[Document][tmp_link][]=' + file.url
 	        });
 			$.ajax({
 				url : BASE_URL + 'documents/update',
 				type : 'post',
-				data : formData + "&data[Modul][id]=" + modul_id + params,
+				data : formData + "&data[Modul][id]=" + modul_id + "&data[Service][id]=" + $('#serviceid').val() + params,
 			}).done(function(data) {
 				var obj = $.parseJSON(data);
 				if(!obj.status) {

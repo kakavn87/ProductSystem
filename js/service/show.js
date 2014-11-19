@@ -238,7 +238,7 @@ function doService(params) {
 			$('.documents-service').find('.fileupload').attr('id', 'fileuploadService' + (idx+1));
 			
 			$('#fileuploadService' + idx).fileupload({
-		        url: BASE_URL + 'documents/upload',
+		        url: BASE_URL + 'document_services/upload',
 		        dataType: 'json',
 		        done: function (e, data) {
 		        	formDataService.files = jQuery.grep(formDataService.files, function(value) {

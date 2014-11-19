@@ -95,3 +95,14 @@ CREATE TABLE IF NOT EXISTS `profiles` (
 
 -- 19-11-2014
 ALTER TABLE `document` ADD `service_id` INT NOT NULL DEFAULT '0' ;
+
+CREATE TABLE IF NOT EXISTS `document_services` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `service_id` int(11) DEFAULT NULL,
+  `link` varchar(255) DEFAULT NULL,
+  `type` enum('VIDEO','PDF') DEFAULT 'PDF',
+  `description` text,
+  `status` enum('ACTIVE','UNACTIVE') DEFAULT 'ACTIVE',
+  `deleted` tinyint(4) DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=26 ;

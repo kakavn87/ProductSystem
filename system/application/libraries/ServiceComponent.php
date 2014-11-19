@@ -4,7 +4,7 @@ class ServiceComponent {
 	public function uploadDocument($serviceId, $documents) {
 		$CI =& get_instance();
 		
-		$CI->load->model('document');
+		$CI->load->model('document_service');
 		unset($documents['description'][count($documents['description']) - 1]);
 		$data = array();
 		$t = 0;
@@ -33,7 +33,7 @@ class ServiceComponent {
 		}
 		
 		if(!empty($data)) {
-			$CI->document->saveAll($data);
+			$CI->document_service->saveAll($data);
 		}
 		
 		return $data;
