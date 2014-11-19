@@ -91,3 +91,7 @@ CREATE TABLE IF NOT EXISTS `profiles` (
   `type` enum('organization','modul','provider') DEFAULT 'organization',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+
+
+-- 19-11-2014
+ALTER TABLE `document` ADD `service_id` INT NOT NULL DEFAULT '0' ;
