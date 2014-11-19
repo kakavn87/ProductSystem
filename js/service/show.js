@@ -1,4 +1,6 @@
 var modulRequirement = [];
+var formDataService = {};
+formDataService.files = [];
 $(function() {
 	if(roleName == 'customer') {
 		$('#customer_view').parent().hide();
@@ -119,7 +121,22 @@ function saveService(e) {
 	formData.report_id = $('#report_id').val();
 	formData.type = $('#standard').is(':checked');
 	formData.customer_view = $('#customer_view').is(':checked');
-
+	
+	formData.document = {};
+	formData.document.description = [];
+	formData.document.type = [];
+	formData.document.link = [];
+	formData.document.files = formDataService.files;
+	$(".document-description-service").each(function() {
+		formData.document.description.push($(this).val());
+	});
+	
+	$('.type-service').each(function() {
+		formData.document.type.push($(this).val());
+	});
+	$('.document-link').each(function() {
+		formData.document.link.push($(this).val());
+	});
 	if (!formData.name.trim().length) {
 		showDialog('Error', 'Please enter service name');
 		return false;
@@ -198,6 +215,44 @@ function doService(params) {
 			$('.operator').show();
 		} else {
 			$('.operator').hide();
+		}
+	});
+	
+	$('.type-service').live('change', function() {
+		if($(this).val() == 'VIDEO') {
+			$(this).parent().find('.link').show();
+			$(this).parent().find('.fileupload').hide();
+		} else {
+			$(this).parent().find('.link').hide();
+			$(this).parent().find('.fileupload').show();
+		}
+	});
+	
+	$('#addDocumentService').live('click', function(e) {
+		e.preventDefault();
+		if (e.handled !== true) {
+			var html = $('.documents-service').html();
+			$('.list-document-service').append(html);
+			
+			var idx = $('.list-document-service').find('.item').length - 1;
+			$('.documents-service').find('.fileupload').attr('id', 'fileuploadService' + (idx+1));
+			
+			$('#fileuploadService' + idx).fileupload({
+		        url: BASE_URL + 'documents/upload',
+		        dataType: 'json',
+		        done: function (e, data) {
+		        	formDataService.files = jQuery.grep(formDataService.files, function(value) {
+						return value.idx != idx;
+					});
+		        	
+		            $.each(data.result.files, function (index, file) {
+		            	formDataService.files.push({url: file.url, idx: idx});
+		            });
+		        },
+		        
+		    }).prop('disabled', !$.support.fileInput)
+		        .parent().addClass($.support.fileInput ? undefined : 'disabled');
+			e.handled = true;
 		}
 	});
 	

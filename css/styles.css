@@ -1381,6 +1381,7 @@ div.modul-standard-name a, div.modul-normal-name a, div.modul-name a {
 	padding-top: 15px;
 }
 
+.documents-service,
 .documents-modul-detail,
 .documents {
 	display: none;
@@ -1390,6 +1391,7 @@ div.modul-standard-name a, div.modul-normal-name a, div.modul-name a {
 	float: right;
 }
 
+#addDocumentService,
 #addDocumentModul,
 #addDocument {
 	cursor: pointer;

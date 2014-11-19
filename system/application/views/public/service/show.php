@@ -52,6 +52,7 @@ var formDataModulDetail = {};
 						<li><a href="#tabs-2">Role</a></li>
 						<li><a href="#tabs-3">Report documents</a></li>
 						<li><a href="#tabs-4">Products</a></li>
+						<li><a href="#tabs-5">Documents</a>
 					</ul>
 					<div id="tabs-1">
 						<div class="info">
@@ -190,6 +191,52 @@ var formDataModulDetail = {};
 						</table>
 						<input type="hidden" name="data[id]" class="id-product" />
 			          	<input type="hidden" name="product_id" id="products" value="<?php echo $value; ?>" />
+					</div>
+					<div id="tabs-5">
+						<div class="documents-content-service">
+							<h4>Documents: </h4>
+							<div class="content">
+								<?php if(!empty($documents)): ?>
+									<?php foreach($documents as $doc)  : 
+										if($doc->type == 'PDF') :
+											$link = base_url() . $doc->link;
+										else :
+											$link = $doc->link;
+										endif; 
+									?>
+										<div>- <a target="_blank" href="<?php echo $link; ?>"><?php echo $doc->link; ?></a></div>
+									<?php endforeach; ?>
+								<?php endif; ?>
+							</div>
+							<div id="addDocumentService">+ Add Document</div>
+							<div class="list-document-service">
+							</div>
+						</div>
+						<div class="documents-service">
+							<div class="item">
+								<label class="user" for="link">Link:</label> 
+								<input type="text" class="link document-link"
+									id="link" name="data[Document][link][]" value="" style="display: none">
+								<input class="fileupload" type="file" name="files" id="fileuploadService0" >
+								<div class="clear"></div>
+						
+								<label class="user" for="documentdescription">Description:</label>
+								<textarea rows="4" class="document-description-service" cols="50"
+									name="data[Document][description][]"></textarea>
+								<div class="clear"></div>
+						
+								<label class="user" for="type">Type:</label> <select
+									name="data[Document][type][]" class="type-service">
+									<option value='PDF'>Pdf</option>
+									<option value='VIDEO'>Video</option>
+								</select>
+								<div class="clear"></div>
+						
+								<img src="<?php echo base_url(); ?>css/images/deleteIcon.png"
+									class="remove-document" />
+								<div class="clear"></div>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div>
@@ -453,6 +500,15 @@ var formDataModulDetail = {};
 	</div>
 	</form>
 </div>
+<!-- The jQuery UI widget factory, can be omitted if jQuery UI is already included -->
+<script src="<?=base_url();?>js/jquery.ui.widget.js"></script>
+<!-- The Iframe Transport is required for browsers without support for XHR file uploads -->
+<script src="<?=base_url();?>js/jquery.iframe-transport.js"></script>
+<!-- The basic File Upload plugin -->
+<script src="<?=base_url();?>js/jquery.fileupload.js"></script>
+<!-- Bootstrap JS is not required, but included for the responsive demo navigation -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
 <script src="<?=base_url();?>js/service/show.js"></script>
 <script src="<?=base_url();?>js/service/action_requirement.js"></script>
 <script src="<?=base_url();?>js/service/action_product.js"></script>

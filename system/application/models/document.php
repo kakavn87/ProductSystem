@@ -32,4 +32,13 @@ class Document extends CI_Model {
 		$query = $this->db->get ();
 		return $query->result ();
 	}
+	
+	function getByServiceId($serviceId) {
+		$this->db->select ( '*' );
+		$this->db->from ( 'document' );
+		$this->db->where('service_id', $serviceId);
+		$this->db->where('deleted', 0);
+		$query = $this->db->get ();
+		return $query->result ();
+	}
 }

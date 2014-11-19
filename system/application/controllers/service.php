@@ -211,6 +211,9 @@ class Service extends Ext_Controller {
 
 			$this->load->model ( 'report_document_detail' );
 			$data ['service_report'] = $this->report_document_detail->getReportsByService ( $id );
+			
+			$this->load->model('document');
+			$data ['documents'] = $this->document->getByServiceId ( $id );
 		}
 
 		$content = $this->load->view ( 'public/service/show', $data, TRUE );
@@ -273,7 +276,7 @@ class Service extends Ext_Controller {
 			$this->load->model ( 'dl' );
 
 			$service = $this->input->post ();
-
+			
 			$roleList = $service ['role_id'];
 			unset ( $service ['role_id'] );
 
@@ -282,13 +285,15 @@ class Service extends Ext_Controller {
 
 			$modules = $service ['modul'];
 			unset ( $service ['modul'] );
+			
+			$documents = $service['document'];
+			unset ( $service ['document'] );
 
 			$modules_cus = array();
 			if(isset($service ['modul_customer'])) {
 				$modules_cus = $service ['modul_customer'];
 				unset ( $service ['modul_customer'] );
 			}
-
 
 			$service ['type'] = $service ['type'] == 'true' ? Dl::TYPE_STANDARD : Dl::TYPE_NORMAL;
 			$service ['customer_view'] = $service ['customer_view'] == 'true' ? Dl::CUSTOMER_ALLOW : Dl::CUSTOMER_DENY;
@@ -349,6 +354,9 @@ class Service extends Ext_Controller {
 					);
 				}
 			}
+			
+			// upload documents
+			$serviceComponent->uploadDocument($serviceId, $documents);
 
 			$this->load->model ( 'report_document_detail' );
 			$this->report_document_detail->deleteData ( $serviceId );

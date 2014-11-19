@@ -1,5 +1,43 @@
 <?php
 class ServiceComponent {
+	
+	public function uploadDocument($serviceId, $documents) {
+		$CI =& get_instance();
+		
+		$CI->load->model('document');
+		unset($documents['description'][count($documents['description']) - 1]);
+		$data = array();
+		$t = 0;
+		foreach($documents['description'] as $key => $doc) {
+			$desc = '';
+			if($documents['type'][$key] == 'PDF') {
+				$file = $documents['files'][$t++]['url'];
+				$list = explode ( '/', $file );
+				list ( $name, $ext ) = explode ( '.', end ( $list ) );
+				$desc = 'uploads/pdf/' . md5 ( $name ) . '.' . $ext;
+			
+				@copy ($file, $desc );
+			
+				@unlink('files/thumbnail/' . $name.'.'.$ext);
+				@unlink('files/' . $name.'.'.$ext);
+			} else {
+				$desc = $documents['link'][$key];
+			}
+			
+			$data[] = array(
+					'link' => $desc,
+					'description' => $doc,
+					'type' => $documents['type'][$key],
+					'service_id' => $serviceId
+			);
+		}
+		
+		if(!empty($data)) {
+			$CI->document->saveAll($data);
+		}
+		
+		return $data;
+	}
 
 	public function getDataToCreateServiceModul($serviceId, $modules, $role = 'developer'){
 		$CI =& get_instance();
