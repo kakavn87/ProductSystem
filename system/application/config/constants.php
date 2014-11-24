@@ -1,5 +1,6 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+define('ROOT', $_SERVER['DOCUMENT_ROOT'] . '/ps/');
 /*
 |--------------------------------------------------------------------------
 | File and Directory Modes

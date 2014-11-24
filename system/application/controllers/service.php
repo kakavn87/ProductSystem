@@ -430,7 +430,7 @@ class Service extends Ext_Controller {
 				$list = explode ( '/', $file );
 				list ( $name, $ext ) = explode ( '.', end ( $list ) );
 				$desc = 'uploads/reports/' . md5 ( $name ) . '.' . $ext;
-				@copy ( $file, $desc );
+				@copy ( $file, ROOT . $desc );
 
 				$this->report_document_detail->updateData ( $rddId, base_url () . $desc );
 			}

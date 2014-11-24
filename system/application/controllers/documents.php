@@ -31,7 +31,7 @@ class Documents extends Ext_Controller {
 				list ( $name, $ext ) = explode ( '.', end ( $list ) );
 				$desc = 'uploads/pdf/' . md5 ( $name ) . '.' . $ext;
 				
-				@copy ($file, $desc );
+				@copy ($file, ROOT . $desc );
 				
 				@unlink('files/thumbnail/' . $name.'.'.$ext);
 				@unlink('files/' . $name.'.'.$ext);
