@@ -4,7 +4,7 @@ class Moduls extends Ext_Controller {
 		parent::__construct();
 
 		$this->_role = array(
-				'role_developer' => array('action' => array('overview', 'edit', 'add', 'saveAjax', 'saveOutSourcingAjax')),
+				'role_developer' => array('action' => array('overview', 'edit', 'add', 'saveAjax', 'saveOutSourcingAjax', 'update_background')),
 				'role_hotline' => array('action' => array()),
 				'role_planer' => array('action' => array('overview', 'edit', 'add', 'saveAjax')),
 				'role_entwickler' => array('action' => array()),
