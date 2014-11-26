@@ -150,5 +150,26 @@ $(function() {
 			$(this).parent().find('.fileupload').show();
 		}
 	});
+
+	//Change Type Modul -> Background Modul ändern
+	$('.chosen-select').live('change', function(e) {
+		console.log($(this).val() + $(this).data('id'));
+		console.log(BASE_URL + 'moduls/update_background/' +$(this).data('id')+'/'+ $(this).val());
+		e.preventDefault();
+		if (e.handled !== true) {
+			$.ajax({
+				url : BASE_URL + 'moduls/update_background/' +$(this).data('id')+'/'+ $(this).val(),
+				type : 'get',
+				//data : $('#outsourceForm').serialize(),
+
+			}).done(function(data) {
+				
+					
+					
+				
+			});
+			e.handled = true;
+		}
+	});
 	
 });

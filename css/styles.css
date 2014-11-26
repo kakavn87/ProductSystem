@@ -1677,3 +1677,21 @@ label.title {
 	color: blue;
 	cursor: pointer;
 }
+.add_container{
+	 width:100%;
+    border:1px solid #d3d3d3;
+}
+
+.add_container div {
+    width:100%;
+}
+.add_container .header {
+    background-color:#d3d3d3;
+    padding: 2px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.add_container .content {
+    display: none;
+    padding : 5px;
+}

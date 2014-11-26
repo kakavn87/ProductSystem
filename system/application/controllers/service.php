@@ -14,6 +14,12 @@ class Service extends Ext_Controller {
 								'save',
 								'load_service',
 								'show_modul_detail',
+								'show_role_requirement',
+								 'edit_role_requirement',
+								 'save_role_requirement',
+								 'delete_role_requirement',
+								 'update_role_requirement',
+								
 								'get_standard',
 								'remove_requirement'
 						)
@@ -260,6 +266,92 @@ class Service extends Ext_Controller {
 			exit ( 'You can not access this page' );
 		}
 	}
+
+	//ROLE REQUIREMENT
+	function show_role_requirement() {
+		if ($this->input->is_ajax_request ()) {
+			$role_id = ( int ) $this->input->post ( 'role_id' );
+			$service_id = ( int ) $this->input->post ( 'service_id' );
+
+			$user = $this->session->userdata ( 'user' );
+			if(!$service_id) {
+				$service_id = $user->id * (-1);
+			}
+
+			$this->load->model ( 'role_requirement' );
+			
+
+				//$data ['service_id'] = $this->modul->getById ( $modul_id );
+				//$data ['role_id'] = $this->document->getByModulId ( $modul_id );
+				$data ['role_requirements'] = $this->role_requirement->getRequirement($role_id, $service_id);
+				$data['role_id'] = $role_id;
+				$data['service_id'] = $service_id;
+			$this->load->view ( 'public/service/show_role_requirement', $data );
+		} else {
+			exit ( 'You can not access this page' );
+		}
+	}
+
+	function edit_role_requirement() {
+		if ($this->input->is_ajax_request ()) {
+			$role_requirement_id = ( int ) $this->input->post ( 'role_requirement_id' );
+		$this->load->model ( 'role_requirement' );
+		$data = array();
+		if($role_requirement_id) {
+			$data['role_requirement'] = $this->role_requirement->getById($role_requirement_id);
+		}
+		$data['role_id'] = $this->input->post ('role_id');
+		$data['service_id'] = $this->input->post('service_id');
+		$this->load->view('public/roles/edit', $data);
+
+		//$this->load->library('template');
+		//$this->template->load($content);
+		}
+	}
+
+	function delete_role_requirement() {
+		if ($this->input->is_ajax_request ()) {
+			$role_requirement_id = ( int ) $this->input->post ( 'role_requirement_id' );
+			$this->load->model ( 'role_requirement' );
+			echo("<script>console.log('PHP: ".$role_requirement_id."');</script>");
+			$this->role_requirement->deleteRequirement($role_requirement_id);
+		}
+	}
+
+	function update_role_requirement() {
+		if ($this->input->is_ajax_request ()) {
+			//$data = ( int )  $this->input->post ('role_requirement_id');
+			
+			
+			
+			$data = array();
+			
+			$data['name'] = $this->input->post ('name');
+			$data['operator'] = $this->input->post('operator');
+			$data['value'] = $this->input->post ('value');
+			$data['type'] = $this->input->post('type');
+			
+			$this->load->model ( 'role_requirement' );
+			 //$this->db->where('id', $data['id']);
+			echo("<script>console.log('PHP: ".$this->input->post('role_requirement_id')."');</script>");
+			if(empty($this->input->post('role_requirement_id'))) {
+				$data['role_id'] = $this->input->post ('role_id');
+				$data['service_id'] = $this->input->post('service_id');
+				echo("<script>console.log('PHP: ".$data['role_id']."serviceid ".$data['service_id']."');</script>");
+				$this->role_requirement->save($data);
+		 	 } else {
+		 	 	$data['id'] = ( int )  $this->input->post('role_requirement_id');
+				$this->role_requirement->update($data);
+				echo("<script>console.log('PHP: ".$data['value'] ."');</script>");
+			} 
+			 
+			 //$role_requirement = $this->role_requirement->getById($data['id']);
+			 //echo("<script>console.log('PHP: ".$role_requirement->role_id."');</script>");	
+			 //$this->load->view('public/service/show_role_requirement', $data);
+		}
+	}
+	//END ROLE REQUIREMENT
+
 	function allowServiceModul() {
 		if ($this->input->is_ajax_request ()) {
 			$data = $this->input->post ();

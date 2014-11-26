@@ -287,4 +287,12 @@ class Moduls extends Ext_Controller {
 		}
 		return $color;
 	}
+	function update_background($id,$type){
+		$this->load->model('modul');
+		$modulData['id'] = $id;
+		$modulData['type'] = $type;
+		$modulData['color'] = $this->_getColor(@$modulData['type']);
+		$this->modul->updateBackground($modulData);
+
+	}
 }

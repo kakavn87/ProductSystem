@@ -53,6 +53,7 @@ var formDataModulDetail = {};
 						<li><a href="#tabs-3">Report documents</a></li>
 						<li><a href="#tabs-4">Products</a></li>
 						<li><a href="#tabs-5">Documents</a>
+						<li><a href="#tabs-6">Role</a>
 					</ul>
 					<div id="tabs-1">
 						<div class="info">
@@ -237,6 +238,57 @@ var formDataModulDetail = {};
 								<div class="clear"></div>
 							</div>
 						</div>
+					</div>
+					<div id="tabs-6">
+						<!-- Expand and collapse a div using javascript -->
+						<div class="add_container">
+						    <div class="header"><span>Add Role</span>
+
+						    </div>
+						    <div class="content">
+						       <div class="info">
+									<label>Name</label>
+									<input type="text" name="data[name]" class="name-product" />
+								
+									<label>Description</label>
+									<textarea rows="5" name="data[description]" cols="58" class="desc-product"></textarea>
+								
+									<button type="button" class="add-product">Add Role</button>
+								</div>
+						    </div>
+						</div>
+						<!-- Expand and collapse a div using javascript -->
+						
+						<table>
+							<tr>
+								<th>Name</th>
+								<th></th>
+								<th></th>
+							</tr>
+							<?php $value = '';foreach($roles as $role) :
+								$selected = '';
+								 if(isset($service_role)) :
+					            	foreach($service_role as $serviceRole) :
+						            	if($serviceRole->role_id == $role->id) :
+						            		$selected="selected='selected'";
+					            			break;
+						            	endif;
+					            	endforeach;
+				           		 endif;
+							?>
+								<tr>
+									<td class="edit edit-role" data-id="<?php echo $role->id; ?>"><?php echo $role->name; ?></td>
+									<td class="delete delete-role" data-id="<?php echo $role->id; ?>">Delete</td>
+									<td class="select select-role <?php echo $selected; ?>" data-id="<?php echo $role->id; ?>"><?php echo empty($selected)?'Select':''; ?></td>
+								</tr>
+							<?php endforeach; ?>
+						</table>
+						<!-- Expand and collapse a div using javascript -->
+						<div class="contain-role-requirement">		</div>
+						<!-- Expand and collapse a div using javascript -->
+						<input type="hidden" name="data[id]" class="id-product" />
+			          	<input type="hidden" name="product_id" id="products" value="<?php echo $value; ?>" />
+
 					</div>
 				</div>
 				<div>

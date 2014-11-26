@@ -194,6 +194,7 @@ function doService(params) {
 	$('.addToService').live('click', addToService);
 	$('ul#navLeft li').live('click', loadService);
 	$('.containerBox').live('click', openModulDetail);
+	$('.edit-role').live('click', openRoleRequirement);
 	$('.addBox').live('click', openListModul);
 	$('.service-standard').live('click', showStandard);
 	$(".add-module").live('click', showAddModule);
@@ -611,6 +612,26 @@ function doService(params) {
 		}
 	}
 
+	function openRoleRequirement(e) {
+		if (e.target == this) {
+			var roleId = $(this).data('id');
+			
+				$.ajax({
+					url : BASE_URL + 'service/show_role_requirement',
+					type : 'post',
+					data : {
+						service_id: $('#serviceid').val(),
+						role_id : roleId
+						
+					},
+				}).done(function(data) {
+					$('.contain-role-requirement').html(data);
+				});
+			
+		}
+	}
+
+
 	function createInput(id, modul) {
 		var html = '<div class="modul-name">';
 		html += '<input type="checkbox" id="modul" class="modul" data-modulname=\'{"id": '
@@ -640,6 +661,26 @@ function doService(params) {
 				+ 'css/images/add.png" />'+'</div>';
 		return html;
 	}
+
+	//expand-and-collapse-a-div-using-javascript
+	$(".header").click(function () {
+
+    $header = $(this);
+    //getting the next element
+    $content = $header.next();
+    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+    $content.slideToggle(500, function () {
+        //execute this after slideToggle is done
+        //change text of header based on visibility of content div
+        $header.text(function () {
+            //change text based on condition
+            return $content.is(":visible") ? "Collapse" : "Expand";
+        });
+   	 });
+
+	});
 	
 	return false;
+	
+	
 }

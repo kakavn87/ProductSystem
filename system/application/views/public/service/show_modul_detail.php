@@ -10,6 +10,17 @@
 	<?php if(empty($app)) : ?>
 		
 		<div class="documents-content">
+
+			<label class="user" for="moduletype" >Type:</label>	
+				<select class="chosen-select" id="selectType" name="data[Modul][type]" data-id="<?php echo $modul->id; ?>">
+					<option value="main">Main</option>
+					<option value="sub">Sub</option>
+					<option value="support">Support</option>
+					<option value="child">Child</option>
+					<option value="partner">Partner</option>
+					<option value="kunden">Kunden</option>
+				</select>
+
 			<h4>Documents: </h4>
 			<div class="content">
 			<?php if(!empty($documents)): ?>

@@ -35,5 +35,11 @@ class Modul extends CI_Model {
 		return $query->result ();
 	}
 	
+	function updateBackground($data) {
+		$this->db->where('id', $data['id']);
+		$this->db->update('modul', $data);
+		
+	}
+	
 	
 }
