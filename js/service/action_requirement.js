@@ -57,7 +57,8 @@ $(function() {
 	});
 	
 	$('.select-requirement').live('click', function(e) {
-		$('#tabs-1 table tr td.select').removeClass('selected').html('Select');
+		//$('#tabs-1 table tr td.select').removeClass('selected').html('Select');
+		$('#tabs-1 table tr td.select').removeClass('selected').html('<img src="http://localhost/ProducSystemCI/css/images/plus.png"/>');
 		$(this).addClass('selected').text('');
 		
 		$('#requirments').val($(this).data('id'));

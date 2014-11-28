@@ -9,11 +9,22 @@ var formDataModulDetail = {};
 <div class="grey">
 	<form action="" method="post" enctype="multipart/form-data">
 		<h1>
-			<input placeholder="Service Name" type="text" id="name"
+		<?php
+			if(isset($service)) {
+			    echo "Create Date: <br />";
+			    echo "Modified: <br />";
+			    echo "By: <br />";
+			} else {
+			    ?>
+			    	<label>Name: </label><input placeholder="Service Name" type="text" id="name"
 				name="name" value="<?php echo isset($service)?$service[0]->name:''; ?>">
+			    <?php
+			}
+			?>
+		
 		</h1>
 		<div id="left">
-			<div class="bottomBox">
+			<!-- <div class="bottomBox">
 				<h1>Standard Services</h1>
 
 				<div class="clear"></div>
@@ -31,9 +42,9 @@ var formDataModulDetail = {};
 				</div>
 				<?php endforeach; ?>
 				</div>
-			</div>
+			</div> -->
 				<div class="bottomBox2">
-					<h1>DL</h1>
+					<h1><?php echo isset($service)?$service[0]->name:' Module'; ?></h1>
 					<div class="clear"></div>
 
 					<div class="modulList" id="sortableDev" ></div>
@@ -49,7 +60,7 @@ var formDataModulDetail = {};
 				<div id="tabs">
 					 <ul>
 						<li><a href="#tabs-1">Requirements</a></li>
-						<li><a href="#tabs-2">Role</a></li>
+						 <li><a href="#tabs-2"></a></li>
 						<li><a href="#tabs-3">Report documents</a></li>
 						<li><a href="#tabs-4">Products</a></li>
 						<li><a href="#tabs-5">Documents</a>
@@ -80,8 +91,8 @@ var formDataModulDetail = {};
 							?>
 								<tr>
 									<td class="edit edit-requirement" data-id="<?php echo $re->id; ?>"><?php echo $re->description; ?></td>
-									<td class="delete delete-requirement" data-id="<?php echo $re->id; ?>">Delete</td>
-									<td class="select select-requirement <?php echo $selected; ?>" data-id="<?php echo $re->id; ?>"><?php echo empty($selected)?'Select':''; ?></td>
+									<td class="delete delete-requirement" data-id="<?php echo $re->id; ?>"><img src="<?php echo base_url(); ?>css/images/delete.png"/> </td>
+									<td class="select select-requirement <?php echo $selected; ?>" data-id="<?php echo $re->id; ?>"><?php echo empty($selected)?'<img src="http://localhost/ProducSystemCI/css/images/plus.png"/>':''; ?></td>
 								</tr>
 							<?php endforeach; ?>
 						</table>
@@ -145,11 +156,11 @@ var formDataModulDetail = {};
 								<tr>
 									<td class="edit edit-report" data-id="<?php echo $report->id; ?>" data-desc="<?php echo $report->description; ?>"><?php echo $report->name; ?></td>
 									<?php if($report->user_id) :?>
-									<td class="delete delete-report" data-id="<?php echo $report->id; ?>">Delete</td>
+									<td class="delete delete-report" data-id="<?php echo $report->id; ?>"><img src="<?php echo base_url(); ?>css/images/delete.png"/></td>
 									<?php else : ?>
 									<td></td>
 									<?php endif; ?>
-									<td class="select select-report <?php echo $selected; ?>" data-id="<?php echo $report->id; ?>"><?php echo empty($selected)?'Select':''; ?></td>
+									<td class="select select-report <?php echo $selected; ?>" data-id="<?php echo $report->id; ?>"><?php echo empty($selected)?'<img src="http://localhost/ProducSystemCI/css/images/plus.png"/>':''; ?></td>
 								</tr>
 							<?php endforeach; ?>
 						</table>
@@ -185,8 +196,8 @@ var formDataModulDetail = {};
 							?>
 								<tr>
 									<td class="edit edit-product" data-id="<?php echo $product->id; ?>" data-desc="<?php echo $product->description; ?>"><?php echo $product->name; ?></td>
-									<td class="delete delete-product" data-id="<?php echo $product->id; ?>">Delete</td>
-									<td class="select select-product <?php echo $selected; ?>" data-id="<?php echo $product->id; ?>"><?php echo empty($selected)?'Select':''; ?></td>
+									<td class="delete delete-product" data-id="<?php echo $product->id; ?>"><img src="<?php echo base_url(); ?>css/images/delete.png"/></td>
+									<td class="select select-product <?php echo $selected; ?>" data-id="<?php echo $product->id; ?>"><?php echo empty($selected)?'<img src="http://localhost/ProducSystemCI/css/images/plus.png"/>':''; ?></td>
 								</tr>
 							<?php endforeach; ?>
 						</table>
@@ -278,8 +289,8 @@ var formDataModulDetail = {};
 							?>
 								<tr>
 									<td class="edit edit-role" data-id="<?php echo $role->id; ?>"><?php echo $role->name; ?></td>
-									<td class="delete delete-role" data-id="<?php echo $role->id; ?>">Delete</td>
-									<td class="select select-role <?php echo $selected; ?>" data-id="<?php echo $role->id; ?>"><?php echo empty($selected)?'Select':''; ?></td>
+									<td class="delete delete-role" data-id="<?php echo $role->id; ?>"><img src="<?php echo base_url(); ?>css/images/delete.png"/></td>
+									<td class="select select-role <?php echo $selected; ?>" data-id="<?php echo $role->id; ?>"><?php echo empty($selected)?'<img src="http://localhost/ProducSystemCI/css/images/plus.png"/>':''; ?></td>
 								</tr>
 							<?php endforeach; ?>
 						</table>

@@ -1,7 +1,7 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 //define('ROOT', $_SERVER['DOCUMENT_ROOT'] . '/ps/');
-define('ROOT',$_SERVER['DOCUMENT_ROOT'].'/ProducSystemCI/uploads/pdf');
+define('ROOT',$_SERVER['DOCUMENT_ROOT'].'/ProducSystemCI/');
 /*
 |--------------------------------------------------------------------------
 | File and Directory Modes

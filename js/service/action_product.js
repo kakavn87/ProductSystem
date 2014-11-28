@@ -65,7 +65,7 @@ $(function() {
 	});
 	
 	$('.select-product').live('click', function(e) {
-		$('#tabs-4 table tr td.select').removeClass('selected').html('Select');
+		$('#tabs-4 table tr td.select').removeClass('selected').html('<img src="http://localhost/ProducSystemCI/css/images/plus.png"/>');
 		$(this).addClass('selected').text('');
 		
 		$('#products').val($(this).data('id'));

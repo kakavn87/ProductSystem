@@ -629,7 +629,7 @@ input.active {
 }
 
 .bottomBox2 {
-	width: 78%;
+	width: 100%;
 	/*height: 300px;*/
 	float: left;
 	-webkit-border-radius: 10px;
@@ -1613,7 +1613,11 @@ span.add-requirement {
 }
 
 #tabs table tr > td.selected {
-	background: #fde2e2;
+	/*background: #fde2e2;*/
+	background-image: url("http://localhost/ProducSystemCI/css/images/select.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 30px;
 }
 
 label.title {
@@ -1666,11 +1670,13 @@ label.title {
 .delete {
 	color: red;
 	cursor: pointer;
+	text-align: center;
 }
 
 .select {
 	color: green;
 	cursor: pointer;
+	text-align: center;
 }
 
 .edit {

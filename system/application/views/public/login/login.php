@@ -16,7 +16,7 @@ var BASE_URL = '<?php echo base_url(); ?>';
     <label for="mail">Ihr Passwort:</label><br/>
     <input type="password" id="password" name="password" value="" /><br/>
     <input type="submit" value="Abschicken" />
-  
+    <a class="registration" href="<?=base_url();?>users/edit">Registration</a>
   </form>
 
 </div>

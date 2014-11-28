@@ -68,7 +68,7 @@ $(function() {
 		var $this = $(this);
 		var $rid = $('#report_id').val();
 		if($this.hasClass('selected')) {
-			$this.removeClass('selected').html('Select');
+			$this.removeClass('selected').html('<img src="http://localhost/ProducSystemCI/css/images/plus.png"/>');
 			var list = $rid.split(',');
 			var report_id = '';
 			$.each(list, function(i, e) {
